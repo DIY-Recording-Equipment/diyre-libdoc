@@ -1,11 +1,10 @@
 {
-    "siteTitle": "My Project Title",
-    "siteDescription": "This is the description of my project title",
-    "author": "John Doe",
+    "siteTitle": "DIYRE Manuals",
+    "siteDescription": "Assembly guides for DIYRE kits.",
+    "author": "DIYRE",
     "faviconUrl": "/assets/myfavicon.png",
-    "blogTitle": "Blog",
-    "blogDescription": "Here is the description of the blog part",
-    "productionUrl": "https://eleventy-libdoc.netlify.app",
+    "tocEnabled": "yes",
+    "roundedImagesCorners": "yes",
     "customLinks": [
         {
             "url": "/feed.xml",
