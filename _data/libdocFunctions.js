@@ -157,7 +157,7 @@ export default {
                     const indentLevel = Math.max(0, headingLevel - 2); // h2 gets 0, h3 gets 1, h4 gets 2
                     const indentPadding = indentLevel * 20; // 20px per indent level
 
-                    // Check if this heading is inside a list item by searching the content
+                    // Check if this heading is inside a list item or has the .step class
                     const headingPattern = new RegExp(`<${htmlTag.tagName}[^>]*>${htmlTag.value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/${htmlTag.tagName}>`, 'g');
                     const beforeHeading = content.split(headingPattern)[0];
 
@@ -166,10 +166,14 @@ export default {
                     const closeLiCount = (beforeHeading.match(/<\/li>/g) || []).length;
                     const isInList = openLiCount > closeLiCount;
 
+                    // Check if heading has the .step class
+                    const headingMatch = content.match(new RegExp(`<${htmlTag.tagName}[^>]*class="[^"]*step[^"]*"[^>]*>${htmlTag.value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/${htmlTag.tagName}>`));
+                    const hasStepClass = headingMatch !== null;
+
                     let displayText = htmlTag.value;
 
-                    // Only add numbering if the heading is inside a list
-                    if (isInList) {
+                    // Only add numbering if the heading is inside a list or has .step class
+                    if (isInList || (hasStepClass && headingLevel >= 2 && headingLevel <= 4)) {
                         // Track numbering: increment counter at this level, reset deeper levels
                         if (!listCounters[indentLevel]) {
                             listCounters[indentLevel] = 0;
@@ -318,7 +322,7 @@ export default {
                         visualContent = `<span class="icon-${iconOrImage} fs-10 | c-primary-500" fs-8="xs"></span>`;
                     } else {
                         // It's an image path
-                        visualContent = `<img src="${iconOrImage}" alt="${mainText}" style="width: 100%; height: auto; max-width: 120px;" loading="lazy" decoding="async">`;
+                        visualContent = `<img src="${iconOrImage}" alt="${mainText}" style="width: 100%; height: auto; max-width: 100px;" loading="lazy" decoding="async">`;
                     }
                 } else {
                     // No third parameter provided, use default icon

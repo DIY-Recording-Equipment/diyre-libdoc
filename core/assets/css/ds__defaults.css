@@ -140,26 +140,23 @@ main h1 {
 }
 main h2 {
     font-weight: 600;
-    font-size: var(--ita-fontSizes-9);
+    font-size: var(--ita-fontSizes-8);
 }
 main h3 {
     font-weight: 500;
-    font-size: var(--ita-fontSizes-8);
+    font-size: var(--ita-fontSizes-6);
 }
 main h4 {
     font-weight: 500;
     font-size: var(--ita-fontSizes-8);
-    letter-spacing: -0.05em;
 }
 main h5 {
     font-weight: 500;
     font-size: var(--ita-fontSizes-7);
-    letter-spacing: -0.05em;
 }
 main h6 {
     font-weight: 500;
     font-size: var(--ita-fontSizes-7);
-    letter-spacing: -0.05em;
 }
 main > *:not(header) h1,
 main > *:not(header) h1,
@@ -194,23 +191,40 @@ main > *:not(header) h5,
 main > *:not(header) h5,
 main > *:not(header) h6,
 main > *:not(header) h6 {
-    margin-top: var(--ita-spacings-5);
     font-size: var(--ita-fontSizes-6);
 }
-main > *:not(header) h1 a,
-main > *:not(header) h1 a,
-main > *:not(header) h2 a,
-main > *:not(header) h2 a,
-main > *:not(header) h3 a,
-main > *:not(header) h3 a,
-main > *:not(header) h4 a,
-main > *:not(header) h4 a,
-main > *:not(header) h5 a,
-main > *:not(header) h5 a,
-main > *:not(header) h6 a,
-main > *:not(header) h6 a {
-    display: none;
+main h3 a,
+main h4 a,
+main h5 a,
+main h6 a {
+    display: none !important;
 }
+
+/* HEADING NUMBERING */
+main {
+    counter-reset: h2Counter;
+}
+h2.step {
+    counter-reset: h3Counter;
+    counter-increment: h2Counter;
+}
+h2.step::before {
+    content: counter(h2Counter) ". ";
+}
+h3.step {
+    counter-reset: h4Counter;
+    counter-increment: h3Counter;
+}
+h3.step::before {
+    content: counter(h2Counter) "." counter(h3Counter) " ";
+}
+h4.step {
+    counter-increment: h4Counter;
+}
+h4.step::before {
+    content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) " ";
+}
+
 /* LINKS */
 main a {
     transition: all 300ms;
@@ -877,13 +891,23 @@ main .widget + .widget {
     margin-top: var(--ita-spacings-5);
 }
 
+/* ICON CARD */
+.widget-iconCard picture {
+    min-width: 100px;
+    max-width: 100px;
+    flex-shrink: 0;
+}
+.widget-iconCard picture img {
+    width: 100%;
+    height: auto;
+}
+
 /* LIGHTBOX */
 .lightbox-thumbnail {
     cursor: pointer;
     display: inline-block;
     width: 200px;
     height: 200px;
-    margin-top: var(--ita-spacings-5);
     border-radius: 12px;
     border-width: 1px;
     border-style: dashed;

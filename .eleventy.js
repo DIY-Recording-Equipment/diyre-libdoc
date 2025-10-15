@@ -11,7 +11,13 @@ import libdocConfig                         from "./_data/libdocConfig.js";
 import libdocFunctions                      from "./_data/libdocFunctions.js";
 // END LibDoc imports
 
+// START markdown-it imports
+import markdownItAttrs                      from "markdown-it-attrs";
+// END markdown-it imports
+
 export default function(eleventyConfig) {
+    // Configure markdown-it with attrs plugin
+    eleventyConfig.amendLibrary("md", mdLib => mdLib.use(markdownItAttrs));
     // Enable passthrough copy files to trigger rebuilds during --serve
     eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 

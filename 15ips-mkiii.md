@@ -3,7 +3,7 @@ layout: guide.liquid
 title: 15IPS mkIII Assembly Guide
 product: 15IPS Colour
 version: "1.0"
-complexity: eginner
+complexity: Beginner
 estimated_time: 1 hour
 product_url: https://www.diyrecordingequipment.com/products/15ips-colour
 support_url: http://www.diyrecordingequipment.com/pages/contact
@@ -41,50 +41,44 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
 
 ---
 
-1. ## Standoffs and Header (Bag 1)
+## Standoffs and Header {.step}
+### Install Standoffs {.step}
+{% lightbox '/assets/15ips3/colour-standoffs.jpg' %}
+Install the four standoffs in the corners of the PCB. These will support the module when installed in your 500-series rack.
 
-    1. ### Install Standoffs
-        {% lightbox '/assets/15ips3/colour-standoffs.jpg' %}
-         Install the four standoffs in the corners of the PCB. These will support the module when installed in your 500-series rack.
+{% alert 'Install the locking end of the standoffs into the PCB.', 'warning', 'Take note' %}
+### Install Header {.step}
+{% lightbox '/assets/15ips3/colour-header.jpg' %}
+Install the 8-pin edge connector header on the back of the PCB.
 
-        {% alert 'Install the locking end of the standoffs into the PCB.', 'warning', 'Take note' %}
+## Resistors {.step}
 
-    2. ### Install Header
-        {% lightbox '/assets/15ips3/colour-header.jpg' %}
-        Install the 8-pin edge connector header on the back of the PCB.
+### Bend Resistors {.step}
+{% lightbox '/assets/15ips3/res-bend.jpg' %}
+Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
 
-     **Parts:**
-     - Standoff × 4
-     - CON1: 10-pin header × 1
+### Sort Resistors {.step}
+To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance.
 
-1. ## Resistors (Bag 2)
+{% alert 'To measure resistors quickly, you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Tip' %}
 
-    1. ### Bend Resistors
-        {% lightbox '/assets/15ips3/res-bend.jpg' %}
-        Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
-    
-    1. ### Sort Resistors
-        To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance.
+### Place Resistors {.step}
+{% lightbox '/assets/15ips3/res-place.jpg' %}
+Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
 
-        {% alert 'To measure resistors quickly, you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Tip' %}
+### Solder Resistors {.step}
+{% lightbox '/assets/15ips3/res-solder.jpg' %}
+Solder the resistors to the PCB. Observe good soldering technique:
 
-    1. ### Place Resistors
-        {% lightbox '/assets/15ips3/res-place.jpg' %}
-        Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
+* Heat the pad and lead for 2-3 seconds
+* Apply a small bit of solder
+* Continue to heat the pad for another 2-3 seconds
+* Remove iron and let cool
 
-    1. ### Solder Resistors
-        {% lightbox '/assets/15ips3/res-solder.jpg' %}
-        Solder the resistors to the PCB. Observe good soldering technique:
+The finished joints should be shiny and should have just enough solder to cover the pad entirely.
 
-        * Heat the pad and lead for 2-3 seconds
-        * Apply a small bit of solder
-        * Continue to heat the pad for another 2-3 seconds
-        * Remove iron and let cool
+### Trim Resistors {.step}
+{% lightbox '/assets/15ips3/res-trim.jpg' %}
+Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
 
-        The finished joints should be shiny and should have just enough solder to cover the pad entirely.
-
-    1. ### Trim Resistors
-        {% lightbox '/assets/15ips3/res-trim.jpg' %}
-        Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
-
-        {% alert 'Hold your finger over the lead being trimmed to prevent it from flying across the room.', 'success', 'Tip' %}
+{% alert 'Hold your finger over the lead being trimmed to prevent it from flying across the room.', 'success', 'Tip' %}
