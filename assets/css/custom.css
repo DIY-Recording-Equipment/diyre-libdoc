@@ -8,11 +8,6 @@ body {
     background-color: white !important;
     background-image: none !important;
 }
-main p:first-child {
-    margin: 0;
-    padding-top:0;
-    padding-bottom:var(--ita-spacings-4);
-}
 main p {
     margin-top:0;
     margin-bottom:0;

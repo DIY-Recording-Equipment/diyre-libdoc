@@ -55,28 +55,21 @@ Install the 8-pin edge connector header on the back of the PCB.
 
 {% lightbox '/assets/15ips3/res-bend.jpg', '/assets/15ips3/res-place.jpg', '/assets/15ips3/res-solder.jpg', '/assets/15ips3/res-trim.jpg' %}
 
-1. Bend Resistors
+1. #### Bend Resistors
     
     Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
-1. Sort Resistors
+1. #### Sort Resistors
     
     To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance.
 
     {% alert 'To measure resistors quickly, you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Tip' %}
-1. Place Resistors
+1. #### Place Resistors
     
     Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
-1. Solder Resistors
+1. #### Solder Resistors
     
-    Solder the resistors to the PCB. Observe good soldering technique:
-
-    * Heat the pad and lead for 2-3 seconds
-    * Apply a small bit of solder
-    * Continue to heat the pad for another 2-3 seconds
-    * Remove iron and let cool
-
-    The finished joints should be shiny and should have just enough solder to cover the pad entirely.
-1. Trim Resistors
+    Solder the resistors to the PCB. The finished joints should be shiny and should have just enough solder to cover the pad entirely.
+1. #### Trim Resistors
 
     Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
 

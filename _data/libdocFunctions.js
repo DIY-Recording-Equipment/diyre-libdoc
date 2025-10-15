@@ -334,7 +334,7 @@ export default {
                         <p class="d-flex gap-5 | p-5 m-0 | brad-3 bwidth-1 bstyle-dashed bcolor-neutral-500">
                             ${visualContent}
                             <span class="d-flex fd-column gap-1">
-                                <strong class="fvs-wght-700 fs-6">${mainText}</strong>
+                                <strong class="fvs-wght-700 fs-4">${mainText}</strong>
                                 <span>${description}</span>
                             </span>
                         </p>
