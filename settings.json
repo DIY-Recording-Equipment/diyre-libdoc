@@ -1,10 +1,11 @@
 {
     "siteTitle": "DIYRE Manuals",
     "siteDescription": "Assembly guides for DIYRE kits.",
-    "author": "DIYRE",
+    "author": false,
     "faviconUrl": "/assets/myfavicon.png",
-    "tocEnabled": "yes",
-    "roundedImagesCorners": "yes",
+    "tocEnabled": true,
+    "roundedImagesCorners": true,
+    "displayTagsListLink": false,
     "customLinks": [
         {
             "url": "/feed.xml",

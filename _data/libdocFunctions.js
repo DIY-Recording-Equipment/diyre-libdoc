@@ -254,26 +254,36 @@ export default {
             }
             return markup;
         },
-        iconCard: async function(mainText, description, iconName) {
+        iconCard: async function(mainText, description, iconOrImage) {
             let markup = '';
             if (typeof mainText == 'string' && typeof description == 'string') {
-                let isAnIcon = false,
-                    finalIconName = 'check-circle';
-                if (typeof iconName == 'string') {
+                let isAnIcon = false;
+                let visualContent = '';
+
+                if (typeof iconOrImage == 'string') {
+                    // Check if it's a valid icon name
                     icomoon.icons.forEach(function(iconData) {
-                        if (iconData.properties.name == iconName) {
-                            finalIconName = iconName;
+                        if (iconData.properties.name == iconOrImage) {
                             isAnIcon = true;
                         }
                     });
+
+                    if (isAnIcon) {
+                        // It's a valid icon
+                        visualContent = `<span class="icon-${iconOrImage} fs-10 | c-primary-500" fs-8="xs"></span>`;
+                    } else {
+                        // It's an image path
+                        visualContent = `<img src="${iconOrImage}" alt="${mainText}" style="width: 100%; height: auto; max-width: 120px;" loading="lazy" decoding="async">`;
+                    }
+                } else {
+                    // No third parameter provided, use default icon
+                    visualContent = `<span class="icon-check-circle fs-10 | c-primary-500" fs-8="xs"></span>`;
                 }
-                if (!isAnIcon && iconName !== undefined) {
-                    console.log(`iconCard shortcode: ${iconName} is not a valid icon, default ${finalIconName} applied.`);
-                }
+
                 markup = `
                     <aside class="widget widget-iconCard">
                         <p class="d-flex gap-5 | p-5 m-0 | brad-3 bwidth-1 bstyle-dashed bcolor-neutral-500">
-                            <span class="icon-${finalIconName} fs-10 | c-primary-500" fs-8="xs"></span>
+                            ${visualContent}
                             <span class="d-flex fd-column gap-1">
                                 <strong class="fvs-wght-700 fs-6">${mainText}</strong>
                                 <span>${description}</span>
@@ -281,7 +291,7 @@ export default {
                         </p>
                     </aside>`;
             } else {
-                console.log(`iconCard shortcode content: "${content}" wrong format, must specify at least main text and description string fields.`);
+                console.log(`iconCard shortcode: wrong format, must specify at least main text and description string fields.`);
             }
             return markup;
         },

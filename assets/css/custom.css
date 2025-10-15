@@ -1,0 +1,16 @@
+/* Custom CSS for DIYRE LibDoc
+ * Add your custom styles here
+ * This file loads after all core LibDoc CSS files
+ */
+
+/* Make page background white with no background image */
+body {
+    background-color: white !important;
+    background-image: none !important;
+}
+
+/* Hide floating TOC completely - we only want the static TOC in page header */
+#floating_toc_container,
+#floating_toc {
+    display: none !important;
+}

@@ -12,6 +12,9 @@ import libdocFunctions                      from "./_data/libdocFunctions.js";
 // END LibDoc imports
 
 export default function(eleventyConfig) {
+    // Enable passthrough copy files to trigger rebuilds during --serve
+    eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
     // START PLUGINS
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
@@ -48,12 +51,11 @@ export default function(eleventyConfig) {
     // END SHORTCODES
 
     // START FILE COPY
-	eleventyConfig.addPassthroughCopy("sandboxes");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("core/assets");
     eleventyConfig.addPassthroughCopy("favicon.png");
     // END FILE COPY
-    
+
     return {
         pathPrefix: libdocConfig.htmlBasePathPrefix
     }

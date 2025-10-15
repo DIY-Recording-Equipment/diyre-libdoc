@@ -888,43 +888,43 @@
   --dsg-slnt: -15;
 }
 .fvs-wght-300 {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-weight: 300;
 }
 .fvs-wght-400 {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-weight: 400;
 }
 .fvs-wght-500 {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-weight: 500;
 }
 .fvs-wght-600 {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-weight: 600;
 }
 .fvs-wght-700 {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-weight: 700;
 }
 .fvs-mono-off {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  /* Open Sans does not support monospace variation */
 }
 .fvs-mono-on {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  /* Open Sans does not support monospace variation */
 }
 .fvs-casual-off {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  /* Open Sans does not support casual variation */
 }
 .fvs-casual-on {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  /* Open Sans does not support casual variation */
 }
 .fvs-cursive-off {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-style: normal;
 }
 .fvs-cursive-on {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-style: italic;
 }
 .fvs-slant-off {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-style: normal;
 }
 .fvs-slant-on {
-  font-variation-settings: "wght" var(--dsg-wght, 300), "MONO" var(--dsg-MONO, 0), "CASL" var(--dsg-CASL, 0), "CRSV" var(--dsg-CRSV, 0), "slnt" var(--dsg-slnt, 0);
+  font-style: italic;
 }
 .fs-1 {
   font-size: var(--ita-fontSizes-1, 10px);
