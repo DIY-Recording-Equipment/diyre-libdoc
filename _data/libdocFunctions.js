@@ -138,14 +138,7 @@ export default {
             let tocMarkup = '';
             if (htmlTagsFound.length > libdocConfig.tocMinTags) {
                 tocMarkup = `
-                    <ol class="cgap-3em | m-0 pl-0 pb-5 o-auto | lh-1 | ls-none bwidth-1 bstyle-dashed bcolor-neutral-500 btwidth-0 brwidth-0"
-                        d-flex="xs,sm"
-                        fd-column="xs,sm"
-                        fw-wrap="xs,sm"
-                        columns-3="md"
-                        columns-2="sm"
-                        maxh-300px="sm"
-                        maxh-200px="xs">`;
+                    <ol class="m-0 pl-0 pb-5 o-auto | lh-1 | ls-none">`;
                 // Displaying the results
                 const anchorsIds = [];
                 htmlTagsFound.forEach(function(htmlTag, tagIndex) {
@@ -154,10 +147,17 @@ export default {
                         slugifiedId += `-${tagIndex}`;
                     }
                     anchorsIds.push(slugifiedId);
+
+                    // Calculate indent level: h2 = 0, h3 = 1, h4 = 2, etc.
+                    const headingLevel = parseInt(htmlTag.tagName.substring(1)); // Extract number from h2, h3, etc.
+                    const indentLevel = Math.max(0, headingLevel - 2); // h2 gets 0, h3 gets 1, h4 gets 2
+                    const indentPadding = indentLevel * 20; // 20px per indent level
+
                     tocMarkup += `
                         <li class="d-flex">
                             <a  href="#${slugifiedId}"
-                                class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                class="pt-1 pb-1 | fs-3 lsp-2 lh-3 fvs-wght-400 | blwidth-1 blstyle-dashed bcolor-neutral-500"
+                                style="padding-left: ${5 + indentPadding}px;">
                                 ${htmlTag.value}
                             </a>
                         </li>`;
