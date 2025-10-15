@@ -419,6 +419,33 @@ export default {
                             </div>
                         </header>`;
             return libdocUtils.templates.sandbox({iframeAttribute, iframeCommands, title, code, enableSwitchId});
+        },
+        lightbox: async function(imagePath, caption) {
+            let markup = '';
+            if (typeof imagePath == 'string') {
+                const lightboxId = libdocUtils.generateRandomId();
+                const altText = typeof caption == 'string' ? caption : '';
+
+                markup = `
+                    <aside class="widget widget-lightbox">
+                        <div class="lightbox-thumbnail" onclick="document.getElementById('lightbox-${lightboxId}').showModal()">
+                            <img src="${imagePath}" alt="${altText}" loading="lazy" decoding="async">
+                        </div>
+                        <dialog id="lightbox-${lightboxId}" class="lightbox-dialog" onclick="if (event.target === this || event.target.classList.contains('lightbox-content') || event.target.classList.contains('lightbox-fullsize-image')) { this.close(); }">
+                            <div class="lightbox-content">
+                                <button class="lightbox-close" onclick="event.stopPropagation(); this.closest('dialog').close()">
+                                    <span class="icon-x | fs-6 | c-primary-500"></span>
+                                </button>
+                                <div class="lightbox-fullsize-image" style="background-image: url('${imagePath}')" role="img" aria-label="${altText}"></div>
+                                ${caption ? `<p class="lightbox-caption">${caption}</p>` : ''}
+                            </div>
+                        </dialog>
+                    </aside>
+                `;
+            } else {
+                console.log(`lightbox shortcode: imagePath is required`);
+            }
+            return markup;
         }
     }
 }

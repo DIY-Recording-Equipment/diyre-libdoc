@@ -40,29 +40,27 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
 {% iconCard 'Desoldering Pump', 'If you accidentally solder something in the wrong place, a desoldering pump can save the day.', '/assets/tools/desoldering_small.jpg' %}
 
 ---
-![Installing standoffs](/assets/15ips3/colour-standoffs.jpg)
-![Installing header](/assets/15ips3/colour-header.jpg)
 
 1. ## Standoffs and Header (Bag 1)
 
     1. ### Install Standoffs
-
+        {% lightbox '/assets/15ips3/colour-standoffs.jpg' %}
          Install the four standoffs in the corners of the PCB. These will support the module when installed in your 500-series rack.
 
         {% alert 'Install the locking end of the standoffs into the PCB.', 'warning', 'Take note' %}
 
     2. ### Install Header
-
+        {% lightbox '/assets/15ips3/colour-header.jpg' %}
         Install the 8-pin edge connector header on the back of the PCB.
 
-    **Parts:**
-    - Standoff × 4
-    - CON1: 10-pin header × 1
+     **Parts:**
+     - Standoff × 4
+     - CON1: 10-pin header × 1
 
 1. ## Resistors (Bag 2)
 
-    ![Bending resistor leads](/assets/15ips3/res-bend.jpg)
     1. ### Bend Resistors
+        {% lightbox '/assets/15ips3/res-bend.jpg' %}
         Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
     
     1. ### Sort Resistors
@@ -71,9 +69,11 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
         {% alert 'To measure resistors quickly, you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Tip' %}
 
     1. ### Place Resistors
+        {% lightbox '/assets/15ips3/res-place.jpg' %}
         Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
 
     1. ### Solder Resistors
+        {% lightbox '/assets/15ips3/res-solder.jpg' %}
         Solder the resistors to the PCB. Observe good soldering technique:
 
         * Heat the pad and lead for 2-3 seconds
@@ -84,6 +84,7 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
         The finished joints should be shiny and should have just enough solder to cover the pad entirely.
 
     1. ### Trim Resistors
+        {% lightbox '/assets/15ips3/res-trim.jpg' %}
         Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
 
         {% alert 'Hold your finger over the lead being trimmed to prevent it from flying across the room.', 'success', 'Tip' %}
