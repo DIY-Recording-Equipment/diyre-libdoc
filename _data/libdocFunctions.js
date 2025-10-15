@@ -139,6 +139,10 @@ export default {
             if (htmlTagsFound.length > libdocConfig.tocMinTags) {
                 tocMarkup = `
                     <ol class="m-0 pl-0 pb-5 o-auto | lh-1 | ls-none">`;
+
+                // Track list numbers at each nesting level
+                const listCounters = {};
+
                 // Displaying the results
                 const anchorsIds = [];
                 htmlTagsFound.forEach(function(htmlTag, tagIndex) {
@@ -153,12 +157,53 @@ export default {
                     const indentLevel = Math.max(0, headingLevel - 2); // h2 gets 0, h3 gets 1, h4 gets 2
                     const indentPadding = indentLevel * 20; // 20px per indent level
 
+                    // Check if this heading is inside a list item by searching the content
+                    const headingPattern = new RegExp(`<${htmlTag.tagName}[^>]*>${htmlTag.value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/${htmlTag.tagName}>`, 'g');
+                    const beforeHeading = content.split(headingPattern)[0];
+
+                    // Count how many <li> tags are opened vs closed before this heading
+                    const openLiCount = (beforeHeading.match(/<li[^>]*>/g) || []).length;
+                    const closeLiCount = (beforeHeading.match(/<\/li>/g) || []).length;
+                    const isInList = openLiCount > closeLiCount;
+
+                    let displayText = htmlTag.value;
+
+                    // Only add numbering if the heading is inside a list
+                    if (isInList) {
+                        // Track numbering: increment counter at this level, reset deeper levels
+                        if (!listCounters[indentLevel]) {
+                            listCounters[indentLevel] = 0;
+                        }
+                        listCounters[indentLevel]++;
+
+                        // Reset all deeper level counters
+                        for (let i = indentLevel + 1; i < 10; i++) {
+                            listCounters[i] = 0;
+                        }
+
+                        // Build the number prefix (e.g., "1.2.3")
+                        let numberPrefix = '';
+                        for (let i = 0; i <= indentLevel; i++) {
+                            if (listCounters[i]) {
+                                numberPrefix += (numberPrefix ? '.' : '') + listCounters[i];
+                            }
+                        }
+
+                        // Add the number prefix to the heading text
+                        displayText = numberPrefix ? `${numberPrefix}. ${htmlTag.value}` : htmlTag.value;
+                    } else {
+                        // Reset counters when we encounter a non-list heading
+                        for (let i = 0; i < 10; i++) {
+                            listCounters[i] = 0;
+                        }
+                    }
+
                     tocMarkup += `
                         <li class="d-flex">
                             <a  href="#${slugifiedId}"
                                 class="pt-1 pb-1 | fs-3 lsp-2 lh-3 fvs-wght-400 | blwidth-1 blstyle-dashed bcolor-neutral-500"
                                 style="padding-left: ${5 + indentPadding}px;">
-                                ${htmlTag.value}
+                                ${displayText}
                             </a>
                         </li>`;
                 });

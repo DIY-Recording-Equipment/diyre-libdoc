@@ -3,7 +3,7 @@ layout: guide.liquid
 title: 15IPS mkIII Assembly Guide
 product: 15IPS Colour
 version: "1.0"
-complexity: Beginner
+complexity: eginner
 estimated_time: 1 hour
 product_url: https://www.diyrecordingequipment.com/products/15ips-colour
 support_url: http://www.diyrecordingequipment.com/pages/contact
