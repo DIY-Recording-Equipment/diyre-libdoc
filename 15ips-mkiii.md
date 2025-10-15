@@ -17,7 +17,7 @@ Thank you for purchasing a {{ product }}!
 
 If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}).
 
-{% alert, 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'warning', 'Note' %}
+{% alert, 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'danger', 'Version check' %}
 
 ---
 
@@ -46,39 +46,37 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
 {% lightbox '/assets/15ips3/colour-standoffs.jpg' %}
 Install the four standoffs in the corners of the PCB. These will support the module when installed in your 500-series rack.
 
-{% alert 'Install the locking end of the standoffs into the PCB.', 'warning', 'Take note' %}
+{% alert 'Install the locking end of the standoffs into the PCB.', 'warning', 'Note' %}
 ### Install Header {.step}
 {% lightbox '/assets/15ips3/colour-header.jpg' %}
 Install the 8-pin edge connector header on the back of the PCB.
 
 ## Resistors {.step}
 
-### Bend Resistors {.step}
-{% lightbox '/assets/15ips3/res-bend.jpg' %}
-Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
+{% lightbox '/assets/15ips3/res-bend.jpg', '/assets/15ips3/res-place.jpg', '/assets/15ips3/res-solder.jpg', '/assets/15ips3/res-trim.jpg' %}
 
-### Sort Resistors {.step}
-To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance.
+1. Bend Resistors
+    
+    Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
+1. Sort Resistors
+    
+    To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance.
 
-{% alert 'To measure resistors quickly, you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Tip' %}
+    {% alert 'To measure resistors quickly, you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Tip' %}
+1. Place Resistors
+    
+    Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
+1. Solder Resistors
+    
+    Solder the resistors to the PCB. Observe good soldering technique:
 
-### Place Resistors {.step}
-{% lightbox '/assets/15ips3/res-place.jpg' %}
-Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
+    * Heat the pad and lead for 2-3 seconds
+    * Apply a small bit of solder
+    * Continue to heat the pad for another 2-3 seconds
+    * Remove iron and let cool
 
-### Solder Resistors {.step}
-{% lightbox '/assets/15ips3/res-solder.jpg' %}
-Solder the resistors to the PCB. Observe good soldering technique:
+    The finished joints should be shiny and should have just enough solder to cover the pad entirely.
+1. Trim Resistors {.step}
+    Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
 
-* Heat the pad and lead for 2-3 seconds
-* Apply a small bit of solder
-* Continue to heat the pad for another 2-3 seconds
-* Remove iron and let cool
-
-The finished joints should be shiny and should have just enough solder to cover the pad entirely.
-
-### Trim Resistors {.step}
-{% lightbox '/assets/15ips3/res-trim.jpg' %}
-Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
-
-{% alert 'Hold your finger over the lead being trimmed to prevent it from flying across the room.', 'success', 'Tip' %}
+    {% alert 'Hold your finger over the lead being trimmed to prevent it from flying across the room.', 'success', 'Tip' %}

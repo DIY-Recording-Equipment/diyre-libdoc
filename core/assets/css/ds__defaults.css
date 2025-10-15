@@ -903,10 +903,21 @@ main .widget + .widget {
 }
 
 /* LIGHTBOX */
+.lightbox-thumbnails-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--ita-spacings-5);
+    max-width: 100%;
+}
+@media (min-width: 900px) {
+    .lightbox-thumbnails-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, calc(25% - var(--ita-spacings-5))));
+    }
+}
 .lightbox-thumbnail {
     cursor: pointer;
-    display: inline-block;
-    width: 200px;
+    display: block;
+    width: 100%;
     height: 200px;
     border-radius: 12px;
     border-width: 1px;
@@ -993,6 +1004,40 @@ main .widget + .widget {
     margin: 0;
     padding: var(--ita-spacings-3);
     border-radius: 6px;
+}
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--ita-colors-neutral-100);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--ita-colors-neutral-500);
+    cursor: pointer;
+    line-height: 1;
+    border-radius: 50%;
+    transition: all 300ms;
+    z-index: 10;
+}
+.lightbox-prev {
+    left: var(--ita-spacings-5);
+}
+.lightbox-next {
+    right: var(--ita-spacings-5);
+}
+.lightbox-nav:hover {
+    transform: translateY(-50%) scale(1.1);
+    background-color: var(--ita-colors-primary-500);
+    border-color: var(--ita-colors-primary-500);
+    box-shadow: var(--libdoc-soft-shadow);
+}
+.lightbox-nav:hover span[class*="icon-"] {
+    color: var(--ita-colors-neutral-100);
 }
 
 /* INPUT RADIOS */

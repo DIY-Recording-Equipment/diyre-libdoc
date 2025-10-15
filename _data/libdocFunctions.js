@@ -67,25 +67,25 @@ export default {
         autoids: async function(content) {
             let i = 0;
             const anchorsIds = [];
-            content = content.replace(/<([a-zA-Z][a-zA-Z0-9_-]*)\b[^>]*>(.*?)<\/\1>/g, function(m,m1,m2){
+            content = content.replace(/<([a-zA-Z][a-zA-Z0-9_-]*)\b([^>]*)>(.*?)<\/\1>/g, function(m,m1,m2,m3){
                 let newM = m;
                 if (libdocConfig.tocHtmlTags.includes(m1)) {
                     // Add id to the specified html tags
-                    let slugifiedId = libdocUtils.slugify(m2);
+                    let slugifiedId = libdocUtils.slugify(m3);
                     if (anchorsIds.includes(slugifiedId)) {
                         slugifiedId += `-${i}`;
                     }
                     anchorsIds.push(slugifiedId);
                     const markup = `
-                        <${m1} id="${slugifiedId}" pl-9="xs,sm">
+                        <${m1}${m2} id="${slugifiedId}" pl-9="xs,sm">
                             <a  href="#${slugifiedId}"
-                                title="${m2}"
+                                title="${m3}"
                                 class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow"
                                 ml-3="xs,sm">
                                 <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
                             </a>
                     `;
-                    newM = m.replace(`<${m1}>`, markup);
+                    newM = m.replace(/<[a-zA-Z][a-zA-Z0-9_-]*\b[^>]*>/, markup);
                     i++;
                 }
                 return newM;
@@ -424,32 +424,59 @@ export default {
                         </header>`;
             return libdocUtils.templates.sandbox({iframeAttribute, iframeCommands, title, code, enableSwitchId});
         },
-        lightbox: async function(imagePath, caption) {
-            let markup = '';
-            if (typeof imagePath == 'string') {
-                const lightboxId = libdocUtils.generateRandomId();
-                const altText = typeof caption == 'string' ? caption : '';
+        lightbox: async function(img1, img2, img3, img4, img5, img6, img7, img8) {
+            // Collect and sanitize image paths
+            const imagePaths = [img1, img2, img3, img4, img5, img6, img7, img8]
+                .filter(path => typeof path === 'string' && path.trim().length > 0)
+                .map(path => path.trim());
 
-                markup = `
-                    <aside class="widget widget-lightbox">
-                        <div class="lightbox-thumbnail" onclick="document.getElementById('lightbox-${lightboxId}').showModal()">
-                            <img src="${imagePath}" alt="${altText}" loading="lazy" decoding="async">
-                        </div>
-                        <dialog id="lightbox-${lightboxId}" class="lightbox-dialog" onclick="if (event.target === this || event.target.classList.contains('lightbox-content') || event.target.classList.contains('lightbox-fullsize-image')) { this.close(); }">
-                            <div class="lightbox-content">
-                                <button class="lightbox-close" onclick="event.stopPropagation(); this.closest('dialog').close()">
-                                    <span class="icon-x | fs-6 | c-primary-500"></span>
-                                </button>
-                                <div class="lightbox-fullsize-image" style="background-image: url('${imagePath}')" role="img" aria-label="${altText}"></div>
-                                ${caption ? `<p class="lightbox-caption">${caption}</p>` : ''}
-                            </div>
-                        </dialog>
-                    </aside>
-                `;
-            } else {
-                console.log(`lightbox shortcode: imagePath is required`);
+            if (imagePaths.length === 0) {
+                console.warn('lightbox shortcode: at least one imagePath is required');
+                return '';
             }
-            return markup;
+
+            const lightboxId = libdocUtils.generateRandomId();
+            const isMultiImage = imagePaths.length > 1;
+
+            // Helper to escape HTML attributes
+            const escapeAttr = (str) => str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+            // Generate thumbnails with inline handlers (works with Eleventy image transform)
+            const thumbnailsMarkup = imagePaths
+                .map((path, index) =>
+                    `<div class="lightbox-thumbnail" onclick="window.openLightbox('lightbox-${lightboxId}', ${index})">` +
+                    `<img src="${escapeAttr(path)}" alt="" loading="lazy" decoding="async">` +
+                    `</div>`
+                )
+                .join('');
+
+            // Navigation buttons (only for multiple images)
+            const navigationMarkup = isMultiImage
+                ? `<button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); window.navigateLightbox('lightbox-${lightboxId}', -1)" aria-label="Previous image">` +
+                  `<span class="icon-caret-left | fs-6 | c-primary-500"></span>` +
+                  `</button>` +
+                  `<button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); window.navigateLightbox('lightbox-${lightboxId}', 1)" aria-label="Next image">` +
+                  `<span class="icon-caret-right | fs-6 | c-primary-500"></span>` +
+                  `</button>`
+                : '';
+
+            // Store image paths as JSON
+            const imagePathsJson = escapeAttr(JSON.stringify(imagePaths));
+
+            return `
+<aside class="widget widget-lightbox">
+<div class="lightbox-thumbnails-grid">${thumbnailsMarkup}</div>
+<dialog id="lightbox-${lightboxId}" class="lightbox-dialog" data-images="${imagePathsJson}" data-current-image="0" aria-modal="true" aria-label="Image gallery" onclick="if (event.target === this || event.target.classList.contains('lightbox-content')) { this.close(); }">
+<div class="lightbox-content">
+<button class="lightbox-close" onclick="event.stopPropagation(); this.closest('dialog').close()" aria-label="Close lightbox">
+<span class="icon-x | fs-6 | c-primary-500"></span>
+</button>
+${navigationMarkup}
+<div class="lightbox-fullsize-image" style="background-image: url('${escapeAttr(imagePaths[0])}')" role="img" aria-label="Image ${isMultiImage ? '1 of ' + imagePaths.length : ''}"></div>
+</div>
+</dialog>
+</aside>
+`;
         }
     }
 }

@@ -8,9 +8,3 @@ body {
     background-color: white !important;
     background-image: none !important;
 }
-
-/* Hide floating TOC completely - we only want the static TOC in page header */
-#floating_toc_container,
-#floating_toc {
-    display: none !important;
-}
