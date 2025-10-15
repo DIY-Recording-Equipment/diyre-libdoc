@@ -316,7 +316,8 @@ main > ol:not(:has(ul)) li > ol {
 }
 main > ol > li + li,
 main > ol li > ol > li + li {
-    padding-top: 1em;
+    padding-top: var(--ita-spacings-4);
+    padding-bottom: var(--ita-spacings-4);
 }
 main > ol:not(:has(ul)) > li,
 main > ol:not(:has(ul)) li > ol > li {

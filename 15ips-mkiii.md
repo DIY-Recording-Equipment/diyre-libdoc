@@ -76,7 +76,8 @@ Install the 8-pin edge connector header on the back of the PCB.
     * Remove iron and let cool
 
     The finished joints should be shiny and should have just enough solder to cover the pad entirely.
-1. Trim Resistors {.step}
+1. Trim Resistors
+
     Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
 
     {% alert 'Hold your finger over the lead being trimmed to prevent it from flying across the room.', 'success', 'Tip' %}
