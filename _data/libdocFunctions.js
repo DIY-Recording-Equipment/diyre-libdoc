@@ -428,10 +428,37 @@ export default {
                         </header>`;
             return libdocUtils.templates.sandbox({iframeAttribute, iframeCommands, title, code, enableSwitchId});
         },
-        lightbox: async function(img1, img2, img3, img4, img5, img6, img7, img8) {
+        lightbox: async function(img1, img2, img3, img4, img5, img6, img7, img8, size) {
+            // Collect all arguments to separate images from size parameter
+            const allArgs = [img1, img2, img3, img4, img5, img6, img7, img8];
+
+            // Check if the last argument is a size parameter (sm, md, lg)
+            const validSizes = ['sm', 'md', 'lg'];
+            let sizeParam = 'sm'; // default size
+
+            // Find the last non-undefined argument
+            let lastDefinedIndex = -1;
+            for (let i = allArgs.length - 1; i >= 0; i--) {
+                if (allArgs[i] !== undefined) {
+                    lastDefinedIndex = i;
+                    break;
+                }
+            }
+
+            // Check if the last defined argument is a valid size parameter
+            let imageArgs = allArgs;
+            if (lastDefinedIndex >= 0) {
+                const lastArg = allArgs[lastDefinedIndex];
+                if (typeof lastArg === 'string' && validSizes.includes(lastArg.trim().toLowerCase())) {
+                    sizeParam = lastArg.trim().toLowerCase();
+                    // Exclude the size parameter from image arguments
+                    imageArgs = allArgs.slice(0, lastDefinedIndex);
+                }
+            }
+
             // Collect and sanitize image paths
-            const imagePaths = [img1, img2, img3, img4, img5, img6, img7, img8]
-                .filter(path => typeof path === 'string' && path.trim().length > 0)
+            const imagePaths = imageArgs
+                .filter(path => typeof path === 'string' && path.trim().length > 0 && !validSizes.includes(path.trim().toLowerCase()))
                 .map(path => path.trim());
 
             if (imagePaths.length === 0) {
@@ -469,7 +496,7 @@ export default {
 
             return `
 <aside class="widget widget-lightbox">
-<div class="lightbox-thumbnails-grid">${thumbnailsMarkup}</div>
+<div class="lightbox-thumbnails-grid lightbox-size-${sizeParam}">${thumbnailsMarkup}</div>
 <dialog id="lightbox-${lightboxId}" class="lightbox-dialog" data-images="${imagePathsJson}" data-current-image="0" aria-modal="true" aria-label="Image gallery" onclick="if (event.target === this || event.target.classList.contains('lightbox-content')) { this.close(); }">
 <div class="lightbox-content">
 <button class="lightbox-close" onclick="event.stopPropagation(); this.closest('dialog').close()" aria-label="Close lightbox">

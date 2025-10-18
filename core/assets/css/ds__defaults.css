@@ -141,6 +141,7 @@ main h1 {
 main h2 {
     font-weight: 600;
     font-size: var(--ita-fontSizes-8);
+    clear:both;
 }
 main h3 {
     font-weight: 500;
@@ -598,6 +599,7 @@ main hr {
     border: none;
     margin-top: 3em;
     margin-bottom: 3em;
+    clear:both;
 }
 main hr::before {
     content: "";
@@ -906,20 +908,49 @@ main .widget + .widget {
 /* LIGHTBOX */
 .lightbox-thumbnails-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--ita-spacings-5);
     max-width: 100%;
 }
+
+/* Size variants for lightbox thumbnails */
+.lightbox-size-sm {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 @media (min-width: 900px) {
-    .lightbox-thumbnails-grid {
+    .lightbox-size-sm {
         grid-template-columns: repeat(auto-fit, minmax(200px, calc(25% - var(--ita-spacings-5))));
     }
 }
+.lightbox-size-sm .lightbox-thumbnail {
+    height: 200px;
+}
+
+.lightbox-size-md {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+}
+.lightbox-size-md .lightbox-thumbnail {
+    height: 600px;
+    border: none;
+}
+.lightbox-size-md .lightbox-thumbnail:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.lightbox-size-lg .lightbox-thumbnail {
+    height: auto;
+    aspect-ratio: 1;
+    border: none;
+}
+.lightbox-size-lg .lightbox-thumbnail:hover {
+    border: none;
+    box-shadow: none;
+}
+
 .lightbox-thumbnail {
     cursor: pointer;
     display: block;
     width: 100%;
-    height: 200px;
     border-radius: 12px;
     border-width: 1px;
     border-style: dashed;
