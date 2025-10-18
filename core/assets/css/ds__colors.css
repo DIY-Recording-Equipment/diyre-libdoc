@@ -229,55 +229,55 @@ main u {
     color: var(--ita-colors-danger-900);
 }
 main a.btn,
-main button[type="button"].btn {
+main button.btn {
     background-color: var(--ita-colors-neutral-200);
     color: var(--ita-colors-neutral-900);
     border-color: var(--ita-colors-neutral-900);
 }
 main a.btn.btn-primary,
-main button[type="button"].btn.btn-primary {
+main button.btn.btn-primary {
     background-color: var(--ita-colors-primary-500);
     color: var(--ita-colors-neutral-100);
     border-color: var(--ita-colors-neutral-100);
 }
 main a.btn.btn-primary-light,
-main button[type="button"].btn.btn-primary-light {
+main button.btn.btn-primary-light {
     background-color: var(--ita-colors-primary-100);
     color: var(--ita-colors-primary-600);
     border-color: var(--ita-colors-primary-600);
 }
 main a.btn.btn-success,
-main button[type="button"].btn.btn-success {
+main button.btn.btn-success {
     background-color: var(--ita-colors-success-500);
     color: var(--ita-colors-neutral-100);
     border-color: var(--ita-colors-success-100);
 }
 main a.btn.btn-success-light,
-main button[type="button"].btn.btn-success-light {
+main button.btn.btn-success-light {
     background-color: var(--ita-colors-success-100);
     color: var(--ita-colors-success-900);
     border-color: var(--ita-colors-success-900);
 }
 main a.btn.btn-warning,
-main button[type="button"].btn.btn-warning {
+main button.btn.btn-warning {
     background-color: var(--ita-colors-warning-500);
     color: var(--ita-colors-neutral-100);
     border-color: var(--ita-colors-warning-100);
 }
 main a.btn.btn-warning-light,
-main button[type="button"].btn.btn-warning-light {
+main button.btn.btn-warning-light {
     background-color: var(--ita-colors-warning-100);
     color: var(--ita-colors-warning-900);
     border-color: var(--ita-colors-warning-900);
 }
 main a.btn.btn-danger,
-main button[type="button"].btn.btn-danger {
+main button.btn.btn-danger {
     background-color: var(--ita-colors-danger-500);
     color: var(--ita-colors-neutral-100);
     border-color: var(--ita-colors-danger-100);
 }
 main a.btn.btn-danger-light,
-main button[type="button"].btn.btn-danger-light {
+main button.btn.btn-danger-light {
     background-color: var(--ita-colors-danger-100);
     color: var(--ita-colors-danger-900);
     border-color: var(--ita-colors-danger-900);

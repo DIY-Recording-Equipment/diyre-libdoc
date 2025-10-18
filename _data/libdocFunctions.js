@@ -4,6 +4,8 @@
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const childProcess = require('child_process');
+const fs = require('fs');
+const path = require('path');
 // END IMPORT REQUIRE WORKAROUND
 
 // START JSON IMPORT WORKAROUND
@@ -76,8 +78,10 @@ export default {
                         slugifiedId += `-${i}`;
                     }
                     anchorsIds.push(slugifiedId);
+                    // Only add pl-9 padding to h1 and h2
+                    const paddingAttr = (m1 === 'h1' || m1 === 'h2') ? ' pl-9="xs,sm"' : '';
                     const markup = `
-                        <${m1}${m2} id="${slugifiedId}" pl-9="xs,sm">
+                        <${m1}${m2} id="${slugifiedId}"${paddingAttr}>
                             <a  href="#${slugifiedId}"
                                 title="${m3}"
                                 class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow"
@@ -477,6 +481,16 @@ ${navigationMarkup}
 </dialog>
 </aside>
 `;
+        },
+        feedbackForm: async function() {
+            try {
+                const feedbackPath = path.join(process.cwd(), 'assets/includes/feedback.html');
+                const feedbackContent = fs.readFileSync(feedbackPath, 'utf8');
+                return feedbackContent;
+            } catch (e) {
+                console.error('feedbackForm shortcode error:', e);
+                return '';
+            }
         }
     }
 }

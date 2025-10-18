@@ -685,7 +685,7 @@ main abbr[data-title].expanded::after {
     content: " (" attr(data-title) ")";
 }
 main a.btn,
-main button[type="button"].btn {
+main button.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -705,11 +705,11 @@ main button[type="button"].btn {
     white-space: nowrap;
 }
 main a.btn:hover,
-main button[type="button"].btn:hover {
+main button.btn:hover {
     border-style: dotted;
 }
 main a.btn:active,
-main button[type="button"].btn:active {
+main button.btn:active {
     border-style: solid;
     scale: 0.95;
 }

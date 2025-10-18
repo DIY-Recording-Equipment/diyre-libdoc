@@ -14,3 +14,367 @@ main p {
     padding-top:var(--ita-spacings-3);
     padding-bottom:var(--ita-spacings-3);
 }
+
+/* Old Style Guides */
+
+.manual-step {
+    clear: both;
+    border-top: 1px solid #cccccc;
+    padding: 10px 0;
+}
+
+.step-image, .tool-image {
+    text-align: center;
+    float: left;
+    margin: 20px 30px 20px 0;
+    max-width: 600px;
+    max-height: 600px;
+    overflow: hidden;
+}
+.step-image img {
+    width: 100%;
+	height: auto;
+}
+.step-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.step-video .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* equivalent to frameborder="0" */
+}
+.step-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    /* margin: 50px 0 10px 0; */
+}
+.step-description ul {
+    list-style: none;
+}
+#print-button {
+    text-align: center;
+    margin: 20px auto;
+    width: 110px;
+}
+
+#print-button a {
+    color: #000;
+}
+
+/* Manual Checklist Styling */
+
+ul.manual-checks {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+ul.manual-checks li {
+    margin-bottom: 10px;
+}
+
+.manual-check {
+    width: 35px;
+    position: relative;
+    display: table-cell;
+}
+
+.manual-check input {
+    display: none;
+}
+
+.manual-check label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+
+.manual-check label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.manual-check label:hover::after {
+    opacity: 0.5;
+}
+
+.manual-check input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+.manual-checks span {
+    display: table-cell;
+}
+/* Resistor Sorting Tool */
+
+#resistor-tool-wrapper {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    /*background-color:#e5e5e5;*/
+}
+
+/* Input Form */
+
+#r-value {
+    float: right;
+}
+
+#r-value input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-bottom: solid 3px #c9c9c9;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#r-value input[type="text"]:focus {
+    border-bottom: solid 3px #969696;
+}
+
+#r-value label {
+    padding: 10px;
+    display: inline-block;
+}
+
+/*End Form Description*/
+
+.resistor-dropdown-wrapper {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: 20px auto 50px auto;
+}
+
+.dropdown li, ul.dropdown {
+    /* Override default li style */
+    margin: 0 !important;
+}
+
+.resistor-dropdown {
+    position: relative;
+    /* Enable absolute positionning for children and pseudo elements */
+    width: 16%;
+    padding: 2%;
+    margin: 0 auto;
+    float: left;
+    background: #ddd;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resistor-dummy {
+    position: relative;
+    /* Enable absolute positionning for children and pseudo elements */
+    width: 16%;
+    padding: 2%;
+    margin: 0 auto;
+    float: left;
+    background: #ddd;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    cursor: normal;
+    font-weight: bold;
+}
+
+.resistor-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #fff;
+}
+
+.resistor-dropdown .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    list-style: none;
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.resistor-dropdown .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    /*border-bottom:1px solid white;*/
+}
+
+/* Colour selector backgrounds */
+
+.brown {
+    background-color: #664838;
+    color: #fff;
+}
+
+.red {
+    background-color: #f44336;
+    color: #fff
+}
+
+.orange {
+    background-color: #fc8832;
+    color: #fff
+}
+
+.yellow {
+    background-color: #f6d436;
+    color: #000
+}
+
+.green {
+    background-color: #4caf50;
+    color: #fff
+}
+
+.blue {
+    background-color: #008aba;
+    color: #fff
+}
+
+.purple {
+    background-color: #5e6cbc;
+    color: #fff
+}
+
+.gray {
+    background-color: #999999;
+    color: #fff
+}
+
+.gold {
+    background: -webkit-linear-gradient(left, #4c462d, #ccb266);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #4c462d, #ccb266);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #4c462d, #ccb266);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #4c462d, #ccb266);
+    /* Standard syntax (must be last) */
+    background-color: #ccb266;
+    /* For browsers that do not support gradients */
+}
+
+.silver {
+    background: -webkit-linear-gradient(left, #3c3c3c, #b9b9b9);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #3c3c3c, #b9b9b9);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #3c3c3c, #b9b9b9);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3c3c3c, #b9b9b9);
+    /* Standard syntax (must be last) */
+    background-color: #b9b9b9;
+    /* For browsers that do not support gradients */
+}
+
+.black {
+    background-color: black;
+    color: white !important
+}
+
+.white {
+    background-color: white;
+    color: black !important
+}
+
+/* Active state */
+
+.resistor-dropdown.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.resistor-dropdown.active:after {
+    border-color: #fff transparent;
+    border-width: 6px 6px 0 6px;
+    margin-top: -3px;
+}
+
+.resistor-dropdown.active {
+    background: #ccc;
+}
+
+/* Resistor SVG */
+
+#resistor-svg-wrapper svg {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* Parts in this step */
+.part {
+    display:inline-block;
+    vertical-align:top;
+    padding: 0 20px 20px 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+.step-parts p {
+    margin:0 0 10px 0;
+    line-height:1.2em;
+}
+
+.schematic {
+    max-width:100%;
+    margin:20px 0;
+}
+
+/* Resistor Table */
+.res-sort {
+    text-align:left;
+    border-collapse:collapse;
+	clear:both;
+	font-size:12px;
+}
+.res-sort th, .res-sort td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px
+}
+.res-sort span {
+    padding:5px;
+    margin:0 3px;
+    display:inline-block;
+    width:50px;
+    text-align:center;
+}
