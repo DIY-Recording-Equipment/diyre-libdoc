@@ -2,6 +2,7 @@
 layout: guide.liquid
 title: 15IPS mkIII Assembly Guide
 product: 15IPS Colour
+kit_sku: KIT-012.06
 version: "1.0"
 complexity: Beginner
 estimated_time: 1 hour

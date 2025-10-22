@@ -56,6 +56,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPairedShortcode("sandbox", libdocFunctions.shortcodes.sandbox);
     eleventyConfig.addPairedShortcode("sandboxFile", libdocFunctions.shortcodes.sandboxFile);
     eleventyConfig.addShortcode("feedbackForm", libdocFunctions.shortcodes.feedbackForm);
+    eleventyConfig.addShortcode("stepParts", libdocFunctions.shortcodes.stepParts);
     // END SHORTCODES
 
     // START FILE COPY

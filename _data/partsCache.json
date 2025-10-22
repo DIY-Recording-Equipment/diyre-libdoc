@@ -1,0 +1,246 @@
+{
+  "lastUpdated": "2025-10-22T20:28:30.313Z",
+  "recordCount": 22,
+  "data": {
+    "KIT-012.06": {
+      "2.2": [
+        {
+          "sku": "COM-R-22k",
+          "refdes": "R3, R11",
+          "itemName": "22k",
+          "qty": "2.00",
+          "markings": "\"red,red,black,red,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-470R",
+          "refdes": "R1, R6, R7",
+          "itemName": "470R",
+          "qty": "3.00",
+          "markings": "\"yellow,violet,black,black,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "LAB-020",
+          "refdes": "Label 2",
+          "itemName": "2 Sticker Big",
+          "qty": "1.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-100k",
+          "refdes": "R10, R12",
+          "itemName": "100k",
+          "qty": "2.00",
+          "markings": "\"brown,black,black,orange,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-10k",
+          "refdes": "R5",
+          "itemName": "10k",
+          "qty": "1.00",
+          "markings": "\"brown,black,black,red,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-220k",
+          "refdes": "G",
+          "itemName": "220k",
+          "qty": "1.00",
+          "markings": "\"red,red,black,orange,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "BOX-017",
+          "refdes": "Bag 2",
+          "itemName": "2x3 Reseal Bag",
+          "qty": "1.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-47k",
+          "refdes": "R",
+          "itemName": "47k",
+          "qty": "1.00",
+          "markings": "\"yellow,violet,black,red,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-2.7k",
+          "refdes": "R2",
+          "itemName": "2.7k",
+          "qty": "1.00",
+          "markings": "\"red,violet,black,brown,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-100R",
+          "refdes": "R9",
+          "itemName": "100R",
+          "qty": "1.00",
+          "markings": "\"brown,black,black,black,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-15k",
+          "refdes": "R8",
+          "itemName": "15k",
+          "qty": "1.00",
+          "markings": "\"brown,green,black,red,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-68R",
+          "refdes": "R4",
+          "itemName": "68R",
+          "qty": "1.00",
+          "markings": "\"blue,grey,black,gold,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "1.1": [
+        {
+          "sku": "HW-Y008",
+          "refdes": "Standoff",
+          "itemName": "\"Standoff, nylon, locking, 1/4 inch\"",
+          "qty": "5.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "5.1": [
+        {
+          "sku": "COM-C005",
+          "refdes": "C1, C3, C4",
+          "itemName": ".1uF film",
+          "qty": "3.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-C003",
+          "refdes": "C2",
+          "itemName": "22pF ceramic",
+          "qty": "1.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "5.2": [
+        {
+          "sku": "COM-C022",
+          "refdes": "C5, C6, C7",
+          "itemName": "100uF 25v electrolytic",
+          "qty": "3.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "4.1": [
+        {
+          "sku": "COM-T013",
+          "refdes": "T1, T2, T5, T7",
+          "itemName": "BC327 PNP",
+          "qty": "4.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "3.1": [
+        {
+          "sku": "COM-D002",
+          "refdes": "D1-D4",
+          "itemName": "1N914",
+          "qty": "4.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-D019",
+          "refdes": "D5-D8",
+          "itemName": "BAT42 schottky",
+          "qty": "4.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "3.2": [
+        {
+          "sku": "COM-D006",
+          "refdes": "LED1",
+          "itemName": "Red LED round 3mm",
+          "qty": "1.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "1.2": [
+        {
+          "sku": "COM-H004",
+          "refdes": "CON1",
+          "itemName": "8-pin DIP header",
+          "qty": "1.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "4.2": [
+        {
+          "sku": "COM-T014",
+          "refdes": "T3, T4, T6",
+          "itemName": "BC337 NPN",
+          "qty": "3.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ]
+    }
+  }
+}

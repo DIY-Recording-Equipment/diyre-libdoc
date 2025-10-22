@@ -4,7 +4,8 @@
   "description": "An Eleventy starter project to craft slick and responsive documentation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch-parts": "node scripts/fetch-parts.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
     "@11ty/eleventy-img": "^6.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "airtable": "^0.12.2",
+    "dotenv": "^17.2.3",
     "markdown-it-attrs": "^4.3.1",
     "sharp": "^0.33.5"
   }

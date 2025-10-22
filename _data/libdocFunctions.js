@@ -518,6 +518,71 @@ ${navigationMarkup}
                 console.error('feedbackForm shortcode error:', e);
                 return '';
             }
+        },
+        stepParts: async function(stepNumber) {
+            // This shortcode renders parts from the partsCache.json for a given manual step
+            // Usage: {% stepParts '1.1' %}
+
+            try {
+                // Load the parts cache
+                const cachePath = path.join(process.cwd(), '_data/partsCache.json');
+
+                if (!fs.existsSync(cachePath)) {
+                    console.warn('stepParts shortcode: partsCache.json not found. Run "npm run fetch-parts" first.');
+                    return `<aside class="widget widget-alert"><div class="alert alert-warning">Parts data not available. Run <code>npm run fetch-parts</code> to fetch parts from Airtable.</div></aside>`;
+                }
+
+                const cacheContent = fs.readFileSync(cachePath, 'utf8');
+                const cache = JSON.parse(cacheContent);
+
+                // Get the kit_sku from the current page's frontmatter
+                // Note: 'this.page' is available in shortcode context
+                const kitSku = this.page?.kit_sku;
+
+                if (!kitSku) {
+                    console.warn('stepParts shortcode: No kit_sku found in page frontmatter. Add "kit_sku" field to your page.');
+                    return `<aside class="widget widget-alert"><div class="alert alert-warning">No kit_sku specified in page frontmatter.</div></aside>`;
+                }
+
+                // Look up parts for this kit SKU and step
+                const partsForKit = cache.data?.[kitSku];
+
+                if (!partsForKit) {
+                    console.warn(`stepParts shortcode: No parts found for kit_sku "${kitSku}"`);
+                    return `<aside class="widget widget-alert"><div class="alert alert-info">No parts data found for kit_sku "${kitSku}".</div></aside>`;
+                }
+
+                const partsForStep = partsForKit[stepNumber];
+
+                if (!partsForStep || partsForStep.length === 0) {
+                    console.warn(`stepParts shortcode: No parts found for step "${stepNumber}" in kit_sku "${kitSku}"`);
+                    return `<aside class="widget widget-alert"><div class="alert alert-info">No parts found for step ${stepNumber}.</div></aside>`;
+                }
+
+                // Generate HTML markup for each part
+                let partsMarkup = '';
+                partsForStep.forEach(part => {
+                    const refdes = part.refdes || '';
+                    const itemName = part.itemName || '';
+                    const qty = part.qty || 1;
+                    const markings = part.markings || '';
+                    const image = part.image || '';
+
+                    partsMarkup += `
+                    <div class="part">
+                        <p>${refdes}<br>${itemName} (x${qty})</p>
+                        ${image ? `<img src="${image}" loading="lazy" decoding="async" alt="${itemName}">` : ''}
+                        ${markings ? `<p>${markings}</p>` : ''}
+                    </div>`;
+                });
+
+                // Wrap all parts in a container
+                return `<div class="step-parts">${partsMarkup}</div>`;
+
+            } catch (e) {
+                console.error('stepParts shortcode error:', e);
+                return `<aside class="widget widget-alert"><div class="alert alert-danger">Error loading parts data: ${e.message}</div></aside>`;
+            }
         }
     }
 }
