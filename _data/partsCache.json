@@ -1,7 +1,143 @@
 {
-  "lastUpdated": "2025-10-22T20:28:30.313Z",
-  "recordCount": 22,
+  "lastUpdated": "2025-10-22T21:07:10.139Z",
+  "recordCount": 34,
   "data": {
+    "KIT-013.03": {
+      "5.1": [
+        {
+          "sku": "COM-C022",
+          "refdes": "C2, C3",
+          "itemName": "100uF 25v electrolytic",
+          "qty": "2.00",
+          "markings": "",
+          "image": "/assets/parts/COM-C022.png",
+          "imageModified": "2025-10-22T21:07:08.285Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/VaiI9M60wa2fg_KzSMpDMA/LUtIypVqDofi2F3M2lBvym8FNLtPaVPNGDbkx4cSe3IwbowynpONDX9-JiUu0kRTFwHsuAZlRFglW1rK8HwrN6WmIp9Y5O_o4KkKdaLGbjhhBVKGaKRFIty_wkNhKExh-rRnHoP3IVKFuyCf87oQyWa-YzNpzOm1Ci93-RF2yDo/ftde66bePvxh6hE07uju_Sc0Sdk6cIBgG143CG4O2EU"
+        }
+      ],
+      "2.1": [
+        {
+          "sku": "COM-Z004",
+          "refdes": "DOA",
+          "itemName": "DOA Socket",
+          "qty": "7.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "1.1": [
+        {
+          "sku": "HW-Y008",
+          "refdes": "Standoff",
+          "itemName": "\"Standoff, nylon, locking, 1/4 inch\"",
+          "qty": "5.00",
+          "markings": "",
+          "image": "/assets/parts/HW-Y008.png",
+          "imageModified": "2025-10-22T21:07:08.429Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/6l4avOILupIcdZEq7YPwMQ/35k9t3GV46_rU0RTgXTzotpf1p7Tq61TdSBg-ePwLu6zTjsjrg2GfA2ls6KNu1I2jN5r-lMSpfeOSCYL-idshwVwoKto92YVW6zzsvNWdiBJYUO_n3wAQ9FEsquh8e75XdJ09Z_Ycw85o3tr8gMGRg/9reSRO1SCBRhJtgsaqQtX55bTESD_8FwqRVawqxGO6s"
+        }
+      ],
+      "1.2": [
+        {
+          "sku": "COM-H004",
+          "refdes": "CON1",
+          "itemName": "8-pin DIP header",
+          "qty": "1.00",
+          "markings": "",
+          "image": "/assets/parts/COM-H004.png",
+          "imageModified": "2025-10-22T21:07:08.583Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/dinCGoIAm-U1YD16_IYTnw/uTHQ-o6NGiMaXRUZwjmTARyjSurN4_FEfxmgefL2BGn7FhdGeBg7Wt5YVwntr1d8vfBca5fOGsOrNGb9LR2_39NWWgx_EUiWVzhdqSEFlAFJk8IxHBi46ep98NHEq7xS1Ou-dqRtCZhSgxfC4yMSl9A9uhCU2bIvLzhq5h5lbWE/u_Gfmolke58UFJgaO7Cj1wzP9tmDbUDZ5pWUfG-BgoM"
+        }
+      ],
+      "3.2": [
+        {
+          "sku": "COM-R-47k",
+          "refdes": "R",
+          "itemName": "47k",
+          "qty": "1.00",
+          "markings": "\"yellow,violet,black,red,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-4.7k",
+          "refdes": "R6",
+          "itemName": "4.7k",
+          "qty": "1.00",
+          "markings": "\"yellow,violet,black,brown,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-10k",
+          "refdes": "R5",
+          "itemName": "10k",
+          "qty": "1.00",
+          "markings": "\"brown,black,black,red,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-100k",
+          "refdes": "R2",
+          "itemName": "100k",
+          "qty": "1.00",
+          "markings": "\"brown,black,black,orange,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-249R",
+          "refdes": "R1, R4",
+          "itemName": "249R",
+          "qty": "2.00",
+          "markings": "\"red,yellow,white,black,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        },
+        {
+          "sku": "COM-R-100R",
+          "refdes": "R3",
+          "itemName": "100R",
+          "qty": "1.00",
+          "markings": "\"brown,black,black,black,brown\"",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "6.1": [
+        {
+          "sku": "COM-X001",
+          "refdes": "X1",
+          "itemName": "CM-10100",
+          "qty": "1.00",
+          "markings": "",
+          "image": "",
+          "imageModified": "",
+          "airtableUrl": ""
+        }
+      ],
+      "4.1": [
+        {
+          "sku": "COM-C005",
+          "refdes": "C1",
+          "itemName": ".1uF film",
+          "qty": "1.00",
+          "markings": "",
+          "image": "/assets/parts/COM-C005.png",
+          "imageModified": "2025-10-22T21:07:09.480Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/k8zamhUsLeKr9PXoGz9npw/W72QQ1GcS-c8nWkv-Rq2Sc6CwzqjYw7XTbtRiwu6wWOxWBZkU2qDEupEXHOiPZbH-VqA22pL7f77W0H8mClaFNgfBtn-jJUoGy6Hu8wDU7We_fyDwUTWoblvagjQ9OxIWfKKHentdxML1X9HmDX7C7UzYgJagFZo6kV3NNmDuxk/MeimmjaH3V6dRMTEiB_q4Eh2Hm6uTm_GurXlIykVG8U"
+        }
+      ]
+    },
     "KIT-012.06": {
       "2.2": [
         {
@@ -132,21 +268,21 @@
           "itemName": "\"Standoff, nylon, locking, 1/4 inch\"",
           "qty": "5.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/HW-Y008.png",
+          "imageModified": "2025-10-22T21:07:08.730Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/6l4avOILupIcdZEq7YPwMQ/35k9t3GV46_rU0RTgXTzotpf1p7Tq61TdSBg-ePwLu6zTjsjrg2GfA2ls6KNu1I2jN5r-lMSpfeOSCYL-idshwVwoKto92YVW6zzsvNWdiBJYUO_n3wAQ9FEsquh8e75XdJ09Z_Ycw85o3tr8gMGRg/9reSRO1SCBRhJtgsaqQtX55bTESD_8FwqRVawqxGO6s"
         }
       ],
-      "5.1": [
+      "4.3": [
         {
           "sku": "COM-C005",
           "refdes": "C1, C3, C4",
           "itemName": ".1uF film",
           "qty": "3.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-C005.png",
+          "imageModified": "2025-10-22T21:07:08.859Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/k8zamhUsLeKr9PXoGz9npw/W72QQ1GcS-c8nWkv-Rq2Sc6CwzqjYw7XTbtRiwu6wWOxWBZkU2qDEupEXHOiPZbH-VqA22pL7f77W0H8mClaFNgfBtn-jJUoGy6Hu8wDU7We_fyDwUTWoblvagjQ9OxIWfKKHentdxML1X9HmDX7C7UzYgJagFZo6kV3NNmDuxk/MeimmjaH3V6dRMTEiB_q4Eh2Hm6uTm_GurXlIykVG8U"
         },
         {
           "sku": "COM-C003",
@@ -154,21 +290,21 @@
           "itemName": "22pF ceramic",
           "qty": "1.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-C003.png",
+          "imageModified": "2025-10-22T21:07:09.080Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/53TmGc0uYdGNI9ROpzpkRw/yYV_4XQHD0al0-53V6oP4EL0ADKEmpPluHi34apGkWj4Xn-42p6wSx_ihhJhK2uRr6e_T-jvvaPehQzOwGmxE08s3Y-py3Gb80kPMFhxW4fJTLXfWDG7Gy0NRbOkMds3xv-sQ7A8LYBwXN2OfuzIcumlwGye6Lgd1JiIyakwHNI/Pq5iVBGPqO2C5XoByTae0W3F99VOUgUlmGXT2bw8af0"
         }
       ],
-      "5.2": [
+      "4.4": [
         {
           "sku": "COM-C022",
           "refdes": "C5, C6, C7",
           "itemName": "100uF 25v electrolytic",
           "qty": "3.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-C022.png",
+          "imageModified": "2025-10-22T21:07:08.975Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/VaiI9M60wa2fg_KzSMpDMA/LUtIypVqDofi2F3M2lBvym8FNLtPaVPNGDbkx4cSe3IwbowynpONDX9-JiUu0kRTFwHsuAZlRFglW1rK8HwrN6WmIp9Y5O_o4KkKdaLGbjhhBVKGaKRFIty_wkNhKExh-rRnHoP3IVKFuyCf87oQyWa-YzNpzOm1Ci93-RF2yDo/ftde66bePvxh6hE07uju_Sc0Sdk6cIBgG143CG4O2EU"
         }
       ],
       "4.1": [
@@ -178,9 +314,9 @@
           "itemName": "BC327 PNP",
           "qty": "4.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-T013.png",
+          "imageModified": "2025-10-22T21:07:09.203Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/yvKqVoQd2hWynduEFwDMMA/f53H699OC3aVWXSkbbpo6RuymXBlMFUVqolbkCzq1ZgAOO_S2qROCid77B6TDVfP0G2OahgmA0kPtpiE9UH0xnaBxgHezgmQLkBgBJsoEDIO0VuJ9Cl8g3qM0keya-LmWmxJVXMn-BLo1FXJb6GiUsaf1iPv0Q-Yex-0UXkkyIM/qnpFAO_GlmSDzXKYkJSW2CkS3Bifr4jgM3RsbmP7HrY"
         }
       ],
       "3.1": [
@@ -190,9 +326,9 @@
           "itemName": "1N914",
           "qty": "4.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-D002.png",
+          "imageModified": "2025-10-22T21:07:09.360Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/rRzb6bmIfS8xJ8SGWfWdSg/MQbY0aKP1Brv_LVLWThsXPhfBEbqRoBwRL309XYTSv_BXfjO1Q09d4TKZ-kdKJPyEBlwJz14W5pOtk5nce7JtTZoxweyupZJLp2NMiqPhgrnTfmOlBHhrQ3FOXvOa_oQfkxPIgB67bexh6FqylcmFdv3KGL6tFKdencUjZvtnEM/768XDIt7VMysK0S3ARV0yJ_ou164aEjaC2MRWAYsU-Q"
         },
         {
           "sku": "COM-D019",
@@ -200,9 +336,9 @@
           "itemName": "BAT42 schottky",
           "qty": "4.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-D019.png",
+          "imageModified": "2025-10-22T21:07:09.594Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/jz0q3YteiHMw4z0kSqZgNQ/f_gOEN0LSvHraYmDoHryqiByAASFIjybjkzIycQz1ZqNgsXDcMyOu3jsEY5P8l0w2ORuFeTQNLM1WugEftEEM0vDM0ndTPAZfMnH6FrY3RYQ92OFNpRsdoByIiolQsUjMyr1lUk1YAjQ3ER7k1U-fg/wvxZLlAbitwPYeOT_Z36uoG8ooyAY1tEQdwAohj_G14"
         }
       ],
       "3.2": [
@@ -212,9 +348,9 @@
           "itemName": "Red LED round 3mm",
           "qty": "1.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-D006.png",
+          "imageModified": "2025-10-22T21:07:09.714Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/lhC1FtAZvxfdEGciVSJ10g/uwh9_HIU048y45DhH0-rNqiudLFSl9Jfko_45ntMO_gXBUgj6gdSbusu1eMI0LxvE3cu8BF5JQkG9gTohzEZHP5nVdzWlmXOmbTCswanafmfI4CfLwJGN7HdRYuvajTyIErcYtDiRMG5Cxu7q266Bg/p5zq5Q0ytE66jhSfcDGxNnrjUzognxGQQEsji7g-y0w"
         }
       ],
       "1.2": [
@@ -224,9 +360,9 @@
           "itemName": "8-pin DIP header",
           "qty": "1.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-H004.png",
+          "imageModified": "2025-10-22T21:07:09.850Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/dinCGoIAm-U1YD16_IYTnw/uTHQ-o6NGiMaXRUZwjmTARyjSurN4_FEfxmgefL2BGn7FhdGeBg7Wt5YVwntr1d8vfBca5fOGsOrNGb9LR2_39NWWgx_EUiWVzhdqSEFlAFJk8IxHBi46ep98NHEq7xS1Ou-dqRtCZhSgxfC4yMSl9A9uhCU2bIvLzhq5h5lbWE/u_Gfmolke58UFJgaO7Cj1wzP9tmDbUDZ5pWUfG-BgoM"
         }
       ],
       "4.2": [
@@ -236,9 +372,9 @@
           "itemName": "BC337 NPN",
           "qty": "3.00",
           "markings": "",
-          "image": "",
-          "imageModified": "",
-          "airtableUrl": ""
+          "image": "/assets/parts/COM-T014.png",
+          "imageModified": "2025-10-22T21:07:09.954Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/yjjKWRpnjOovN5aAis0Sqg/XxrEGlCpl4n-6cWNck_WVj4Pej7hp4hxpaSmImAI4NILy1c2S3XYSFHiIVoAgWstWNCAn0FlpYbRgz6KM8FURcUKMWbB7huctbL77glimOJoApuoV7OFMJM5Q6-RwcCmhwvYMPryM28C1MuEd5WLfFp9EjmQAbqzzdx6TK5M2K8/B4X5D7ddE9z8W6IRkSFJLpbTEBeOkVfDclEXVI5fXTQ"
         }
       ]
     }

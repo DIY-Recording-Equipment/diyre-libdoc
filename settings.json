@@ -4,7 +4,7 @@
     "author": false,
     "faviconUrl": "/assets/myfavicon.png",
     "tocEnabled": true,
-    "roundedImagesCorners": true,
+    "roundedImagesCorners": false,
     "displayTagsListLink": false,
     "customLinks": [
         {

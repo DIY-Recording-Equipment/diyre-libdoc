@@ -519,9 +519,10 @@ ${navigationMarkup}
                 return '';
             }
         },
-        stepParts: async function(stepNumber) {
+        stepParts: async function(stepNumber, kitSku) {
             // This shortcode renders parts from the partsCache.json for a given manual step
-            // Usage: {% stepParts '1.1' %}
+            // Usage: {% stepParts '1.1', kit_sku %}
+            // The kit_sku parameter should be passed from the page's frontmatter
 
             try {
                 // Load the parts cache
@@ -535,13 +536,9 @@ ${navigationMarkup}
                 const cacheContent = fs.readFileSync(cachePath, 'utf8');
                 const cache = JSON.parse(cacheContent);
 
-                // Get the kit_sku from the current page's frontmatter
-                // Note: 'this.page' is available in shortcode context
-                const kitSku = this.page?.kit_sku;
-
                 if (!kitSku) {
-                    console.warn('stepParts shortcode: No kit_sku found in page frontmatter. Add "kit_sku" field to your page.');
-                    return `<aside class="widget widget-alert"><div class="alert alert-warning">No kit_sku specified in page frontmatter.</div></aside>`;
+                    console.warn('stepParts shortcode: No kit_sku provided. Usage: {% stepParts \'1.1\', kit_sku %}');
+                    return `<aside class="widget widget-alert"><div class="alert alert-warning">No kit_sku provided to stepParts shortcode.</div></aside>`;
                 }
 
                 // Look up parts for this kit SKU and step
@@ -564,13 +561,19 @@ ${navigationMarkup}
                 partsForStep.forEach(part => {
                     const refdes = part.refdes || '';
                     const itemName = part.itemName || '';
-                    const qty = part.qty || 1;
                     const markings = part.markings || '';
                     const image = part.image || '';
 
+                    // Parse quantity and convert to integer
+                    const qtyRaw = part.qty || 1;
+                    const qty = parseInt(parseFloat(qtyRaw));
+
+                    // Only show quantity if greater than 1
+                    const qtyDisplay = qty > 1 ? ` (x${qty})` : '';
+
                     partsMarkup += `
                     <div class="part">
-                        <p>${refdes}<br>${itemName} (x${qty})</p>
+                        <p>${refdes}<br>${itemName}${qtyDisplay}</p>
                         ${image ? `<img src="${image}" loading="lazy" decoding="async" alt="${itemName}">` : ''}
                         ${markings ? `<p>${markings}</p>` : ''}
                     </div>`;

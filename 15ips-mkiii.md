@@ -51,6 +51,8 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
 
 Note that there are two different ends on the plastic standoffs. The locking end has tabs with a right angle to prevent them from being removed after installation, while the non-locking end has smooth tabs. Insert the locking ends of the standoffs from the bottom of the PCB.
 
+{% stepParts '1.1', kit_sku %}
+
 ---
 
 {% lightbox '/assets/15ips3/colour-header.jpg', 'md' %}
@@ -58,6 +60,8 @@ Note that there are two different ends on the plastic standoffs. The locking end
 ###  Populate 8-Pin Header {.step}
 
 Insert the 8-pin header into the holes marked "CON1." Make sure to place the short, silver pins through the bottom of the PCB so that the PCB rests on the black plastic posts. Solder the header from the top of the PCB and <u>do not trim</u> the leads afterward.
+
+{% stepParts '1.2', kit_sku %}
 
 ## Resistors (Bag 2) {.step}
 
@@ -113,6 +117,8 @@ Place each diode so that the line on the component matches the line on the PCB. 
 
 Note that there are two kinds of diodes. The 1N914 are black and red. The BAT42 may be blue/black or red/black. If they are red/black check the body for the marking "42.".
 
+{% stepParts '3.1', kit_sku %}
+
 ---
 
 {% lightbox '/assets/15ips3/led.jpg', 'md' %}
@@ -120,6 +126,8 @@ Note that there are two kinds of diodes. The 1N914 are black and red. The BAT42 
 ### Populate LED {.step}
 
 Place the LED so that the longer leg goes through the hole with a "+" marking. Double check the polarity, then solder.
+
+{% stepParts '3.2', kit_sku %}
 
 ## Transistors (Bag 4) {.step}
 
@@ -133,6 +141,8 @@ Note that there are two different types of transistors in this bag: some with si
 
 Those positions are T1, T2, T5, and T7
 
+{% stepParts '4.1', kit_sku %}
+
 ---
 
 {% lightbox '/assets/15ips3/trans-bc337.jpg', 'md' %}
@@ -140,6 +150,8 @@ Those positions are T1, T2, T5, and T7
 ### Populate BC337 Transistors {.step}
 
 Place the transistors that do have a silver marking in the positions with a filled-in shape. Check that they are all oriented according to the shape on the PCB, then solder and trim.</p>    <p>Those positions are T3, T4, and T6
+
+{% stepParts '4.2', kit_sku %}
 
 ---
 
@@ -149,12 +161,16 @@ Place the transistors that do have a silver marking in the positions with a fill
 
 Place the smaller capacitors in their respective places. These capacitors are not polarized and therefore can be placed in either direction. Solder then trim the leads.
 
+{% stepParts '4.3', kit_sku %}
+
 ---
 
 {% lightbox '/assets/15ips3/caps-large.jpg', 'md' %}
 
 ###  Populate Large Capacitors {.step}
 These capacitors are polarized, so they must be placed in a certain direction. The positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB. Double check their orientation, then solder and trim.
+
+{% stepParts '4.4', kit_sku %}
 
 ---
 

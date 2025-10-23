@@ -112,8 +112,66 @@ function needsDownload(sku, airtableModified, previousCache) {
   return true; // Not found in cache, download
 }
 
+// Extract kit_sku values from all markdown manual files in root directory
+function extractKitSkusFromManuals() {
+  const rootDir = path.join(__dirname, '..');
+  const kitSkus = new Set();
+
+  try {
+    // Read all .md files in root directory
+    const files = fs.readdirSync(rootDir).filter(file => file.endsWith('.md'));
+
+    console.log(`📄 Scanning ${files.length} markdown files for kit_sku...`);
+
+    files.forEach(file => {
+      const filePath = path.join(rootDir, file);
+      const content = fs.readFileSync(filePath, 'utf8');
+
+      // Extract frontmatter (between --- delimiters)
+      const frontmatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+
+      if (frontmatterMatch) {
+        const frontmatter = frontmatterMatch[1];
+        // Look for kit_sku: value
+        const kitSkuMatch = frontmatter.match(/^kit_sku:\s*(.+)$/m);
+
+        if (kitSkuMatch) {
+          const kitSku = kitSkuMatch[1].trim().replace(/['"]/g, ''); // Remove quotes if present
+          kitSkus.add(kitSku);
+          console.log(`   ✓ Found kit_sku "${kitSku}" in ${file}`);
+        }
+      }
+    });
+
+    return Array.from(kitSkus);
+  } catch (error) {
+    console.error('Error scanning markdown files:', error.message);
+    return [];
+  }
+}
+
 async function fetchPartsData() {
   console.log('🔄 Fetching parts data from Airtable...');
+
+  // Extract kit SKUs from markdown manuals
+  const kitSkus = extractKitSkusFromManuals();
+
+  if (kitSkus.length === 0) {
+    console.log('⚠️  No manuals with kit_sku found. Creating empty cache.');
+
+    const emptyCache = {
+      lastUpdated: new Date().toISOString(),
+      recordCount: 0,
+      data: {}
+    };
+
+    const cacheFilePath = path.join(__dirname, '..', '_data', 'partsCache.json');
+    fs.writeFileSync(cacheFilePath, JSON.stringify(emptyCache, null, 2));
+    console.log('📁 Empty cache saved to: _data/partsCache.json');
+    return;
+  }
+
+  console.log(`\n🎯 Fetching data for ${kitSkus.length} kit(s): ${kitSkus.join(', ')}\n`);
 
   const partsData = {};
   let recordCount = 0;
@@ -132,17 +190,27 @@ async function fetchPartsData() {
   }
 
   try {
+    // Build filter formula for multiple kit SKUs
+    // Format: OR({field} = 'KIT-012.06', {field} = 'KIT-013.01', ...)
+    let filterFormula;
+    if (kitSkus.length === 1) {
+      filterFormula = `{${FIELDS.KIT_SKU}} = '${kitSkus[0]}'`;
+    } else {
+      const conditions = kitSkus.map(sku => `{${FIELDS.KIT_SKU}} = '${sku}'`).join(', ');
+      filterFormula = `OR(${conditions})`;
+    }
+
     // Fetch records from Airtable
     // returnFieldsByFieldId: true returns fields by ID instead of name
     // cellFormat: 'string' returns human-readable values for linked records
     // timeZone and userLocale are required when using cellFormat: 'string'
-    // filterByFormula: temporary filter for testing with one kit
+    // filterByFormula: dynamic filter based on kit SKUs in manual files
     const records = await table.select({
       returnFieldsByFieldId: true,
       cellFormat: 'string',
       timeZone: 'America/New_York',
       userLocale: 'en-us',
-      filterByFormula: `{${FIELDS.KIT_SKU}} = 'KIT-012.06'`
+      filterByFormula: filterFormula
     }).all();
 
     console.log(`📦 Found ${records.length} records`);
@@ -182,35 +250,50 @@ async function fetchPartsData() {
       let imageModified = '';
       let airtableUrl = '';
 
-      if (image && Array.isArray(image) && image.length > 0) {
-        const imageData = image[0];
-        airtableUrl = imageData.url;
-        imageModified = imageData.lastModified || new Date().toISOString();
-
-        // Extract file extension from URL
-        const urlPath = new URL(airtableUrl).pathname;
-        const ext = path.extname(urlPath) || '.png';
-        // Use component SKU for filename
-        const filename = `${sku}${ext}`;
-        const localPath = path.join(partsDir, filename);
-        imagePath = `/assets/parts/${filename}`;
-
-        // Check if we need to download this image
-        if (needsDownload(sku, imageModified, previousCache)) {
-          try {
-            await downloadImage(airtableUrl, localPath);
-            imagesDownloaded++;
-            console.log(`   📥 Downloaded: ${filename}`);
-          } catch (error) {
-            console.warn(`   ⚠️  Failed to download image for ${sku}: ${error.message}`);
-            imagesFailed++;
-            // Keep the path if file exists locally, otherwise empty
-            if (!fs.existsSync(localPath)) {
-              imagePath = '';
-            }
+      if (image) {
+        // When using cellFormat: 'string', attachments are formatted as:
+        // "filename.ext (https://url)"
+        // We need to parse this string to extract the URL
+        if (typeof image === 'string') {
+          const urlMatch = image.match(/\((https:\/\/[^)]+)\)/);
+          if (urlMatch) {
+            airtableUrl = urlMatch[1];
+            // We don't have lastModified with string format, so always download
+            imageModified = new Date().toISOString();
           }
-        } else {
-          imagesSkipped++;
+        } else if (Array.isArray(image) && image.length > 0) {
+          // Fallback: if it's an array (not using cellFormat: 'string')
+          const imageData = image[0];
+          airtableUrl = imageData.url;
+          imageModified = imageData.lastModified || new Date().toISOString();
+        }
+
+        if (airtableUrl) {
+          // Extract file extension from URL
+          const urlPath = new URL(airtableUrl).pathname;
+          const ext = path.extname(urlPath) || '.png';
+          // Use component SKU for filename
+          const filename = `${sku}${ext}`;
+          const localPath = path.join(partsDir, filename);
+          imagePath = `/assets/parts/${filename}`;
+
+          // Check if we need to download this image
+          if (needsDownload(sku, imageModified, previousCache)) {
+            try {
+              await downloadImage(airtableUrl, localPath);
+              imagesDownloaded++;
+              console.log(`   📥 Downloaded: ${filename}`);
+            } catch (error) {
+              console.warn(`   ⚠️  Failed to download image for ${sku}: ${error.message}`);
+              imagesFailed++;
+              // Keep the path if file exists locally, otherwise empty
+              if (!fs.existsSync(localPath)) {
+                imagePath = '';
+              }
+            }
+          } else {
+            imagesSkipped++;
+          }
         }
       }
 
