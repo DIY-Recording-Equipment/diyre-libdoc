@@ -81,6 +81,9 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our <a href="https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator" target="_blank">Resistor Color Code Calculator</a> or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
 
+
+{% stepResistors '2.2', kit_sku %}
+
 ---
 
 {% lightbox '/assets/15ips3/res-place.jpg', 'md' %}

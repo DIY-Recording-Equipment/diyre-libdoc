@@ -167,7 +167,42 @@ kit_sku: KIT-012.06
 {% stepParts '2.3', kit_sku %}
 ```
 
-**Note:** The parts data shows reference designators, item names, quantities, images, and markings for each part used in that step.
+**Note:** The parts data shows reference designators, item names, quantities, images, and markings for each part used in that step. Resistors are automatically excluded from this shortcode - use `stepResistors` to display resistors.
+
+---
+
+## stepResistors
+
+Display resistors needed for a specific assembly step in a sortable table format, pulling data from Airtable.
+
+**Parameters:**
+- `stepNumber` (required) - The step identifier (e.g., '2.2', '3.1')
+- `kitSku` (required) - The kit SKU (usually passed from frontmatter as `kit_sku`)
+
+**Setup Required:**
+
+1. Add `kit_sku` to your page's frontmatter:
+```yaml
+---
+layout: guide.liquid
+title: Assembly Guide
+kit_sku: KIT-012.06
+---
+```
+
+2. Run `npm run fetch-parts` to download parts data from Airtable
+
+**Examples:**
+
+```liquid
+{% stepResistors '2.2', kit_sku %}
+
+{% stepResistors '3.1', kit_sku %}
+```
+
+**Output:** Displays a table with three columns: Reference (reference designator), Value (resistor value), and Color Code (color-coded bands). Resistors are automatically sorted alphanumerically by reference designator.
+
+**Note:** This shortcode only displays parts where the Type field contains "COM Resistor". All other parts are excluded.
 
 ---
 

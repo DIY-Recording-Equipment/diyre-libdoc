@@ -25,7 +25,8 @@ const requiredEnvVars = [
   'AIRTABLE_FIELD_MANUAL_STEP',
   'AIRTABLE_FIELD_MARKINGS',
   'AIRTABLE_FIELD_IMAGE',
-  'AIRTABLE_FIELD_KIT_SKU'
+  'AIRTABLE_FIELD_KIT_SKU',
+  'AIRTABLE_FIELD_TYPE'
 ];
 
 const missingVars = requiredEnvVars.filter(varName => !process.env[varName]);
@@ -51,7 +52,8 @@ const FIELDS = {
   QTY: process.env.AIRTABLE_FIELD_QTY,
   MANUAL_STEP: process.env.AIRTABLE_FIELD_MANUAL_STEP,
   MARKINGS: process.env.AIRTABLE_FIELD_MARKINGS,
-  IMAGE: process.env.AIRTABLE_FIELD_IMAGE
+  IMAGE: process.env.AIRTABLE_FIELD_IMAGE,
+  TYPE: process.env.AIRTABLE_FIELD_TYPE
 };
 
 // Load previous cache if it exists
@@ -228,6 +230,7 @@ async function fetchPartsData() {
       const manualStep = fields[FIELDS.MANUAL_STEP];
       const markings = fields[FIELDS.MARKINGS];
       const image = fields[FIELDS.IMAGE];
+      const type = fields[FIELDS.TYPE];
 
       // Skip records without required fields
       if (!kitSku || !manualStep) {
@@ -304,6 +307,7 @@ async function fetchPartsData() {
         itemName: itemName || '',
         qty: qty || 1,
         markings: markings || '',
+        type: type || '',
         image: imagePath,
         imageModified: imageModified,
         airtableUrl: airtableUrl // For debugging

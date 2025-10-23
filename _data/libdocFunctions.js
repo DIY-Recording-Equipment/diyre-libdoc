@@ -556,9 +556,20 @@ ${navigationMarkup}
                     return `<aside class="widget widget-alert"><div class="alert alert-info">No parts found for step ${stepNumber}.</div></aside>`;
                 }
 
+                // Filter out resistors (exclude parts where type contains "COM Resistor")
+                const nonResistorParts = partsForStep.filter(part => {
+                    const type = part.type || '';
+                    return !type.includes('COM Resistor');
+                });
+
+                if (nonResistorParts.length === 0) {
+                    console.warn(`stepParts shortcode: No non-resistor parts found for step "${stepNumber}" in kit_sku "${kitSku}"`);
+                    return `<aside class="widget widget-alert"><div class="alert alert-info">No parts found for step ${stepNumber}.</div></aside>`;
+                }
+
                 // Generate HTML markup for each part
                 let partsMarkup = '';
-                partsForStep.forEach(part => {
+                nonResistorParts.forEach(part => {
                     const refdes = part.refdes || '';
                     const itemName = part.itemName || '';
                     const markings = part.markings || '';
@@ -585,6 +596,106 @@ ${navigationMarkup}
             } catch (e) {
                 console.error('stepParts shortcode error:', e);
                 return `<aside class="widget widget-alert"><div class="alert alert-danger">Error loading parts data: ${e.message}</div></aside>`;
+            }
+        },
+        stepResistors: async function(stepNumber, kitSku) {
+            // This shortcode renders resistors from the partsCache.json for a given manual step in a table format
+            // Usage: {% stepResistors '2.2', kit_sku %}
+            // The kit_sku parameter should be passed from the page's frontmatter
+
+            try {
+                // Load the parts cache
+                const cachePath = path.join(process.cwd(), '_data/partsCache.json');
+
+                if (!fs.existsSync(cachePath)) {
+                    console.warn('stepResistors shortcode: partsCache.json not found. Run "npm run fetch-parts" first.');
+                    return `<aside class="widget widget-alert"><div class="alert alert-warning">Parts data not available. Run <code>npm run fetch-parts</code> to fetch parts from Airtable.</div></aside>`;
+                }
+
+                const cacheContent = fs.readFileSync(cachePath, 'utf8');
+                const cache = JSON.parse(cacheContent);
+
+                if (!kitSku) {
+                    console.warn('stepResistors shortcode: No kit_sku provided. Usage: {% stepResistors \'2.2\', kit_sku %}');
+                    return `<aside class="widget widget-alert"><div class="alert alert-warning">No kit_sku provided to stepResistors shortcode.</div></aside>`;
+                }
+
+                // Look up parts for this kit SKU and step
+                const partsForKit = cache.data?.[kitSku];
+
+                if (!partsForKit) {
+                    console.warn(`stepResistors shortcode: No parts found for kit_sku "${kitSku}"`);
+                    return `<aside class="widget widget-alert"><div class="alert alert-info">No parts data found for kit_sku "${kitSku}".</div></aside>`;
+                }
+
+                const partsForStep = partsForKit[stepNumber];
+
+                if (!partsForStep || partsForStep.length === 0) {
+                    console.warn(`stepResistors shortcode: No parts found for step "${stepNumber}" in kit_sku "${kitSku}"`);
+                    return `<aside class="widget widget-alert"><div class="alert alert-info">No parts found for step ${stepNumber}.</div></aside>`;
+                }
+
+                // Filter only resistors (type contains "COM Resistor")
+                // Type field is a multi-select that comes through as comma-separated string
+                const resistors = partsForStep.filter(part => {
+                    const type = part.type || '';
+                    return type.includes('COM Resistor');
+                });
+
+                if (resistors.length === 0) {
+                    console.warn(`stepResistors shortcode: No resistors found for step "${stepNumber}" in kit_sku "${kitSku}"`);
+                    return `<aside class="widget widget-alert"><div class="alert alert-info">No resistors found for step ${stepNumber}.</div></aside>`;
+                }
+
+                // Sort resistors alphanumerically by reference designator
+                resistors.sort((a, b) => {
+                    const refA = (a.refdes || '').toLowerCase();
+                    const refB = (b.refdes || '').toLowerCase();
+                    return refA.localeCompare(refB, undefined, { numeric: true, sensitivity: 'base' });
+                });
+
+                // Helper function to parse color bands from markings for markdown
+                const parseColorBands = (markings) => {
+                    if (!markings) return '';
+
+                    // Remove quotes and extra whitespace
+                    const cleaned = markings.replace(/["']/g, '').trim();
+
+                    // Check if this is a text marking (not color bands)
+                    if (cleaned.toLowerCase().startsWith('marking')) {
+                        return cleaned;
+                    }
+
+                    // Split by comma to get individual colors
+                    const colors = cleaned.split(',').map(c => c.trim().toLowerCase());
+
+                    // Generate spans for each color (HTML in markdown)
+                    const spans = colors.map(color =>
+                        `<span class="${color}">${color}</span>`
+                    ).join('');
+
+                    return spans;
+                };
+
+                // Generate HTML table rows directly
+                let tableRows = '';
+                resistors.forEach(resistor => {
+                    const refdes = resistor.refdes || '';
+                    const itemName = resistor.itemName || '';
+                    const markings = resistor.markings || '';
+                    const colorBands = parseColorBands(markings);
+
+                    tableRows += `<tr><td>${refdes}</td><td>${itemName}</td><td>${colorBands}</td></tr>`;
+                });
+
+                // Generate HTML table
+                const tableMarkup = `<div class="res-sort"><table><thead><tr><th>Reference</th><th>Value</th><th>Color Code</th></tr></thead><tbody>${tableRows}</tbody></table></div>`;
+
+                return tableMarkup;
+
+            } catch (e) {
+                console.error('stepResistors shortcode error:', e);
+                return `<aside class="widget widget-alert"><div class="alert alert-danger">Error loading resistor data: ${e.message}</div></aside>`;
             }
         }
     }

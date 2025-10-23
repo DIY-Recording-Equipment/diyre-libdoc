@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-10-22T21:07:10.139Z",
+  "lastUpdated": "2025-10-23T21:21:03.522Z",
   "recordCount": 34,
   "data": {
     "KIT-013.03": {
@@ -10,9 +10,10 @@
           "itemName": "100uF 25v electrolytic",
           "qty": "2.00",
           "markings": "",
+          "type": "COM Capacitor",
           "image": "/assets/parts/COM-C022.png",
-          "imageModified": "2025-10-22T21:07:08.285Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/VaiI9M60wa2fg_KzSMpDMA/LUtIypVqDofi2F3M2lBvym8FNLtPaVPNGDbkx4cSe3IwbowynpONDX9-JiUu0kRTFwHsuAZlRFglW1rK8HwrN6WmIp9Y5O_o4KkKdaLGbjhhBVKGaKRFIty_wkNhKExh-rRnHoP3IVKFuyCf87oQyWa-YzNpzOm1Ci93-RF2yDo/ftde66bePvxh6hE07uju_Sc0Sdk6cIBgG143CG4O2EU"
+          "imageModified": "2025-10-23T21:21:01.843Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/_FtBcAKCcGGQNPzx30S0Sw/vHXd-y_tKgJivBfm5KBIg1iCL6_qbMEC0U6lmqwMxxI5UKzX1REOCcJKvnNLaFYikxDVjjnfe6AW0Gb1IiWfClzejU_3NJ6MpR9UwDZhAAyMnk-wO65_WUoLv2h-Ap-zfHVzSpgqBbyVpvlzdNnU32WMgboOzUN79bS1whPfS88/81iHcO8bXFcGwyIYkm7h0vxTC8q0xDvIJ7Zcm8w4RTo"
         }
       ],
       "2.1": [
@@ -22,6 +23,7 @@
           "itemName": "DOA Socket",
           "qty": "7.00",
           "markings": "",
+          "type": "COM Misc",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -34,9 +36,10 @@
           "itemName": "\"Standoff, nylon, locking, 1/4 inch\"",
           "qty": "5.00",
           "markings": "",
+          "type": "HW Misc",
           "image": "/assets/parts/HW-Y008.png",
-          "imageModified": "2025-10-22T21:07:08.429Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/6l4avOILupIcdZEq7YPwMQ/35k9t3GV46_rU0RTgXTzotpf1p7Tq61TdSBg-ePwLu6zTjsjrg2GfA2ls6KNu1I2jN5r-lMSpfeOSCYL-idshwVwoKto92YVW6zzsvNWdiBJYUO_n3wAQ9FEsquh8e75XdJ09Z_Ycw85o3tr8gMGRg/9reSRO1SCBRhJtgsaqQtX55bTESD_8FwqRVawqxGO6s"
+          "imageModified": "2025-10-23T21:21:02.084Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/jeXBQ1ykIQIVIwg_v9AlWg/FG0JqKZjh_NLI0GXYgl9BcIZ9AePrznAj7aSgOpQuJt_0ujrwCXmSt0t8ChFCn244nwEnP4oGCRzKnO1Tb3OVkyXh_huPg37qpgafk--jHGu6HcZWCViYHoLCwINH31FRMY4wZpBkXCALLxeBpNw5g/PcOXixll71wsjvRfrvpvbiFMxk47nPpyr0KeEppVq_c"
         }
       ],
       "1.2": [
@@ -46,9 +49,10 @@
           "itemName": "8-pin DIP header",
           "qty": "1.00",
           "markings": "",
+          "type": "COM Header",
           "image": "/assets/parts/COM-H004.png",
-          "imageModified": "2025-10-22T21:07:08.583Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/dinCGoIAm-U1YD16_IYTnw/uTHQ-o6NGiMaXRUZwjmTARyjSurN4_FEfxmgefL2BGn7FhdGeBg7Wt5YVwntr1d8vfBca5fOGsOrNGb9LR2_39NWWgx_EUiWVzhdqSEFlAFJk8IxHBi46ep98NHEq7xS1Ou-dqRtCZhSgxfC4yMSl9A9uhCU2bIvLzhq5h5lbWE/u_Gfmolke58UFJgaO7Cj1wzP9tmDbUDZ5pWUfG-BgoM"
+          "imageModified": "2025-10-23T21:21:02.191Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/Btuawx0eCUAbz9i8mkjKaQ/b7nEwb1rC_e6fezcnRqox6HRD0U6E1BWCfjCC0q3bWMr6CrPLayaK-Vcpq2yqrXPikhfGwtdOy4SsRxSrv7s8qt7x8cwMITE35FaN8A9pklhZw06-FVmbrIdJTIxpfh4PFbByEsn3kKwLiOMTswffQDAGPedKYxe3d6dhfIOnkM/AJgP0ipe-WnnjRStsiPcTPlVaP3zrgS19JF19L5_kF4"
         }
       ],
       "3.2": [
@@ -58,6 +62,7 @@
           "itemName": "47k",
           "qty": "1.00",
           "markings": "\"yellow,violet,black,red,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -68,6 +73,7 @@
           "itemName": "4.7k",
           "qty": "1.00",
           "markings": "\"yellow,violet,black,brown,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -78,6 +84,7 @@
           "itemName": "10k",
           "qty": "1.00",
           "markings": "\"brown,black,black,red,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -88,6 +95,7 @@
           "itemName": "100k",
           "qty": "1.00",
           "markings": "\"brown,black,black,orange,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -98,6 +106,7 @@
           "itemName": "249R",
           "qty": "2.00",
           "markings": "\"red,yellow,white,black,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -108,6 +117,7 @@
           "itemName": "100R",
           "qty": "1.00",
           "markings": "\"brown,black,black,black,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -120,6 +130,7 @@
           "itemName": "CM-10100",
           "qty": "1.00",
           "markings": "",
+          "type": "COM Transformer",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -132,9 +143,10 @@
           "itemName": ".1uF film",
           "qty": "1.00",
           "markings": "",
+          "type": "COM Capacitor",
           "image": "/assets/parts/COM-C005.png",
-          "imageModified": "2025-10-22T21:07:09.480Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/k8zamhUsLeKr9PXoGz9npw/W72QQ1GcS-c8nWkv-Rq2Sc6CwzqjYw7XTbtRiwu6wWOxWBZkU2qDEupEXHOiPZbH-VqA22pL7f77W0H8mClaFNgfBtn-jJUoGy6Hu8wDU7We_fyDwUTWoblvagjQ9OxIWfKKHentdxML1X9HmDX7C7UzYgJagFZo6kV3NNmDuxk/MeimmjaH3V6dRMTEiB_q4Eh2Hm6uTm_GurXlIykVG8U"
+          "imageModified": "2025-10-23T21:21:02.979Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/rX1zrfK6P4HVlnj27LNiKg/Btb9m06C0HVX4SO27Rnf06z5naoGliSLAUZ5SRyViLKixDmLi4SgJSBdiS01zbHZGvBfaFYjcBu7zkNIkclPLfEOKY0zltnBsTAqqBwluuXjhh4Vd2yWRfIYRvORkPCR6CM511pFAtgWD6hlW2DmDzdpRsJVk80CGKDZcVVUkLg/TpQLT9tmZDyPfiECVEz3zdaoi5v8k2Wt1iP2VrTDj1A"
         }
       ]
     },
@@ -146,6 +158,7 @@
           "itemName": "22k",
           "qty": "2.00",
           "markings": "\"red,red,black,red,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -156,6 +169,7 @@
           "itemName": "470R",
           "qty": "3.00",
           "markings": "\"yellow,violet,black,black,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -166,6 +180,7 @@
           "itemName": "2 Sticker Big",
           "qty": "1.00",
           "markings": "",
+          "type": "Label, Uncountable",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -176,6 +191,7 @@
           "itemName": "100k",
           "qty": "2.00",
           "markings": "\"brown,black,black,orange,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -186,6 +202,7 @@
           "itemName": "10k",
           "qty": "1.00",
           "markings": "\"brown,black,black,red,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -196,6 +213,7 @@
           "itemName": "220k",
           "qty": "1.00",
           "markings": "\"red,red,black,orange,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -206,6 +224,7 @@
           "itemName": "2x3 Reseal Bag",
           "qty": "1.00",
           "markings": "",
+          "type": "Box, Uncountable",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -216,6 +235,7 @@
           "itemName": "47k",
           "qty": "1.00",
           "markings": "\"yellow,violet,black,red,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -226,6 +246,7 @@
           "itemName": "2.7k",
           "qty": "1.00",
           "markings": "\"red,violet,black,brown,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -236,6 +257,7 @@
           "itemName": "100R",
           "qty": "1.00",
           "markings": "\"brown,black,black,black,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -246,6 +268,7 @@
           "itemName": "15k",
           "qty": "1.00",
           "markings": "\"brown,green,black,red,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -256,6 +279,7 @@
           "itemName": "68R",
           "qty": "1.00",
           "markings": "\"blue,grey,black,gold,brown\"",
+          "type": "COM Resistor",
           "image": "",
           "imageModified": "",
           "airtableUrl": ""
@@ -268,9 +292,10 @@
           "itemName": "\"Standoff, nylon, locking, 1/4 inch\"",
           "qty": "5.00",
           "markings": "",
+          "type": "HW Misc",
           "image": "/assets/parts/HW-Y008.png",
-          "imageModified": "2025-10-22T21:07:08.730Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/6l4avOILupIcdZEq7YPwMQ/35k9t3GV46_rU0RTgXTzotpf1p7Tq61TdSBg-ePwLu6zTjsjrg2GfA2ls6KNu1I2jN5r-lMSpfeOSCYL-idshwVwoKto92YVW6zzsvNWdiBJYUO_n3wAQ9FEsquh8e75XdJ09Z_Ycw85o3tr8gMGRg/9reSRO1SCBRhJtgsaqQtX55bTESD_8FwqRVawqxGO6s"
+          "imageModified": "2025-10-23T21:21:02.284Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/jeXBQ1ykIQIVIwg_v9AlWg/FG0JqKZjh_NLI0GXYgl9BcIZ9AePrznAj7aSgOpQuJt_0ujrwCXmSt0t8ChFCn244nwEnP4oGCRzKnO1Tb3OVkyXh_huPg37qpgafk--jHGu6HcZWCViYHoLCwINH31FRMY4wZpBkXCALLxeBpNw5g/PcOXixll71wsjvRfrvpvbiFMxk47nPpyr0KeEppVq_c"
         }
       ],
       "4.3": [
@@ -280,9 +305,10 @@
           "itemName": ".1uF film",
           "qty": "3.00",
           "markings": "",
+          "type": "COM Capacitor",
           "image": "/assets/parts/COM-C005.png",
-          "imageModified": "2025-10-22T21:07:08.859Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/k8zamhUsLeKr9PXoGz9npw/W72QQ1GcS-c8nWkv-Rq2Sc6CwzqjYw7XTbtRiwu6wWOxWBZkU2qDEupEXHOiPZbH-VqA22pL7f77W0H8mClaFNgfBtn-jJUoGy6Hu8wDU7We_fyDwUTWoblvagjQ9OxIWfKKHentdxML1X9HmDX7C7UzYgJagFZo6kV3NNmDuxk/MeimmjaH3V6dRMTEiB_q4Eh2Hm6uTm_GurXlIykVG8U"
+          "imageModified": "2025-10-23T21:21:02.411Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/rX1zrfK6P4HVlnj27LNiKg/Btb9m06C0HVX4SO27Rnf06z5naoGliSLAUZ5SRyViLKixDmLi4SgJSBdiS01zbHZGvBfaFYjcBu7zkNIkclPLfEOKY0zltnBsTAqqBwluuXjhh4Vd2yWRfIYRvORkPCR6CM511pFAtgWD6hlW2DmDzdpRsJVk80CGKDZcVVUkLg/TpQLT9tmZDyPfiECVEz3zdaoi5v8k2Wt1iP2VrTDj1A"
         },
         {
           "sku": "COM-C003",
@@ -290,9 +316,10 @@
           "itemName": "22pF ceramic",
           "qty": "1.00",
           "markings": "",
+          "type": "COM Capacitor",
           "image": "/assets/parts/COM-C003.png",
-          "imageModified": "2025-10-22T21:07:09.080Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/53TmGc0uYdGNI9ROpzpkRw/yYV_4XQHD0al0-53V6oP4EL0ADKEmpPluHi34apGkWj4Xn-42p6wSx_ihhJhK2uRr6e_T-jvvaPehQzOwGmxE08s3Y-py3Gb80kPMFhxW4fJTLXfWDG7Gy0NRbOkMds3xv-sQ7A8LYBwXN2OfuzIcumlwGye6Lgd1JiIyakwHNI/Pq5iVBGPqO2C5XoByTae0W3F99VOUgUlmGXT2bw8af0"
+          "imageModified": "2025-10-23T21:21:02.626Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/l_GgXDgbt_IoiuNZ3uh-wQ/YJyVRd9dVTcWj1CRYZ2iOAAS8-o6Ws_s6ojoZyW543mKOSuFT8ZvpnvFjpORV4D5TOe6TNEogEGmyi1ccwHssXu_a_CLqAypsejgEbwzZ7WovjG7eAwmdPHAFV4UfyduullY49gY-wSX6jH5nZy29N1pyKEixbpNNQAkjTxs-Ws/KoZNg4ZJk-OeS4hhGGwe5L8h6L2mBWekUmAncm9uoeg"
         }
       ],
       "4.4": [
@@ -302,9 +329,10 @@
           "itemName": "100uF 25v electrolytic",
           "qty": "3.00",
           "markings": "",
+          "type": "COM Capacitor",
           "image": "/assets/parts/COM-C022.png",
-          "imageModified": "2025-10-22T21:07:08.975Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/VaiI9M60wa2fg_KzSMpDMA/LUtIypVqDofi2F3M2lBvym8FNLtPaVPNGDbkx4cSe3IwbowynpONDX9-JiUu0kRTFwHsuAZlRFglW1rK8HwrN6WmIp9Y5O_o4KkKdaLGbjhhBVKGaKRFIty_wkNhKExh-rRnHoP3IVKFuyCf87oQyWa-YzNpzOm1Ci93-RF2yDo/ftde66bePvxh6hE07uju_Sc0Sdk6cIBgG143CG4O2EU"
+          "imageModified": "2025-10-23T21:21:02.518Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/_FtBcAKCcGGQNPzx30S0Sw/vHXd-y_tKgJivBfm5KBIg1iCL6_qbMEC0U6lmqwMxxI5UKzX1REOCcJKvnNLaFYikxDVjjnfe6AW0Gb1IiWfClzejU_3NJ6MpR9UwDZhAAyMnk-wO65_WUoLv2h-Ap-zfHVzSpgqBbyVpvlzdNnU32WMgboOzUN79bS1whPfS88/81iHcO8bXFcGwyIYkm7h0vxTC8q0xDvIJ7Zcm8w4RTo"
         }
       ],
       "4.1": [
@@ -314,9 +342,10 @@
           "itemName": "BC327 PNP",
           "qty": "4.00",
           "markings": "",
+          "type": "COM Transistor",
           "image": "/assets/parts/COM-T013.png",
-          "imageModified": "2025-10-22T21:07:09.203Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/yvKqVoQd2hWynduEFwDMMA/f53H699OC3aVWXSkbbpo6RuymXBlMFUVqolbkCzq1ZgAOO_S2qROCid77B6TDVfP0G2OahgmA0kPtpiE9UH0xnaBxgHezgmQLkBgBJsoEDIO0VuJ9Cl8g3qM0keya-LmWmxJVXMn-BLo1FXJb6GiUsaf1iPv0Q-Yex-0UXkkyIM/qnpFAO_GlmSDzXKYkJSW2CkS3Bifr4jgM3RsbmP7HrY"
+          "imageModified": "2025-10-23T21:21:02.737Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/HxKg7Euamy9ZbXEkpGxTkQ/mavV0ppgy94Yq-dannaE3yJM5tLhFacek_-0LI6WwYcfbZDrPMiMhCUP-JpN05lA1Eo941pQUgbGbi58ETo4TYR1E9yj_vjXpqBlL4MMoQ2IgVTsiTPSd6KPSGKHW7hGuc8jbHTw5hIv8Xs6H6cu1wqa7n4lfHNZx3vOfi0rzvg/iIgsV5tgQW5dawbridEyKBdUFyfixLb-pnbxza4ydB0"
         }
       ],
       "3.1": [
@@ -326,9 +355,10 @@
           "itemName": "1N914",
           "qty": "4.00",
           "markings": "",
+          "type": "COM Diode",
           "image": "/assets/parts/COM-D002.png",
-          "imageModified": "2025-10-22T21:07:09.360Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/rRzb6bmIfS8xJ8SGWfWdSg/MQbY0aKP1Brv_LVLWThsXPhfBEbqRoBwRL309XYTSv_BXfjO1Q09d4TKZ-kdKJPyEBlwJz14W5pOtk5nce7JtTZoxweyupZJLp2NMiqPhgrnTfmOlBHhrQ3FOXvOa_oQfkxPIgB67bexh6FqylcmFdv3KGL6tFKdencUjZvtnEM/768XDIt7VMysK0S3ARV0yJ_ou164aEjaC2MRWAYsU-Q"
+          "imageModified": "2025-10-23T21:21:02.856Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/Ld0jZhXRzrPL3fupO9nUGw/JKc_KnPJxvddaAy5GYJcDO-vuCcSkaY7-l5SnCEINCz9DaFEExiKd0_KUmwK7JCUqpHgUXDnL2I9SMxAnAFC8e2rFrYzdgE26ae1wqnTOMnaB_ATcNkOMMwCA-ADAwBCv7Ys6hA5YHPbXVG1D9d_AOMP9-c0XCQC5brjsD7GU4M/BPwTZMG2RGKmJplwXMMcMVx0Mc1opUwo3oYdQZHnfxg"
         },
         {
           "sku": "COM-D019",
@@ -336,9 +366,10 @@
           "itemName": "BAT42 schottky",
           "qty": "4.00",
           "markings": "",
+          "type": "COM Diode",
           "image": "/assets/parts/COM-D019.png",
-          "imageModified": "2025-10-22T21:07:09.594Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/jz0q3YteiHMw4z0kSqZgNQ/f_gOEN0LSvHraYmDoHryqiByAASFIjybjkzIycQz1ZqNgsXDcMyOu3jsEY5P8l0w2ORuFeTQNLM1WugEftEEM0vDM0ndTPAZfMnH6FrY3RYQ92OFNpRsdoByIiolQsUjMyr1lUk1YAjQ3ER7k1U-fg/wvxZLlAbitwPYeOT_Z36uoG8ooyAY1tEQdwAohj_G14"
+          "imageModified": "2025-10-23T21:21:03.117Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/xnpz-HIM0xOdBp2sTGCJyw/_nj4jWTE5YjHR074jj0bUwLkhuos38MQfpvvU6MpmMu3eexVzQGeffKLt_1nbbOAqaKqceOlQvP4973cCQ1TELnK8ngQz6NQwpzrtf-5PScGuUdZasTqJRFZ_c7IxvphhG_bKayTdZUCseCZasJBQg/6ZZHY98Re_eAif_4R-I-Csqc8oT9YrqH0rWlfhyiYB0"
         }
       ],
       "3.2": [
@@ -348,9 +379,10 @@
           "itemName": "Red LED round 3mm",
           "qty": "1.00",
           "markings": "",
+          "type": "COM Diode",
           "image": "/assets/parts/COM-D006.png",
-          "imageModified": "2025-10-22T21:07:09.714Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/lhC1FtAZvxfdEGciVSJ10g/uwh9_HIU048y45DhH0-rNqiudLFSl9Jfko_45ntMO_gXBUgj6gdSbusu1eMI0LxvE3cu8BF5JQkG9gTohzEZHP5nVdzWlmXOmbTCswanafmfI4CfLwJGN7HdRYuvajTyIErcYtDiRMG5Cxu7q266Bg/p5zq5Q0ytE66jhSfcDGxNnrjUzognxGQQEsji7g-y0w"
+          "imageModified": "2025-10-23T21:21:03.231Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/IDWw7ULYwpSuO8iw47wBnA/KlB4E9zSuWXDAT3e6BuCQKhvZDQQk31u5ua3eLtnog67575HtZkub2rvwDWn4c3mqlbos4MCInPDV1DcPkaYrunps9YETCOi2yteN6yR7oz-iFdogmhM5TSrp00LWnqJEgWl-s9oc-z4w0WofZNHeQ/NMMaZb3ZKtBQy5Tmhft_WLhsDeMdN-kbDf4YKHU-mcY"
         }
       ],
       "1.2": [
@@ -360,9 +392,10 @@
           "itemName": "8-pin DIP header",
           "qty": "1.00",
           "markings": "",
+          "type": "COM Header",
           "image": "/assets/parts/COM-H004.png",
-          "imageModified": "2025-10-22T21:07:09.850Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/dinCGoIAm-U1YD16_IYTnw/uTHQ-o6NGiMaXRUZwjmTARyjSurN4_FEfxmgefL2BGn7FhdGeBg7Wt5YVwntr1d8vfBca5fOGsOrNGb9LR2_39NWWgx_EUiWVzhdqSEFlAFJk8IxHBi46ep98NHEq7xS1Ou-dqRtCZhSgxfC4yMSl9A9uhCU2bIvLzhq5h5lbWE/u_Gfmolke58UFJgaO7Cj1wzP9tmDbUDZ5pWUfG-BgoM"
+          "imageModified": "2025-10-23T21:21:03.338Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/Btuawx0eCUAbz9i8mkjKaQ/b7nEwb1rC_e6fezcnRqox6HRD0U6E1BWCfjCC0q3bWMr6CrPLayaK-Vcpq2yqrXPikhfGwtdOy4SsRxSrv7s8qt7x8cwMITE35FaN8A9pklhZw06-FVmbrIdJTIxpfh4PFbByEsn3kKwLiOMTswffQDAGPedKYxe3d6dhfIOnkM/AJgP0ipe-WnnjRStsiPcTPlVaP3zrgS19JF19L5_kF4"
         }
       ],
       "4.2": [
@@ -372,9 +405,10 @@
           "itemName": "BC337 NPN",
           "qty": "3.00",
           "markings": "",
+          "type": "COM Transistor",
           "image": "/assets/parts/COM-T014.png",
-          "imageModified": "2025-10-22T21:07:09.954Z",
-          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761177600000/yjjKWRpnjOovN5aAis0Sqg/XxrEGlCpl4n-6cWNck_WVj4Pej7hp4hxpaSmImAI4NILy1c2S3XYSFHiIVoAgWstWNCAn0FlpYbRgz6KM8FURcUKMWbB7huctbL77glimOJoApuoV7OFMJM5Q6-RwcCmhwvYMPryM28C1MuEd5WLfFp9EjmQAbqzzdx6TK5M2K8/B4X5D7ddE9z8W6IRkSFJLpbTEBeOkVfDclEXVI5fXTQ"
+          "imageModified": "2025-10-23T21:21:03.437Z",
+          "airtableUrl": "https://v5.airtableusercontent.com/v3/u/46/46/1761264000000/LaOe41zX855dBqMTCLMjVw/JOUPptB87a-_CoS1tp1lh6MGNODtgZJvnfZO66XJdFtMPJMYf9048Ob7T29bRgAlAaRG4WyL9EaHSdjNA970lObHFEucsl-JXmYeHDBOaxbV8HMRD229ZHVSxLqtBIOeZyRqwBCZhwAgmZh5LkVIL-JbPiDEtUjziLlUJ6T615g/B9dMqmvNaMydKP77zqFbyEj8WOfN-tMOUJCgr5Rlw_s"
         }
       ]
     }
