@@ -147,21 +147,14 @@ main > pre > code::before {
 }
 /* TABLES */
 main table thead th {
-    background-color: var(--ita-colors-primary-100);
-    border-color: var(--ita-colors-primary-300);
+    background-color: var(--ita-colors-neutral-200);
+    border-bottom-color: var(--ita-colors-neutral-300);
 }
 main table tbody tr td {
-    border-color: var(--ita-colors-primary-300);
-}
-main table tbody tr:nth-child(odd) td {
-    background-color: var(--ita-colors-primary-200);
-    color: var(--ita-colors-neutral-900);
-}
-main table tbody tr:nth-child(even) td {
-    background-color: var(--ita-colors-primary-100);
+    border-bottom-color: var(--ita-colors-neutral-300);
 }
 main table td code {
-    background-color: var(--ita-colors-primary-300);
+    background-color: var(--ita-colors-neutral-300);
     color: var(--ita-colors-neutral-900);
 }
 /* QUOTES */

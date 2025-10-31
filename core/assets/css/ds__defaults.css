@@ -472,7 +472,7 @@ main > pre > code::before {
     font-weight: 500;
 }
 /* TABLES */
-main > .table-wrapper + .table-wrapper {
+main > .table-wrapper {
     margin-top: 2em;
 }
 main table {
@@ -486,16 +486,20 @@ main table thead th {
     font-weight: 700;
     font-size: var(--ita-fontSizes-3);
     padding: var(--ita-spacings-3);
-    border-width: 1px;
-    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom: 1px solid;
 }
 main table tbody tr td {
     padding: var(--ita-spacings-3);
     font-size: var(--ita-fontSizes-3);
-    border-width: 1px;
-    border-style: solid;
     font-weight: 400;
     line-height: 1.5em;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom: 1px solid;
 }
 main table td code {
     font-size: var(--ita-fontSizes-3);

@@ -130,81 +130,68 @@ ul.manual-checks li {
 /* Resistor Sorting Tool */
 
 #resistor-tool-wrapper {
-    max-width: 600px;
     margin: auto;
+    max-width: 800px;
     padding: 20px;
-    /*background-color:#e5e5e5;*/
+    background-color:#e5e5e5;
 }
 
 /* Input Form */
 
 #r-value {
-    float: right;
+    display: flex;
+    align-items: center;
+    gap: var(--ita-spacings-3);
+    max-width: 100%;
 }
 
 #r-value input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-bottom: solid 3px #c9c9c9;
-    -webkit-transition: border 0.3s;
-    -moz-transition: border 0.3s;
-    -o-transition: border 0.3s;
-    transition: border 0.3s;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-#r-value input[type="text"]:focus {
-    border-bottom: solid 3px #969696;
+    flex: 0 1 auto;
+    width: 100px;
+    max-width: 100%;
 }
 
 #r-value label {
-    padding: 10px;
-    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
-/*End Form Description*/
-
 .resistor-dropdown-wrapper {
-    clear: both;
+    display: flex;
+    gap: var(--ita-spacings-2);
     width: 100%;
-    float: left;
     margin: 20px auto 50px auto;
 }
 
 .dropdown li, ul.dropdown {
-    /* Override default li style */
     margin: 0 !important;
 }
 
 .resistor-dropdown {
     position: relative;
-    /* Enable absolute positionning for children and pseudo elements */
-    width: 16%;
-    padding: 2%;
-    margin: 0 auto;
-    float: left;
+    flex: 1;
+    padding: var(--ita-spacings-3);
     background: #ddd;
     color: #fff;
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
     font-weight: bold;
+    min-width: 0;
 }
 
 .resistor-dummy {
     position: relative;
-    /* Enable absolute positionning for children and pseudo elements */
-    width: 16%;
-    padding: 2%;
-    margin: 0 auto;
-    float: left;
+    flex: 1;
+    padding: var(--ita-spacings-3);
     background: #ddd;
     color: #fff;
     text-transform: uppercase;
     outline: none;
     cursor: normal;
     font-weight: bold;
+    min-width: 0;
 }
 
 .resistor-dropdown:after {
@@ -225,6 +212,7 @@ ul.manual-checks li {
     top: 100%;
     left: 0;
     right: 0;
+    padding:0;
     list-style: none;
     /* Hiding */
     opacity: 0;
@@ -235,8 +223,7 @@ ul.manual-checks li {
     display: block;
     text-decoration: none;
     color: #ffffff;
-    padding: 10px;
-    /*border-bottom:1px solid white;*/
+    padding: var(--ita-spacings-3);
 }
 
 /* Colour selector backgrounds */
@@ -362,21 +349,19 @@ ul.manual-checks li {
 
 /* Resistor Table */
 .res-sort {
-    text-align:left;
-    border-collapse:collapse;
-	clear:both;
-	font-size:12px;
-}
-.res-sort th, .res-sort td {
-    border-bottom: 1px solid #ddd;
-    padding: 10px
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--ita-spacings-1);
 }
 .res-sort span {
-    padding:5px;
-    margin:0 3px;
-    display:inline-block;
-    width:50px;
-    text-align:center;
+    padding: var(--ita-spacings-2);
+    font-size: clamp(10px, 2vw, var(--ita-fontSizes-3));
+    min-width: clamp(40px, 10vw, 80px);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    flex-shrink: 0;
 }
 .brown {
     background-color: #664838;
@@ -452,4 +437,70 @@ ul.manual-checks li {
 .white {
     background-color: white;
     color: black !important
+}
+
+/* Text inputs and email input */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: var(--ita-spacings-4);
+    border: 1px solid var(--ita-colors-neutral-500);
+    border-radius: 12px;
+    font-size: var(--ita-fontSizes-4);
+    font-family: var(--libdoc-font-family);
+    color: var(--ita-colors-neutral-900);
+    background-color: var(--ita-colors-neutral-100);
+    transition: all 300ms;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: 3px solid var(--ita-colors-primary-500);
+    outline-offset: -1px;
+    border-color: var(--ita-colors-primary-500);
+    box-shadow: var(--libdoc-soft-shadow);
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    padding: var(--ita-spacings-4);
+    border: 1px solid var(--ita-colors-neutral-500);
+    border-radius: 12px;
+    font-size: var(--ita-fontSizes-4);
+    font-family: var(--libdoc-font-family);
+    color: var(--ita-colors-neutral-900);
+    background-color: var(--ita-colors-neutral-100);
+    transition: all 300ms;
+    resize: vertical;
+    box-sizing: border-box;
+    min-height: 120px;
+}
+
+textarea:focus {
+    outline: 3px solid var(--ita-colors-primary-500);
+    outline-offset: -1px;
+    border-color: var(--ita-colors-primary-500);
+    box-shadow: var(--libdoc-soft-shadow);
+}
+
+/* Radio button container spacing */
+input[type="radio"] {
+    margin-right: var(--ita-spacings-2);
+    margin-left: var(--ita-spacings-3);
+    cursor: pointer;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+/* Form layout spacing */
+form label {
+    display: block;
+    margin-bottom: var(--ita-spacings-2);
+    font-size: var(--ita-fontSizes-4);
+    font-weight: 600;
+    color: var(--ita-colors-neutral-900);
 }

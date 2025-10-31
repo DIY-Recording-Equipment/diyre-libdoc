@@ -519,6 +519,79 @@ ${navigationMarkup}
                 return '';
             }
         },
+        resCalc: async function() {
+            try {
+                const resCalcPath = path.join(process.cwd(), 'assets/includes/resCalc.html');
+                const resCalcHtml = fs.readFileSync(resCalcPath, 'utf8');
+
+                // Script loader that conditionally loads dependencies in correct order
+                const scriptLoader = `
+<script>
+(function() {
+    // Check if calculator is already initialized
+    if (window.rc !== null && window.rc !== undefined) {
+        console.log("Resistor calculator already loaded");
+        return;
+    }
+
+    // Function to load script dynamically
+    function loadScript(src, callback) {
+        var script = document.createElement('script');
+        script.src = src;
+        script.onload = callback;
+        script.onerror = function() {
+            console.error('Failed to load script:', src);
+        };
+        document.head.appendChild(script);
+    }
+
+    // Load dependencies in sequence: jQuery -> Snap.svg -> resCalc10.js
+    if (!window.jQuery) {
+        console.log("Loading jQuery for resistor calculator...");
+        loadScript('/assets/res-calc/jquery-3.2.1.js', function() {
+            console.log("jQuery loaded, loading Snap.svg...");
+            loadScript('/assets/res-calc/snap.svg.js', function() {
+                console.log("Snap.svg loaded, loading calculator...");
+                loadScript('/assets/res-calc/resCalc10.js', function() {
+                    console.log("Calculator loaded, initializing...");
+                    if (typeof mainResSort === 'function') {
+                        mainResSort();
+                    }
+                });
+            });
+        });
+    } else {
+        // jQuery already exists, check for Snap
+        if (!window.Snap) {
+            console.log("Loading Snap.svg for resistor calculator...");
+            loadScript('/assets/res-calc/snap.svg.js', function() {
+                console.log("Snap.svg loaded, loading calculator...");
+                loadScript('/assets/res-calc/resCalc10.js', function() {
+                    console.log("Calculator loaded, initializing...");
+                    if (typeof mainResSort === 'function') {
+                        mainResSort();
+                    }
+                });
+            });
+        } else {
+            // Both jQuery and Snap exist, just load calculator
+            loadScript('/assets/res-calc/resCalc10.js', function() {
+                console.log("Calculator loaded, initializing...");
+                if (typeof mainResSort === 'function') {
+                    mainResSort();
+                }
+            });
+        }
+    }
+})();
+</script>`;
+
+                return `<aside class="widget widget-resCalc">${resCalcHtml}${scriptLoader}</aside>`;
+            } catch (e) {
+                console.error('resCalc shortcode error:', e);
+                return '';
+            }
+        },
         stepParts: async function(stepNumber, kitSku) {
             // This shortcode renders parts from the partsCache.json for a given manual step
             // Usage: {% stepParts '1.1', kit_sku %}
@@ -685,11 +758,11 @@ ${navigationMarkup}
                     const markings = resistor.markings || '';
                     const colorBands = parseColorBands(markings);
 
-                    tableRows += `<tr><td>${refdes}</td><td>${itemName}</td><td>${colorBands}</td></tr>`;
+                    tableRows += `<tr><td>${refdes}</td><td>${itemName}</td><td class="res-sort">${colorBands}</td></tr>`;
                 });
 
                 // Generate HTML table
-                const tableMarkup = `<div class="res-sort"><table><thead><tr><th>Reference</th><th>Value</th><th>Color Code</th></tr></thead><tbody>${tableRows}</tbody></table></div>`;
+                const tableMarkup = `<table><thead><tr><th>Reference</th><th>Value</th><th>Color Code</th></tr></thead><tbody>${tableRows}</tbody></table>`;
 
                 return tableMarkup;
 

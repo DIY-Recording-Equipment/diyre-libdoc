@@ -16,7 +16,7 @@ Thank you for purchasing a [{{ product }}]({{ product_url }})</a>
 
 If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}).
 
-{% alert, 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'danger', 'Version check' %}
+{% alert, 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'warning', 'Version check' %}
 
 ## Tools
 
@@ -36,8 +36,9 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
 
 {% iconCard 'Desoldering Pump', 'If you accidentally solder something in the wrong place, a desoldering pump can save the day.', '/assets/tools/desoldering_small.jpg' %}
 
+### Component Sorting
 
-{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/15ips3/15ips-mkiii-sorting.pdf) target="_blank">Component Sorting Sheet (PDF)', '/assets/pdf-download.png' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/15ips3/15ips-mkiii-sorting.pdf)', '/assets/pdf-download.png' %}
 
 
 
@@ -51,7 +52,6 @@ If this is your first DIY project ever, we recommend reading our [Getting Starte
 
 Note that there are two different ends on the plastic standoffs. The locking end has tabs with a right angle to prevent them from being removed after installation, while the non-locking end has smooth tabs. Insert the locking ends of the standoffs from the bottom of the PCB.
 
-{% stepParts '1.1', kit_sku %}
 
 ---
 
@@ -60,8 +60,6 @@ Note that there are two different ends on the plastic standoffs. The locking end
 ###  Populate 8-Pin Header {.step}
 
 Insert the 8-pin header into the holes marked "CON1." Make sure to place the short, silver pins through the bottom of the PCB so that the PCB rests on the black plastic posts. Solder the header from the top of the PCB and <u>do not trim</u> the leads afterward.
-
-{% stepParts '1.2', kit_sku %}
 
 ## Resistors (Bag 2) {.step}
 
@@ -75,12 +73,13 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
-{% lightbox '/assets/res_cal.png', 'md' %}
+{% resCalc %}
 
 ### Sort Resistors {.step}
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our <a href="https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator" target="_blank">Resistor Color Code Calculator</a> or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our <a href="https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator" target="_blank">Resistor Color Code Calculator</a> or test them with a multi-meter set to read resistance.
 
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 {% stepResistors '2.2', kit_sku %}
 
@@ -120,7 +119,6 @@ Place each diode so that the line on the component matches the line on the PCB. 
 
 Note that there are two kinds of diodes. The 1N914 are black and red. The BAT42 may be blue/black or red/black. If they are red/black check the body for the marking "42.".
 
-{% stepParts '3.1', kit_sku %}
 
 ---
 
@@ -129,8 +127,6 @@ Note that there are two kinds of diodes. The 1N914 are black and red. The BAT42 
 ### Populate LED {.step}
 
 Place the LED so that the longer leg goes through the hole with a "+" marking. Double check the polarity, then solder.
-
-{% stepParts '3.2', kit_sku %}
 
 ## Transistors (Bag 4) {.step}
 
@@ -144,8 +140,6 @@ Note that there are two different types of transistors in this bag: some with si
 
 Those positions are T1, T2, T5, and T7
 
-{% stepParts '4.1', kit_sku %}
-
 ---
 
 {% lightbox '/assets/15ips3/trans-bc337.jpg', 'md' %}
@@ -153,8 +147,6 @@ Those positions are T1, T2, T5, and T7
 ### Populate BC337 Transistors {.step}
 
 Place the transistors that do have a silver marking in the positions with a filled-in shape. Check that they are all oriented according to the shape on the PCB, then solder and trim.</p>    <p>Those positions are T3, T4, and T6
-
-{% stepParts '4.2', kit_sku %}
 
 ---
 
@@ -164,8 +156,6 @@ Place the transistors that do have a silver marking in the positions with a fill
 
 Place the smaller capacitors in their respective places. These capacitors are not polarized and therefore can be placed in either direction. Solder then trim the leads.
 
-{% stepParts '4.3', kit_sku %}
-
 ---
 
 {% lightbox '/assets/15ips3/caps-large.jpg', 'md' %}
@@ -173,11 +163,9 @@ Place the smaller capacitors in their respective places. These capacitors are no
 ###  Populate Large Capacitors {.step}
 These capacitors are polarized, so they must be placed in a certain direction. The positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB. Double check their orientation, then solder and trim.
 
-{% stepParts '4.4', kit_sku %}
-
 ---
 
-### Final Checks {.step}
+## Final Checks {.step}
 
 Before you wrap up, check the following things:
 
