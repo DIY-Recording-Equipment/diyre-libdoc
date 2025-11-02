@@ -105,8 +105,8 @@ With an icon:
 {% iconCard 'Configure', 'Start entering your own settings into settings.json at the root of the project.', 'faders' %}
 
 With an image:
-`{% raw %}{% iconCard 'Soldering Iron', 'We recommend an adjustable-temperature station. The smaller, pencil-style ones do not have enough power.', '/assets/tools/soldering-iron_small.jpg' %}{% endraw %}`
-{% iconCard 'Soldering Iron', 'We recommend an adjustable-temperature station. The smaller, pencil-style ones do not have enough power.', '/assets/tools/soldering-iron_small.jpg' %}
+`{% raw %}{% iconCard 'Soldering Iron', 'We recommend an adjustable-temperature station. The smaller, pencil-style ones do not have enough power.', '/assets/tools/soldering-iron.jpg' %}{% endraw %}`
+{% iconCard 'Soldering Iron', 'We recommend an adjustable-temperature station. The smaller, pencil-style ones do not have enough power.', '/assets/tools/soldering-iron.jpg' %}
 
 With default icon:
 `{% raw %}{% iconCard 'Getting Started', 'Follow these steps to begin your project.' %}{% endraw %}`

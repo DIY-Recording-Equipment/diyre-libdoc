@@ -13,29 +13,30 @@ sorting_sheet_url: /assets/tsx/tsx-sorting-sheet.pdf
 schematic_url:
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/tsx-guitar-overdrive-colour', 'md' %}
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-Thank you for purchasing a [TSX Colour](https://www.diyrecordingequipment.com/products/tsx-guitar-overdrive-colour).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+## Tools
 
-## Required Tools
+### Required
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
-## Optional Tools
+### Optional
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
 
-## Component Sorting Sheet
+### Component Sorting Sheet
 ---
 
-{% lightbox '/assets/tsx/tsx-sorting-sheet.pdf', 'md' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/tsx/tsx-sorting-sheet.pdf)', '/assets/pdf-download.png' %}
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/tsx/tsx-sorting-sheet.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -75,9 +76,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -141,7 +145,7 @@ The leads of the IC must be slightly bent to fit perfectly into the socket. Pres
 
 IC polarity is indicated by a dot or notch on one side of the body. Align this side with the notch in the socket. Place the IC in this direction, and press it completely into the socket.
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:
@@ -149,7 +153,7 @@ Before you wrap up, check the following things:
 {% checks 'capacitor', 'resistor', 'diode', 'ic', 'solder' %}
 ---
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

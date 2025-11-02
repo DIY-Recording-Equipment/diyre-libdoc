@@ -1,7 +1,7 @@
 ---
 layout: guide.liquid
 title: FF1 Assembly Guide
-product: FF1
+product: FF1 Colour
 kit_sku:
 version:
 complexity:
@@ -13,28 +13,29 @@ sorting_sheet_url: /assets/ff1/FF1_Sorting_Sheet_1.3.pdf
 schematic_url:
 ---
 
-Welcome to the FF1 assembly guide.
-Thank you for purchasing a [FF1!](https://www.diyrecordingequipment.com/products/ff1-fuzz-colour)
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+### Optional
 
-## Component Sorting Sheet
----
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
 
-{% lightbox '/assets/ff1/FF1_Sorting_Sheet_1.3.pdf', 'md' %}
+### Component Sorting Sheet
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/ff1/FF1_Sorting_Sheet_1.3.pdf).
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/ff1/FF1_Sorting_Sheet_1.3.pdf)', '/assets/pdf-download.png' %}
+
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -66,9 +67,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -166,7 +170,7 @@ Using a flat surface and your finger, bend the leads of the IC so they are 90 de
 
 Line up the IC so that the dot on its surface is on the same side as the notch on the socket. Then push tthe IC into the socket.
 
-## Final Checks {.step}
+## Final Checks
 
 ---
 
@@ -177,7 +181,7 @@ Before you wrap up, check the following things:
 
 {% lightbox '/assets/ff1/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

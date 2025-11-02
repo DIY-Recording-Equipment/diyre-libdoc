@@ -12,38 +12,35 @@ getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 sorting_sheet_url: /assets/duo/duo-sorting-1.1.pdf
 schematic_url:
 ---
-<!-- if you want to exclude something from the mcb_toc just make it and 'H1' as opposed to an 'h1' -->
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. The Duo is intended for intermediate builders. If you have built a 500-series module or several guitar pedals before you should have no problem with the Duo. However, keep in mind it's a big kit! There are hundreds of parts to place, so plan to split the building over several sessions.
 
-{% lightbox 'https://www.diyrecordingequipment.com/collections/colour/products/colour-duo', 'md' %}
+Additional resources:
+- [Colour Duo Build Map](https://maps.diy.re/duo/)
+- [Colour Duo Operation Manual (PDF)](https://cdn.shopify.com/s/files/1/0698/2265/files/Colour_Duo_Manual_1.0.pdf?v=1608768961)
+- [Colour Duo IO Board Schematic (PDF)](https://cdn.shopify.com/s/files/1/0698/2265/files/Colour_Duo_IO_Board_1.0_Schematic.pdf?v=1612308372)
+- [Colour Duo Drawer Schematic (PDF)](https://cdn.shopify.com/s/files/1/0698/2265/files/Colour_Duo_Drawer_1.0_Schematic.pdf?v=1612308372)
+- [Colour Duo Recall Sheet (Vertical)](https://manuals.diy.re/assets/recall/duo-vertical.pdf)
+- [Colour Duo Recall Sheet (Horizontal)](https://manuals.diy.re/assets/recall/duo-horizontal.pdf)
 
-Thank you for purchasing a [Colour Duo!](https://www.diyrecordingequipment.com/collections/colour/products/colour-duo)
+## Tools
 
-The Duo is intended for intermediate builders. If you have built a 500-series module or several guitar pedals before you should have no problem with the Duo. However, keep in mind it's a big kit! There are hundreds of parts to place, so plan to split the building over several sessions.
+### Required
 
-## Required Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
+### Optional
 
-## Optional Tools
+{% tool 'multi-meter' %}
+{% tool 'tape' %}
+{% tool 'desoldering-pump' %}
 
-{% tools 'multi-meter' %}
-{% tools 'tape' %}
-{% tools 'desoldering-pump' %}
+### 
+Resistor Sorting Sheet
 
-## Component Sorting Sheet
----
+{% iconCard 'Resistor Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Resistor Sorting Sheet](/assets/duo/duo-sorting-1.1.pdf)', '/assets/pdf-download.png' %}
 
-{% lightbox '/assets/duo/duo-sorting-1.1.pdf', 'md' %}
-
-To identify and keep track the resistors, download and print the [Component Sorting Sheet (PDF)](/assets/duo/duo-sorting-1.1.pdf).
-
-<H1 class="exclude" style="clear: both">I/O Board Assembly</H1>
-
----
-
-The Colour Duo is split into two sections, the I/O Board and Drawer. In this guide we'll build the I/O Board first and then the Drawer.
 
 ## I/O Board Resistors (Bag 1) {.step}
 
@@ -58,9 +55,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -780,7 +780,7 @@ Non-skirted knob (x10)
 
 Insert the drawer PCB into the PCB rails, then slide the assembly into the case. There should be some resistance at the end when the board-to-board connectors mate. Then fasten the front panel to the case by tightening the thumb screws.
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:
@@ -803,7 +803,7 @@ If you are unfamiliar with the software, please watch our series of videos on me
 
 {% lightbox '/assets/duo/14.4-finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

@@ -71,9 +71,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 {% resCalc %}
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -144,7 +147,7 @@ The leads of the IC must be slightly bent to fit perfectly into the socket. Pres
 
 IC polarity is indicated by a dot or notch on one side of the body. Align this side with the notch in the socket. Place the IC in this direction, and press it completely into the socket. 
 
-## Final Checks {.step}
+## Final Checks
 
 ---
 
@@ -168,7 +171,7 @@ To stereo match two AurEx units, first set one the way you want it. Then use a m
 ---
 
 {% lightbox '/assets/aurex/finished.jpg', 'md' %}
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

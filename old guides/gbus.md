@@ -10,14 +10,10 @@ product_url: https://www.diyrecordingequipment.com/products/g-bus-compressor-kit
 support_url: https://support.diy.re/
 getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 sorting_sheet_url: /assets/gbus/gbus-sorting-1.1.pdf
-schematic_url:
+schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/G_Bus_1.0_Schematic.pdf?v=1666358399
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/g-bus-compressor-kit', 'md' %}
-
-Thank you for purchasing a [G Bus](https://www.diyrecordingequipment.com/products/g-bus-compressor-kit)!
-
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide.
 
 Because the G Bus is a big, complex project, we recommend setting aside several sessions to complete it. We have gone to great lenghts to make the assembly process clear and precise, but there are hundreds off opportunities for Murphy's Law to creep in, especially if you are in a rush.
 
@@ -32,29 +28,32 @@ This is an advanced project for builders who have experience with PCB soldering 
 - Electrolytic capacitor polarity
 - Connector orientation
 
-The schematic can be found here: [G Bus VCA Compressor Schematic PDF](https://cdn.shopify.com/s/files/1/0698/2265/files/G_Bus_1.0_Schematic.pdf?v=1666358399).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
 So, have fun, take your time, and Don't Panic.
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
-{% tools 'pliers' %}
-{% tools 'phillips' %}
-{% tools 'flathead' %}
-{% tools 'rew' %}
-{% tools 'multi-meter' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
+{% tool 'pliers' %}
+{% tool 'phillips' %}
+{% tool 'flathead' %}
+{% tool 'rew' %}
+{% tool 'multi-meter' %}
 
-{% tools 'res-calc' %}
-{% tools 'desoldering-pump' %}
-{% tools 'tape' %}
+### Optional
 
-## Resistor Sorting Sheet
----
+{% tool 'res-calc' %}
+{% tool 'desoldering-pump' %}
+{% tool 'tape' %}
+
+### Resistor Sorting Sheet
 
 {% lightbox '/assets/gbus/gbus-sorting-1.1.pdf', 'md' %}
 
@@ -901,7 +900,7 @@ Lid screw (x10)
 
 {% lightbox '/assets/gbus/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

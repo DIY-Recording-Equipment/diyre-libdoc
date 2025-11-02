@@ -1,43 +1,43 @@
 ---
 layout: guide.liquid
 title: Distortastudio Assembly Guide
-product: Distortastudio
-kit_sku:
-version:
-complexity:
-estimated_time:
+product: Distortastudio Colour
+kit_sku: KIT-039.02
+version: "1.1"
+complexity: Beginner
+estimated_time: 1 hour
 product_url: https://www.diyrecordingequipment.com/products/distortastudio-cassette-4-track-colour
 support_url: https://support.diy.re/
 getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 sorting_sheet_url: /assets/distortastudio/distortastudio-sorting.pdf
-schematic_url:
+schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/Distortastudio_1.0_Schematic.pdf?v=1677857187
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/distortastudio-cassette-4-track-colour', 'md' %}
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-Thank you for purchasing a [Distortastudio Colour](https://www.diyrecordingequipment.com/products/distortastudio-cassette-4-track-colour).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% alert 'Before you begin, check the revision of your PCB. If yours says "Rev A 2015" on the top side, follow the [Rev A assembly guide](https://www.diyrecordingequipment.com/pages/distortastudio-manual). If yours does not say "Rev A" on the front, you are on the correct page.', 'warning', 'Version Check' %}
 
-Before you begin, check the revision of your PCB. If yours says "Rev A 2015" on the top side, follow the [Rev A assembly guide](https://www.diyrecordingequipment.com/pages/distortastudio-manual). If yours does not say "Rev A" on the front, you are on the correct page.
+## Tools
 
-## Required Tools
+### Required
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
-## Optional Tools
+### Optional
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
 
-## Component Sorting Sheet
----
+### Component Sorting Sheet
 
-{% lightbox '/assets/distortastudio/distortastudio-sorting.pdf', 'md' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/distortastudio/distortastudio-sorting.pdf)', '/assets/pdf-download.png' %}
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/distortastudio/distortastudio-sorting.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -77,9 +77,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -134,7 +137,7 @@ The leads of the ICs must be slightly bent to fit perfectly into the sockets. Fo
 
 IC polarity is indicated by a dot or notch on one side of the body. Align this side with the notch in the sockets. Place all of the ICs in this direction, and press them completely into the sockets.
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:
@@ -142,8 +145,9 @@ Before you wrap up, check the following things:
 {% checks 'capacitor', 'resistor', 'ic', 'solder' %}
 ---
 
-    <img src="/assets/distortastudio/finished-600.jpg" />
-### Finished! {.step}
+{% lightbox '/assets/distortastudio/finished.jpg', 'md' %}
+
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

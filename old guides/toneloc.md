@@ -13,30 +13,32 @@ sorting_sheet_url: /assets/toneloc/toneloc-sorting-2.0.pdf
 schematic_url:
 ---
 
-Welcome to the Toneloc assembly guide.
-Thank you for purchasing a [Toneloc](https://www.diyrecordingequipment.com/products/toneloc-level-loc-compressor-colour)
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
 This guide is for the Toneloc 2.0, if you purchased the earlier version see the [Toneloc 1.0 assembly guide](https://www.diyrecordingequipment.com/pages/tone-loc-assembly-guide).
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+### Optional
 
-## Component Sorting Sheet
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
+
+### Component Sorting Sheet
 ---
 
-{% lightbox '/assets/toneloc/toneloc-sorting-2.0.pdf', 'md' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/toneloc/toneloc-sorting-2.0.pdf)', '/assets/pdf-download.png' %}
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/toneloc/toneloc-sorting-2.0.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -116,7 +118,7 @@ Place the smaller capacitors in their respective places. These capacitors are no
 
 Some of these capacitors are polarized, so they must be placed in a certain direction. The polarized capacitors are marked with a stripe on the body. On these the positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB. Double check their orientation, then solder and trim.
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:

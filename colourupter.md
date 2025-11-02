@@ -2,43 +2,45 @@
 layout: guide.liquid
 title: Colourupter Assembly Guide
 product: Colourupter
-kit_sku:
-version:
-complexity:
-estimated_time:
+kit_sku: KIT-019.03
+version: "2.5"
+complexity: Intermediate
+estimated_time: 1 hour
 product_url: https://www.diyrecordingequipment.com/products/colourupter
 support_url: https://support.diy.re/
 getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 sorting_sheet_url: /assets/colourupter/colourupter-sorting-2.0.pdf
-schematic_url:
+schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/Colourupter_2.5_Schematic.pdf?v=1716300129
 ---
 
-Thank you for purchasing a [Colourupter](https://www.diyrecordingequipment.com/products/colourupter).
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-{ % alert, 'Before you begin, check the revision of your PCB. If yours has the version number "v2.5" on the bottom you are on the correct page. If it does not, please follow the [Colourupter mkI assembly guide](https://www.diyrecordingequipment.com/pages/colourupter-manual).', 'warning', 'Revision Check' %}
+{% alert 'Before you begin, check the revision of your PCB. If yours has the version number v2.5 on the bottom you are on the correct page. If it does not, please follow the [Colourupter mkI assembly guide](https://www.diyrecordingequipment.com/pages/colourupter-manual).', 'warning', 'Version Check' %}
 
 ## Tools
 
 ### Required
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
-{% tools 'phillips' %}
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
+{% tool 'phillips' %}
+{% tool 'rew' %}
 
 ## Optional
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
-{% tools '500ext' %}
-{% tools 'rew' %}
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
+{% tool '500ext' %}
 
-##$ Component Sorting Sheet
----
+#### Component Sorting Sheet
 
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/colourupter/colourupter-sorting-2.0.pdf)', '/assets/pdf-download.png' %}
+
 
 ## Standoffs, Header, and IC Socket (Bag 1) {.step}
 
@@ -81,7 +83,9 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 {% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -116,7 +120,8 @@ Use clippers to trim away the excess leads. Clip as closely as possible to the j
 ### Populate Capacitors {.step}
 Place the capacitors in their respective positions. The capacitors are not polarized and therefore can be placed in either direction. Solder then trim the leads.
 
-		<strong>Note:</strong> These capacitors are mistakenly marked "100u" on the PCB. They should be 10u as shown in the photo.
+{% alert 'These capacitors are mistakenly marked "100u" on the PCB. They should be 10u as shown in the photo.', 'warning' %}
+
 
 ---
 
@@ -145,7 +150,7 @@ The leads of the IC must be slightly bent to fit perfectly into the socket. Pres
 
 IC polarity is indicated by a dot or notch on one side of the body. Align this side with the notch in the socket. Place the IC in this direction, and press it completely into the socket. 
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:
@@ -193,7 +198,7 @@ Use a screwdriver to adjust the VR1 trimpot until the level at the input is -15d
 
 {% lightbox '/assets/colourupter/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

@@ -13,26 +13,29 @@ sorting_sheet_url:
 schematic_url:
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/l2a', 'md' %}
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-Thank you for purchasing a [L2A Re-amplifier Kit!](https://www.diyrecordingequipment.com/products/l2a)
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
 This guide is for the L2A Rev E, launched August 2021. If you have an earlier version, head over to the [L2A Rev D Assembly Guide](https://www.diyrecordingequipment.com/pages/l2a-manual).
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
-{% tools 'phillips' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
+{% tool 'phillips' %}
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
-{% tools 'tape' %}
+### Optional
+
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
+{% tool 'tape' %}
 
 ## Resistors and Capacitors {.step}
 
@@ -46,9 +49,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -202,7 +208,7 @@ Then switch between the LIFT and GROUND positions. With some setups one position
 
 {% lightbox '/assets/l2a/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

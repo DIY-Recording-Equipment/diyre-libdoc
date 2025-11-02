@@ -909,7 +909,7 @@ main .widget + .widget {
     height: auto;
 }
 
-/* LIGHTBOX */
+/* LIGHTBOX - GLightbox thumbnails */
 .lightbox-thumbnails-grid {
     display: grid;
     gap: var(--ita-spacings-5);
@@ -960,6 +960,7 @@ main .widget + .widget {
     border-style: dashed;
     transition: all 300ms;
     overflow: hidden;
+    text-decoration: none;
 }
 .lightbox-thumbnail:hover {
     border-style: solid;
@@ -970,110 +971,6 @@ main .widget + .widget {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.lightbox-dialog {
-    max-width: 90vw;
-    max-height: 90vh;
-    border: none;
-    border-radius: 12px;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-}
-.lightbox-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(4px);
-}
-.lightbox-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--ita-spacings-5);
-    padding: var(--ita-spacings-7);
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-}
-.lightbox-close {
-    position: absolute;
-    top: var(--ita-spacings-5);
-    right: var(--ita-spacings-5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--ita-colors-neutral-100);
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--ita-colors-neutral-500);
-    cursor: pointer;
-    line-height: 1;
-    border-radius: 50%;
-    transition: all 300ms;
-    z-index: 10;
-}
-.lightbox-close:hover {
-    transform: scale(1.1);
-    background-color: var(--ita-colors-primary-500);
-    border-color: var(--ita-colors-primary-500);
-    box-shadow: var(--libdoc-soft-shadow);
-}
-.lightbox-close:hover .icon-x {
-    color: var(--ita-colors-neutral-100);
-}
-.lightbox-fullsize-image {
-    width: 90vw;
-    height: 80vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 6px;
-}
-.lightbox-caption {
-    font-size: var(--ita-fontSizes-4);
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    margin: 0;
-    padding: var(--ita-spacings-3);
-    border-radius: 6px;
-}
-.lightbox-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--ita-colors-neutral-100);
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--ita-colors-neutral-500);
-    cursor: pointer;
-    line-height: 1;
-    border-radius: 50%;
-    transition: all 300ms;
-    z-index: 10;
-}
-.lightbox-prev {
-    left: var(--ita-spacings-5);
-}
-.lightbox-next {
-    right: var(--ita-spacings-5);
-}
-.lightbox-nav:hover {
-    transform: translateY(-50%) scale(1.1);
-    background-color: var(--ita-colors-primary-500);
-    border-color: var(--ita-colors-primary-500);
-    box-shadow: var(--libdoc-soft-shadow);
-}
-.lightbox-nav:hover span[class*="icon-"] {
-    color: var(--ita-colors-neutral-100);
 }
 
 /* INPUT RADIOS */

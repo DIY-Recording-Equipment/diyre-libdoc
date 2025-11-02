@@ -13,30 +13,31 @@ sorting_sheet_url: /assets/ssvca/ssvca-sorting.pdf
 schematic_url:
 ---
 
-<img src="/assets/ssvca/finished-600.jpg">
-  Welcome to the SS VCA assembly guide.
-Thank you for purchasing a [SS VCA](https://www.diyrecordingequipment.com/products/ssvca)
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
-{% tools 'flathead' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
+{% tool 'flathead' %}
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+### Optional
 
-## Component Sorting Sheet
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
+
+### Component Sorting Sheet
 ---
 
-{% lightbox '/assets/ssvca/ssvca-sorting.pdf', 'md' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/ssvca/ssvca-sorting.pdf)', '/assets/pdf-download.png' %}
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/ssvca/ssvca-sorting.pdf).
 
 ## Standoffs, Header, and IC Socket (Bag 1) {.step}
 
@@ -68,9 +69,12 @@ Insert the IC sockets so that the notches on the sockets align with the markings
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -178,7 +182,7 @@ The leads of the ICs must be slightly bent to fit perfectly into the sockets. Fo
 
 IC polarity is indicated by a dot or notch on one side of the body. Align this side with the notch in the sockets. Place all of the ICs in this direction, and press them completely into the sockets. 
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:
@@ -227,7 +231,7 @@ Adjust VR1 on the SS VCA until the In level is -27dBFS (3dB gain). Your SS VCA i
 
 {% lightbox '/assets/ssvca/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 Congrats on completing your SS VCA. To begin using it, simply plug it into a host such as the Colour Palette and turn the Colour knob to begin compressing.
 
 The SS VCA has a fixed threshold. Therefore, the Colour knob on the host controls the amount of compression by controlling the input level to the SS VCA.

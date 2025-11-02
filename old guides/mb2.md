@@ -13,23 +13,25 @@ sorting_sheet_url:
 schematic_url:
 ---
 
-{% lightbox '[kit url in store]', 'md' %}
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-Thank you for purchasing a [MB2]([kit url in store])
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+## Tools
 
-## Required Tools
+### Required
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
-{% tools 'phillips' %}
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
+{% tool 'phillips' %}
 
-## Optional Tools
+### Optional
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
 
 ## Resistors {.step}
 ---
@@ -54,9 +56,12 @@ R7, R8<br>470k resistor (x4)
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -221,7 +226,7 @@ Next, set a channel in your DAW to record the channel you plugged the MB2 into. 
 
 {% lightbox '/assets/mb2/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

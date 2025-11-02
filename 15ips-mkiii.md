@@ -13,13 +13,13 @@ sorting_sheet_url: /assets/15ips3/15ips-mkiii-sorting.pdf
 schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/15IPS_mkIII_Schematic.pdf?v=1713884579
 ---
 
-Thank you for purchasing a [{{ product }}]({{ product_url }})
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-You can view the [{{ product }} schematic PDF here]({{ schematic_url }}).
-
-{% alert, 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'warning', 'Version check' %}
+{% alert 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'warning', 'Version check' %}
 
 ## Tools
 
@@ -50,7 +50,6 @@ You can view the [{{ product }} schematic PDF here]({{ schematic_url }}).
 ###  Insert Standoffs {.step}
 
 Note that there are two different ends on the plastic standoffs. The locking end has tabs with a right angle to prevent them from being removed after installation, while the non-locking end has smooth tabs. Insert the locking ends of the standoffs from the bottom of the PCB.
-
 
 ---
 

@@ -13,32 +13,33 @@ sorting_sheet_url:
 schematic_url:
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/hc1', 'md' %}
-
-Thank you for purchasing a [HC1]([kit url in store])
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
 This guide is for the HC1 full kit, which includes a chassis and power supply. If you are building the partial kit, head over to the [HC1 Partial Kit Assembly Guide](https://www.diyrecordingequipment.com/pages/hc1-assembly-guide).
 
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
-{% tools 'phillips' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
+{% tool 'phillips' %}
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+### Optional
 
-## Component Sorting Sheet
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
+
+### Component Sorting Sheet
 ---
 
-{% lightbox '/assets/[sorting sheet url]', 'md' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet]({{ sorting_sheet_url }})', '/assets/pdf-download.png' %}
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/[sorting sheet url]).
 
 ## Resistors {.step}
 
@@ -218,7 +219,7 @@ The HC1 accepts unbalanced inputs via either a single stereo cable in the L jack
 
 {% lightbox '/assets/hc1/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

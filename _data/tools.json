@@ -3,31 +3,31 @@
     "slug": "500ext",
     "name": "500EXT Extender",
     "description": "A 500-series extender like the <a href=\"https://www.diyrecordingequipment.com/products/500ext-500-series-extender-kit\">500EXT</a> will make testing and troubleshooting easier.",
-    "img_src": "/assets/parts/500ext.jpg"
+    "img_src": "/assets/tools/500ext.jpg"
   },
   {
     "slug": "desoldering-pump",
     "name": "Desoldering Pump",
     "description": "If you accidentally solder something in the wrong place, a desoldering pump can save the day.",
-    "img_src": "/assets/tools/desoldering_small.jpg"
+    "img_src": "/assets/tools/desoldering.jpg"
   },
   {
     "slug": "flathead",
     "name": "Flat Head Screwdriver",
     "description": "A small flat head screwdriver for adjusting a trimpot.",
-    "img_src": "/assets/tools/flathead_small.jpg"
+    "img_src": "/assets/tools/flathead.jpg"
   },
   {
     "slug": "multi-meter",
     "name": "Multi-meter",
     "description": "If you run into problems, a multimeter can come in handy. You can also use it to sort resistors.",
-    "img_src": "/assets/tools/digital_mm_small.jpg"
+    "img_src": "/assets/tools/digital_mm.jpg"
   },
   {
     "slug": "phillips",
     "name": "Phillips Head Screwdriver",
     "description": "A #1 Phillips head screwdriver.",
-    "img_src": "/assets/tools/screwdriver_small.jpg"
+    "img_src": "/assets/tools/screwdriver.jpg"
   },
   {
     "slug": "pliers",
@@ -39,36 +39,36 @@
     "slug": "res-calc",
     "name": "Resistor Calculator",
     "description": "Resistor sorting made easy! Enter a value to find the color bands, or enter your color bands to find the resistor's value. Type in the value of the resistor you need and <a href=\"https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator\">this tool</a> will show you the corresponding color code.",
-    "img_src": "/assets/parts/rescalc.png"
+    "img_src": "/assets/tools/rescalc.png"
   },
   {
     "slug": "rew",
     "name": "Room EQ Wizard (REW)",
     "description": "REW is an incredible piece of free measurement software for PC, Mac, and Linux. While REW is primarily known for measuring room acoustics, it's also a powerful tool for measuring analog gear. Download and install the latest version at the <a href=\"https://www.roomeqwizard.com/\">Room EQ Wizard website</a>.",
-    "img_src": "/assets/parts/rew.jpg"
+    "img_src": "/assets/tools/rew.jpg"
   },
   {
     "slug": "solder",
     "name": "Solder",
     "description": "You can use tin solder or lead-free. We recommend tin because it is easier and more forgiving to use.",
-    "img_src": "/assets/tools/solder_small.jpg"
+    "img_src": "/assets/tools/solder.jpg"
   },
   {
     "slug": "soldering-iron",
     "name": "Soldering Iron",
     "description": "We recommend an adjustable-temperature station. The smaller, pencil-style ones that plug directly into the wall do not have enough power to create good joints consistently.",
-    "img_src": "/assets/tools/soldering-iron_small.jpg"
+    "img_src": "/assets/tools/soldering-iron.jpg"
   },
   {
     "slug": "tape",
     "name": "Tape",
     "description": "A bit of clear tape will help hold some tricky components in place for soldering.",
-    "img_src": "/assets/tools/tape_small.jpg"
+    "img_src": "/assets/tools/tape.jpg"
   },
   {
     "slug": "wire-cutters",
     "name": "Wire Cutters",
     "description": "A good pair will be sharp and have a fine point for cutting leads down right at the solder joint. Don't use a set of large cutters meant for household wiring.",
-    "img_src": "/assets/tools/wire-cutters_small.jpg"
+    "img_src": "/assets/tools/wire-cutters.jpg"
   }
 ]

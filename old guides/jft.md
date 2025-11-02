@@ -13,31 +13,32 @@ sorting_sheet_url: /assets/jft/jft-mkii-sorting-1.1.pdf
 schematic_url:
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/jft-colour', 'md' %}
+Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
-Thank you for purchasing a [JFT Colour!](https://www.diyrecordingequipment.com/products/jft-colour)
-
-If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
+{% if schematic_url %}
+View the [{{ product }} schematic PDF here]({{ schematic_url }}).
+{% endif %}
 
 This guide is for the JFT mkII, if you purchased the earlier version see the [JFT mkI assembly guide](https://www.diyrecordingequipment.com/pages/jft-manual).
 
-## Required Tools
+## Tools
 
-{% tools 'soldering-iron' %}
-{% tools 'solder' %}
-{% tools 'wire-cutters' %}
+### Required
 
-## Optional Tools
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
-{% tools 'multi-meter' %}
-{% tools 'desoldering-pump' %}
+### Optional
 
-## Component Sorting Sheet
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
+
+### Component Sorting Sheet
 ---
 
-{% lightbox '/assets/jft/jft-mkii-sorting-1.1.pdf', 'md' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/jft/jft-mkii-sorting-1.1.pdf)', '/assets/pdf-download.png' %}
 
-To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/jft/jft-mkii-sorting-1.1.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -69,9 +70,12 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
-Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
+Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use the color code calculator above, or test them with a multi-meter set to read resistance.
+
+{% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
 ---
 
@@ -165,7 +169,7 @@ res-trim.html
 trans-bc327.html
 -->
 
-## Final Checks {.step}
+## Final Checks
 ---
 
 Before you wrap up, check the following things:
@@ -175,7 +179,7 @@ Before you wrap up, check the following things:
 
 {% lightbox '/assets/jft/finished.jpg', 'md' %}
 
-### Finished! {.step}
+### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 

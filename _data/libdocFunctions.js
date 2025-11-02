@@ -502,45 +502,22 @@ export default {
             }
 
             const lightboxId = libdocUtils.generateRandomId();
-            const isMultiImage = imagePaths.length > 1;
 
             // Helper to escape HTML attributes
             const escapeAttr = (str) => str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-            // Generate thumbnails with inline handlers (works with Eleventy image transform)
+            // Generate GLightbox-compatible thumbnails
             const thumbnailsMarkup = imagePaths
                 .map((path, index) =>
-                    `<div class="lightbox-thumbnail" onclick="window.openLightbox('lightbox-${lightboxId}', ${index})">` +
-                    `<img src="${escapeAttr(path)}" alt="" loading="lazy" decoding="async">` +
-                    `</div>`
+                    `<a href="${escapeAttr(path)}" class="glightbox lightbox-thumbnail" data-gallery="gallery-${lightboxId}">` +
+                    `<img src="${escapeAttr(path)}" alt="Image ${index + 1}" loading="lazy" decoding="async">` +
+                    `</a>`
                 )
                 .join('');
-
-            // Navigation buttons (only for multiple images)
-            const navigationMarkup = isMultiImage
-                ? `<button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); window.navigateLightbox('lightbox-${lightboxId}', -1)" aria-label="Previous image">` +
-                  `<span class="icon-caret-left | fs-6 | c-primary-500"></span>` +
-                  `</button>` +
-                  `<button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); window.navigateLightbox('lightbox-${lightboxId}', 1)" aria-label="Next image">` +
-                  `<span class="icon-caret-right | fs-6 | c-primary-500"></span>` +
-                  `</button>`
-                : '';
-
-            // Store image paths as JSON
-            const imagePathsJson = escapeAttr(JSON.stringify(imagePaths));
 
             return `
 <aside class="widget widget-lightbox">
 <div class="lightbox-thumbnails-grid lightbox-size-${sizeParam}">${thumbnailsMarkup}</div>
-<dialog id="lightbox-${lightboxId}" class="lightbox-dialog" data-images="${imagePathsJson}" data-current-image="0" aria-modal="true" aria-label="Image gallery" onclick="if (event.target === this || event.target.classList.contains('lightbox-content')) { this.close(); }">
-<div class="lightbox-content">
-<button class="lightbox-close" onclick="event.stopPropagation(); this.closest('dialog').close()" aria-label="Close lightbox">
-<span class="icon-x | fs-6 | c-primary-500"></span>
-</button>
-${navigationMarkup}
-<div class="lightbox-fullsize-image" style="background-image: url('${escapeAttr(imagePaths[0])}')" role="img" aria-label="Image ${isMultiImage ? '1 of ' + imagePaths.length : ''}"></div>
-</div>
-</dialog>
 </aside>
 `;
         },
