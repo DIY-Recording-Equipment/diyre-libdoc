@@ -7,14 +7,17 @@ version: "1.0"
 complexity: Beginner
 estimated_time: 1 hour
 product_url: https://www.diyrecordingequipment.com/products/15ips-colour
-support_url: http://www.diyrecordingequipment.com/pages/contact
-getting_started_url: http://www.diyrecordingequipment.com/pages/getting-started
+support_url: https://www.diyrecordingequipment.com/pages/contact
+getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 sorting_sheet_url: /assets/15ips3/15ips-mkiii-sorting.pdf
+schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/15IPS_mkIII_Schematic.pdf?v=1713884579
 ---
 
-Thank you for purchasing a [{{ product }}]({{ product_url }})</a>
+Thank you for purchasing a [{{ product }}]({{ product_url }})
 
 If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}).
+
+You can view the [{{ product }} schematic PDF here]({{ schematic_url }}).
 
 {% alert, 'This guide is for the 15IPS mkIII. If you purchased the earlier version, see the [15IPS mkII assembly guide](https://manuals.diy.re/15ips).', 'warning', 'Version check' %}
 

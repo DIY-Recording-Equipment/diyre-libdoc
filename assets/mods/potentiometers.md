@@ -1,0 +1,3 @@
+### Populate Potentiometers {.step}
+
+Pay close attention to the values marked on the back when placing the potentiometers (pots). Place them, then double check the values on the pots against those on the PCB.  Bend two leads of each pot against the PCB, then solder and trim.
