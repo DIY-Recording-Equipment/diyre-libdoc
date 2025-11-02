@@ -155,7 +155,7 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder' %}
+{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder', 'trim' %}
 
 ## Calibration {.step}
 

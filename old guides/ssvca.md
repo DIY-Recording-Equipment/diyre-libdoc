@@ -33,7 +33,6 @@ View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% tool 'multi-meter' %}
 {% tool 'desoldering-pump' %}
 
-### Component Sorting Sheet
 ---
 
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/ssvca/ssvca-sorting.pdf)', '/assets/pdf-download.png' %}
@@ -187,7 +186,7 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'diode', 'resistor', 'solder', 'ic' %}
+{% checks 'capacitor', 'diode', 'resistor', 'ic', 'solder', 'trim' %}
 ## Calibration {.step}
 
 The SS VCA requires just one parameter to be calibrated: the make-up gain. The make-up gain is variable so that you can adjust it depending on the amount of compression you typically use. But for a good starting point, we will set it to 3dB. If you are using the SS VCA in a 500-series rack, the following steps will be easier with an extender like the [500EXT](https://www.diyrecordingequipment.com/products/500ext-500-series-extender-kit).

@@ -32,7 +32,6 @@ View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% tool 'multi-meter' %}
 {% tool 'desoldering-pump' %}
 
-### Component Sorting Sheet
 ---
 
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/tsx/tsx-sorting-sheet.pdf)', '/assets/pdf-download.png' %}
@@ -150,7 +149,7 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'resistor', 'diode', 'ic', 'solder' %}
+{% checks 'capacitor', 'resistor', 'diode', 'ic', 'solder', 'trim' %}
 ---
 
 ### Build Completed!

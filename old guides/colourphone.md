@@ -34,7 +34,6 @@ View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% tool 'multi-meter' %}
 {% tool 'desoldering-pump' %}
 
-### Component Sorting Sheet
 ---
 
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet]({{ sorting_sheet_url }})', '/assets/pdf-download.png' %}
@@ -153,7 +152,7 @@ Place the transformer in the T1 position, solder, and trim the leads.
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder' %}
+{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder', 'trim' %}
 ---
 
 {% lightbox '/assets/colourphone/finished.jpg', 'md' %}

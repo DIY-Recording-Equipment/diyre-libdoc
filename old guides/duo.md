@@ -100,14 +100,7 @@ other is round. And second, one is a BC327 (black top) while the other is a BC33
 Place the BC327 in Q1 and the BC337 in Q2. Place both of them so that the shape of the body matches the
 shape on the circuit board. Double check the positions and orientation, then solder and trim.
 
-        <strong>Parts in this step:</strong>
-
-Q1<br>BC327 transistor
-
-            <img src="/assets/parts/com-t-to92.png">
-Q2<br>BC337 transistor
-
-            <img src="/assets/parts/com-t-to92-silver.png">
+{% stepParts '1.1', kit_sku %}
 
 ---
 
@@ -523,15 +516,6 @@ SW1-SW3<br>DPDT switch (x3)
 
 ---
 
-<h3>Quick Question</h3>
-    <form action="https://formsubmit.co/hi2zl04q@robot.zapier.com" method="POST" target="_blank" id="form-usage">
-    <input type="hidden" name="_replyto">
-    <input type="hidden" name="_subject" value="%meta.title%">
-@[/mods/usage-feedback.html]
-    </form>
-
----
-
 {% lightbox '/assets/duo/11.3-pop-header-sockets.jpg', 'md' %}
 
 ### Populate Header Sockets {.step}
@@ -785,7 +769,7 @@ Insert the drawer PCB into the PCB rails, then slide the assembly into the case.
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'diode', 'ic', 'resistor', 'transistor', 'solder' %}
+{% checks 'capacitor', 'diode', 'ic', 'resistor', 'transistor', 'solder', 'trim' %}
 ---
 
     <img src="/assets/duo/audio-tests-600.jpg" />

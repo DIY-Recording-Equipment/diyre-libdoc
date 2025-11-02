@@ -32,7 +32,6 @@ You can view the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% tool 'multi-meter' %}
 {% tool 'desoldering-pump' %}
 
-### Component Sorting Sheet
 
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/aurex/aurex-sorting-1.0.pdf)', '/assets/pdf-download.png' %}
 
@@ -153,7 +152,7 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder' %}
+{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder', 'trim' %}
 ---
 
 {% lightbox '/assets/aurex/options.jpg', 'md' %}

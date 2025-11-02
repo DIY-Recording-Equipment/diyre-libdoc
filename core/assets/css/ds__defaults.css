@@ -738,6 +738,8 @@ main .alert {
     font-weight: 400;
     font-style: normal;
     padding: var(--ita-spacings-3) var(--ita-spacings-5);
+    margin-top: var(--ita-spacings-3);
+    margin-bottom: var(--ita-spacings-3);
     border-left-style: dashed;
     border-left-width: 1px;
     font-size: var(--ita-fontSizes-4);

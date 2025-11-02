@@ -205,7 +205,7 @@ Remove the backing from the foam pad and apply it to the bottom of the case.
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'transistor', 'resistor', 'solder' %}
+{% checks 'capacitor', 'transistor', 'resistor', 'solder', 'trim' %}
 ---
 
 {% lightbox '/assets/mb2/test-input.jpg', 'md' %}

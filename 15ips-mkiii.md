@@ -15,6 +15,7 @@ schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/15IPS_mkIII_Sch
 
 Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
+
 {% if schematic_url %}
 View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% endif %}
@@ -28,18 +29,11 @@ View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% tool 'soldering-iron' %}
 {% tool 'solder' %}
 {% tool 'wire-cutters' %}
-
-
 ### Optional
 
 {% tool 'multi-meter' %}
 {% tool 'desoldering-pump' %}
-
-### Component Sorting
-
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/15ips3/15ips-mkiii-sorting.pdf)', '/assets/pdf-download.png' %}
-
-
 
 ## Standoffs and Header (Bag 1) {.step}
 

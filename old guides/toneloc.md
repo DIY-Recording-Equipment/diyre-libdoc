@@ -34,7 +34,6 @@ This guide is for the Toneloc 2.0, if you purchased the earlier version see the 
 {% tool 'multi-meter' %}
 {% tool 'desoldering-pump' %}
 
-### Component Sorting Sheet
 ---
 
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/toneloc/toneloc-sorting-2.0.pdf)', '/assets/pdf-download.png' %}
@@ -123,7 +122,7 @@ Some of these capacitors are polarized, so they must be placed in a certain dire
 
 Before you wrap up, check the following things:
 
-{% checks 'capacitor', 'transistor', 'ic', 'solder' %}
+{% checks 'capacitor', 'transistor', 'ic', 'solder', 'trim' %}
 ---
 
 {% lightbox '/assets/toneloc/finished.jpg', 'md' %}
