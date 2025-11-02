@@ -15,6 +15,7 @@ const path = require('path');
 const libdocSystem =        require("./libdocSystem.json");
 const libdocMessages =      require("./libdocMessages.json");
 const icomoon =             require("../core/assets/fonts/icomoon/selection.json");
+const tools =               require("./tools.json");
 // END JSON IMPORT WORKAROUND
 
 import libdocUtils          from    "./libdocUtils.js";
@@ -345,6 +346,39 @@ export default {
                     </aside>`;
             } else {
                 console.log(`iconCard shortcode: wrong format, must specify at least main text and description string fields.`);
+            }
+            return markup;
+        },
+        tool: async function(slug, customUrl) {
+            let markup = '';
+            if (typeof slug == 'string') {
+                // Find the tool with matching slug
+                const tool = tools.find(t => t.slug === slug);
+
+                if (tool) {
+                    const visualContent = `<img src="${tool.img_src}" alt="${tool.name}" style="width: 100%; height: auto; max-width: 100px;" loading="lazy" decoding="async">`;
+
+                    // If a custom URL is provided, add a link to the description
+                    let description = tool.description;
+                    if (customUrl && typeof customUrl === 'string') {
+                        description += ` <a href="${customUrl}" target="_blank">View/Download</a>`;
+                    }
+
+                    markup = `
+                    <aside class="widget widget-iconCard">
+                        <p class="d-flex gap-5 | p-5 m-0 | brad-3 bwidth-1 bstyle-dashed bcolor-neutral-500">
+                            ${visualContent}
+                            <span class="d-flex fd-column gap-1">
+                                <strong class="fvs-wght-700 fs-4">${tool.name}</strong>
+                                <span>${description}</span>
+                            </span>
+                        </p>
+                    </aside>`;
+                } else {
+                    console.log(`tool shortcode: tool with slug "${slug}" not found in tools.json`);
+                }
+            } else {
+                console.log(`tool shortcode: slug parameter is required. Usage: {% tool 'slug' %} or {% tool 'slug', custom_url %}`);
             }
             return markup;
         },

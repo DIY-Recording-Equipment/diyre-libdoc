@@ -52,6 +52,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addShortcode("icomoon", libdocFunctions.shortcodes.icomoon);
     eleventyConfig.addShortcode("icon", libdocFunctions.shortcodes.icon);
     eleventyConfig.addShortcode("iconCard", libdocFunctions.shortcodes.iconCard);
+    eleventyConfig.addShortcode("tool", libdocFunctions.shortcodes.tool);
     eleventyConfig.addShortcode("lightbox", libdocFunctions.shortcodes.lightbox);
     eleventyConfig.addPairedShortcode("sandbox", libdocFunctions.shortcodes.sandbox);
     eleventyConfig.addPairedShortcode("sandboxFile", libdocFunctions.shortcodes.sandboxFile);

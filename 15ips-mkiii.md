@@ -7,7 +7,7 @@ version: "1.0"
 complexity: Beginner
 estimated_time: 1 hour
 product_url: https://www.diyrecordingequipment.com/products/15ips-colour
-support_url: https://www.diyrecordingequipment.com/pages/contact
+support_url: https://support.diy.re
 getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 sorting_sheet_url: /assets/15ips3/15ips-mkiii-sorting.pdf
 schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/15IPS_mkIII_Schematic.pdf?v=1713884579
@@ -25,19 +25,15 @@ You can view the [{{ product }} schematic PDF here]({{ schematic_url }}).
 
 ### Required
 
-{% iconCard 'Soldering Iron', 'We recommend an adjustable-temperature station. The smaller, pencil-style ones that plug directly into the wall do not have enough power to create good joints consistently.', '/assets/tools/soldering-iron_small.jpg' %}
-
-{% iconCard 'Solder', 'You can use 60/40 leaded solder or lead-free. We recommend 60/40 because it is easier and more forgiving to use.', '/assets/tools/solder_small.jpg' %}
-
-{% iconCard 'Wire Cutters', 'A good pair will be sharp and have a fine point for cutting leads down to the solder joint.', '/assets/tools/wire-cutters_small.jpg' %}
+{% tool 'soldering-iron' %}
+{% tool 'solder' %}
+{% tool 'wire-cutters' %}
 
 
 ### Optional
 
-{% iconCard 'Multi-meter', 'A multi-meter is required for some of the test steps and will come in handy if something goes wrong.', '/assets/tools/digital_mm_small.jpg' %}
-
-
-{% iconCard 'Desoldering Pump', 'If you accidentally solder something in the wrong place, a desoldering pump can save the day.', '/assets/tools/desoldering_small.jpg' %}
+{% tool 'multi-meter' %}
+{% tool 'desoldering-pump' %}
 
 ### Component Sorting
 
