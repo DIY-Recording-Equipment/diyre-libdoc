@@ -199,7 +199,7 @@ this.mainResSort = function(){
           resSvg = Snap("#resistor-svg-wrapper");
             console.log(f);
           resSvg.append(f);
-          resSVG.attr("width", "100%")
+          resSvg.attr("width", "100%")
         	//console.log("Hello!!!!");
 
         });

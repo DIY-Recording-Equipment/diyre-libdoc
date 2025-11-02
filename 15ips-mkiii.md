@@ -1,6 +1,6 @@
 ---
 layout: guide.liquid
-title: 15IPS mkIII Assembly Guide
+title: 15IPS Assembly Guide
 product: 15IPS Colour
 kit_sku: KIT-012.06
 version: "1.0"
