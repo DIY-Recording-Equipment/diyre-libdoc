@@ -34,29 +34,28 @@ You can view the [{{ product }} schematic PDF here]({{ schematic_url }}).
 
 ### Component Sorting Sheet
 
-{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/15ips3/aurex-sorting-1.0.pdf)', '/assets/pdf-download.png' %}
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/aurex/aurex-sorting-1.0.pdf)', '/assets/pdf-download.png' %}
 
----
 
 ## Standoffs, Header, and IC Socket (Bag 1) {.step}
 
 ---
 
-![colour-standoffs](%base_url%/assets/aurex/colour-standoffs.jpg)
+{% lightbox '/assets/aurex/colour-standoffs.jpg', 'md' %}
 ### Insert Standoffs {.step}
 
 Note that there are two different ends on the plastic standoffs. The locking end has tabs with a right angle to prevent them from being removed after installation, while the non-locking end has smooth tabs. Insert the locking ends of the standoffs from the bottom of the PCB.
 
 ---
 
-![colour-header](%base_url%/assets/aurex/colour-header.jpg)
+{% lightbox '/assets/aurex/colour-header.jpg', 'md' %}
 ### Populate 8-Pin Header {.step}
 
 Insert the 8-pin header into the holes marked “CON1.” Make sure to place the short, silver pins through the bottom of the PCB so that the PCB rests on the black plastic posts. Solder the header from the top of the PCB and <u>do not trim</u> the leads afterward.
 
 ---
 
-![ic-socket](%base_url%/assets/aurex/ic-socket.jpg)
+{% lightbox '/assets/aurex/ic-socket.jpg', 'md' %}
 ### Tape and Solder IC Socket {.step}
 
 Insert the IC socket so that the notches on the sockets align with the markings on the PCB. Secure in place with tape. Then flip the PCB over and solder in place. Remove the tape.
@@ -65,33 +64,34 @@ Insert the IC socket so that the notches on the sockets align with the markings 
 
 ---
 
-![res-bend](%base_url%/assets/15ips/res-bend.jpg)
+{% lightbox '/assets/15ips/res-bend.jpg', 'md' %}
 ### Bend Resistors {.step}
 
 Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
 
 ---
+{% resCalc %}
 ### Sort Resistors {.step}    
 
 Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
 
 ---
 
-![res-place](%base_url%/assets/aurex/res-place.jpg)
+{% lightbox '/assets/aurex/res-place.jpg', 'md' %}
 ### Place Resistors {.step}
 
 Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
 
 ---
 
-![res-solder](%base_url%/assets/aurex/res-solder.jpg)
+{% lightbox '/assets/aurex/res-solder.jpg', 'md' %}
 ### Solder Resistors {.step}
 
 Solder the resistors to the PCB. Observe good soldering technique: heat the pad and lead for 2-3 seconds, apply a small bit of solder, and continue to heat the pad for another 2-3 seconds. The finished joints should be shiny and should have just enough solder to cover the pad entirely.
 
 ---
 
-![res-trim](%base_url%/assets/aurex/res-trim.jpg)
+{% lightbox '/assets/aurex/res-trim.jpg', 'md' %}
 ### Trim Resistors {.step}
 
 Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
@@ -100,34 +100,34 @@ Use clippers to trim away the excess leads. Clip as closely as possible to the j
 
 ---
 
-![diodes](%base_url%/assets/aurex/diodes.jpg)
+{% lightbox '/assets/aurex/diodes.jpg', 'md' %}
 ### Populate Diodes {.step}
 
 Place each diode so that the line on the component matches the line on the PCB. Double check the orientation, then solder and trim.
 
 ---
 
-![res-arrays](%base_url%/assets/aurex/res-arrays.jpg)
+{% lightbox '/assets/aurex/res-arrays.jpg', 'md' %}
 ### Populate Resistor Arrays {.step}
 Place the resistor arrays in the RA1 and RA2 positions. Although these parts do have a dot for alignment, the orientation does not matter. Bend a couple leads of each array to hold them in place. Then solder and trim the excess leads.
 
 ---
 
-![caps-small](%base_url%/assets/aurex/caps-small.jpg)
+{% lightbox '/assets/aurex/caps-small.jpg', 'md' %}
 ### Populate Small Capacitors {.step}
 
 Place the smaller capacitors in their respective places. These capacitors are not polarized and therefore can be placed in either direction. Solder then trim the leads.
 
 ---
 
-![trimpots](%base_url%/assets/aurex/trimpots.jpg)
+{% lightbox '/assets/aurex/trimpots.jpg', 'md' %}
 ### Populate Trimpots {.step}
 
 Populate the trimpots in the orientation marked on the PCB. Leave the trimmers alone for right now, we will set them in another step.
 
 ---
 
-![caps-large](%base_url%/assets/aurex/caps-large.jpg)
+{% lightbox '/assets/aurex/caps-large.jpg', 'md' %}
 ### Populate Large Capacitors {.step}
 The 100uF capacitors are polarized, so they must be placed in a certain direction. The positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB.
 
@@ -137,7 +137,7 @@ The 4.7uF capacitors are not polarized and can be installed in either direction.
 
 ---
 
-![ic](%base_url%/assets/aurex/ic.jpg)
+{% lightbox '/assets/aurex/ic.jpg', 'md' %}
 ### Place IC in Socket {.step}
 
 The leads of the IC must be slightly bent to fit perfectly into the socket. Press one row of leads against a flat surface until they form a 90-degree angle with the body of the IC. Then do this for the other row.
@@ -150,14 +150,10 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/resistor.html] 
-@[/checks/ic.html]
-@[/checks/diode.html]
-@[/checks/solder.html]
+{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder' %}
 ---
 
-![options](%base_url%/assets/aurex/options.jpg)
+{% lightbox '/assets/aurex/options.jpg', 'md' %}
 ### Set Options {.step}
 The AurEx is two signal processors in one: a low-frequency maximizer and a high-frequency exciter. Each has it's own dedicated saturation circuitry, so adjusting one band does not affect the other.
 
@@ -171,10 +167,10 @@ To stereo match two AurEx units, first set one the way you want it. Then use a m
 
 ---
 
-![finished](%base_url%/assets/aurex/finished.jpg)
+{% lightbox '/assets/aurex/finished.jpg', 'md' %}
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

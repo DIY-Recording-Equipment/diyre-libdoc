@@ -15,11 +15,11 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/products/jft-colour', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/jft-colour">JFT Colour!</a>
+Thank you for purchasing a [JFT Colour!](https://www.diyrecordingequipment.com/products/jft-colour)
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
-This guide is for the JFT mkII, if you purchased the earlier version see the <a href="https://www.diyrecordingequipment.com/pages/jft-manual">JFT mkI assembly guide</a>.
+This guide is for the JFT mkII, if you purchased the earlier version see the [JFT mkI assembly guide](https://www.diyrecordingequipment.com/pages/jft-manual).
 
 ## Required Tools
 
@@ -37,7 +37,7 @@ This guide is for the JFT mkII, if you purchased the earlier version see the <a 
 
 {% lightbox '/assets/jft/jft-mkii-sorting-1.1.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/jft/jft-mkii-sorting-1.1.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/jft/jft-mkii-sorting-1.1.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -170,18 +170,14 @@ trans-bc327.html
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-<!--@[/checks/diode.html]    -->
-@[/checks/transistor.html]
-@[/checks/resistor.html] 
-@[/checks/solder.html]
+{% checks 'capacitor', 'transistor', 'resistor', 'solder' %}
 ---
 
 {% lightbox '/assets/jft/finished.jpg', 'md' %}
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

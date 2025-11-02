@@ -15,9 +15,9 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/products/g-bus-compressor-kit', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/g-bus-compressor-kit">G Bus</a>!
+Thank you for purchasing a [G Bus](https://www.diyrecordingequipment.com/products/g-bus-compressor-kit)!
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
 Because the G Bus is a big, complex project, we recommend setting aside several sessions to complete it. We have gone to great lenghts to make the assembly process clear and precise, but there are hundreds off opportunities for Murphy's Law to creep in, especially if you are in a rush.
 
@@ -32,7 +32,7 @@ This is an advanced project for builders who have experience with PCB soldering 
 - Electrolytic capacitor polarity
 - Connector orientation
 
-The schematic can be found here: <a href="https://cdn.shopify.com/s/files/1/0698/2265/files/G_Bus_1.0_Schematic.pdf?v=1666358399">G Bus VCA Compressor Schematic PDF</a>.
+The schematic can be found here: [G Bus VCA Compressor Schematic PDF](https://cdn.shopify.com/s/files/1/0698/2265/files/G_Bus_1.0_Schematic.pdf?v=1666358399).
 
 So, have fun, take your time, and Don't Panic.
 
@@ -58,14 +58,14 @@ So, have fun, take your time, and Don't Panic.
 
 {% lightbox '/assets/gbus/gbus-sorting-1.1.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf" target="_blank">Resistor Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Resistor Sorting Sheet (PDF)](/assets/gbus/gbus-sorting-1.1.pdf).
 
 ## Interactive Build Map
 ---
 
 {% lightbox 'https://maps.diy.re/gbus/', 'md' %}
 
-To easily find parts and keep track of which ones you have populated, use the <a href="https://maps.diy.re/gbus/">G Bus Interactive Build Map</a>.
+To easily find parts and keep track of which ones you have populated, use the [G Bus Interactive Build Map](https://maps.diy.re/gbus/).
 
 ## Bypass Capacitors and IC Sockets (Bag 1) {.step}
 This is the only section of the guide that does not correspond to a certain circuit block. Since every block contains these parts, we'll save time by populating the entire board with these first.
@@ -84,13 +84,13 @@ Insert the IC sockets so that the notches on the sockets align with the markings
 
 CB1-CB20<br>.1u cap (x31)
 
-            <img src="%base_url%/assets/parts/com-c004.png">
+            <img src="/assets/parts/com-c004.png">
 IC1, IC6, IC7<br>DIP14 IC socket (x4)
 
-            <img src="%base_url%/assets/parts/com-h010.png">
+            <img src="/assets/parts/com-h010.png">
 IC2-IC5<br>DIP8 IC socket (x8)
 
-            <img src="%base_url%/assets/parts/com-h009.png">
+            <img src="/assets/parts/com-h009.png">
 
 ## Power Sections (Bag 2) {.step} 
 The POWER 16V section receives the +/-16v and +48v power from the external SMPS and conditions it before sending it to the rest of the circuit. The inductors and capacitors form a low-pass filter which removes noise from the power rails. The capacitors also act as reservoirs of current, providing current quickly when the circuit requires it. This prevents the power rails for "sagging" (dipping below the rated voltage) when there is a large demand for current.
@@ -110,10 +110,10 @@ shape on the circuit board. Double check the positions and orientation, then sol
 
 U1<br>7812 regulator
 
-            <img src="%base_url%/assets/parts/com-u024.png">
+            <img src="/assets/parts/com-u024.png">
 U2<br>7912 regulator
 
-            <img src="%base_url%/assets/parts/com-u025.png">
+            <img src="/assets/parts/com-u025.png">
 
 ---
 
@@ -124,7 +124,7 @@ U2<br>7912 regulator
 Place the inductors in their positions, solder, and trim. Inductors are not polarized.
 L1, L2<br>470u inductor (x2)
 
-            <img src="%base_url%/assets/parts/com-l008.png">
+            <img src="/assets/parts/com-l008.png">
 
 ---
 
@@ -135,10 +135,10 @@ The four 2200u capacitors are polarized, so they must be placed in a certain dir
 
 C1-C4<br>2200u cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c043.png">
+            <img src="/assets/parts/com-c043.png">
 C5, C6<br>4.7u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c021.png">
+            <img src="/assets/parts/com-c021.png">
 
 ---
 
@@ -149,10 +149,10 @@ C5, C6<br>4.7u cap (x2)
 Place the XLR jacks. Most will snap in place, but you may need to use some tape if they fall out before soldering. Solder the jacks but do not trim the leads.
 J1<br>5-pin XLR female jack
 
-            <img src="%base_url%/assets/parts/com-j017.png">
+            <img src="/assets/parts/com-j017.png">
 J2<br>5-pin XLR male jack
 
-            <img src="%base_url%/assets/parts/com-j016.png">
+            <img src="/assets/parts/com-j016.png">
 
 ---
 
@@ -183,21 +183,21 @@ Pay close attention to which side the components should be populated on. On the 
 
 C1_CB, C2_CB<br>100u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c022.png">
+            <img src="/assets/parts/com-c022.png">
 C3_CB, C6_CB<br>.15u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c055.png">
+            <img src="/assets/parts/com-c055.png">
 Markings: 2A154J
 
 C4_CB, C7_CB<br>.1u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c005.png">
+            <img src="/assets/parts/com-c005.png">
 C5_CB, C8_CB<br>68n cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c050.png">
+            <img src="/assets/parts/com-c050.png">
 Markings: 2A683J
 
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -208,13 +208,13 @@ Populate the various headers that connect the controls to the motherboard (MB). 
 
 CON2_CB<br>16-pin header
 
-            <img src="%base_url%/assets/parts/com-h033.png">
+            <img src="/assets/parts/com-h033.png">
 CON3_CB<br>12-pin header
 
-            <img src="%base_url%/assets/parts/com-h031.png">
+            <img src="/assets/parts/com-h031.png">
 CON4_CB<br>26-pin header
 
-            <img src="%base_url%/assets/parts/com-h035.png">
+            <img src="/assets/parts/com-h035.png">
 
 ---
 
@@ -225,12 +225,12 @@ Pay close attention to the values marked on the back when placing the potentiome
 
 VR1_CB, VR2_CB<br>B50k pot (x2)
 
-            <img src="%base_url%/assets/parts/com-e-pot-vertical.png">
+            <img src="/assets/parts/com-e-pot-vertical.png">
 Markings: B503
 
 VR3_CB<br>B10k pot
 
-            <img src="%base_url%/assets/parts/com-e-pot-vertical.png">
+            <img src="/assets/parts/com-e-pot-vertical.png">
 Markings: B103
 
 ---
@@ -244,10 +244,10 @@ Insert the switches so that the tabs on the switches match those on the PCB. The
 
 SW1_CB-SW3_CB, SW5_CB<br>2x6 switch (x4)
 
-            <img src="%base_url%/assets/parts/com-e-rotary.png">
+            <img src="/assets/parts/com-e-rotary.png">
 SW9_CB<br>4x3 switch
 
-            <img src="%base_url%/assets/parts/com-e-rotary.png">
+            <img src="/assets/parts/com-e-rotary.png">
 
 ---
 
@@ -258,10 +258,10 @@ Install the switch caps before populating the switches on the small sub-board. P
 
 SW6_CB-SW8_CB<br>DPDT switch (x3)
 
-            <img src="%base_url%/assets/parts/com-e038.png">
+            <img src="/assets/parts/com-e038.png">
 CON6B_CB<br>4-pin header
 
-            <img src="%base_url%/assets/parts/com-h021.png">
+            <img src="/assets/parts/com-h021.png">
 
 ---
 
@@ -272,13 +272,13 @@ Fasten the sub-board to CB2 via the screws, standoffs, and nuts. Then solder the
 
 4-40 screw 3/8" (x2)
 
-            <img src="%base_url%/assets/parts/hw-s001.png">
+            <img src="/assets/parts/hw-s001.png">
 4-40 nut (x2)
 
-            <img src="%base_url%/assets/parts/hw-n001.png">
+            <img src="/assets/parts/hw-n001.png">
 4-40 standoff 5/32" (x2)<br>
 
-            <img src="%base_url%/assets/parts/hw-y022.png">
+            <img src="/assets/parts/hw-y022.png">
 
 ---
 
@@ -289,7 +289,7 @@ For each wire on the harness, place the wire through the end of the terminal unt
 
 Quick-connect terminal (x4)
 
-            <img src="%base_url%/assets/parts/hw-y023.png">
+            <img src="/assets/parts/hw-y023.png">
 
 ---
 
@@ -324,35 +324,35 @@ Note that the 10k and 120R resistors have the same color code in opposite direct
 
 C7<br> 100u cap
 
-            <img src="%base_url%/assets/parts/com-c022.png">
+            <img src="/assets/parts/com-c022.png">
 C8<br>100p cap
 
-            <img src="%base_url%/assets/parts/com-c008.png">
+            <img src="/assets/parts/com-c008.png">
 C9, C10<br>3.3n cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c013.png">
+            <img src="/assets/parts/com-c013.png">
 CON1<br>3-pin header
 
-            <img src="%base_url%/assets/parts/com-h038.png">
+            <img src="/assets/parts/com-h038.png">
 CON2<br>16-pin header
 
-            <img src="%base_url%/assets/parts/com-h033.png">
+            <img src="/assets/parts/com-h033.png">
 CON3<br>12-pin header
 
-            <img src="%base_url%/assets/parts/com-h031.png">
+            <img src="/assets/parts/com-h031.png">
 CON4<br>26-pin header
 
-            <img src="%base_url%/assets/parts/com-h035.png">
+            <img src="/assets/parts/com-h035.png">
 CON5<br>4-pin header
 
-            <img src="%base_url%/assets/parts/com-h039.png">
+            <img src="/assets/parts/com-h039.png">
 D1-D3, D11<br>1N4004 diode (x5)
 
-            <img src="%base_url%/assets/parts/com-d005.png">
+            <img src="/assets/parts/com-d005.png">
 IC1, IC7<br>LF347N opamp (x2)
 
-            <img src="%base_url%/assets/parts/com-u-dip14.png">
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+            <img src="/assets/parts/com-u-dip14.png">
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -363,7 +363,7 @@ You can hold the relays in place for soldering with tape or by bending the leads
 
 U3-U6<br>24V relays (x5)
 
-            <img src="%base_url%/assets/parts/com-z010.png">
+            <img src="/assets/parts/com-z010.png">
 
 ---
 
@@ -398,7 +398,7 @@ Use the ribbon cable and IN switch wiring harness to connect CB2 and the IN swit
 Place the TRS jacks. Hold them in place with tape or by bending the leads, then solder and trim.
 J3<br>TRS jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j010.png">
+            <img src="/assets/parts/com-j010.png">
 
 ---
 
@@ -409,10 +409,10 @@ J3<br>TRS jack (x2)
 Place the XLR jacks. Most will snap in place, but you may need to use some tape if they fall out before soldering. Solder the jacks but do not trim the leads.
 J4<br>3-pin XLR male jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j007.png">
+            <img src="/assets/parts/com-j007.png">
 J5, J6<br>Combo jack (x3)
 
-            <img src="%base_url%/assets/parts/com-j024.png">
+            <img src="/assets/parts/com-j024.png">
 
 ## Balanced Input/Output and Unity Trim (Bag 6) {.step}
 
@@ -427,35 +427,35 @@ Populate the ICs, resistors, and capacitors. Do not populate the transformers ye
 
 C11, C12, C20<br>22u cap (x6)
 
-            <img src="%base_url%/assets/parts/com-c060.png">
+            <img src="/assets/parts/com-c060.png">
 C13, C15, C19<br>100u cap (x6)
 
-            <img src="%base_url%/assets/parts/com-c022.png">
+            <img src="/assets/parts/com-c022.png">
 C14<br>22p cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c003.png">
+            <img src="/assets/parts/com-c003.png">
 Markings: 22j
 
 C16<br>220u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c002.png">
+            <img src="/assets/parts/com-c002.png">
 C17, C18<br>100p cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c008.png">
+            <img src="/assets/parts/com-c008.png">
 Markings: bc 101
 
 IC2, IC3<br>NE5532 opamp (x4)
 
-            <img src="%base_url%/assets/parts/com-u-dip8.png">
+            <img src="/assets/parts/com-u-dip8.png">
 RA1, RA2<br>10k array (x4)
 
-            <img src="%base_url%/assets/parts/com-z006.png">
+            <img src="/assets/parts/com-z006.png">
 VR1<br>50k trimpot (x2)
 
-            <img src="%base_url%/assets/parts/com-e036.png">
+            <img src="/assets/parts/com-e036.png">
 Markings: W503
 
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -492,29 +492,29 @@ Populate the ICs, diodes, resistors, capacitors, and trimpots. Remember that the
 
 C21<br>22p cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c003.png">
+            <img src="/assets/parts/com-c003.png">
 Markings: 22j
 
 C22, C24<br>22u cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c060.png">
+            <img src="/assets/parts/com-c060.png">
 C23<br>100p cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c008.png">
+            <img src="/assets/parts/com-c008.png">
 Markings: bc 101
 
 D4, D5<br>1N4148 diode (x4)
 
-            <img src="%base_url%/assets/parts/com-d015.png">
+            <img src="/assets/parts/com-d015.png">
 IC4<br>NE5532 opamp (x2)
 
-            <img src="%base_url%/assets/parts/com-u-dip8.png">
+            <img src="/assets/parts/com-u-dip8.png">
 VR2<br>50k trimpot (x2)
 
-            <img src="%base_url%/assets/parts/com-e037.png">
+            <img src="/assets/parts/com-e037.png">
 Markings: W503
 
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -527,10 +527,10 @@ Place the right-angle side of the 7-pin connectors through the VCA sub-boards fr
 
 VCA1A<br>2181C VCA PCB (x2)
 
-            <img src="%base_url%/assets/parts/pcb-082.png">
+            <img src="/assets/parts/pcb-082.png">
 VCA1A<br>12-pin header (x2)
 
-            <img src="%base_url%/assets/parts/com-h017.png">
+            <img src="/assets/parts/com-h017.png">
 
 ---
 
@@ -557,26 +557,26 @@ Populate the ICs, resistors, and capacitors. Remember that the large caps and IC
 
 C25, C28<br>22p cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c003.png">
+            <img src="/assets/parts/com-c003.png">
 Markings: 22j
 
 C26<br>82n cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c057.png">
+            <img src="/assets/parts/com-c057.png">
 Markings: 82nJ63
 
 C27<br>3.3n cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c013.png">
+            <img src="/assets/parts/com-c013.png">
 Markings: 3n3j100
 
 C29<br>22u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c060.png">
+            <img src="/assets/parts/com-c060.png">
 IC5<br>NE552 opamp (x2)
 
-            <img src="%base_url%/assets/parts/com-u-dip8.png">
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+            <img src="/assets/parts/com-u-dip8.png">
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -608,30 +608,30 @@ Populate the ICs, diodes, resistors, capacitors, and VCA. Note that C30, the dio
 
 C30<br>6.8u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c059.png">
+            <img src="/assets/parts/com-c059.png">
 C31<br>22p cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c003.png">
+            <img src="/assets/parts/com-c003.png">
 Markings: 22j
 
 C32<br>100p cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c008.png">
+            <img src="/assets/parts/com-c008.png">
 Markings: bc 101
 
 D6-D10<br>1N4148 diode (x10)
 
-            <img src="%base_url%/assets/parts/com-d015.png">
+            <img src="/assets/parts/com-d015.png">
 IC6<br>LF347 opamp (x2)
 
-            <img src="%base_url%/assets/parts/com-u-dip14.png">
+            <img src="/assets/parts/com-u-dip14.png">
 VCA2<br>2181C VCA PCB (x2)
 
-            <img src="%base_url%/assets/parts/pcb-082.png">
+            <img src="/assets/parts/pcb-082.png">
 VCA2<br>12-pin header (x2)
 
-            <img src="%base_url%/assets/parts/com-h017.png">
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+            <img src="/assets/parts/com-h017.png">
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ## Meter, Attack, Release, and Ratio (Bag 10) {.step}
 The ratio of a compressor is equal to the amount of gain in the SC. So the RATIO switch sets the gain of IC5.2 by selecting between R72-R74. The other resistors in this section adjust the threshold by adding different amounts of offset to the CV. This prevents big jumps in level as the ratios change.
@@ -649,20 +649,20 @@ Populate the diodes, resistors, capacitors, and trimpots. The tantalum capacitor
 
 C33-C36, C38<br>.47u cap (x5)
 
-            <img src="%base_url%/assets/parts/com-c061.png">
+            <img src="/assets/parts/com-c061.png">
 Markings: 474L
 
 C37<br>6.8u cap
 
-            <img src="%base_url%/assets/parts/com-c059.png">
+            <img src="/assets/parts/com-c059.png">
 Markings: 685H
 
 VR3<br>5k trimpot
 
-            <img src="%base_url%/assets/parts/com-e036.png">
+            <img src="/assets/parts/com-e036.png">
 Markings: W502
 
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -673,19 +673,19 @@ Populate the diodes, resistors, capacitors, and trimpot. Note that the 10u NP ca
 
 C39-C42<br>10u NP cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c001.png">
+            <img src="/assets/parts/com-c001.png">
 C43<br>100p cap
 
-            <img src="%base_url%/assets/parts/com-c008.png">
+            <img src="/assets/parts/com-c008.png">
 D12, D13<br>1N4148 diode (x2)
 
-            <img src="%base_url%/assets/parts/com-d015.png">
+            <img src="/assets/parts/com-d015.png">
 VR4<br>50k trimpot
 
-            <img src="%base_url%/assets/parts/com-e037.png">
+            <img src="/assets/parts/com-e037.png">
 Markings: W503
 
-Resistors<br><a href="%base_url%/assets/gbus/gbus-sorting-1.1.pdf">See sorting sheet</a>
+Resistors<br>[See sorting sheet](/assets/gbus/gbus-sorting-1.1.pdf)
 
 ---
 
@@ -731,7 +731,7 @@ After double checking, connect the wiring harness to CON1.
 
 Quick-connect terminal (x2)
 
-            <img src="%base_url%/assets/parts/hw-y024.png">
+            <img src="/assets/parts/hw-y024.png">
 
 ---
 
@@ -775,10 +775,10 @@ To avoid damaging the connectors during this section, disconnect the CBs, meter,
 
 PCB screw (x6)
 
-            <img src="%base_url%/assets/parts/hw-s027.png">
+            <img src="/assets/parts/hw-s027.png">
 Transformer screw (x4)
 
-            <img src="%base_url%/assets/parts/hw-s017.png">
+            <img src="/assets/parts/hw-s017.png">
 
 ---
 
@@ -820,7 +820,7 @@ Screw the U-bracket to the bottom of the chassis then connect the cables to the 
 
 U-bracket screw (x3)
 
-            <img src="%base_url%/assets/parts/hw-s026.png">
+            <img src="/assets/parts/hw-s026.png">
 
 ---
 
@@ -831,7 +831,7 @@ Fasten the front panel to the chassis. Then place the meter and IN switch throug
 
 Front panel screw (x4)
 
-            <img src="%base_url%/assets/parts/hw-s024.png">
+            <img src="/assets/parts/hw-s024.png">
 
 ---
 
@@ -895,7 +895,7 @@ Place the lid on the case with the countersunk side facing up. Screw in the thre
 
 Lid screw (x10)
 
-            <img src="%base_url%/assets/parts/hw-s026.png">
+            <img src="/assets/parts/hw-s026.png">
 
 ---
 
@@ -903,10 +903,10 @@ Lid screw (x10)
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ## Modding the G Bus
-There are a lot more mays to mod the G Bus than we could fit on the front panel. So if you want to customize your G Bus, head over to the <a href="https://support.diy.re/category/45-g-bus">G Bus Mods page</a>. Please keep in mind that we cannot offer support for the mods. There are simply too many variables that change once you start modding, especially after several mods. You're the man now, dog!
+There are a lot more mays to mod the G Bus than we could fit on the front panel. So if you want to customize your G Bus, head over to the [G Bus Mods page](https://support.diy.re/category/45-g-bus). Please keep in mind that we cannot offer support for the mods. There are simply too many variables that change once you start modding, especially after several mods. You're the man now, dog!
 
 ---
 

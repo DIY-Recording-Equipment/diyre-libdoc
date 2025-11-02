@@ -13,13 +13,11 @@ sorting_sheet_url: /assets/ctx/ctx-mkii-sorting-1.0.pdf
 schematic_url:
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/ctx-colour', 'md' %}
+Thank you for purchasing a [CTX Colour!](https://www.diyrecordingequipment.com/products/ctx-colour)
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/ctx-colour">CTX Colour!</a>
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
-
-This guide is for the CTX mkII, if you purchased the earlier version see the <a href="https://www.diyrecordingequipment.com/pages/ctx-manual">CTX mkI assembly guide</a>.
+This guide is for the CTX mkII, if you purchased the earlier version see the [CTX mkI assembly guide](https://www.diyrecordingequipment.com/pages/ctx-manual).
 
 ## Required Tools
 
@@ -37,18 +35,15 @@ This guide is for the CTX mkII, if you purchased the earlier version see the <a 
 
 {% lightbox '/assets/ctx/ctx-mkii-sorting-1.0.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/ctx/ctx-mkii-sorting-1.0.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/ctx/ctx-mkii-sorting-1.0.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
 ---
 
-    <a
-href="%base_url%/assets/ctx/colour-standoffs.jpg"
-target="_blank"
->
-        <img src="%base_url%/assets/ctx/colour-standoffs-600.jpg" />
-      </a>
+    [
+        <img src="/assets/ctx/colour-standoffs-600.jpg" />
+      ](/assets/ctx/colour-standoffs.jpg)
 ### Insert Standoffs {.step}
 
 Note that there are two different ends on the plastic standoffs. The locking end has tabs with a right angle to prevent them from being removed after installation, while the non-locking end has smooth tabs. Insert the locking ends of the standoffs from the bottom of the PCB.
@@ -158,7 +153,7 @@ Look closely at the transformer and find the four pins with small magnet wires a
 ### Insert DOA {.step}
 Follow the instructions in the RED-25 Assembly Guide:
 
-    <a href="https://www.diyrecordingequipment.com/pages/red-25-assembly-guide">RED-25 Assembly Guide</a>
+    [RED-25 Assembly Guide](https://www.diyrecordingequipment.com/pages/red-25-assembly-guide)
 
 Once assembled, insert the DOA into the socket.
 
@@ -167,20 +162,14 @@ Once assembled, insert the DOA into the socket.
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-<!-- @[/checks/diode.html]     -->
-@[/checks/transistor.html]
-@[/checks/resistor.html] 
-@[/checks/solder.html]
-<!-- @[/checks/array.html] -->
-<!-- @[/checks/ic.html] -->
+{% checks 'capacitor', 'transistor', 'resistor', 'solder' %}
 ---
 
 {% lightbox '/assets/ctx/finished.jpg', 'md' %}
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

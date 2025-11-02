@@ -60,6 +60,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addShortcode("resCalc", libdocFunctions.shortcodes.resCalc);
     eleventyConfig.addShortcode("stepParts", libdocFunctions.shortcodes.stepParts);
     eleventyConfig.addShortcode("stepResistors", libdocFunctions.shortcodes.stepResistors);
+    eleventyConfig.addShortcode("checks", libdocFunctions.shortcodes.checks);
     // END SHORTCODES
 
     // START FILE COPY

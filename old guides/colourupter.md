@@ -13,34 +13,32 @@ sorting_sheet_url: /assets/colourupter/colourupter-sorting-2.0.pdf
 schematic_url:
 ---
 
-{% lightbox 'https://www.diyrecordingequipment.com/products/colourupter', 'md' %}
+Thank you for purchasing a [Colourupter](https://www.diyrecordingequipment.com/products/colourupter).
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/colourupter">Colourupter</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+{ % alert, 'Before you begin, check the revision of your PCB. If yours has the version number "v2.5" on the bottom you are on the correct page. If it does not, please follow the [Colourupter mkI assembly guide](https://www.diyrecordingequipment.com/pages/colourupter-manual).', 'warning', 'Revision Check' %}
 
-Before you begin, check the revision of your PCB. If yours has the version number "v2.5" on the bottom you are on the correct page. If it does not, please follow the <a href="https://www.diyrecordingequipment.com/pages/colourupter-manual">Colourupter mkI assembly guide</a>.
+## Tools
 
-## Required Tools
+### Required
 
 {% tools 'soldering-iron' %}
 {% tools 'solder' %}
 {% tools 'wire-cutters' %}
 {% tools 'phillips' %}
 
-## Optional Tools
+## Optional
 
 {% tools 'multi-meter' %}
 {% tools 'desoldering-pump' %}
 {% tools '500ext' %}
 {% tools 'rew' %}
 
-## Component Sorting Sheet
+##$ Component Sorting Sheet
 ---
 
-{% lightbox '/assets/colourupter/colourupter-sorting-2.0.pdf', 'md' %}
-
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/colourupter/colourupter-sorting-2.0.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+{% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/colourupter/colourupter-sorting-2.0.pdf)', '/assets/pdf-download.png' %}
 
 ## Standoffs, Header, and IC Socket (Bag 1) {.step}
 
@@ -80,6 +78,7 @@ Bend the resistor leads 90 degrees at the body so they can be inserted into the 
 
 ---
 
+{% resCalc %}
 ### Sort Resistors {.step}    
 
 Resistor values are identified by colored bands on the body of the resistor. To sort resistors, use our [Resistor Color Code Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator) or test them with a multi-meter set to read resistance. (Pro tip: to measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.)
@@ -151,20 +150,17 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/resistor.html] 
-@[/checks/ic.html]
-@[/checks/diode.html]
-@[/checks/solder.html]
+{% checks 'capacitor', 'resistor', 'ic', 'diode', 'solder' %}
+
 ## Calibration {.step}
 
-No two vactrols are exactly alike. So to ensure predictable behavior and acceptable stereo matching, we need to calibrate the Colourupter. If you are using the Colourupter in a 500-series rack, the following steps will be easier with an extender like the <a href="https://www.diyrecordingequipment.com/products/500ext-500-series-extender-kit">500EXT</a>.
+No two vactrols are exactly alike. So to ensure predictable behavior and acceptable stereo matching, we need to calibrate the Colourupter. If you are using the Colourupter in a 500-series rack, the following steps will be easier with an extender like the [500EXT](https://www.diyrecordingequipment.com/products/500ext-500-series-extender-kit).
 
 ---
+{% lightbox '/assets/colourupter/rew.jpg', 'md' %}
 
-    <img src="%base_url%/assets/colourupter/rew-600.jpg" />
 ### Set Up for Testing {.step}
-Download and install <a href="https://www.roomeqwizard.com/">Room EQ Wizard</a> on your computer. In Preferences choose your audio interface for the Input and Output Device and set the Input and Output to the left/channel 1.
+Download and install [Room EQ Wizard](https://www.roomeqwizard.com/) on your computer. In Preferences choose your audio interface for the Input and Output Device and set the Input and Output to the left/channel 1.
 
 Connect the Colour host with your Colourupter to the left/channel 1 of your interface.
 
@@ -199,7 +195,7 @@ Use a screwdriver to adjust the VR1 trimpot until the level at the input is -15d
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

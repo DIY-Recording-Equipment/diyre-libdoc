@@ -13,11 +13,11 @@ sorting_sheet_url: /assets/ssvca/ssvca-sorting.pdf
 schematic_url:
 ---
 
-<img src="%base_url%/assets/ssvca/finished-600.jpg">
+<img src="/assets/ssvca/finished-600.jpg">
   Welcome to the SS VCA assembly guide.
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/ssvca">SS VCA</a>
+Thank you for purchasing a [SS VCA](https://www.diyrecordingequipment.com/products/ssvca)
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
 ## Required Tools
 
@@ -36,7 +36,7 @@ If this is your first DIY project ever, we recommend reading our <a href="http:/
 
 {% lightbox '/assets/ssvca/ssvca-sorting.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/ssvca/ssvca-sorting.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/ssvca/ssvca-sorting.pdf).
 
 ## Standoffs, Header, and IC Socket (Bag 1) {.step}
 
@@ -183,20 +183,16 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/diode.html]    
-@[/checks/resistor.html] 
-@[/checks/solder.html]
-@[/checks/ic.html]
+{% checks 'capacitor', 'diode', 'resistor', 'solder', 'ic' %}
 ## Calibration {.step}
 
-The SS VCA requires just one parameter to be calibrated: the make-up gain. The make-up gain is variable so that you can adjust it depending on the amount of compression you typically use. But for a good starting point, we will set it to 3dB. If you are using the SS VCA in a 500-series rack, the following steps will be easier with an extender like the <a href="https://www.diyrecordingequipment.com/products/500ext-500-series-extender-kit">500EXT</a>.
+The SS VCA requires just one parameter to be calibrated: the make-up gain. The make-up gain is variable so that you can adjust it depending on the amount of compression you typically use. But for a good starting point, we will set it to 3dB. If you are using the SS VCA in a 500-series rack, the following steps will be easier with an extender like the [500EXT](https://www.diyrecordingequipment.com/products/500ext-500-series-extender-kit).
 
 ---
 
-    <img src="%base_url%/assets/colourupter/rew-600.jpg" />
+    <img src="/assets/colourupter/rew-600.jpg" />
 ### Set Up for Testing {.step}
-Download and install <a href="https://www.roomeqwizard.com/">Room EQ Wizard</a> on your computer. In Preferences choose your audio interface for the Input and Output Device and set the Input and Output to the left/channel 1.
+Download and install [Room EQ Wizard](https://www.roomeqwizard.com/) on your computer. In Preferences choose your audio interface for the Input and Output Device and set the Input and Output to the left/channel 1.
 
 Connect the Colour host with the SS VCA to the left/channel 1 of your interface.
 

@@ -145,7 +145,9 @@ Those positions are T1, T2, T5, and T7
 
 ### Populate BC337 Transistors {.step}
 
-Place the transistors that do have a silver marking in the positions with a filled-in shape. Check that they are all oriented according to the shape on the PCB, then solder and trim.</p>    <p>Those positions are T3, T4, and T6
+Place the transistors that do have a silver marking in the positions with a filled-in shape. Check that they are all oriented according to the shape on the PCB, then solder and trim.
+
+Those positions are T3, T4, and T6
 
 ---
 
@@ -164,23 +166,18 @@ These capacitors are polarized, so they must be placed in a certain direction. T
 
 ---
 
-## Final Checks {.step}
+## Final Checks
 
 Before you wrap up, check the following things:
 
-- Capacitor orientation: Is the stripe on the cap on the opposite side from the "+" marking on the PCB?
-- Diode orientation: Do the stripes on the diode match those on the PCB?
-- Transistor orientation: Does the shape of the transistor match the outline on the PCB?
-- Resistors: Are all the resistors in the correct positions?
-- Soldering: Is every solder joint shiny and clean? If one is cloudy or misshapen, try reheating it for 8 seconds and adding a tiny bit more solder.
-- Trimming: Are all of the excess leads trimmed down as close to the joint as possible?
+{% checks 'capacitor', 'resistor', 'transistor', 'diode', 'solder', 'trim' %}
 
 ---
 
 {% lightbox '/assets/15ips3/finished.jpg', 'md' %}
 
-### Finished! {.step}
-All good? Congrats on finishing your build! Have a question or problem? <a href="http://www.diyrecordingequipment.com/pages/support">Drop us a line.</a>
+### Finished!
+All good? Congrats on finishing your build! Have a question or problem? <a href="https://support.diy.re">Drop us a line.</a>
 
 ---
 

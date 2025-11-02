@@ -14,11 +14,11 @@ schematic_url:
 ---
 
 Welcome to the Toneloc assembly guide.
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/toneloc-level-loc-compressor-colour">Toneloc</a>
+Thank you for purchasing a [Toneloc](https://www.diyrecordingequipment.com/products/toneloc-level-loc-compressor-colour)
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
-This guide is for the Toneloc 2.0, if you purchased the earlier version see the <a href="https://www.diyrecordingequipment.com/pages/tone-loc-assembly-guide">Toneloc 1.0 assembly guide</a>.
+This guide is for the Toneloc 2.0, if you purchased the earlier version see the [Toneloc 1.0 assembly guide](https://www.diyrecordingequipment.com/pages/tone-loc-assembly-guide).
 
 ## Required Tools
 
@@ -36,7 +36,7 @@ This guide is for the Toneloc 2.0, if you purchased the earlier version see the 
 
 {% lightbox '/assets/toneloc/toneloc-sorting-2.0.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/toneloc/toneloc-sorting-2.0.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/toneloc/toneloc-sorting-2.0.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -121,10 +121,7 @@ Some of these capacitors are polarized, so they must be placed in a certain dire
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]   
-@[/checks/transistor.html]
-@[/checks/ic.html]
-@[/checks/solder.html]
+{% checks 'capacitor', 'transistor', 'ic', 'solder' %}
 ---
 
 {% lightbox '/assets/toneloc/finished.jpg', 'md' %}

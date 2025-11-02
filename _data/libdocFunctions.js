@@ -16,6 +16,7 @@ const libdocSystem =        require("./libdocSystem.json");
 const libdocMessages =      require("./libdocMessages.json");
 const icomoon =             require("../core/assets/fonts/icomoon/selection.json");
 const tools =               require("./tools.json");
+const checks =              require("./checks.json");
 // END JSON IMPORT WORKAROUND
 
 import libdocUtils          from    "./libdocUtils.js";
@@ -804,6 +805,33 @@ ${navigationMarkup}
                 console.error('stepResistors shortcode error:', e);
                 return `<aside class="widget widget-alert"><div class="alert alert-danger">Error loading resistor data: ${e.message}</div></aside>`;
             }
+        },
+        checks: async function(...slugs) {
+            // This shortcode generates an unordered list of check descriptions from checks.json
+            // Usage: {% checks 'resistor', 'capacitor', 'diode' %}
+
+            if (slugs.length === 0) {
+                console.warn('checks shortcode: No slugs provided. Usage: {% checks \'slug1\', \'slug2\', ... %}');
+                return '';
+            }
+
+            let checkItems = '';
+
+            slugs.forEach(slug => {
+                const check = checks.find(c => c.slug === slug);
+
+                if (check) {
+                    checkItems += `<li>${check.description}</li>`;
+                } else {
+                    console.warn(`checks shortcode: check with slug "${slug}" not found in checks.json`);
+                }
+            });
+
+            if (checkItems === '') {
+                return '';
+            }
+
+            return `<ul class="checks-list">${checkItems}</ul>`;
         }
     }
 }

@@ -15,9 +15,9 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/products/tsx-guitar-overdrive-colour', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/tsx-guitar-overdrive-colour">TSX Colour</a>.
+Thank you for purchasing a [TSX Colour](https://www.diyrecordingequipment.com/products/tsx-guitar-overdrive-colour).
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
 ## Required Tools
 
@@ -35,7 +35,7 @@ If this is your first DIY project ever, we recommend reading our <a href="http:/
 
 {% lightbox '/assets/tsx/tsx-sorting-sheet.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/tsx/tsx-sorting-sheet.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/tsx/tsx-sorting-sheet.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -146,16 +146,12 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/resistor.html]
-@[/checks/diode.html]
-@[/checks/ic.html]
-@[/checks/solder.html]
+{% checks 'capacitor', 'resistor', 'diode', 'ic', 'solder' %}
 ---
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

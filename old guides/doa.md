@@ -15,11 +15,11 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/products/doa-colour-kit', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/doa-colour-kit">DOA Colour</a>.
+Thank you for purchasing a [DOA Colour](https://www.diyrecordingequipment.com/products/doa-colour-kit).
 
-Before you begin, check the revision of your PCB. If yours says "Rev A 2015" on the top side, follow the <a href="https://www.diyrecordingequipment.com/pages/doa-colour-assembly-guide">Rev A assembly guide</a>. If yours does not say "Rev A" on the front, you are on the correct page.
+Before you begin, check the revision of your PCB. If yours says "Rev A 2015" on the top side, follow the [Rev A assembly guide](https://www.diyrecordingequipment.com/pages/doa-colour-assembly-guide). If yours does not say "Rev A" on the front, you are on the correct page.
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
 ## Required Tools
 
@@ -37,7 +37,7 @@ If this is your first DIY project ever, we recommend reading our <a href="http:/
 
 {% lightbox '/assets/doa/doa-sorting-1.1.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/doa/doa-sorting-1.1.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/doa/doa-sorting-1.1.pdf).
 
 ## Standoffs, Header, and DOA Sockets (Bag 1) {.step}
 
@@ -135,7 +135,7 @@ The three 100uF capacitors are polarized, so they must be placed in a certain di
 ### Insert DOA {.step}
 Follow the instructions in the RED-25 Assembly Guide:
 
-    <a href="https://www.diyrecordingequipment.com/pages/red-25-assembly-guide">RED-25 Assembly Guide</a>
+    [RED-25 Assembly Guide](https://www.diyrecordingequipment.com/pages/red-25-assembly-guide)
 
 Once assembled, insert the DOA into the socket.
 
@@ -144,16 +144,14 @@ Once assembled, insert the DOA into the socket.
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/resistor.html] 
-@[/checks/solder.html]
+{% checks 'capacitor', 'resistor', 'solder' %}
 ---
 
 {% lightbox '/assets/doa/finished.jpg', 'md' %}
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

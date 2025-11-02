@@ -15,9 +15,9 @@ schematic_url:
 
 {% lightbox '[kit url in store]', 'md' %}
 
-Thank you for purchasing a <a href="[kit url in store]">MB2</a>
+Thank you for purchasing a [MB2]([kit url in store])
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
 ## Required Tools
 
@@ -41,16 +41,16 @@ If this is your first DIY project ever, we recommend reading our <a href="http:/
 Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
 R1, R2<br>10k resistor (x4)
 
-            <img src="%base_url%/assets/parts/com-r-10k.png">
+            <img src="/assets/parts/com-r-10k.png">
 R3, R4<br>68R resistor (x4)
 
-            <img src="%base_url%/assets/parts/com-r-68.png">
+            <img src="/assets/parts/com-r-68.png">
 R5, R6<br>2.7k resistor (x4)
 
-            <img src="%base_url%/assets/parts/com-r-2.7k.png">
+            <img src="/assets/parts/com-r-2.7k.png">
 R7, R8<br>470k resistor (x4)
 
-            <img src="%base_url%/assets/parts/com-r-470k.png">
+            <img src="/assets/parts/com-r-470k.png">
 
 ---
 
@@ -93,7 +93,7 @@ Use clippers to trim away the excess leads. Clip as closely as possible to the j
 Note that there are two different types of transistors in this bag: some with silver markings on top and some without. Those without a marking are the BC327s. Place them in the positions that have an outline of the transistor instead of a filled-in shape. Make sure the transistors are aligned so the flat edge matches that of the outline on the board. Then solder and trim.
 T1, T2<br>BC327 transistor (x4)
 
-        <img src="%base_url%/assets/parts/com-t-to92.png">
+        <img src="/assets/parts/com-t-to92.png">
 
 ---
 
@@ -108,7 +108,7 @@ These components are the functional core of the MB2. Their job is to provide 26d
 
 T3<br>LSK389 transistor (x2)
 
-        <img src="%base_url%/assets/parts/com-t015.png">
+        <img src="/assets/parts/com-t015.png">
 
 ## Capacitors {.step}
 
@@ -128,7 +128,7 @@ Place the smaller capacitors in their respective places. These capacitors are no
 
 C3, C4<br>0.22u cap (x4)
 
-        <img src="%base_url%/assets/parts/com-c019.png">
+        <img src="/assets/parts/com-c019.png">
 
 ---
 
@@ -139,7 +139,7 @@ C3, C4<br>0.22u cap (x4)
 These capacitors are polarized, so they must be placed in a certain direction. The positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB. Double check their orientation, then solder and trim.
 C5<br>100u cap
 
-        <img src="%base_url%/assets/parts/com-c028.png">
+        <img src="/assets/parts/com-c028.png">
 
 ## Jacks and Case {.step}
 
@@ -153,13 +153,13 @@ Screw the input and output panels to the XLR jacks with the longer, thread-cutti
 
 J2, J6<br>3-pin XLR male jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j007.png">
+            <img src="/assets/parts/com-j007.png">
 J4, J8<br>3-pin XLR female jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j008.png">
+            <img src="/assets/parts/com-j008.png">
 XLR screw (x8)
 
-            <img src="%base_url%/assets/parts/hw-s022.png">
+            <img src="/assets/parts/hw-s022.png">
 
 ---
 
@@ -184,7 +184,7 @@ Re-attach the remaining panel to the XLRs. Then fasten the panels to the case wi
 
 PCB bracket screw (x8)
 
-            <img src="%base_url%/assets/parts/hw-s027.png">
+            <img src="/assets/parts/hw-s027.png">
 
 ---
 
@@ -200,10 +200,7 @@ Remove the backing from the foam pad and apply it to the bottom of the case.
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]    
-@[/checks/transistor.html]
-@[/checks/resistor.html] 
-@[/checks/solder.html]
+{% checks 'capacitor', 'transistor', 'resistor', 'solder' %}
 ---
 
 {% lightbox '/assets/mb2/test-input.jpg', 'md' %}
@@ -226,7 +223,7 @@ Next, set a channel in your DAW to record the channel you plugged the MB2 into. 
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

@@ -15,11 +15,11 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/products/mojo-maestro-passive-clipping-colour', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/mojo-maestro-passive-clipping-colour">Mojo Maestro Colour</a>.
+Thank you for purchasing a [Mojo Maestro Colour](https://www.diyrecordingequipment.com/products/mojo-maestro-passive-clipping-colour).
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
-Before you begin, check the revision of your PCB. If yours says "v1.2 2019" on the top side, follow the <a href="https://www.diyrecordingequipment.com/pages/mojo-maestro-assembly-guide">version 1.x assembly guide</a>. If yours does not say "v1.2 2019" on the top, you are on the correct page.
+Before you begin, check the revision of your PCB. If yours says "v1.2 2019" on the top side, follow the [version 1.x assembly guide](https://www.diyrecordingequipment.com/pages/mojo-maestro-assembly-guide). If yours does not say "v1.2 2019" on the top, you are on the correct page.
 
 ## Required Tools
 
@@ -37,7 +37,7 @@ Before you begin, check the revision of your PCB. If yours says "v1.2 2019" on t
 
 {% lightbox '/assets/mojo-maestro/mojo-sorting-2.0.pdf', 'md' %}
 
-To identify and keep track of every part in the kit, download and print the <a href="%base_url%/assets/mojo-maestro/mojo-sorting-2.0.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet (PDF)](/assets/mojo-maestro/mojo-sorting-2.0.pdf).
 
 ## Standoffs and Header (Bag 1) {.step}
 
@@ -156,11 +156,7 @@ IC polarity is indicated by a dot or notch on one side of the body. Align this s
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/resistor.html]
-@[/checks/diode.html]
-@[/checks/ic.html]
-@[/checks/solder.html]
+{% checks 'capacitor', 'resistor', 'diode', 'ic', 'solder' %}
 ---
 
 {% lightbox '/assets/mojo-maestro/options.jpg', 'md' %}

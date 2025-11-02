@@ -15,11 +15,11 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/products/l2a', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/products/l2a">L2A Re-amplifier Kit!</a>
+Thank you for purchasing a [L2A Re-amplifier Kit!](https://www.diyrecordingequipment.com/products/l2a)
 
-This guide is for the L2A Rev E, launched August 2021. If you have an earlier version, head over to the <a href="https://www.diyrecordingequipment.com/pages/l2a-manual">L2A Rev D Assembly Guide</a>.
+This guide is for the L2A Rev E, launched August 2021. If you have an earlier version, head over to the [L2A Rev D Assembly Guide](https://www.diyrecordingequipment.com/pages/l2a-manual).
 
-If this is your first DIY project ever, we recommend reading our <a href="http://www.diyrecordingequipment.com/pages/getting-started">Getting Started Guide</a>.
+If this is your first DIY project ever, we recommend reading our [Getting Started Guide](http://www.diyrecordingequipment.com/pages/getting-started).
 
 ## Required Tools
 
@@ -136,8 +136,7 @@ Attach the input panel over the switch and XLR jack, and screw the panel to the 
 
 Before putting case together, check the following things:
 
-@[/checks/resistor.html] 
-@[/checks/solder.html]
+{% checks 'resistor', 'solder' %}
 ---
 
 {% lightbox '/assets/l2a/slide-pcb.jpg', 'md' %}
@@ -205,7 +204,7 @@ Then switch between the LIFT and GROUND positions. With some setups one position
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

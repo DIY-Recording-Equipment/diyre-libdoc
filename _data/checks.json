@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "capacitor",
+    "description": "Capacitor orientation: Is the stripe on the cap on the opposite side from the \"+\" marking on the PCB?"
+  },
+  {
+    "slug": "diode",
+    "description": "Diode orientation: Do the stripes on the diode match those on the PCB?"
+  },
+  {
+    "slug": "ic",
+    "description": "IC orientation: Does the dot/notch on the IC align with the notches on the socket and PCB?"
+  },
+  {
+    "slug": "resistor-array",
+    "description": "Resistor array orientation: Does the dot on the array align with the dot on the PCB?"
+  },
+  {
+    "slug": "resistor",
+    "description": "Resistors: Are all the resistors in the correct positions?"
+  },
+  {
+    "slug": "solder",
+    "description": "Soldering: Is every solder joint shiny and clean? If one is cloudy or misshapen, try reheating it for 8 seconds and adding a tiny bit more solder."
+  },
+  {
+    "slug": "trim",
+    "description": "Trimming: Are all of the excess leads trimmed down as close to the joint as possible?"
+  },
+  {
+    "slug": "transistor",
+    "description": "Transistor orientation: Does the shape of the transistor match the outline on the PCB?"
+  }
+]

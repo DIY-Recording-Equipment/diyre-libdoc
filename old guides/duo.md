@@ -16,7 +16,7 @@ schematic_url:
 
 {% lightbox 'https://www.diyrecordingequipment.com/collections/colour/products/colour-duo', 'md' %}
 
-Thank you for purchasing a <a href="https://www.diyrecordingequipment.com/collections/colour/products/colour-duo">Colour Duo!</a>
+Thank you for purchasing a [Colour Duo!](https://www.diyrecordingequipment.com/collections/colour/products/colour-duo)
 
 The Duo is intended for intermediate builders. If you have built a 500-series module or several guitar pedals before you should have no problem with the Duo. However, keep in mind it's a big kit! There are hundreds of parts to place, so plan to split the building over several sessions.
 
@@ -37,7 +37,7 @@ The Duo is intended for intermediate builders. If you have built a 500-series mo
 
 {% lightbox '/assets/duo/duo-sorting-1.1.pdf', 'md' %}
 
-To identify and keep track the resistors, download and print the <a href="%base_url%/assets/duo/duo-sorting-1.1.pdf" target="_blank">Component Sorting Sheet (PDF)</a>.
+To identify and keep track the resistors, download and print the [Component Sorting Sheet (PDF)](/assets/duo/duo-sorting-1.1.pdf).
 
 <H1 class="exclude" style="clear: both">I/O Board Assembly</H1>
 
@@ -54,7 +54,7 @@ The Colour Duo is split into two sections, the I/O Board and Drawer. In this gui
 ### Bend Resistors {.step}
 
 Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
-    <strong>Parts in this step:</strong> Refer to the component <a href="%base_url%/assets/duo/duo-sorting-1.1.pdf">sorting sheet</a>.
+    <strong>Parts in this step:</strong> Refer to the component [sorting sheet](/assets/duo/duo-sorting-1.1.pdf).
 
 ---
 
@@ -104,10 +104,10 @@ shape on the circuit board. Double check the positions and orientation, then sol
 
 Q1<br>BC327 transistor
 
-            <img src="%base_url%/assets/parts/com-t-to92.png">
+            <img src="/assets/parts/com-t-to92.png">
 Q2<br>BC337 transistor
 
-            <img src="%base_url%/assets/parts/com-t-to92-silver.png">
+            <img src="/assets/parts/com-t-to92-silver.png">
 
 ---
 
@@ -118,7 +118,7 @@ Q2<br>BC337 transistor
 Insert the IC sockets so that the notches on the sockets align with the markings on the PCB. Secure in place with tape. Then flip the PCB over and solder in place. Remove the tape.
 IC1, IC2<br>IC socket (x2)
 
-            <img src="%base_url%/assets/parts/com-h009.png">
+            <img src="/assets/parts/com-h009.png">
 
 ---
 
@@ -131,7 +131,7 @@ The leads of the ICs must be slightly bent to fit perfectly into the sockets. Fo
 IC polarity is indicated by a dot or notch on one side of the body. Align this side with the notch in the sockets. Place all of the ICs in this direction, and press them completely into the sockets.
 IC1, IC2<br>1256 line receiver (x2)
 
-            <img src="%base_url%/assets/parts/com-u-dip8.png">
+            <img src="/assets/parts/com-u-dip8.png">
 
 ---
 
@@ -140,7 +140,7 @@ IC1, IC2<br>1256 line receiver (x2)
 ### Populate Bypass Capacitors {.step}
 CB1-CB4, C10, C11<br>.1u ceramic cap (x6)
 
-            <img src="%base_url%/assets/parts/com-c004.png">
+            <img src="/assets/parts/com-c004.png">
 
 ---
 
@@ -151,10 +151,10 @@ CB1-CB4, C10, C11<br>.1u ceramic cap (x6)
 Place each diode so that the line on the component matches the line on the PCB. Double check the orientation, then solder and trim.
 D1<br>1N4004 diode
 
-            <img src="%base_url%/assets/parts/com-d005.png">
+            <img src="/assets/parts/com-d005.png">
 D2<br>5.6v zener diode
 
-            <img src="%base_url%/assets/parts/com-d010.png">
+            <img src="/assets/parts/com-d010.png">
 
 ---
 
@@ -165,12 +165,12 @@ D2<br>5.6v zener diode
 Place the smaller capacitors in their respective places. These capacitors are not polarized and therefore can be placed in either direction. Solder then trim the leads.
 C2, C3, C6, C7<br>470p caps
 
-            <img src="%base_url%/assets/parts/com-c009.png">
+            <img src="/assets/parts/com-c009.png">
 Markings: 471
 
 C4, C8<br>47p caps
 
-            <img src="%base_url%/assets/parts/com-c010.png">
+            <img src="/assets/parts/com-c010.png">
 Markings: 47j
 
 ## I/O Board Connectors (Bag 3) {.step}
@@ -184,16 +184,16 @@ Markings: 47j
 Place the 32-pin connectors and fasten them with the included nuts, washers, and screws. The washers should go between the bottom of the PCB and the nuts. Then solder and trim.
 CON1A, CON2A<br>Board-to-board connector (x2)
 
-            <img src="%base_url%/assets/parts/com-j023.png">
+            <img src="/assets/parts/com-j023.png">
 CON1A, CON2A<br>3-48 Screw (x4)
 
-            <img src="%base_url%/assets/parts/hw-s021.png">
+            <img src="/assets/parts/hw-s021.png">
 CON1A, CON2A<br>Nylon washer (x4)
 
-            <img src="%base_url%/assets/parts/hw-w002.png">
+            <img src="/assets/parts/hw-w002.png">
 CON1A, CON2A<br>3-48 Nut (x4)
 
-            <img src="%base_url%/assets/parts/hw-n006.png">
+            <img src="/assets/parts/hw-n006.png">
 
 ## I/O Board Large Capacitors, Inductors, and Relay (Bag 4) {.step}
 
@@ -206,7 +206,7 @@ CON1A, CON2A<br>3-48 Nut (x4)
 Place the relay and bend some of the leads against the bottom of the PCB to hold it in place. Then solder and trim.
 U1<br>24V relay
 
-            <img src="%base_url%/assets/parts/com-z010.png">
+            <img src="/assets/parts/com-z010.png">
 
 ---
 
@@ -218,7 +218,7 @@ Place the inductors in their positions, solder, and trim. Inductors are not pola
 
 L1-L3<br>470u inductor (x3)
 
-            <img src="%base_url%/assets/parts/com-l008.png">
+            <img src="/assets/parts/com-l008.png">
 
 ---
 
@@ -229,13 +229,13 @@ L1-L3<br>470u inductor (x3)
 These capacitors are polarized, so they must be placed in a certain direction. The positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB. Double check their orientation, then solder and trim.
 C1, C5<br>100u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c022.png">
+            <img src="/assets/parts/com-c022.png">
 C9, C16<br>100u/63v cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c028.png">
+            <img src="/assets/parts/com-c028.png">
 C12-C15<br>2200u cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c043.png">
+            <img src="/assets/parts/com-c043.png">
 
 ## Jacks (Bag 5) {.step}
 
@@ -248,7 +248,7 @@ C12-C15<br>2200u cap (x4)
 Place the TRS jacks. Hold them in place with tape or by bending the leads, then solder and trim.
 J1, J5<br>TRS jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j010.png">
+            <img src="/assets/parts/com-j010.png">
 
 ---
 
@@ -259,19 +259,19 @@ J1, J5<br>TRS jack (x2)
 Place the XLR jacks. Most will snap in place, but you may need to use some tape if they fall out before soldering. Solder the jacks but do not trim the leads.
 J2, J6<br>3-pin XLR male jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j007.png">
+            <img src="/assets/parts/com-j007.png">
 J3, J7<br>Combo jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j024.png">
+            <img src="/assets/parts/com-j024.png">
 J4, J8<br>3-pin XLR female jack (x2)
 
-            <img src="%base_url%/assets/parts/com-j008.png">
+            <img src="/assets/parts/com-j008.png">
 J9<br>5-pin XLR female jack
 
-            <img src="%base_url%/assets/parts/com-j017.png">
+            <img src="/assets/parts/com-j017.png">
 J10<br>5-pin XLR male jack
 
-            <img src="%base_url%/assets/parts/com-j016.png">
+            <img src="/assets/parts/com-j016.png">
 
 <H1 class="exclude" style="clear:both">Drawer Assembly</H1>
 
@@ -286,10 +286,10 @@ Populate the resistors as in step 1.
 
 R40<br>2.2k resistor
 
-            <img src="%base_url%/assets/parts/com-r-2.2k.png">
+            <img src="/assets/parts/com-r-2.2k.png">
 R41<br>47k resistor
 
-            <img src="%base_url%/assets/parts/com-r-47k.png">
+            <img src="/assets/parts/com-r-47k.png">
 
 ---
 
@@ -300,7 +300,7 @@ R41<br>47k resistor
 Place the diode so that the line on the component matches the line on the PCB. Double check the orientation, then solder and trim.
 D3<br>1N4004 diode
 
-            <img src="%base_url%/assets/parts/com-d005.png">
+            <img src="/assets/parts/com-d005.png">
 
 ---
 
@@ -311,7 +311,7 @@ Populate the relay as before.
 
 U1<br>24V relay
 
-            <img src="%base_url%/assets/parts/com-z010.png">
+            <img src="/assets/parts/com-z010.png">
 
 ---
 
@@ -322,10 +322,10 @@ U1<br>24V relay
 Position the lightpipe switch cap so that the flat surface faces the bottom of the switch. Then press the cap onto the switch until it snaps into place.
             <br>Lightpipe switch cap
 
-            <img src="%base_url%/assets/parts/com-k010.png">
+            <img src="/assets/parts/com-k010.png">
 SW4<br>DPDT switch
 
-            <img src="%base_url%/assets/parts/com-e006.png">
+            <img src="/assets/parts/com-e006.png">
 
 ---
 
@@ -346,7 +346,7 @@ If your PCB is version 1.1 or lower, there are no footprints for these capacitor
 
 C13, C14<br>220u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c002.png">
+            <img src="/assets/parts/com-c002.png">
 
 <H1 class="exclude" style="clear: both">Populating the Channels</H1>
 
@@ -359,9 +359,9 @@ Since channels 1 and 2 of the Duo are identical, the steps below are written for
 ---
 
 ### Sort Resistors {.step}
-Here's a link to that same resistor tool from above: <a href="https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator" target="_blank">Resistor Calculator</a>
+Here's a link to that same resistor tool from above: [Resistor Calculator](https://www.diyrecordingequipment.com/pages/resistor-color-code-calculator)
 
-        <strong>Parts in this step:</strong> Refer to the component <a href="%base_url%/assets/duo/duo-sorting-1.1.pdf">sorting sheet</a>.
+        <strong>Parts in this step:</strong> Refer to the component [sorting sheet](/assets/duo/duo-sorting-1.1.pdf).
 
 ---
 
@@ -382,7 +382,7 @@ Flip the PCB over and place the 8-pin Colour sockets in their positions. Solder 
 
 CON6-CON8<br>Colour socket (x3)
 
-            <img src="%base_url%/assets/parts/com-h001.png">
+            <img src="/assets/parts/com-h001.png">
 
 ---
 
@@ -393,7 +393,7 @@ Tape and solder the IC sockets as you did before.
 
 IC1-IC5<br>IC socket (x5)
 
-            <img src="%base_url%/assets/parts/com-h009.png">
+            <img src="/assets/parts/com-h009.png">
 
 ---
 
@@ -404,7 +404,7 @@ IC1-IC5<br>IC socket (x5)
 Place the diode bridge, matching the labeling to that on the circuit board. Bend the leads against the bottom of the pcb, then solder.
 BR1<br>Diode bridge
 
-            <img src="%base_url%/assets/parts/com-u001.png">
+            <img src="/assets/parts/com-u001.png">
 
 ---
 
@@ -415,12 +415,12 @@ Place the ICs in their sockets as you did before, playing close attention to the
 
 IC1<br>1512 mic preamp
 
-            <img src="%base_url%/assets/parts/com-u-dip8.png">
+            <img src="/assets/parts/com-u-dip8.png">
 Markings: THAT 1512
 
 IC2-IC5<br>NE5532 opamp (x4)
 
-            <img src="%base_url%/assets/parts/com-u-dip8.png">
+            <img src="/assets/parts/com-u-dip8.png">
 Markings: NE5532P
 
 ## Drawer Capacitors and Diodes (Bag 9) {.step}
@@ -434,7 +434,7 @@ Populate the bypass capacitors as you did before.
 
 CB1-CB10<br>.1u ceramic cap (x10)
 
-            <img src="%base_url%/assets/parts/com-c004.png">
+            <img src="/assets/parts/com-c004.png">
 
 ---
 
@@ -445,7 +445,7 @@ Populate the diodes as before, paying close attention to the black lines for ori
 
 D1, D2<br>1N914 diode (x2)
 
-            <img src="%base_url%/assets/parts/com-d002.png">
+            <img src="/assets/parts/com-d002.png">
 
 ---
 
@@ -456,13 +456,13 @@ Place the remaining capacitors in their respective places. As before, these capa
 
 C4<br>82n cap
 
-            <img src="%base_url%/assets/parts/com-c057.png">
+            <img src="/assets/parts/com-c057.png">
 C6, C7, C8, C11<br>22p cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c003.png">
+            <img src="/assets/parts/com-c003.png">
 C10, C12<br>100p cap (x4)
 
-            <img src="%base_url%/assets/parts/com-c074.png">
+            <img src="/assets/parts/com-c074.png">
 
 ## Drawer Large Capacitors (Bag 10) {.step}
 
@@ -475,13 +475,13 @@ Populate the large capacitors as you did on the IO board. Remember that these ar
 
 C1, C2<br>100u/63v cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c028.png">
+            <img src="/assets/parts/com-c028.png">
 C3<br>3300u cap
 
-            <img src="%base_url%/assets/parts/com-c030.png">
+            <img src="/assets/parts/com-c030.png">
 C5, C9<br>100u cap (x2)
 
-            <img src="%base_url%/assets/parts/com-c022.png">
+            <img src="/assets/parts/com-c022.png">
 
 ## Drawer Connectors, Switches, and Sockets (Bag 11) {.step}
 
@@ -494,16 +494,16 @@ C5, C9<br>100u cap (x2)
 Place the 32-pin connector and fasten it with the included nuts, washers and screws. The washers should go between the bottom of the PCB and the nuts. Then solder and trim.
 CON1B/CON2B<br>Board-to-board connector
 
-            <img src="%base_url%/assets/parts/com-j023.png">
+            <img src="/assets/parts/com-j023.png">
 CON1A, CON2A<br>3-48 Screw (x2)
 
-            <img src="%base_url%/assets/parts/hw-s021.png">
+            <img src="/assets/parts/hw-s021.png">
 CON1A, CON2A<br>Nylon washer (x2)
 
-            <img src="%base_url%/assets/parts/hw-w002.png">
+            <img src="/assets/parts/hw-w002.png">
 CON1A, CON2A<br>3-48 Nut (x2)
 
-            <img src="%base_url%/assets/parts/hw-n006.png">
+            <img src="/assets/parts/hw-n006.png">
 
 ---
 
@@ -516,10 +516,10 @@ Place the switches and use a small screwdriver to bend a couple of the leads aga
 
             <br>Switch cap (x3)
 
-            <img src="%base_url%/assets/parts/com-k007.png">
+            <img src="/assets/parts/com-k007.png">
 SW1-SW3<br>DPDT switch (x3)
 
-            <img src="%base_url%/assets/parts/com-e006.png">
+            <img src="/assets/parts/com-e006.png">
 
 ---
 
@@ -544,10 +544,10 @@ It can be tricky to mount headers exactly perpendicular to the PCB. Our preferre
 4. Now solder the rest of the pins of the header from underneath.
 CON3, CON4<br>12-pin socket (x2)
 
-            <img src="%base_url%/assets/parts/com-h002.png">
+            <img src="/assets/parts/com-h002.png">
 CON5<br>6-pin socket
 
-            <img src="%base_url%/assets/parts/com-h029.png">
+            <img src="/assets/parts/com-h029.png">
 
 ---
 
@@ -558,17 +558,17 @@ CON5<br>6-pin socket
 Pay close attention to the values marked on the back when placing the potentiometers (pots). Place them, then double check the values on the pots against those on the PCB.  Bend two leads of each pot against the PCB, then solder and trim.
 VR1<br>C1k pot
 
-            <img src="%base_url%/assets/parts/com-e-pot-single.png">
+            <img src="/assets/parts/com-e-pot-single.png">
 Markings: C1k
 
 VR5<br>B10k pot
 
-            <img src="%base_url%/assets/parts/com-e-pot-single.png">
+            <img src="/assets/parts/com-e-pot-single.png">
 Markings: B10k
 
 VR2, VR3, VR4, VR6<br>B20k pot (x4)
 
-            <img src="%base_url%/assets/parts/com-e-pot-single.png">
+            <img src="/assets/parts/com-e-pot-single.png">
 Markings: B20k
 
 ## Drawer Daughter Board Parts (Bag 12) {.step}
@@ -582,10 +582,10 @@ Populate the resistors as before.
 
 R1_DB<br>47k resistor
 
-            <img src="%base_url%/assets/parts/com-r-47k.png">
+            <img src="/assets/parts/com-r-47k.png">
 R2_DB<br>100k resistor
 
-            <img src="%base_url%/assets/parts/com-r-100k.png">
+            <img src="/assets/parts/com-r-100k.png">
 
 ---
 
@@ -601,10 +601,10 @@ As with the header sockets, these pins must be perpendicular to the board to mat
 4. Now solder the rest of the pins of the header from underneath.
 CON3_DB, CON4_DB<br>12-pin header (x2)
 
-            <img src="%base_url%/assets/parts/com-h003.png">
+            <img src="/assets/parts/com-h003.png">
 CON5_DB<br>6-pin header
 
-            <img src="%base_url%/assets/parts/com-h003-6.png">
+            <img src="/assets/parts/com-h003-6.png">
 
 ---
 
@@ -618,13 +618,13 @@ Then place and solder all the switches.
 
             <br>Switch cap (x2)
 
-            <img src="%base_url%/assets/parts/com-k007.png">
+            <img src="/assets/parts/com-k007.png">
             <br>Lightpipe switch cap (x4)
 
-            <img src="%base_url%/assets/parts/com-k010.png">
+            <img src="/assets/parts/com-k010.png">
 SW1_DB-SW6_DB<br>DPDT switch (x6)
 
-            <img src="%base_url%/assets/parts/com-e006.png">
+            <img src="/assets/parts/com-e006.png">
 
 <H1 class="exclude" style="clear: both">Chassis Assembly</H1>
 
@@ -640,7 +640,7 @@ Position the drawer rails on the inside of the case with the wider opening facin
 
 PCB rail (x2)
 
-            <img src="%base_url%/assets/parts/com-z011.png">
+            <img src="/assets/parts/com-z011.png">
 
 ---
 
@@ -652,7 +652,7 @@ Mount the assembled IO board to the case. You will need to tilt it slightly to g
 
 XLR screw (x16)
 
-            <img src="%base_url%/assets/parts/hw-s022.png">
+            <img src="/assets/parts/hw-s022.png">
 
 ---
 
@@ -664,10 +664,10 @@ Place each nut plate behind one of the flanges at the front of the case, so that
 
 Nut plate (x2)
 
-            <img src="%base_url%/assets/parts/hw-c040.png">
+            <img src="/assets/parts/hw-c040.png">
 Nut plate screw (x4)
 
-            <img src="%base_url%/assets/parts/hw-s025.png">
+            <img src="/assets/parts/hw-s025.png">
 
 ---
 
@@ -679,10 +679,10 @@ Place each L-bracket over the pots of the Colour section. Check that the standof
 
 PCB bracket screw (x8)
 
-            <img src="%base_url%/assets/parts/hw-s027.png">
+            <img src="/assets/parts/hw-s027.png">
 Standoff (x6)
 
-            <img src="%base_url%/assets/parts/hw-y020.png">
+            <img src="/assets/parts/hw-y020.png">
 
 ---
 
@@ -694,7 +694,7 @@ Plug the daughter boards for each channel into the two sets of header sockets. T
 
 PCB bracket screw (x6)
 
-            <img src="%base_url%/assets/parts/hw-s027.png">
+            <img src="/assets/parts/hw-s027.png">
 
 ---
 
@@ -706,7 +706,7 @@ Place the lid on the case with the countersunk side facing up. Then screw it to 
 
 Lid screw (x7)
 
-            <img src="%base_url%/assets/parts/hw-s026.png">
+            <img src="/assets/parts/hw-s026.png">
 
 ---
 
@@ -718,7 +718,7 @@ If you plan to use your Duo in a rack, screw the rack ears to the case.
 
 Rack ear screw (x6)
 
-            <img src="%base_url%/assets/parts/hw-s024.png">
+            <img src="/assets/parts/hw-s024.png">
 
 ---
 
@@ -730,7 +730,7 @@ If you plan to use your Duo on a desktop, you may choose to apply the rubber fee
 
 Rubber foot (x5)
 
-            <img src="%base_url%/assets/parts/hw-y021.png">
+            <img src="/assets/parts/hw-y021.png">
 
 ## Front Panel (Bag 14) {.step}
 
@@ -744,10 +744,10 @@ Place the front panel over the pots and switches (yes, this might be the trickie
 
 Pot washer (x12)
 
-            <img src="%base_url%/assets/parts/hw-w004.png">
+            <img src="/assets/parts/hw-w004.png">
 Pot nut (x12)
 
-            <img src="%base_url%/assets/parts/hw-n005.png">
+            <img src="/assets/parts/hw-n005.png">
 
 ---
 
@@ -767,10 +767,10 @@ Place the wider, skirted knobs on the two preamp gain pots, and the non-skirted 
 
 Skirted knob (x2)
 
-            <img src="%base_url%/assets/parts/com-k008.png">
+            <img src="/assets/parts/com-k008.png">
 Non-skirted knob (x10)
 
-            <img src="%base_url%/assets/parts/com-k009.png">
+            <img src="/assets/parts/com-k009.png">
 
 ---
 
@@ -785,24 +785,19 @@ Insert the drawer PCB into the PCB rails, then slide the assembly into the case.
 
 Before you wrap up, check the following things:
 
-@[/checks/capacitor.html]  
-@[/checks/diode.html]
-@[/checks/ic.html]   
-@[/checks/resistor.html]
-@[/checks/transistor.html]
-@[/checks/solder.html]
+{% checks 'capacitor', 'diode', 'ic', 'resistor', 'transistor', 'solder' %}
 ---
 
-    <img src="%base_url%/assets/duo/audio-tests-600.jpg" />
+    <img src="/assets/duo/audio-tests-600.jpg" />
 ### Optional: Run Audio Tests {.step}
 
 If your unit powers up and passes audio fine, most likely it's functioning exactly as it should. But if you want to really be sure, follow the steps in this video to test your Duo with the free software Room Eq Wizard (REW) and your interface:
 
-    <a href="https://youtu.be/Qf_rXdLhY1g">Colour Duo Audio Test Process (YouTube)</a>
+    [Colour Duo Audio Test Process (YouTube)](https://youtu.be/Qf_rXdLhY1g)
 
 If you are unfamiliar with the software, please watch our series of videos on measuring gear with REW:
 
-    <a href="https://www.youtube.com/watch?v=OwwKV4QTfwU&list=PLLjcaIlBVjDO5CgfHU5WSBKv7Aj13RG2K">Measuring Your Audio Gear with REW (YouTube Playlist)</a>
+    [Measuring Your Audio Gear with REW (YouTube Playlist)](https://www.youtube.com/watch?v=OwwKV4QTfwU&list=PLLjcaIlBVjDO5CgfHU5WSBKv7Aj13RG2K)
 
 ---
 
@@ -810,7 +805,7 @@ If you are unfamiliar with the software, please watch our series of videos on me
 
 ### Finished! {.step}
 
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](http://www.diyrecordingequipment.com/pages/support)
+All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 
