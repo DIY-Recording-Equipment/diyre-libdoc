@@ -875,21 +875,6 @@ main .__search-occurrence {
 #floating_toc a:hover {
     font-weight: 700;
 }
-#floating_toc__list_parent::before {
-    content: '';
-    display: flex;
-    width: 50%;
-    height: 35px;
-    position: absolute;
-    top: 45px;
-    left: 50%;
-    border-left: 1px dashed var(--ita-colors-neutral-500);
-    z-index: 12;
-    border-top: 1px dashed var(--ita-colors-neutral-500);
-    border-radius: 8px;
-    z-index: -10;
-}
-
 /* GTT / Go to top button */
 #gtt_btn {
     right: clamp(var(--ita-spacings-5), 100%, calc(50% - var(--ita-widths-content) - var(--ita-widths-content) / 2));
@@ -1100,23 +1085,22 @@ input[type="radio"] ~ label::before {
         font-size: var(--ita-fontSizes-3);
     }
 }
-
-@media (min-width: 960px) and (max-width: 1440px) {
-    body:not(.touch-device) #floating_toc__list {
-        transition: opacity 300ms;
-        opacity: 0.3;
-    }
-    body:not(.touch-device) #floating_toc:hover #floating_toc__list {
-        opacity: 1;
-    }
-}
-
 /* HOVERS */
 .__hover-1 {
     transition: all 300ms;
 }
 .__hover-2 {
     transition: all 300ms;
+}
+
+/* LARGE SCREEN (lg) - Custom breakpoint at 1200px */
+@media (min-width: 1200px) {
+    #floating_toc_container {
+        display: flex !important;
+    }
+    #toc_main {
+        display: none !important;
+    }
 }
 
 /* SHADOWS */

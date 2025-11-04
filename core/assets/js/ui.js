@@ -253,23 +253,8 @@ const libdocUi = {
             window.scroll({top:0});
             location.hash = '';
         },
-        _clickFloatingToggleTocBtn: function(evt) {
-            if (libdocUi.el.ftocDetails.open) {
-                libdocUi.el.ftocDetails.open = false;
-            } else {
-                libdocUi.el.ftocDetails.open = true;
-            }
-        },
         _scrollWindowForFTOC: function() {
             libdocUi.updateFtocList();
-        },
-        _toggleFtocLargeDevices: function(evt) {
-            if (libdocUi.el.ftocDetails.open) {
-                libdocUi.updateUserPreferences({FTOCNormallyOpened: true});
-                libdocUi.updateFtocList();
-            } else {
-                libdocUi.updateUserPreferences({FTOCNormallyOpened: false});
-            }
         },
         _scrollNavPrimaryPreviousPreferenceValue: 0,
         _scrollNavPrimary: function() {
@@ -412,16 +397,16 @@ const libdocUi = {
         });
     },
     toggleFtocSmallDevices: function() {
-        if (libdocUi.el.ftocDetails.open) {
-            libdocUi.el.ftocDetails.open = false;
-            libdocUi.el.navSmallDevicesFTOCBtn.classList.add('c-primary-900');
-            libdocUi.el.navSmallDevicesFTOCBtn.classList.remove('c-primary-500');
-        } else {
-            libdocUi.el.ftocDetails.open = true;
+        if (libdocUi.el.ftocContainer.style.display === 'none' || libdocUi.el.ftocContainer.style.display === '') {
+            libdocUi.el.ftocContainer.style.display = 'block';
             libdocUi.el.ftoc.style.display = null;
             libdocUi.updateFtocList();
             libdocUi.el.navSmallDevicesFTOCBtn.classList.remove('c-primary-900');
             libdocUi.el.navSmallDevicesFTOCBtn.classList.add('c-primary-500');
+        } else {
+            libdocUi.el.ftocContainer.style.display = 'none';
+            libdocUi.el.navSmallDevicesFTOCBtn.classList.add('c-primary-900');
+            libdocUi.el.navSmallDevicesFTOCBtn.classList.remove('c-primary-500');
         }
     },
     getVisibleTocIndexes: function() {
@@ -446,21 +431,11 @@ const libdocUi = {
     },
     createFloatingToc: function() {;
         if (libdocUi.el.ftoc === undefined && libdocUi.el.tocMainOl !== null) {
-            libdocUi.el.ftocDetails = document.createElement('details');
-            const elDetails = libdocUi.el.ftocDetails;
-            elDetails.setAttribute('w-100', 'xs,sm');
-            elDetails.id = 'floating_toc';
-            const elSummary = document.createElement('summary');
-            elSummary.setAttribute('class', 'd-flex jc-end | pt-5 | cur-pointer');
-            elSummary.setAttribute('d-none', 'xs,sm');
-            elSummary.title = libdocMessages.toggleFloatingToc;
-            elSummary.ariaLabel = libdocMessages.tableOfContent;
-            elSummary.innerHTML = `
-                <span class="d-flex jc-center ai-center gap-2 | pos-relative ar-square | h-50px | brad-4 c-primary-500 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow">
-                    <span class="icon-list-dashes fs-6"></span>
-                </span>`;
-            elDetails.appendChild(elSummary);
-            
+            libdocUi.el.ftocContainer = document.createElement('div');
+            const elContainer = libdocUi.el.ftocContainer;
+            elContainer.setAttribute('w-100', 'xs,sm');
+            elContainer.id = 'floating_toc';
+
             let floatingTocMarkup = `
                 <div id="floating_toc__list_parent"
                     d-flex="md"
@@ -471,15 +446,9 @@ const libdocUi = {
                         pos-relative
                         o-auto pl-0 mb-0 pt-3 pb-3
                         lsp-3
-                        bc-primary-100 blwidth-0 bwidth-1 bstyle-dashed bcolor-primary-300 ls-none
-                        __soft-shadow"
-                        fw-wrap="xs,sm"
+                        blwidth-0 ls-none"
                         mt-2="md"
-                        mt-0="xs,sm"
-                        maxh-200px="xs,sm"
-                        brad-3="md"
-                        bb-0="xs,sm"
-                        br-0="xs,sm">`;
+                        brad-3="md">`;
             libdocUi.el.ftocHeadings = [];
             libdocUi.el.tocMainOl.querySelectorAll('a').forEach(function(el) {
                 const   headingReference = el.getAttribute(`href`),
@@ -488,44 +457,29 @@ const libdocUi = {
                 floatingTocMarkup += `
                     <li>
                         <a  href="${headingReference}"
-                            class="d-flex | pl-5 pr-5 | fs-3 lsp-3 lh-5 fvs-wght-400 td-none | c-primary-500 blwidth-1 blstyle-dashed bcolor-primary-300"
+                            class="d-flex | pl-5 pr-5 | fs-3 lsp-3 lh-5 fvs-wght-400 td-none "
                             pt-2="md"
-                            pb-2="md"
-                            pt-1="xs,sm"
-                            pb-1="xs,sm">
+                            pb-2="md">
                             ${el.innerHTML}
                         </a>
                     </li>`;
             });
             floatingTocMarkup += '</ul></div>';
-            elDetails.innerHTML += floatingTocMarkup;
+            elContainer.innerHTML = floatingTocMarkup;
 
             libdocUi.el.ftoc = document.createElement('div');
             libdocUi.el.ftoc.id = 'floating_toc_container';
             libdocUi.el.ftoc.setAttribute('class', 'd-flex | pos-fixed z-2');
+            libdocUi.el.ftoc.setAttribute('d-none', 'xs,sm');
             libdocUi.el.ftoc.setAttribute('top-0', 'md');
             libdocUi.el.ftoc.setAttribute('right-0', 'md');
-            libdocUi.el.ftoc.setAttribute('left-0', 'xs,sm');
-            libdocUi.el.ftoc.setAttribute('bottom-60px', 'xs,sm');
-            libdocUi.el.ftoc.setAttribute('o-auto', 'xs,sm');
-            libdocUi.el.ftoc.setAttribute('w-100', 'xs,sm');
-            if (libdocUi._currentScreenSizeName == 'md') libdocUi.el.ftoc.style.display = 'none';
-            libdocUi.el.ftoc.appendChild(elDetails);
+            libdocUi.el.ftoc.appendChild(elContainer);
             document.body.prepend(libdocUi.el.ftoc);
             window.addEventListener('scroll', libdocUi.handlers._scrollWindowForFTOC);
             libdocUi.el.ftocLinks = libdocUi.el.ftoc.querySelectorAll('a');
             libdocUi.el.ftocList = libdocUi.el.ftoc.querySelector('#floating_toc__list');
-            libdocUi.el.navSmallDevicesFTOCBtn.disabled = false;
-            libdocUi.el.navSmallDevicesFTOCBtn.addEventListener('click', libdocUi.toggleFtocSmallDevices);
-            libdocUi.el.navSmallDevicesFTOCBtn.addEventListener('click', libdocUi.updateSearchOccurrenceCmdBottom);
-            elDetails.addEventListener("toggle", libdocUi.handlers._toggleFtocLargeDevices);
-            if (libdocUi.getUserPreferences().FTOCNormallyOpened) {
-                elDetails.open = true;
-                if (libdocUi._currentScreenSizeName == 'xs'
-                    || libdocUi._currentScreenSizeName == 'sm') {
-                    libdocUi.el.tocMain.open = false;
-                }
-            }
+            // Floating TOC is hidden on small devices, so disable the button
+            libdocUi.el.navSmallDevicesFTOCBtn.disabled = true;
         }
     },
     createGoToTop: function() {
@@ -616,7 +570,7 @@ const libdocUi = {
             } else {
                 libdocUi.el.navSmallDevicesFTOCBtn.disabled = false;
             }
-            if (libdocUi.el.ftocDetails.open) {
+            if (libdocUi.el.ftocContainer && libdocUi.el.ftocContainer.style.display !== 'none') {
                 libdocUi.el.navSmallDevicesFTOCBtn.classList.remove('c-primary-900');
                 libdocUi.el.navSmallDevicesFTOCBtn.classList.add('c-primary-500');
             } else {
@@ -626,47 +580,28 @@ const libdocUi = {
         }
     },
     updateFtocList: function() {
-        if (window.scrollY > libdocUi.el.mainHeader.clientHeight && typeof libdocUi.el.ftoc == 'object') {
-            libdocUi.el.ftoc.style.display = null;
-            if (libdocUi.el.ftocDetails.open) {
-                const linkIndexesArray = libdocUi.getVisibleTocIndexes();
-                let firstTrueIndex = -1;
-                linkIndexesArray.forEach(function(isInViewport, linkIndex) {
-                    if (isInViewport) {
-                        // libdocUi.el.ftocLinks[linkIndex].style.backgroundColor = 'var(--ita-colors-primary-200)';
-                        libdocUi.el.ftocLinks[linkIndex].classList.add('__active');
-                        if (firstTrueIndex === -1) firstTrueIndex = linkIndex;
-                    } else {
-                        // libdocUi.el.ftocLinks[linkIndex].style.backgroundColor = null;
-                        libdocUi.el.ftocLinks[linkIndex].classList.remove('__active');
-                    }
-                });
-                if (firstTrueIndex > -1) {
-                    const elFirstLink = libdocUi.el.ftocLinks[firstTrueIndex];
-                    if (libdocUi._currentScreenSizeName == 'md') {
-                        if (
-                            (elFirstLink.offsetTop + elFirstLink.clientHeight > libdocUi.el.ftocList.scrollTop)
-                            &&
-                            (elFirstLink.offsetTop + elFirstLink.clientHeight < libdocUi.el.ftocList.scrollTop + libdocUi.el.ftocList.clientHeight)
-                            ) {
-                        } else {
-                            libdocUi.el.ftocList.scroll({top: libdocUi.el.ftocLinks[firstTrueIndex].offsetTop - 80});
-                        }
-                    } else {
-                        if (
-                            (elFirstLink.offsetLeft + elFirstLink.clientWidth / 2 > libdocUi.el.ftocList.scrollLeft)
-                            &&
-                            (elFirstLink.offsetLeft + elFirstLink.clientWidth < libdocUi.el.ftocList.scrollLeft + libdocUi.el.ftocList.clientWidth)
-                            ) {
-                        } else {
-                            libdocUi.el.ftocList.scroll({left: libdocUi.el.ftocLinks[firstTrueIndex].offsetLeft - 10});
-                        }
-                    }
+        if (typeof libdocUi.el.ftoc == 'object' && libdocUi._currentScreenSizeName == 'md') {
+            // On medium/large screens, always show floating TOC
+            const linkIndexesArray = libdocUi.getVisibleTocIndexes();
+            let firstTrueIndex = -1;
+            linkIndexesArray.forEach(function(isInViewport, linkIndex) {
+                if (isInViewport) {
+                    libdocUi.el.ftocLinks[linkIndex].classList.add('__active');
+                    if (firstTrueIndex === -1) firstTrueIndex = linkIndex;
+                } else {
+                    libdocUi.el.ftocLinks[linkIndex].classList.remove('__active');
                 }
-            }
-        } else {
-            if (typeof libdocUi.el.ftoc == 'object') {
-                if (libdocUi._currentScreenSizeName == 'md') libdocUi.el.ftoc.style.display = 'none';
+            });
+            if (firstTrueIndex > -1) {
+                const elFirstLink = libdocUi.el.ftocLinks[firstTrueIndex];
+                if (
+                    (elFirstLink.offsetTop + elFirstLink.clientHeight > libdocUi.el.ftocList.scrollTop)
+                    &&
+                    (elFirstLink.offsetTop + elFirstLink.clientHeight < libdocUi.el.ftocList.scrollTop + libdocUi.el.ftocList.clientHeight)
+                    ) {
+                } else {
+                    libdocUi.el.ftocList.scroll({top: libdocUi.el.ftocLinks[firstTrueIndex].offsetTop - 80});
+                }
             }
         }
     },

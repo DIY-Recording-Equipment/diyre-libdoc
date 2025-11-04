@@ -328,11 +328,6 @@ main .alert.alert-danger::before {
     border-color: currentColor;
 }
 
-/* FLOATING TOC */
-#floating_toc__list a.__active {
-    background-color: var(--ita-colors-primary-200);
-}
-
 /* SEARCH OCCURRENCES */
 @keyframes flash {
     50% { background-color: #BF0 }
@@ -373,9 +368,13 @@ main .__search-occurrence {
 }
 
 /* FLOATING TABLE OF CONTENT */
-#floating_toc a:hover {
-    color: var(--ita-colors-primary-700);
+#floating_toc__list a {
+    color: var(--ita-colors-neutral-900);
 }
+#floating_toc__list a.__active {
+    background-color: var(--ita-colors-primary-200);
+}
+
 
 /* HOVERS */
 .__hover-1:hover {
