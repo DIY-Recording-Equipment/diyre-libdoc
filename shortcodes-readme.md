@@ -167,16 +167,16 @@ Display one or more images in a gallery with click-to-zoom functionality.
 **Examples:**
 
 Single image, small size:
-`{% raw %}{% lightbox '/assets/15ips3/diodes.jpg' %}{% endraw %}`
-{% lightbox '/assets/15ips3/diodes.jpg' %}
+`{% raw %}{% lightbox '/assets/shortcodes-readme/diodes.jpg' %}{% endraw %}`
+{% lightbox '/assets/shortcodes-readme/diodes.jpg' %}
 
 Single image, medium size:
-`{% raw %}{% lightbox '/assets/15ips3/diodes.jpg', 'md' %}{% endraw %}`
-{% lightbox '/assets/15ips3/diodes.jpg', 'md' %}
+`{% raw %}{% lightbox '/assets/shortcodes-readme/diodes.jpg', 'md' %}{% endraw %}`
+{% lightbox '/assets/shortcodes-readme/diodes.jpg', 'md' %}
 
 Multiple images, small size:
-`{% raw %}{% lightbox '/assets/15ips3/diodes.jpg', '/assets/15ips3/led.jpg', '/assets/15ips3/caps-small.jpg', 'sm' %}{% endraw %}`
-{% lightbox '/assets/15ips3/diodes.jpg', '/assets/15ips3/led.jpg', '/assets/15ips3/caps-small.jpg', 'sm' %}
+`{% raw %}{% lightbox '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', 'sm' %}{% endraw %}`
+{% lightbox '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', 'sm' %}
 
 ---
 
@@ -213,12 +213,12 @@ Display parts needed for a specific assembly step, pulling data from Airtable.
 
 **Setup Required:**
 
-1. Add `kit_sku` to your page's frontmatter:`yaml
----
+1. Add `kit_sku` to your page's frontmatter:
+```
 layout: guide.liquid
 title: Assembly Guide
 kit_sku: KIT-012.06
----`
+```
 
 2. Run `npm run fetch-parts` to download parts data from Airtable
 
