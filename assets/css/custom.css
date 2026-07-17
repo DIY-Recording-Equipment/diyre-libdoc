@@ -379,3 +379,13 @@ form label {
     font-weight: 600;
     color: var(--ita-colors-neutral-900);
 }
+main hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+main hr::before {
+    border-bottom-style: solid;
+}
+main a[href^="https://"]:not([href^="https://eleventy-libdoc"])::after, main a.__external-link::after {
+    content: none;
+}
