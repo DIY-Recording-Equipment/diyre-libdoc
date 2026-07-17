@@ -15,6 +15,17 @@ main p {
     padding-bottom:var(--ita-spacings-3);
 }
 
+/* Safety precautions block (header, above TOC on guide pages) */
+.safety-precautions {
+    column-count: 2;
+    column-gap: var(--ita-spacings-6);
+}
+@media (max-width: 599px) {
+    .safety-precautions {
+        column-count: 1;
+    }
+}
+
 /* Resistor Sorting Tool */
 
 #resistor-tool-wrapper {
@@ -388,4 +399,12 @@ main hr::before {
 }
 main a[href^="https://"]:not([href^="https://eleventy-libdoc"])::after, main a.__external-link::after {
     content: none;
+}
+
+/* Shortcode Customization */
+main .alert {
+    border:none;
+}
+main .alert[data-title]::before {
+    border-bottom-style:solid;
 }

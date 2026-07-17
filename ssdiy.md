@@ -82,12 +82,7 @@ Place the chassis top over the boards, then install the nut and washer onto SW1.
 
 Fasten the side panels with the flat-head screws, then attach the bottom panel with the pan-head screws and rubber feet.
 
-
----
-
-### Build Completed!
-
-All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
+Congratulations on completing your SS-DIY! If you have questions about using the SS-DIY, refer to the [Operation Manual](https://support.diy.re). Have a question or problem? [Drop us a line.](https://support.diy.re)
 
 ---
 

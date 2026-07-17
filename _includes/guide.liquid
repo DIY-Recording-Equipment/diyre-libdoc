@@ -92,6 +92,13 @@
     </script>
 </head>
 <body class="d-flex fd-column ai-center | m-0">
+    {% if libdocConfig.siteLogoUrl %}
+        <div class="d-flex jc-center | w-100 | pt-6 pb-6">
+            <a href="https://www.diyrecordingequipment.com">
+                <img src="{{ libdocConfig.siteLogoUrl }}" alt="{{ libdocConfig.siteTitle }}" style="max-height: {{ libdocConfig.siteLogoMaxHeight }}px; width: auto;">
+            </a>
+        </div>
+    {% endif %}
     <div class="d-flex | w-100"
         fd-column="xs,sm"
         ai-start="md"
@@ -104,6 +111,9 @@
                     fs-9="xs,sm">
                     {{ pageTitle }}
                 </h1>
+                {% if product %}
+                    {%- include 'libdoc_safety_precautions' -%}
+                {% endif %}
                 {% if pageDescription != '' %}
                     <p class="d-flex ai-center fw-wrap gap-2 | pt-5 pl-5 pb-5 m-0 | fvs-wght-400 tws-balance fs-7 lsp-3 lh-5 | blwidth-1 blstyle-dashed bcolor-neutral-500"
                         pt-3="xs"

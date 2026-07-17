@@ -3,6 +3,8 @@
     "siteDescription": "Assembly guides for DIYRE kits.",
     "author": false,
     "faviconUrl": "/assets/favicon.png",
+    "siteLogoUrl": "/assets/logo.png",
+    "siteLogoMaxHeight": 50,
     "tocEnabled": true,
     "roundedImagesCorners": false,
     "displayTagsListLink": false,

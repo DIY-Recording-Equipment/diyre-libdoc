@@ -86,7 +86,7 @@ export default {
                         <${m1}${m2} id="${slugifiedId}"${paddingAttr}>
                             <a  href="#${slugifiedId}"
                                 title="${m3}"
-                                class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow"
+                                class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bcolor-neutral-500 __hover-1 __soft-shadow"
                                 ml-3="xs,sm">
                                 <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
                             </a>
@@ -337,7 +337,7 @@ export default {
 
                 markup = `
                     <aside class="widget widget-iconCard">
-                        <p class="d-flex gap-5 | p-5 m-0 | brad-3 bwidth-1 bstyle-dashed bcolor-neutral-500">
+                        <p class="d-flex gap-5 | p-5 m-0 | brad-0 btwidth-1 btstyle-solid bcolor-neutral-500">
                             ${visualContent}
                             <span class="d-flex fd-column gap-1">
                                 <strong class="fvs-wght-700 fs-4">${mainText}</strong>
@@ -367,7 +367,7 @@ export default {
 
                     markup = `
                     <aside class="widget widget-iconCard">
-                        <p class="d-flex gap-5 | p-5 m-0 | brad-3 bwidth-1 bstyle-dashed bcolor-neutral-500">
+                        <p class="d-flex gap-5 | p-5 m-0 | brad-0 btwidth-1 btstyle-solid bcolor-neutral-500">
                             ${visualContent}
                             <span class="d-flex fd-column gap-1">
                                 <strong class="fvs-wght-700 fs-4">${tool.name}</strong>
