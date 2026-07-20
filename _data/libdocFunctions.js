@@ -558,6 +558,15 @@ ${content}
                 return '';
             }
         },
+        safetyPrecautions: async function() {
+            try {
+                const safetyPrecautionsPath = path.join(process.cwd(), 'assets/includes/safety-precautions.html');
+                return fs.readFileSync(safetyPrecautionsPath, 'utf8');
+            } catch (e) {
+                console.error('safetyPrecautions shortcode error:', e);
+                return '';
+            }
+        },
         resCalc: async function() {
             try {
                 const resCalcPath = path.join(process.cwd(), 'assets/includes/resCalc.html');

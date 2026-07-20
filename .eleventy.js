@@ -58,6 +58,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPairedShortcode("sandbox", libdocFunctions.shortcodes.sandbox);
     eleventyConfig.addPairedShortcode("sandboxFile", libdocFunctions.shortcodes.sandboxFile);
     eleventyConfig.addShortcode("feedbackForm", libdocFunctions.shortcodes.feedbackForm);
+    eleventyConfig.addShortcode("safetyPrecautions", libdocFunctions.shortcodes.safetyPrecautions);
     eleventyConfig.addShortcode("resCalc", libdocFunctions.shortcodes.resCalc);
     eleventyConfig.addShortcode("stepParts", libdocFunctions.shortcodes.stepParts);
     eleventyConfig.addShortcode("stepResistors", libdocFunctions.shortcodes.stepResistors);

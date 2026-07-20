@@ -13,12 +13,14 @@ This guide explains all available shortcodes you can use in your markdown files.
 - [iconCard](#iconcard) - Display a card with icon/image and text
 - [tool](#tool) - Display a tool card from tools.json data
 - [lightbox](#lightbox) - Display images in a gallery with click-to-zoom
+- [stepBlock](#stepblock) - Wrap step content with a lightbox image floated alongside it
 - [embed](#embed) - Embed external content like YouTube videos
 - [stepParts](#stepparts) - Display parts needed for an assembly step
 - [stepResistors](#stepresistors) - Display resistors in a sortable table
 - [resCalc](#rescalc) - Display an inline resistor color code calculator
 - [checks](#checks) - Display a checklist from checks.json data
 - [feedbackForm](#feedbackform) - Insert a feedback form
+- [safetyPrecautions](#safetyprecautions) - Insert the safety precautions and warranty disclaimer block
 
 ---
 
@@ -177,6 +179,31 @@ Single image, medium size:
 Multiple images, small size:
 `{% raw %}{% lightbox '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', 'sm' %}{% endraw %}`
 {% lightbox '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', '/assets/shortcodes-readme/diodes.jpg', 'sm' %}
+
+---
+
+## stepBlock
+
+Wrap a step's heading and text with a single image floated alongside it — the image sits to the left of the content on wide screens and stacks above it on narrow screens. The image is still a click-to-zoom lightbox, just like the standalone `lightbox` shortcode.
+
+**Parameters:**
+- `imagePath` (required) - Path to the image
+- `size` (optional) - Thumbnail size: `sm`, `md`, or `lg`
+
+**Defaults:**
+- Size defaults to `md` if not specified
+
+**Examples:**
+
+```
+{% raw %}{% stepBlock '/assets/shortcodes-readme/diodes.jpg', 'md' %}
+### Install the diodes {.step}
+
+Insert each diode according to the silkscreen markings. Bend the leads to hold it in place, then flip the board and solder.
+{% endstepBlock %}{% endraw %}
+```
+
+**Note:** This is a paired shortcode — content between `{% stepBlock %}` and `{% endstepBlock %}` becomes `step-block__content`; the image becomes `step-block__media`. Layout is controlled by the `.step-block` rules in `assets/css/custom.css`.
 
 ---
 
@@ -343,3 +370,18 @@ Insert a feedback form into your page.
 
 `{% raw %}{% feedbackForm %}{% endraw %}`
 {% feedbackForm %}
+
+---
+
+## safetyPrecautions
+
+Insert the standard safety precautions, warranty, and damaged/missing parts disclaimer block. Used automatically in `guide.liquid` on any page with `product` set in frontmatter, but can also be placed manually.
+
+**Parameters:**
+- None
+
+**Examples:**
+
+`{% raw %}{% safetyPrecautions %}{% endraw %}`
+
+**Note:** The markup is maintained in `assets/includes/safety-precautions.html`. To change the wording, edit that file.
