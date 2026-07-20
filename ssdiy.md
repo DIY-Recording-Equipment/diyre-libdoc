@@ -28,26 +28,29 @@ Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is you
 
 ## Soldering 101
 
+If this is your first time soldering, follow the 8-second soldering process below. Once you’re confident in your ability to make clean solder joints, you can relax the timing and find your own rhythm. But for your first project, follow it strictly to build good habits.
+
 {% lightbox '/assets/solder/1-clean.jpg', '/assets/solder/2-heat.jpg', '/assets/solder/3-solder.jpg', '/assets/solder/4-heat-more.jpg', '/assets/solder/5-trim.jpg', '/assets/solder/6-finished.jpg', 'sm' %}
 
-If this is your first time soldering, follow the 8-second soldering process below. Once you’re confident in
-your ability to make clean solder joints, you can relax the timing and find your own rhythm.
-But for your practicing and first project, I recommend following it strictly to build good habits.
-
-1. Clean the tip.
+1. **Clean** the tip.
     1. Clean with a wire sponge before every solder joint.
     2. Apply a little solder to the tip, this is called “tinning.”
-2. Heat the pad for 5 seconds.
+2. **Heat** the pad for 5 seconds.
     1. Place the iron where the pad and the component lead meet.
     2. Touch the pad and the lead with the side of the tip. Heat is transferred on the side of the tip, not the point. 
-3. Add solder for 1 second.
+3. Add **solder** for 1 second.
+    1. Add solder where the tip, pad, and lead meet.
     1. Err on the side of too little solder.
-    2. Add solder where the tip, pad, and lead meet. Don’t add it to the tip.
     3. Keep the tip still while you add solder.
-4. Apply heat for 2 more seconds.
-    1. After stop applying solder
-5. Clip the lead.
-    1. Allow the joint to cool for a few seconds, then clean the excess lead right at the solder joint.
+4. **Heat** for 2 more seconds.
+    1. Keep the tip still after you finish applying
+solder.
+5. **Trim** the lead.
+    1. Allow the joint to cool for a few seconds, then clip the excess lead right at the solder joint.
+6. **Done!**
+    1. Your finished solder joint should be a perfectly uniform and shiny tent that covers the entire pad. 
+    2. If your joint looks like a blob, use less solder and heat the pad longer next time. 
+    3. If you can still see some of the pad, use more solder next time.
 
 ## Populate PCBs {.step}
 
