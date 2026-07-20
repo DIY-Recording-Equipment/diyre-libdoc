@@ -527,6 +527,18 @@ main > ol:not(:has(ul)) li > ol > li::before {
 main > ol:not(:has(ul)) > li::before {
     border-radius: 0;
 }
+
+/* Floating TOC: sit just below the logo header instead of the viewport top.
+   Logo section height = pt-6 + pb-6 (var(--ita-spacings-6) each) + logo img
+   (settings.json siteLogoMaxHeight, currently 50px). */
+@media (min-width: 960px) {
+    #floating_toc_container {
+        top: calc(2 * var(--ita-spacings-6) + 50px);
+    }
+    #floating_toc__list {
+        max-height: calc(100vh - 160px - 2 * var(--ita-spacings-6) - 50px);
+    }
+}
 main a[href^="https://"]:not([href^="https://eleventy-libdoc"])::after, main a.__external-link::after {
     content: none;
 }
