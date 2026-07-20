@@ -30,6 +30,8 @@ Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is you
 
 ## Soldering 101
 
+---
+
 If this is your first time soldering, follow the 8-second soldering process below. Once you’re confident in your ability to make clean solder joints, you can relax the timing and find your own rhythm. But for your first project, follow it strictly to build good habits.
 
 {% lightbox '/assets/solder/1-clean.jpg', '/assets/solder/2-heat.jpg', '/assets/solder/3-solder.jpg', '/assets/solder/4-heat-more.jpg', '/assets/solder/5-trim.jpg', '/assets/solder/6-finished.jpg', 'sm' %}
@@ -98,7 +100,11 @@ Place the chassis top over the boards, then install the nut and washer onto SW1.
 Fasten the side panels with the flat-head screws, then attach the bottom panel with the pan-head screws and rubber feet.
 {% endstepBlock %}
 
-Congratulations on completing your SS-DIY! If you have questions about using the SS-DIY, refer to the [Operation Manual](https://support.diy.re). Have a question or problem? [Drop us a line.](https://support.diy.re)
+{% stepBlock '/assets/ssdiy/ssdiy-top.jpg', 'md' %}
+### Congratulations! {.step}
+
+You've completed building your SS-DIY. If you have questions about using the SS-DIY, refer to the [Operation Manual](https://support.diy.re). Have a question or problem? [Drop us a line.](https://support.diy.re)
+{% endstepBlock %}
 
 ---
 
