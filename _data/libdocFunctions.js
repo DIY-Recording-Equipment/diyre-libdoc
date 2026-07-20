@@ -22,6 +22,27 @@ const checks =              require("./checks.json");
 import libdocUtils          from    "./libdocUtils.js";
 import libdocConfig         from    "./libdocConfig.js";
 
+// Shared by the `lightbox` and `stepBlock` shortcodes: builds the GLightbox-compatible
+// thumbnail grid markup for a set of image paths at a given size (sm|md|lg).
+function buildLightboxMarkup(imagePaths, sizeParam) {
+    const lightboxId = libdocUtils.generateRandomId();
+    const escapeAttr = (str) => str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+    const thumbnailsMarkup = imagePaths
+        .map((path, index) =>
+            `<a href="${escapeAttr(path)}" class="glightbox lightbox-thumbnail" data-gallery="gallery-${lightboxId}">` +
+            `<img src="${escapeAttr(path)}" alt="Image ${index + 1}" loading="lazy" decoding="async">` +
+            `</a>`
+        )
+        .join('');
+
+    return `
+<aside class="widget widget-lightbox">
+<div class="lightbox-thumbnails-grid lightbox-size-${sizeParam}">${thumbnailsMarkup}</div>
+</aside>
+`;
+}
+
 export default {
     pluginsParameters: {
         eleventyImageTransform: function() {
@@ -501,24 +522,30 @@ export default {
                 return '';
             }
 
-            const lightboxId = libdocUtils.generateRandomId();
+            return buildLightboxMarkup(imagePaths, sizeParam);
+        },
+        stepBlock: async function(content, imagePath, size) {
+            const validSizes = ['sm', 'md', 'lg'];
+            const sizeParam = (typeof size === 'string' && validSizes.includes(size.trim().toLowerCase()))
+                ? size.trim().toLowerCase()
+                : 'md';
 
-            // Helper to escape HTML attributes
-            const escapeAttr = (str) => str.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+            if (typeof imagePath !== 'string' || imagePath.trim().length === 0) {
+                console.warn('stepBlock shortcode: an imagePath is required. Usage: {% stepBlock \'/assets/x/img.jpg\', \'md\' %}...{% endstepBlock %}');
+                return content;
+            }
 
-            // Generate GLightbox-compatible thumbnails
-            const thumbnailsMarkup = imagePaths
-                .map((path, index) =>
-                    `<a href="${escapeAttr(path)}" class="glightbox lightbox-thumbnail" data-gallery="gallery-${lightboxId}">` +
-                    `<img src="${escapeAttr(path)}" alt="Image ${index + 1}" loading="lazy" decoding="async">` +
-                    `</a>`
-                )
-                .join('');
+            const imageMarkup = buildLightboxMarkup([imagePath.trim()], sizeParam);
 
             return `
-<aside class="widget widget-lightbox">
-<div class="lightbox-thumbnails-grid lightbox-size-${sizeParam}">${thumbnailsMarkup}</div>
-</aside>
+<div class="step-block">
+<div class="step-block__media">${imageMarkup}</div>
+<div class="step-block__content">
+
+${content}
+
+</div>
+</div>
 `;
         },
         feedbackForm: async function() {

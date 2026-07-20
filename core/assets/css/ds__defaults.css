@@ -201,30 +201,6 @@ main h6 a {
     display: none !important;
 }
 
-/* HEADING NUMBERING */
-main {
-    counter-reset: h2Counter;
-}
-h2.step {
-    counter-reset: h3Counter;
-    counter-increment: h2Counter;
-}
-h2.step::before {
-    content: counter(h2Counter) ". ";
-}
-h3.step {
-    counter-reset: h4Counter;
-    counter-increment: h3Counter;
-}
-h3.step::before {
-    content: counter(h2Counter) "." counter(h3Counter) " ";
-}
-h4.step {
-    counter-increment: h4Counter;
-}
-h4.step::before {
-    content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) " ";
-}
 
 /* LINKS */
 main a {

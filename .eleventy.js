@@ -54,6 +54,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addShortcode("iconCard", libdocFunctions.shortcodes.iconCard);
     eleventyConfig.addShortcode("tool", libdocFunctions.shortcodes.tool);
     eleventyConfig.addShortcode("lightbox", libdocFunctions.shortcodes.lightbox);
+    eleventyConfig.addPairedShortcode("stepBlock", libdocFunctions.shortcodes.stepBlock);
     eleventyConfig.addPairedShortcode("sandbox", libdocFunctions.shortcodes.sandbox);
     eleventyConfig.addPairedShortcode("sandboxFile", libdocFunctions.shortcodes.sandboxFile);
     eleventyConfig.addShortcode("feedbackForm", libdocFunctions.shortcodes.feedbackForm);

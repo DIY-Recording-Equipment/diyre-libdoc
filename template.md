@@ -1,7 +1,7 @@
 ---
 # GUIDE TEMPLATE — copy this file, rename it to your product's slug (e.g. mykit.md), then:
 # 1. Replace every PRODUCT NAME / PRODUCT-SLUG / KIT-XXX.XX placeholder below and in the body.
-# 2. Put real photos in /assets/PRODUCT-SLUG/ and swap out the placeholder.jpg lightbox
+# 2. Put real photos in /assets/PRODUCT-SLUG/ and swap out the placeholder.jpg stepBlock/lightbox
 #    references (from /assets/template/placeholder.jpg) for them.
 # 3. Duplicate/remove step sections in the body as needed for your kit's actual bags/steps.
 # 4. Delete these comment lines.
@@ -43,30 +43,27 @@ View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% iconCard 'Component Sorting Sheet', 'To identify and keep track of every part in the kit, download and print the [Component Sorting Sheet](/assets/PRODUCT-SLUG/PRODUCT-SLUG-sorting-1.0.pdf)', '/assets/pdf-download.png' %}
 
 <!--
-Below is one bag/section with its standard step pattern: a photo, then a heading + instructions.
-Duplicate this pattern for each bag/section of the build. Give each numbered heading the `{.step}`
-class so it's picked up by the table of contents and step numbering.
+Below is one bag/section with its standard step pattern: {% stepBlock %} wraps a photo together
+with the heading + instructions that follow it, laying the image to the left of the text on wide
+screens. Duplicate this pattern for each bag/section of the build. Give each numbered heading the
+`{.step}` class so it's picked up by the table of contents and step numbering.
 -->
 
 ## Section Name (Bag 1) {.step}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Step Title {.step}
 
 Step instructions go here.
+{% endstepBlock %}
 
 ## Resistors (Bag X) {.step}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Bend Resistors {.step}
 
 Bend the resistor leads 90 degrees at the body so they can be inserted into the PCB.
+{% endstepBlock %}
 
 ---
 
@@ -77,47 +74,37 @@ Resistor values are identified by colored bands on the body of the resistor. To 
 
 {% alert, 'To measure resistors quickly you can remove the probes from your multi-meter and place the leads of the resistor directly in the probe sockets.', 'success', 'Pro Tip' %}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Place Resistors {.step}
 
 Place the resistors into their respective positions on the PCB. As you place each resistor, bend its leads against the bottom of the PCB so that it stays in place during soldering.
+{% endstepBlock %}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Solder Resistors {.step}
 
 Solder the resistors to the PCB. Observe good soldering technique: heat the pad and lead for 2-3 seconds, apply a small bit of solder, and continue to heat the pad for another 2-3 seconds. The finished joints should be shiny and should have just enough solder to cover the pad entirely.
+{% endstepBlock %}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Trim Resistors {.step}
 
 Use clippers to trim away the excess leads. Clip as closely as possible to the joint without clipping the joint itself.
+{% endstepBlock %}
 
 ## Capacitors (Bag X) {.step}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Populate Small Capacitors {.step}
 
 Place the smaller capacitors in their respective places. These capacitors are not polarized and therefore can be placed in either direction. Solder then trim the leads.
+{% endstepBlock %}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Populate Large Capacitors {.step}
 
 These capacitors are polarized, so they must be placed in a certain direction. The positive lead is slightly longer, while the negative lead is marked with a stripe on the body of the capacitor. Place the capacitors with the positive lead in the pad next to the "+" marking on the PCB. Double check their orientation, then solder and trim.
+{% endstepBlock %}
 
 <!--
 Alternative to resCalc / manual step-by-step above: if this kit's BOM is in Airtable,
@@ -133,13 +120,11 @@ Before you wrap up, check the following things:
 
 {% checks 'capacitor', 'transistor', 'resistor', 'solder', 'trim' %}
 
----
-
-{% lightbox '/assets/template/placeholder.jpg', 'md' %}
-
+{% stepBlock '/assets/template/placeholder.jpg', 'md' %}
 ### Build Completed!
 
 All good? Congrats on finishing your build! Have a question or problem? [Drop us a line.](https://support.diy.re)
+{% endstepBlock %}
 
 ---
 

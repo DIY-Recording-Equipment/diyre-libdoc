@@ -15,6 +15,69 @@ main p {
     padding-bottom:var(--ita-spacings-3);
 }
 
+/* Step block: image sits left of the heading/text on wide screens (stepBlock shortcode) */
+.step-block {
+    display: flex;
+    gap: var(--ita-spacings-6);
+    align-items: flex-start;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid var(--ita-colors-neutral-500);
+}
+.step-block__media {
+    flex: 0 0 auto;
+    max-width: 300px;
+}
+.step-block__media .lightbox-thumbnail {
+    aspect-ratio: 1;
+    height: auto;
+}
+.step-block__content {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.step-block__content h2.step,
+.step-block__content h3.step,
+.step-block__content h4.step {
+    display: block;
+}
+@media (max-width: 899px) {
+    .step-block {
+        flex-direction: column;
+    }
+    .step-block__media {
+        max-width: 100%;
+    }
+}
+
+/* HEADING NUMBERING */
+main {
+    counter-reset: h2Counter;
+}
+h2.step {
+    counter-reset: h3Counter;
+    counter-increment: h2Counter;
+    margin-top:2em;
+}
+h2.step::before {
+    content: counter(h2Counter) ". ";
+}
+h3.step {
+    counter-reset: h4Counter;
+    counter-increment: h3Counter;
+    font-weight:bold;  
+    font-size:1.2em;
+}
+h3.step::before {
+    content: counter(h2Counter) "." counter(h3Counter) " ";
+}
+h4.step {
+    counter-increment: h4Counter;
+}
+h4.step::before {
+    content: counter(h2Counter) "." counter(h3Counter) "." counter(h4Counter) " ";
+}
+
 /* Safety precautions block (header, above TOC on guide pages) */
 .safety-precautions {
     column-count: 2;
