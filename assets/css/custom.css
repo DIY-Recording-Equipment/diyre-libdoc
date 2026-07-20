@@ -471,3 +471,67 @@ main .alert {
 main .alert[data-title]::before {
     border-bottom-style:solid;
 }
+
+/* LIGHTBOX - GLightbox thumbnails */
+.lightbox-thumbnails-grid {
+    display: grid;
+    gap: var(--ita-spacings-5);
+    max-width: 100%;
+}
+
+/* Size variants for lightbox thumbnails */
+.lightbox-size-sm {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+@media (min-width: 900px) {
+    .lightbox-size-sm {
+        grid-template-columns: repeat(auto-fit, minmax(200px, calc(25% - var(--ita-spacings-5))));
+    }
+}
+.lightbox-size-sm .lightbox-thumbnail {
+    height: 200px;
+}
+
+.lightbox-size-md {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+}
+.lightbox-size-md .lightbox-thumbnail {
+    height: 600px;
+    border: none;
+}
+.lightbox-size-md .lightbox-thumbnail:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.lightbox-size-lg .lightbox-thumbnail {
+    height: auto;
+    aspect-ratio: 1;
+    border: none;
+}
+.lightbox-size-lg .lightbox-thumbnail:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.lightbox-thumbnail {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: dashed;
+    transition: all 300ms;
+    overflow: hidden;
+    text-decoration: none;
+}
+.lightbox-thumbnail:hover {
+    border-style: solid;
+    box-shadow: var(--libdoc-soft-shadow);
+}
+.lightbox-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
