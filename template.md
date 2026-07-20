@@ -21,9 +21,13 @@ schematic_url: https://cdn.shopify.com/s/files/1/0698/2265/files/PRODUCT-SLUG_Sc
 
 Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
+{% safetyPrecautions %}
+
 {% if schematic_url %}
 View the [{{ product }} schematic PDF here]({{ schematic_url }}).
 {% endif %}
+
+
 
 <!-- Optional: use this alert for version notices, known issues, etc. Delete if not needed. -->
 {% alert 'Version-specific note goes here, or delete this alert.', 'warning', 'Version Check' %}

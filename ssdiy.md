@@ -13,6 +13,8 @@ getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 
 Welcome to the [{{ product }}]({{ product_url }}) assembly guide. If this is your first DIY project ever, we recommend reading our [Getting Started Guide]({{ getting_started_url }}) before beginning.
 
+{% safetyPrecautions %}
+
 ## Tools
 
 ### Required
