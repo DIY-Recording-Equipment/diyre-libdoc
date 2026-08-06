@@ -6,7 +6,7 @@ kit_sku: KIT-117.01
 version: "1.0"
 complexity: Beginner
 estimated_time: 1 hour
-product_url: https://www.diyrecordingequipment.com/products/PRODUCT-SLUG
+product_url: https://www.diyrecordingequipment.com/products/ss-diy-stereo-input-switcher-kit
 support_url: https://support.diy.re/
 getting_started_url: https://www.diyrecordingequipment.com/pages/getting-started
 ---
@@ -38,7 +38,7 @@ If this is your first time soldering, follow the 8-second soldering process belo
 
 1. **Clean** the tip.
     1. Clean with a wire sponge before every solder joint.
-    2. Apply a little solder to the tip, this is called “tinning.”
+    1. Apply a little solder to the tip, this is called “tinning.”
 2. **Heat** the pad for 5 seconds.
     1. Place the iron where the pad and the component lead meet.
     2. Touch the pad and the lead with the side of the tip. Heat is transferred on the side of the tip, not the point. 
@@ -80,7 +80,7 @@ Place the jacks in the board and turn it over, making sure the jacks are sitting
 
 Insert the switch with its thicker locating pin in the larger hole. Solder one pin first, check that it's sitting flush, then solder the remaining pins.
 
-{% alert 'Make sure the switch is sitting flush in the PCB before soldering. It is very difficult to adjust the switch if it is soldered crooked.', 'warning', 'Double Check' %}
+{% alert 'Make sure the switch is sitting flush in the PCB before soldering. It is very difficult to adjust the switch if it is fully soldered crooked.', 'warning', 'Double Check' %}
 {% endstepBlock %}
 
 ## Mechanical Assembly {.step}
@@ -94,7 +94,7 @@ Mount the RIGHT board on the bottom and the LEFT board on top, fastening both wi
 {% stepBlock '/assets/ssdiy/05-chassis-top.jpg', 'md' %}
 ### Mount Chassis Top {.step}
 
-Place the chassis top over the boards, then install the nut and washer onto SW1. Fasten the knob to finish.
+Place the white, nylon washer on SW1. Then place the chassis top over the boards. Then install the washer and nut onto SW1. Fasten the knob using the includex hex key to tighten the set screw.
 {% endstepBlock %}
 ---
 {% stepBlock '/assets/ssdiy/06-case.jpg', 'md' %}
@@ -106,7 +106,7 @@ Fasten the side panels with the flat-head screws, then attach the bottom panel w
 {% stepBlock '/assets/ssdiy/ssdiy-top.jpg', 'md' %}
 ### Congratulations! {.step}
 
-You've completed building your SS-DIY. If you have questions about using the SS-DIY, refer to the [Operation Manual](https://support.diy.re). Have a question or problem? [Drop us a line.](https://support.diy.re)
+You've completed building your SS-DIY. If you have questions about using the SS-DIY, refer to the [Operation Manual](https://cdn.shopify.com/s/files/1/0698/2265/files/SS-DIY_Manual.pdf). Have a question or problem? [Drop us a line.](https://support.diy.re)
 {% endstepBlock %}
 
 ---
