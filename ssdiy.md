@@ -58,6 +58,7 @@ solder.
 
 ## Populate PCBs {.step}
 
+---
 {% stepBlock '/assets/ssdiy/01-headers.jpg', 'md' %}
 ### Headers {.step}
 
@@ -66,12 +67,14 @@ Place the headers so the gap in the plastic body matches the PCB legend, then tu
 {% alert 'You do not need to trim the leads after soldering for these or any parts in the SS-DIY.', 'success', 'Tip' %}
 {% endstepBlock %}
 
+---
 {% stepBlock '/assets/ssdiy/02-jacks.jpg', 'md' %}
 ### Jacks {.step}
 
 Place the jacks in the board and turn it over, making sure the jacks are sitting flush. Solder the pins.
 {% endstepBlock %}
 
+---
 {% stepBlock '/assets/ssdiy/03-switch.jpg', 'md' %}
 ### Rotary Switch {.step}
 
@@ -81,25 +84,25 @@ Insert the switch with its thicker locating pin in the larger hole. Solder one p
 {% endstepBlock %}
 
 ## Mechanical Assembly {.step}
-
+---
 {% stepBlock '/assets/ssdiy/04-boards-cables.jpg', 'md' %}
 ### Mount Boards and Connect Cables {.step}
 
 Mount the RIGHT board on the bottom and the LEFT board on top, fastening both with the TRS jack screws. Connect the two boards with the IDC cables.
 {% endstepBlock %}
-
+---
 {% stepBlock '/assets/ssdiy/05-chassis-top.jpg', 'md' %}
 ### Mount Chassis Top {.step}
 
 Place the chassis top over the boards, then install the nut and washer onto SW1. Fasten the knob to finish.
 {% endstepBlock %}
-
+---
 {% stepBlock '/assets/ssdiy/06-case.jpg', 'md' %}
 ### Screw Case Together {.step}
 
 Fasten the side panels with the flat-head screws, then attach the bottom panel with the pan-head screws and rubber feet.
 {% endstepBlock %}
-
+---
 {% stepBlock '/assets/ssdiy/ssdiy-top.jpg', 'md' %}
 ### Congratulations! {.step}
 

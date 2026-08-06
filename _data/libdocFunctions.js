@@ -103,15 +103,9 @@ export default {
                     anchorsIds.push(slugifiedId);
                     // Only add pl-9 padding to h1 and h2
                     const paddingAttr = (m1 === 'h1' || m1 === 'h2') ? ' pl-9="xs,sm"' : '';
-                    const markup = `
-                        <${m1}${m2} id="${slugifiedId}"${paddingAttr}>
-                            <a  href="#${slugifiedId}"
-                                title="${m3}"
-                                class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bcolor-neutral-500 __hover-1 __soft-shadow"
-                                ml-3="xs,sm">
-                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
-                            </a>
-                    `;
+                    // Anchor-link button (icon-link-simple pill) intentionally removed —
+                    // headings still get their id, just no visible link button next to them.
+                    const markup = `<${m1}${m2} id="${slugifiedId}"${paddingAttr}>`;
                     newM = m.replace(/<[a-zA-Z][a-zA-Z0-9_-]*\b[^>]*>/, markup);
                     i++;
                 }

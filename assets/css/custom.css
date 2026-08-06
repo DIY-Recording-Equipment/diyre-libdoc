@@ -21,6 +21,10 @@ main p {
     gap: var(--ita-spacings-5);
     max-width: 100%;
 }
+.widget-lightbox {
+    padding-top: var(--ita-spacings-7);
+    padding-bottom: var(--ita-spacings-7);
+}
 
 /* Size variants for lightbox thumbnails */
 .lightbox-size-sm {
@@ -51,7 +55,7 @@ main p {
     cursor: pointer;
     display: block;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 0;
     border-width: 1px;
     transition: all 300ms;
     overflow: hidden;
@@ -73,9 +77,6 @@ main p {
     display: flex;
     gap: var(--ita-spacings-6);
     align-items: flex-start;
-    margin-top: 2em;
-    padding-top: 2em;
-    border-top: 1px solid var(--ita-colors-neutral-500);
 }
 .step-block__media {
     flex: 0 0 auto;
@@ -110,7 +111,7 @@ main {
 h2.step {
     counter-reset: h3Counter;
     counter-increment: h2Counter;
-    margin-top:2em;
+    margin-top: 2em;
 }
 h2.step::before {
     content: counter(h2Counter) ". ";
@@ -447,7 +448,7 @@ input[type="email"] {
     width: 100%;
     padding: var(--ita-spacings-4);
     border: 1px solid var(--ita-colors-neutral-500);
-    border-radius: 12px;
+    border-radius: 0;
     font-size: var(--ita-fontSizes-4);
     font-family: var(--libdoc-font-family);
     color: var(--ita-colors-neutral-900);
@@ -469,7 +470,7 @@ textarea {
     width: 100%;
     padding: var(--ita-spacings-4);
     border: 1px solid var(--ita-colors-neutral-500);
-    border-radius: 12px;
+    border-radius: 0;
     font-size: var(--ita-fontSizes-4);
     font-family: var(--libdoc-font-family);
     color: var(--ita-colors-neutral-900);
@@ -507,8 +508,8 @@ form label {
     color: var(--ita-colors-neutral-900);
 }
 main hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: var(--ita-spacings-7);
+    margin-bottom: var(--ita-spacings-7);
 }
 main hr::before {
     border-bottom-style: solid;
@@ -519,6 +520,7 @@ main > ol:not(:has(ul)) > li,
 main > ol:not(:has(ul)) li > ol > li,
 main > ol:has(ul) > li {
     border-left: none;
+    padding-left: var(--ita-spacings-8);
 }
 main > ol:not(:has(ul)) > li::before,
 main > ol:not(:has(ul)) li > ol > li::before {
@@ -526,6 +528,23 @@ main > ol:not(:has(ul)) li > ol > li::before {
 }
 main > ol:not(:has(ul)) > li::before {
     border-radius: 0;
+}
+/* Keep the numbers from hanging past the main column's left edge. Core
+   positions the ::before via position:absolute + a negative translateX,
+   but the <li> itself is never made a positioned ancestor (unlike the
+   equivalent <ul> rule), so the number positions relative to <main>
+   (which carries .pos-relative) and its own width + spacing can push it
+   past main's left padding into the gutter/sidebar. Making the <li> the
+   positioning context and pinning the number to its own left edge keeps
+   it inside the li's reserved padding-left space instead. */
+main > ol:not(:has(ul)) > li,
+main > ol:not(:has(ul)) li > ol > li {
+    position: relative;
+}
+main > ol:not(:has(ul)) > li::before,
+main > ol:not(:has(ul)) li > ol > li::before {
+    left: 0;
+    transform: none;
 }
 
 /* Floating TOC: sit just below the logo header instead of the viewport top.
@@ -548,5 +567,42 @@ main .alert {
     border:none;
 }
 main .alert[data-title]::before {
-    border-bottom-style:solid;
+    border:none;
+    margin-bottom:0;
+}
+
+/* ROUNDED CORNERS REMOVAL
+ * The base theme (core/assets/css/ds.css, ds__defaults.css,
+ * autocomplete.css) hardcodes border-radius all over: image blocks,
+ * buttons, code blocks, embeds, the search-results dropdown, and the
+ * design-system's brad, bradtl, bradtr, bradbr, and bradbl corner
+ * utility classes (used by the breadcrumb pill and blog/tag templates).
+ * Overridden here instead of in core/ to avoid upstream merge conflicts.
+ * True circles (radio buttons, decorative nav/list dot markers) are left
+ * alone -- those are an intentional shape, not a "rounded corner".
+ */
+[class*="brad-"],
+[class*="bradtl"],
+[class*="bradtr"],
+[class*="bradbr"],
+[class*="bradbl"] {
+    border-radius: 0;
+}
+main samp,
+main kbd,
+main > *:not(pre) code,
+main > pre,
+main > pre > code,
+main figure,
+main blockquote::before,
+main a.btn,
+main button.btn,
+main > aside > iframe,
+main .__search-occurrence {
+    border-radius: 0;
+}
+/* autocomplete.css loads after custom.css (see guide.liquid), so this
+   needs !important to win despite matching source order otherwise */
+.auto-results-wrapper > ul {
+    border-radius: 0 !important;
 }
