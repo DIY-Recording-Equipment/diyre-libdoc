@@ -558,6 +558,19 @@ main > ol:not(:has(ul)) li > ol > li::before {
         max-height: calc(100vh - 160px - 2 * var(--ita-spacings-6) - 50px);
     }
 }
+/* Between 960px and 1199px both TOCs render at once: ui.js only hides the
+   floating TOC below 960px (d-none="xs,sm"), but core's #toc_main (the
+   top-of-page TOC) only hides at 1200px+ (ds__defaults.css's
+   "min-width: 1200px" rule), and the floating box's right-offset math also
+   assumes that same 1200px layout. In the gap, the floating box collapses
+   to the viewport's right edge and overlaps the (still narrower) main
+   column. Hide the floating TOC for that range so only the top-of-page
+   TOC shows, matching core's intended cutover point. */
+@media (min-width: 960px) and (max-width: 1199px) {
+    #floating_toc_container {
+        display: none;
+    }
+}
 main a[href^="https://"]:not([href^="https://eleventy-libdoc"])::after, main a.__external-link::after {
     content: none;
 }
