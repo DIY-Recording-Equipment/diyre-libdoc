@@ -7,7 +7,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # Runs on your own machine (self-hosted runner) rather than a GitHub-hosted
+    # one, because SiteGround appears to block/drop SSH connections from
+    # GitHub-hosted runners' datacenter IP ranges before the handshake even
+    # completes. Your machine's normal IP already reaches SiteGround fine.
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v4
