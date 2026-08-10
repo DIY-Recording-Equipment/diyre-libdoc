@@ -1,0 +1,20 @@
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Prevent file browsing
+Options -Indexes -MultiViews
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Root visits go to the main store's manuals landing page, not our own homepage
+    RewriteRule ^(index\.html)?$ https://www.diyrecordingequipment.com/pages/manuals [R=301,L]
+</IfModule>
+
+# Disable SiteGround SuperCacher (Dynamic Cache / NGINX Direct Delivery) for this
+# site. It's a 100% static build with no PHP/DB backend, so the caching layer
+# has no expensive backend work to save -- it was only adding up to a 3-hour
+# staleness window after each deploy, requiring a manual purge every time.
+<IfModule mod_headers.c>
+Header set Cache-Control "private"
+</IfModule>
