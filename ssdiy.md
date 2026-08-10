@@ -39,7 +39,7 @@ If this is your first time soldering, follow the 8-second soldering process belo
 1. **Clean** the tip.
     1. Clean with a wire sponge before every solder joint.
     1. Apply a little solder to the tip, this is called “tinning.”
-2. **Heat** the pad for 5 seconds.
+2. **Heat** for 5 seconds.
     1. Place the iron where the pad and the component lead meet.
     2. Touch the pad and the lead with the side of the tip. Heat is transferred on the side of the tip, not the point. 
 3. Add **solder** for 1 second.

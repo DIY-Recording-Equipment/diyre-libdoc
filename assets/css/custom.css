@@ -575,6 +575,12 @@ main a[href^="https://"]:not([href^="https://eleventy-libdoc"])::after, main a._
     content: none;
 }
 
+/* Text links: don't go bold on hover (core's main a:hover sets
+   font-weight: 700, vs. 500 for the resting :link/:visited state). */
+main a:hover {
+    font-weight: 500;
+}
+
 /* Shortcode Customization */
 main .alert {
     border:none;
