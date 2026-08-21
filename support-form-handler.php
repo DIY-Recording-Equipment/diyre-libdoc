@@ -159,6 +159,11 @@ try {
     $mail->Password = MAIL_SMTP_PASSWORD;
     $mail->SMTPSecure = MAIL_SMTP_ENCRYPTION;
 
+    // PHPMailer defaults to ISO-8859-1; without this, any non-ASCII byte in
+    // the subject/body (e.g. the em dash the subject is built with, or an
+    // accented name) comes through as mojibake in the recipient's inbox.
+    $mail->CharSet = 'UTF-8';
+
     // From must be the authenticated mailbox itself for SPF/DKIM alignment.
     $mail->setFrom(MAIL_SMTP_USERNAME, 'DIYRE Manuals Site');
     $mail->addAddress(MAIL_TO_ADDRESS, MAIL_TO_NAME);

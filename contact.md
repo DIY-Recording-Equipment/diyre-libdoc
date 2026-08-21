@@ -80,10 +80,10 @@ permalink: contact/index.html
 
         var parts = [];
         if (product) parts.push(product);
-        if (orderNumber) parts.push('Order #' + orderNumber);
+        if (orderNumber) parts.push(orderNumber);
         parts.push('Troubleshooting');
 
-        subjectField.value = parts.join(' — ');
+        subjectField.value = parts.join(' ');
     });
 })();
 </script>
