@@ -521,6 +521,26 @@ form label {
     color: var(--ita-colors-neutral-900);
 }
 
+/* Radio option groups (e.g. missing-parts.md's "What happened?"): pairs a
+   radio with its label as one inline unit, overriding form label's block
+   display so the label sits next to its radio dot instead of stacking
+   below it on its own line. */
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    margin-right: var(--ita-spacings-6);
+    margin-top: var(--ita-spacings-2);
+}
+.radio-option input[type="radio"] {
+    margin-left: 0;
+}
+.radio-option label {
+    display: inline;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
 /* File input (photo uploads on support forms) */
 input[type="file"] {
     display: block;

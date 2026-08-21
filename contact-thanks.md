@@ -1,5 +1,5 @@
 ---
-layout: support.liquid
+layout: page.liquid
 title: Request Received
 description: false
 permalink: contact/thanks/index.html
@@ -10,4 +10,4 @@ eleventyExcludeFromCollections: true
 
 In the meantime, check the [Getting Started Guide](https://www.diyrecordingequipment.com/pages/getting-started) or your kit's assembly guide for common troubleshooting steps.
 
-[Back to Contact Support](/contact/)
+[Back to Contact](/contact/)

@@ -1,17 +1,22 @@
 ---
-layout: support.liquid
-title: Contact Support
-description: Stuck on a build, or something not working right? Tell us what's going on and attach a few photos — we'll get back to you by email.
+layout: page.liquid
+title: Contact Us
+
 permalink: contact/index.html
 ---
+
+Looking for one of these instead?
+
+- **[Missing / Replacement Parts Request](/missing-parts/)**
+- **[Troubleshooting Support Request](/troubleshooting-support/)**
+
+Otherwise, use the form below for anything else.
 
 <div id="support-form-error" style="display:none">
 {% alert 'Something went wrong submitting your request. Double check the required fields (name and a valid email) and try again, or email us directly at support@diyrecordingequipment.com.', 'danger', 'Submission Failed' %}
 </div>
 
-<form action="/support-form-handler.php" method="POST" enctype="multipart/form-data" id="form-support">
-    <input type="hidden" name="_subject" value="Troubleshooting Support Request">
-
+<form action="/support-form-handler.php" method="POST" id="form-contact-general">
     <p aria-hidden="true" class="hp-field">
         <label for="website">Leave this field empty</label>
         <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
@@ -26,31 +31,15 @@ permalink: contact/index.html
         <input type="email" id="email" name="email" required>
     </p>
     <p>
-        <label for="kit_product">Which kit or product?</label>
-        <input type="text" id="kit_product" name="kit_product">
+        <label for="_subject">Subject</label>
+        <input type="text" id="_subject" name="_subject" required>
     </p>
     <p>
-        <label for="order_number">Order number (optional)</label>
-        <input type="text" id="order_number" name="order_number">
+        <label for="question">Message</label>
+        <textarea id="question" name="question" rows="6" required></textarea>
     </p>
     <p>
-        <label for="issue_description">What's going wrong?</label>
-        <textarea id="issue_description" name="issue_description" rows="6" required placeholder="Describe the problem you're running into."></textarea>
-    </p>
-    <p>
-        <label for="test_setup">What's your test setup?</label>
-        <textarea id="test_setup" name="test_setup" rows="4" placeholder="What are you plugging this into, and how are you powering/testing it?"></textarea>
-    </p>
-    <p>
-        <label for="troubleshooting_tried">What have you already tried?</label>
-        <textarea id="troubleshooting_tried" name="troubleshooting_tried" rows="4" placeholder="Steps you've already taken to troubleshoot the issue."></textarea>
-    </p>
-    <p>
-        <label for="photos">Photos (up to 5)</label>
-        <input type="file" id="photos" name="photos[]" multiple accept="image/*,.pdf">
-    </p>
-    <p>
-        <button class="btn" type="submit">Submit Request</button>
+        <button class="btn" type="submit">Submit</button>
     </p>
 </form>
 
@@ -61,29 +50,5 @@ permalink: contact/index.html
         var el = document.getElementById('support-form-error');
         if (el) el.style.display = '';
     }
-})();
-
-(function () {
-    // Build the email subject from the product + order number right before
-    // submit, so support can triage from the subject line alone. Falls back
-    // to the static default in the hidden field's value if JS is disabled.
-    var form = document.getElementById('form-support');
-    if (!form) return;
-    form.addEventListener('submit', function () {
-        var subjectField = form.querySelector('[name="_subject"]');
-        var productField = form.querySelector('[name="kit_product"]');
-        var orderField = form.querySelector('[name="order_number"]');
-        if (!subjectField) return;
-
-        var product = productField ? productField.value.trim() : '';
-        var orderNumber = orderField ? orderField.value.trim() : '';
-
-        var parts = [];
-        if (product) parts.push(product);
-        if (orderNumber) parts.push(orderNumber);
-        parts.push('Troubleshooting');
-
-        subjectField.value = parts.join(' ');
-    });
 })();
 </script>
