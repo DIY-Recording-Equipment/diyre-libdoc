@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "When will kits be back in stock?"
+eleventyNavigation:
+  key: "When will kits be back in stock?"
+  parent: "Shipping & Returns"
+  order: 5
 date: 2022-10-26
 ---
 

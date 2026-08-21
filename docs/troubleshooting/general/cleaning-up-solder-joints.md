@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Cleaning up solder joints"
+eleventyNavigation:
+  key: "Cleaning up solder joints"
+  parent: "General"
+  order: 5
 date: 2022-10-26
 ---
 

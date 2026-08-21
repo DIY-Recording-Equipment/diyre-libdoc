@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus vintage VCAs"
+eleventyNavigation:
+  key: "G Bus vintage VCAs"
+  parent: "Mods"
+  order: 14
 date: 2022-10-27
 ---
 

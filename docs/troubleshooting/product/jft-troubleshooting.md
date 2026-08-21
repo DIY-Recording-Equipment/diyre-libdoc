@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "JFT Colour Troubleshooting"
+eleventyNavigation:
+  key: "JFT Colour Troubleshooting"
+  parent: "By Product"
+  order: 8
 date: 2026-08-18
 ---
 

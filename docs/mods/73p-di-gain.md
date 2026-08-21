@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "73P DI gain"
+eleventyNavigation:
+  key: "73P DI gain"
+  parent: "Mods"
+  order: 3
 date: 2026-04-01
 ---
 

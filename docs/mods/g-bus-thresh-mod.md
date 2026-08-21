@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus THRESHOLD sensitivity"
+eleventyNavigation:
+  key: "G Bus THRESHOLD sensitivity"
+  parent: "Mods"
+  order: 12
 date: 2023-12-11
 ---
 

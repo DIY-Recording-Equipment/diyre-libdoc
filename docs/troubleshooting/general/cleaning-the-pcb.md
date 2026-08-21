@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Cleaning the PCB"
+eleventyNavigation:
+  key: "Cleaning the PCB"
+  parent: "General"
+  order: 4
 date: 2021-10-06
 ---
 

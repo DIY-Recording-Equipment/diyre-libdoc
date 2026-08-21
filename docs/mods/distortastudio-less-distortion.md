@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Distortastudio less distortion"
+eleventyNavigation:
+  key: "Distortastudio less distortion"
+  parent: "Mods"
+  order: 5
 date: 2026-07-20
 ---
 

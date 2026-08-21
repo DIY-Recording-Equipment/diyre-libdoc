@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "15IPS mkii change resonant filter"
+eleventyNavigation:
+  key: "15IPS mkii change resonant filter"
+  parent: "Mods"
+  order: 2
 date: 2024-10-22
 ---
 

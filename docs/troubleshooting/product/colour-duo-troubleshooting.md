@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Colour Duo Troubleshooting"
+eleventyNavigation:
+  key: "Colour Duo Troubleshooting"
+  parent: "By Product"
+  order: 2
 date: 2026-08-18
 ---
 

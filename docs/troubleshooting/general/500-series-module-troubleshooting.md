@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "500-series module troubleshooting"
+eleventyNavigation:
+  key: "500-series module troubleshooting"
+  parent: "General"
+  order: 1
 date: 2022-10-26
 ---
 

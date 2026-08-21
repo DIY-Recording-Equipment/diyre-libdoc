@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus high-pass filter frequencies"
+eleventyNavigation:
+  key: "G Bus high-pass filter frequencies"
+  parent: "Mods"
+  order: 10
 date: 2022-10-27
 ---
 

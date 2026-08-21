@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus true bypass"
+eleventyNavigation:
+  key: "G Bus true bypass"
+  parent: "Mods"
+  order: 13
 date: 2026-03-31
 ---
 

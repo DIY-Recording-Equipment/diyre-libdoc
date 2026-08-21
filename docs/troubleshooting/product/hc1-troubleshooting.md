@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "HC1 Headphone Amp Troubleshooting"
+eleventyNavigation:
+  key: "HC1 Headphone Amp Troubleshooting"
+  parent: "By Product"
+  order: 7
 date: 2026-08-18
 ---
 

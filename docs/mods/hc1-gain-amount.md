@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "HC1 gain amount"
+eleventyNavigation:
+  key: "HC1 gain amount"
+  parent: "Mods"
+  order: 15
 date: 2026-08-21
 ---
 

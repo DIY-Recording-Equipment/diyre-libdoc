@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "EQP5 Troubleshooting"
+eleventyNavigation:
+  key: "EQP5 Troubleshooting"
+  parent: "By Product"
+  order: 5
 date: 2026-08-18
 ---
 

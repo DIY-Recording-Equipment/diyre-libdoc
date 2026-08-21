@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "L2P attenuation amount"
+eleventyNavigation:
+  key: "L2P attenuation amount"
+  parent: "Mods"
+  order: 16
 date: 2026-08-21
 ---
 

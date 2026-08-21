@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "EQP5 alternate frequencies"
+eleventyNavigation:
+  key: "EQP5 alternate frequencies"
+  parent: "Mods"
+  order: 6
 date: 2026-03-31
 ---
 

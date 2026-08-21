@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus MAKE-UP amount"
+eleventyNavigation:
+  key: "G Bus MAKE-UP amount"
+  parent: "Mods"
+  order: 11
 date: 2022-10-27
 ---
 

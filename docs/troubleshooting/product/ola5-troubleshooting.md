@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "OLA5 Troubleshooting"
+eleventyNavigation:
+  key: "OLA5 Troubleshooting"
+  parent: "By Product"
+  order: 9
 date: 2026-08-18
 ---
 

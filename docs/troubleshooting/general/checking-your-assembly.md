@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Checking your assembly (component positions and orientation)"
+eleventyNavigation:
+  key: "Checking your assembly (component positions and orientation)"
+  parent: "General"
+  order: 2
 date: 2022-10-26
 ---
 

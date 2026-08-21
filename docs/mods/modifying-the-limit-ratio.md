@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "OLA5 limit ratio"
+eleventyNavigation:
+  key: "OLA5 limit ratio"
+  parent: "Mods"
+  order: 17
 date: 2022-10-27
 ---
 

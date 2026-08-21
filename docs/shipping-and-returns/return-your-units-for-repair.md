@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Return your unit for the Last Ditch Repair Service"
+eleventyNavigation:
+  key: "Return your unit for the Last Ditch Repair Service"
+  parent: "Shipping & Returns"
+  order: 6
 date: 2026-08-21
 ---
 

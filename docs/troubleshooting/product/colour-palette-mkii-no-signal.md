@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Colour Palette mkII no signal"
+eleventyNavigation:
+  key: "Colour Palette mkII no signal"
+  parent: "By Product"
+  order: 3
 date: 2026-08-18
 ---
 

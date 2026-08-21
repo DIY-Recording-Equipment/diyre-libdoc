@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "CP5 high input impedance"
+eleventyNavigation:
+  key: "CP5 high input impedance"
+  parent: "Mods"
+  order: 4
 date: 2026-08-21
 ---
 

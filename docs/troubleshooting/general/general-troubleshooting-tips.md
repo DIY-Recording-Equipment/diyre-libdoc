@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "General troubleshooting tips"
+eleventyNavigation:
+  key: "General troubleshooting tips"
+  parent: "General"
+  order: 6
 date: 2025-10-28
 ---
 

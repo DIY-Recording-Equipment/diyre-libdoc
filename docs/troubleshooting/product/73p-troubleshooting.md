@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "73P Troubleshooting"
+eleventyNavigation:
+  key: "73P Troubleshooting"
+  parent: "By Product"
+  order: 1
 date: 2026-08-18
 ---
 

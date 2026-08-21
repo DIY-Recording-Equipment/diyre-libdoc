@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Missing or damaged parts"
+eleventyNavigation:
+  key: "Missing or damaged parts"
+  parent: "Shipping & Returns"
+  order: 4
 date: 2024-10-24
 ---
 

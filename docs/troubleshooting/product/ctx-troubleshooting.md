@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "CTX Colour Troubleshooting"
+eleventyNavigation:
+  key: "CTX Colour Troubleshooting"
+  parent: "By Product"
+  order: 4
 date: 2026-08-18
 ---
 

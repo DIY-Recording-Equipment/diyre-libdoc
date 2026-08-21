@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "International shipping duties"
+eleventyNavigation:
+  key: "International shipping duties"
+  parent: "Shipping & Returns"
+  order: 2
 date: 2025-04-02
 ---
 

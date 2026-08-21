@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus DRIVE amount"
+eleventyNavigation:
+  key: "G Bus DRIVE amount"
+  parent: "Mods"
+  order: 8
 date: 2022-10-27
 ---
 

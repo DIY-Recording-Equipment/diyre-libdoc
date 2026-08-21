@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "15IPS less distortion (30IPS mod)"
+eleventyNavigation:
+  key: "15IPS less distortion (30IPS mod)"
+  parent: "Mods"
+  order: 1
 date: 2024-08-19
 ---
 

@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus Troubleshooting"
+eleventyNavigation:
+  key: "G Bus Troubleshooting"
+  parent: "By Product"
+  order: 6
 date: 2026-08-18
 ---
 

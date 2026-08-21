@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "EQP5 and OLA5 LF bump fix"
+eleventyNavigation:
+  key: "EQP5 and OLA5 LF bump fix"
+  parent: "Mods"
+  order: 7
 date: 2023-02-09
 ---
 

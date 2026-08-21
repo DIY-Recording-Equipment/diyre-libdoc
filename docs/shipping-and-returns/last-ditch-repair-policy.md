@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Last Ditch Repair Policy"
+eleventyNavigation:
+  key: "Last Ditch Repair Policy"
+  parent: "Shipping & Returns"
+  order: 3
 date: 2025-12-12
 ---
 

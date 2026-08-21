@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Returns process"
+eleventyNavigation:
+  key: "Returns process"
+  parent: "Shipping & Returns"
+  order: 7
 date: 2025-10-15
 ---
 

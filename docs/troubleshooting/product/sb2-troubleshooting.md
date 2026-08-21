@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "SB2 troubleshooting"
+eleventyNavigation:
+  key: "SB2 troubleshooting"
+  parent: "By Product"
+  order: 10
 date: 2022-10-26
 ---
 

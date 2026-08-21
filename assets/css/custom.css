@@ -579,6 +579,44 @@ main hr::before {
     border-bottom-style: solid;
 }
 
+/* Bullets: remove the dashed guide line/stub (core's border-left on the <li>
+   plus a border-bottom "stub" on ::before), keep the ::after dot marker.
+   Same "no dashed guide lines" treatment as the ordered-list override below,
+   applied to core's ul selector group (top-level ul, nested ul, and a ul
+   nested inside an ol). */
+main > ul > li,
+main > ul ul > li,
+main > ol ul > li {
+    border-left: none;
+}
+main > ul > li::before,
+main > ul ul > li::before,
+main > ol ul > li::before {
+    border-bottom: none;
+}
+
+/* Sidebar navigation: remove dashed lines (container border, header/search
+   divider, per-link stub before each item, nested-list guide line). Dot
+   markers (.nav_primary__anchor::after) are left alone. */
+#nav_primary_container {
+    border: none;
+}
+#nav_primary_header {
+    border-bottom: none;
+}
+#nav_primary .nav_primary__anchor::before,
+.nav_primary .nav_primary__anchor::before,
+#nav_primary_blog_link::before {
+    border-top: none;
+}
+#nav_primary_blog_link {
+    border-bottom: none;
+}
+#nav_primary > ol > li ol li,
+.nav_primary > ol > li ol li {
+    border-left: none;
+}
+
 /* Ordered lists: simpler numbering, no dashed guide lines or pill radius */
 main > ol:not(:has(ul)) > li,
 main > ol:not(:has(ul)) li > ol > li,

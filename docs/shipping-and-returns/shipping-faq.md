@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "Shipping and returns"
+eleventyNavigation:
+  key: "Shipping and returns"
+  parent: "Shipping & Returns"
+  order: 8
 date: 2025-12-12
 ---
 

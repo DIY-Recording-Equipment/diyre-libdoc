@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "G Bus feed-forward mode"
+eleventyNavigation:
+  key: "G Bus feed-forward mode"
+  parent: "Mods"
+  order: 9
 date: 2022-10-27
 ---
 

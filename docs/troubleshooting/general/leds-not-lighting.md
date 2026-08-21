@@ -1,6 +1,10 @@
 ---
 layout: support.liquid
 title: "LEDs not lighting or turning off after a few seconds"
+eleventyNavigation:
+  key: "LEDs not lighting or turning off after a few seconds"
+  parent: "General"
+  order: 8
 date: 2026-08-18
 ---
 
