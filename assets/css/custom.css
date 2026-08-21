@@ -507,6 +507,37 @@ form label {
     font-weight: 600;
     color: var(--ita-colors-neutral-900);
 }
+
+/* File input (photo uploads on support forms) */
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: var(--ita-spacings-4);
+    border: 1px solid var(--ita-colors-neutral-500);
+    border-radius: 0;
+    font-size: var(--ita-fontSizes-4);
+    font-family: var(--libdoc-font-family);
+    color: var(--ita-colors-neutral-900);
+    background-color: var(--ita-colors-neutral-100);
+    box-sizing: border-box;
+}
+input[type="file"]:focus {
+    outline: 3px solid var(--ita-colors-primary-500);
+    outline-offset: -1px;
+    border-color: var(--ita-colors-primary-500);
+}
+
+/* Honeypot field on support forms: invisible to sighted users and skipped
+   by keyboard/screen-reader users (tabindex="-1" + aria-hidden on the
+   wrapping element in the markup), but still present in the DOM for bots
+   that fill in every field regardless of visibility. */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 main hr {
     margin-top: var(--ita-spacings-7);
     margin-bottom: var(--ita-spacings-7);

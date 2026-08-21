@@ -70,6 +70,12 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("core/assets");
     eleventyConfig.addPassthroughCopy("favicon.png");
     eleventyConfig.addPassthroughCopy(".htaccess");
+    // Support-form backend: plain PHP + vendored PHPMailer, copied through
+    // untouched (no templating) so SiteGround's PHP layer can execute it.
+    // mail-config.php (SMTP credentials) is deliberately NOT listed here —
+    // see mail-config.example.php.
+    eleventyConfig.addPassthroughCopy("support-form-handler.php");
+    eleventyConfig.addPassthroughCopy("phpmailer");
     // END FILE COPY
 
     return {
