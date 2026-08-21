@@ -1,0 +1,11 @@
+---
+layout: support.liquid
+title: "EQP5 and OLA5 LF bump fix"
+date: 2023-02-09
+---
+
+The EQP5 and OLA5 naturally have small bump in the very low frequencies when using the Vintage Output. When the output is connected to a standard line-level input with an impedance of 20k Ohms or lower, the bump is about 2dB at 5Hz. However, with higher impedance inputs the bump can increase in amplitude and move up into the audible range.
+
+All that's need to tame the bump is to decrease the input impedance seen by the transformer. We can do this by simply soldering a resistor between the Out+ and Out- pads of the card edge as shown below. Any value between 1k-2k Ohms will work, while keeping the load light enough that it will not negatively affect the Modern output.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/63e524cdd2459a27d10c915d/file-iEOjPczLeh.jpg)

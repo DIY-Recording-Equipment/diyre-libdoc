@@ -1,0 +1,49 @@
+---
+layout: support.liquid
+title: "G Bus true bypass"
+date: 2026-03-31
+---
+
+**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+
+By default, the G Bus COMPRESSOR switch only bypasses the compression circuitry and audio still passes through the compressor, including the XFMR/DRIVE circuitry if it is switched in. However, you can modify the XFMR switch to be a "true bypass" switch using the "IN+" and "IN-" pads on the PCB.
+
+Doing either of the following mods will replace either the XFMR IN or OUT position with true bypass. This means you will replace either the standard or XFMR output with true bypass.
+
+**Option 1: True bypass XFMR OUT**
+
+  
+
+In this mode, you will replace the standard output with true bypass. So the compressor will be completely bypassed when the XFMR switch is in the OUT position, and the standard output will be disabled.
+
+1. Remove C13, C15, R20, and R22
+2. Solder jumper wires from the round pads of C13 and C15 to IN+ and IN- respectively. Do the same on both channels.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635abb562a22cc147576d7e1/file-J2E25r2UTK.png)
+
+This option results in the circuit below:
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635ab0429171a91e374a4cf9/file-9YjsrBM1aK.png)
+
+**Option 2: True bypass XFMR IN**
+
+In this mode, you will replace the XFMR output with true bypass. So the compressor will be completely bypassed when the XFMR switch is in the IN position, and the XFMR output will be disabled. With this mod installed, the DRIVE switch will not do anything.
+
+1. Remove R25, R26 and R13\_CB, R14\_CB (not pictured).
+2. Solder jumper wires from the pads shown below of R25 and R26 to IN- an IN+ respectively.
+
+Left channel:
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635abe349171a91e374a4d3c/file-SWnTRMYX6n.png)
+
+R channel:
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635abf717678db1f11869272/file-1XvG5fwh84.png)
+
+This option results in the circuit below:
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635ab0397678db1f11869225/file-MX81iwgENM.png)
+
+**Additional Resources:**
+
+- [G Bus Schematic (PDF)](https://cdn.shopify.com/s/files/1/0698/2265/files/G_Bus_1.0_Schematic.pdf)

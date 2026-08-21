@@ -1,0 +1,29 @@
+---
+layout: support.liquid
+title: "G Bus DRIVE amount"
+date: 2022-10-27
+---
+
+**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+
+The DRIVE switch controls two stages at once: the gain of the opamp IC3.2 and an attenuator after the transformer. The gain is set by the resistors R5\_CB-R7\_CB and R10\_CB-R12\_CB, while the attenuation is set by R8\_CB, R9\_CB and R13\_CB, R14\_CB.
+
+The gain/attenuation resistors correspond to each other as shown below. Note there is no corresponding attenuation resistor for R5\_CB, R10\_CB.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635aa3d92a22cc147576d748/file-H2moPgBKeK.png)
+
+Tips for modding the DRIVE amounts:
+
+- To increase the gain and therefore the distortion of the DRIVE stage, decrease the value of the gain resistors. To decrease the gain and distortion, increase the value of the gain resistors.
+- To increase attenuation (reduce the output level), decrease the value of the attenuation resistors. To decrease attenuation (increase output level), increase the value of the attenuation resistors.
+- Because the perceived volume of the output changes with the amount of distortion, the attenuator values must be set by ear. The easiest method is to replace the resistors you plan to change with trim pots, set them by ear, measure the values, then replace with the nearest available resistors.
+- To maintain balance between the channels, keep the pairs of resistors the same. That is, if you change R5\_CB, also change R10\_CB the same value, etc.
+- If you plan to decrease any of the gain resistors below 510R, you should increase the value of C1\_CB and C2\_CB to avoid low-frequency roll off. The gain resistors together with C1\_CB and C2\_CB create a high-pass filter. You can use an [online HPF calculator](http://www.learningaboutelectronics.com/Articles/High-pass-filter-calculator.php) to check the corner frequency of your resistor/capacitor combinations. To avoid affecting the audio range, aim for a corner frequency of 3Hz or below.
+
+Gain resistors are highlighted green, attenuation resistors are highlighted red.
+
+![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635a9e187678db1f118691a9/file-vSkIol6qCm.png)
+
+**Additional Resources:**
+
+- [G Bus Schematic (PDF)](https://cdn.shopify.com/s/files/1/0698/2265/files/G_Bus_1.0_Schematic.pdf)
