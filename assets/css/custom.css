@@ -8,6 +8,19 @@ body {
     background-color: white !important;
     background-image: none !important;
 }
+
+/* core's `main > * { display: block; ... }` (ds__defaults.css) lays out
+   every direct child of <main> as a full-width block, for headings/
+   paragraphs/asides in markdown content. If a <script> tag is ever placed
+   at the top level of a page's markdown (a direct sibling of the content
+   around it, not nested inside a wrapping element) that rule overrides the
+   browser's built-in `script { display: none }` default, and the script's
+   text renders as visible page content instead of executing silently.
+   `main > script` outranks `main > *` on specificity alone, so this wins
+   without needing !important. */
+main > script {
+    display: none;
+}
 main p {
     margin-top:0;
     margin-bottom:0;
