@@ -7,3 +7,7 @@ _data/envlocal.json
 .env
 /assets/___dummy_content
 mail-config.php
+# Local SFTP mount points some editors/clients create when browsing the
+# live SiteGround server directly (e.g. a "Connect to Server" mount) —
+# not repo content, just a local mirror of remote state.
+/www
