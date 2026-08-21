@@ -62,4 +62,28 @@ permalink: contact/index.html
         if (el) el.style.display = '';
     }
 })();
+
+(function () {
+    // Build the email subject from the product + order number right before
+    // submit, so support can triage from the subject line alone. Falls back
+    // to the static default in the hidden field's value if JS is disabled.
+    var form = document.getElementById('form-support');
+    if (!form) return;
+    form.addEventListener('submit', function () {
+        var subjectField = form.querySelector('[name="_subject"]');
+        var productField = form.querySelector('[name="kit_product"]');
+        var orderField = form.querySelector('[name="order_number"]');
+        if (!subjectField) return;
+
+        var product = productField ? productField.value.trim() : '';
+        var orderNumber = orderField ? orderField.value.trim() : '';
+
+        var parts = [];
+        if (product) parts.push(product);
+        if (orderNumber) parts.push('Order #' + orderNumber);
+        parts.push('Troubleshooting');
+
+        subjectField.value = parts.join(' — ');
+    });
+})();
 </script>
