@@ -1,5 +1,5 @@
 ---
-layout: page.liquid
+layout: support.liquid
 title: "Troubleshooting"
 eleventyNavigation:
   key: "Troubleshooting"

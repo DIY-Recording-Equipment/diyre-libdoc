@@ -1,5 +1,5 @@
 ---
-layout: page.liquid
+layout: support.liquid
 title: Parts Request
 eleventyNavigation:
   key: "Request Parts"
@@ -9,9 +9,14 @@ eleventyNavigation:
 
 If your kit is missing a part or you damaged one while building, use this form to request a new one.
 
-If your kit was missing a part, we apologize for the inconvenience. We take missing parts very seriously and will check our stock and processes for errors based on your request.
+- For general inquiries, use the **[Contact](/docs/contact/)** form.
+- To request help with troubleshooting, use the **[Support Request](/docs/contact/troubleshooting/)** form.
 
-If you're requesting replacement parts, we will reply to your submission with a payment link to complete the request. Most parts are covered under our flat-rate policy of $5 plus shipping for all the parts you need.
+**Missing parts:** If your kit was incomplete, we apologize for the inconvenience. We take missing parts very seriously and will check our stock and processes for errors based on your request.
+
+**Replacement parts:** If you're requesting replacement parts, we will reply to your submission with a payment link to complete the request. Most parts are covered under our flat-rate policy of $5 plus shipping for all the parts you need.
+
+For general inquiries 
 
 <div id="support-form-error" style="display:none">
 {% alert 'Something went wrong submitting your request. Double check the required fields (name and a valid email) and try again, or email us directly at support@diyrecordingequipment.com.', 'danger', 'Submission Failed' %}

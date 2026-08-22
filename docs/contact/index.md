@@ -1,16 +1,15 @@
 ---
-layout: page.liquid
+layout: support.liquid
 title: Contact Us
 eleventyNavigation:
   key: "Contact Us"
   order: 4
-permalink: contact/index.html
 ---
 
-Looking for one of these instead?
+Use the form below for general inquiries.
 
-- **[Missing / Replacement Parts Request](/contact-parts/)**
-- **[Troubleshooting Support Request](/contact-troubleshooting/)**
+- For missing or replacement parts, use the **[ Parts Request](parts/)** form.
+- To request help with troubleshooting, use the **[Support Request](troubleshooting/)** form.
 
 Otherwise, use the form below for anything else.
 

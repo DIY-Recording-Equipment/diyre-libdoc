@@ -167,14 +167,15 @@
                     bradtr-3="md">
                     {% if libdocConfig.siteLogoUrl %}
                         <li class="d-flex ai-center">
-                            <a  href="https://www.diyrecordingequipment.com"
-                                class="pl-5 pt-5 pr-5 | td-none fvs-wght-700 lsp-5 fs-8 tws-balance | c-neutral-900"
+                            <a  href="/docs/"
+                                class="d-flex ai-center gap-3 | pl-5 pt-5 pr-5 | td-none fvs-wght-700 lsp-5 fs-8 tws-balance | c-neutral-900"
                                 title="{{ libdocConfig.siteDescription }}">
                                 <img src="{{ libdocConfig.siteLogoUrl }}"
                                     alt="{{ libdocConfig.siteTitle }}"
                                     eleventy:widths="{{ libdocSystem.widthSidebar | minus: 40 | times: 2 }}"
                                     class="maxw-100 w-auto"
                                     style="max-height: {{ libdocConfig.siteLogoMaxHeight }}px">
+                                <span>Docs</span>
                             </a>
                         </li>
                     {% endif %}
@@ -257,7 +258,6 @@
                         {{ pageDescription }}
                     </p>
                 {% else %}
-                    <div class="pt-5 | blwidth-1 blstyle-dashed bcolor-neutral-500"></div>
                 {% endif %}
                 {% if page.url != '/search/' %}
                     <div class="d-flex ai-center | m-0 | pt-1 pb-1 | blwidth-1 blstyle-dashed bcolor-neutral-500">
@@ -300,7 +300,7 @@
             </noscript>
             {{ content | cleanup | autoids }}
             <footer class="minh-100vh">
-
+                <p class="fs-2 c-neutral-700">&copy;DIY Recording Equipment, LLC {% year %}. Return to the <a href="https://www.diyrecordingequipment.com">DIYRE store</a>.</p>
             </footer>
         </main>
     </div>

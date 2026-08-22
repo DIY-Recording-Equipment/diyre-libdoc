@@ -46,6 +46,7 @@ export default function(eleventyConfig) {
     // END COLLECTIONS
 
     // START SHORTCODES
+    eleventyConfig.addShortcode("year", libdocFunctions.shortcodes.year);
     eleventyConfig.addShortcode("alert", libdocFunctions.shortcodes.alert);
     eleventyConfig.addPairedShortcode("alertAlt", libdocFunctions.shortcodes.alert);
     eleventyConfig.addShortcode("embed", libdocFunctions.shortcodes.embed);

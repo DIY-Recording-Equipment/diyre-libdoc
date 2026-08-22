@@ -257,7 +257,6 @@
                         {{ pageDescription }}
                     </p>
                 {% else %}
-                    <div class="pt-5 | blwidth-1 blstyle-dashed bcolor-neutral-500"></div>
                 {% endif %}
                 {% if tocMarkup != '' %}
                     <details id="toc_main" open>
@@ -279,7 +278,7 @@
             </noscript>
             {{ content | cleanup | autoids }}
             <footer class="minh-100vh">
-
+                <p class="fs-2 c-neutral-700">&copy;DIY Recording Equipment, LLC {% year %}. Return to the <a href="https://www.diyrecordingequipment.com">DIYRE store</a>.</p>
             </footer>
         </main>
     </div>

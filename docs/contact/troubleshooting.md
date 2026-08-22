@@ -1,11 +1,16 @@
 ---
-layout: page.liquid
+layout: support.liquid
 title: Troubleshooting Support Request
 eleventyNavigation:
   key: "Request Support"
   parent: "Contact Us"
   order: 2
 ---
+
+Use the form below to request support if your kit isn't working. Please read through all of the instructions before submitting the form.
+
+- For general inquiries, use the **[Contact](/docs/contact/)** form.
+- For missing or replacement parts, use the **[ Parts Request](/docs/contact/parts/)** form.
 
 We're dedicated to helping you finish your DIY project. But we're also a small company without a dedicated support team. Troubleshooting requires one of experts to make time to give your issue their full, sustained attention. Please be respectful of this time by sending a clear, detailed message, and please allow two business days for troubleshooting responses.
 

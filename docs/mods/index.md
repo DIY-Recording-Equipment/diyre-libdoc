@@ -1,5 +1,5 @@
 ---
-layout: page.liquid
+layout: support.liquid
 title: "Mods"
 eleventyNavigation:
   key: "Mods"

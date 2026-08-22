@@ -282,6 +282,9 @@ export default {
         }
     },
     shortcodes: {
+        year: async function() {
+            return new Date().getFullYear();
+        },
         alert: async function(content, type, title) {
             const validTypes = ['info', 'warning', 'success', 'danger'];
             let markup = '',
