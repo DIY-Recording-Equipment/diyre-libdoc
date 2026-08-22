@@ -4,7 +4,7 @@ title: "International repair techs"
 eleventyNavigation:
   key: "International repair techs"
   parent: "Shipping & Returns"
-  order: 1
+  order: 8
 date: 2022-10-26
 ---
 

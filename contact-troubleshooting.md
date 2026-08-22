@@ -1,7 +1,10 @@
 ---
 layout: page.liquid
 title: Troubleshooting Support Request
-permalink: troubleshooting-support/index.html
+eleventyNavigation:
+  key: "Request Support"
+  parent: "Contact Us"
+  order: 2
 ---
 
 We're dedicated to helping you finish your DIY project. But we're also a small company without a dedicated support team. Troubleshooting requires one of experts to make time to give your issue their full, sustained attention. Please be respectful of this time by sending a clear, detailed message, and please allow two business days for troubleshooting responses.

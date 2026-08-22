@@ -1,10 +1,17 @@
 ---
 layout: page.liquid
 title: Parts Request
-permalink: missing-parts/index.html
+eleventyNavigation:
+  key: "Request Parts"
+  parent: "Contact Us"
+  order: 1
 ---
 
-We're sorry — whether a part didn't make it into your kit or arrived damaged, we'll get you sorted. If a replacement needs to be shipped to you, we'll follow up by email with an invoice for the replacement fee, which in most cases is **$5 plus shipping**.
+If your kit is missing a part or you damaged one while building, use this form to request a new one.
+
+If your kit was missing a part, we apologize for the inconvenience. We take missing parts very seriously and will check our stock and processes for errors based on your request.
+
+If you're requesting replacement parts, we will reply to your submission with a payment link to complete the request. Most parts are covered under our flat-rate policy of $5 plus shipping for all the parts you need.
 
 <div id="support-form-error" style="display:none">
 {% alert 'Something went wrong submitting your request. Double check the required fields (name and a valid email) and try again, or email us directly at support@diyrecordingequipment.com.', 'danger', 'Submission Failed' %}

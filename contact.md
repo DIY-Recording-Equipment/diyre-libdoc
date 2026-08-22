@@ -1,14 +1,16 @@
 ---
 layout: page.liquid
 title: Contact Us
-
+eleventyNavigation:
+  key: "Contact Us"
+  order: 4
 permalink: contact/index.html
 ---
 
 Looking for one of these instead?
 
-- **[Missing / Replacement Parts Request](/missing-parts/)**
-- **[Troubleshooting Support Request](/troubleshooting-support/)**
+- **[Missing / Replacement Parts Request](/contact-parts/)**
+- **[Troubleshooting Support Request](/contact-troubleshooting/)**
 
 Otherwise, use the form below for anything else.
 
