@@ -28,4 +28,4 @@ Here are a few options:
 
   
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/66c3587b6eb51e63b8f9f1e0/file-9Rdpb24XSS.png)
+![](/assets/docs/file-9Rdpb24XSS.png)

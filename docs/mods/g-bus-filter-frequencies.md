@@ -19,7 +19,7 @@ You can use any capacitor, polarized or non-polarized, that fits in the PCB. The
 
 Do not change the value of R43, as it sets the total gain of the filter for unity gain. And note that, while just one channel is shown below, you need to change the capacitors for both channels.
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635967a173d6a22819f06a12/file-j7MtJyEMhv.png)
+![](/assets/docs/file-j7MtJyEMhv.png)
 
 **Additional Resources:**
 

@@ -16,7 +16,7 @@ If your OLA5 is not passing a signal, please check the following:
 2. 500-series rack: if possible, test another module in the same slot the OLA5 was in, and try the OLA5 in a different slot
 3. OLA5 output stage: make sure the jumpers on CON1 (Modern/Vintage output select) are oriented as shown below
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/5b3278182c7d3a0fa9a377ac/file-sd33lNIGfq.png)
+![](/assets/docs/file-sd33lNIGfq.png)
 
 ## Not Compressing
 

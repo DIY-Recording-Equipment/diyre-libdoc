@@ -18,4 +18,4 @@ One engineer who uses a pair of 15IPS for mastering sets his R6/R7 to 180R and c
 
 The resistor specifications are through-hole, metal film, 1% tolerance, 1/4 watt.
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635956a073d6a22819f0698f/file-ENA3aJrNHX.png)
+![](/assets/docs/file-ENA3aJrNHX.png)

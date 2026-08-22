@@ -20,7 +20,7 @@ The CP5's input impedance is set by the resistors R12 and R13 in parallel with t
 
 To calculate the input impedance given a certain R12/R13 value, use the formula for parallel resistance/impedance:
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/691b67bd707e322a85a89f1a/file-oYHReQfifg.png)
+![](/assets/docs/file-oYHReQfifg.png)
 
 
 Zt is the total input impedance
@@ -33,7 +33,7 @@ Note that when the -20dB switch is IN, R12 and R13 are bypassed and the input im
 
   
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/691b691e487e915c15d0ee90/file-Hn4nEW8V24.png)
+![](/assets/docs/file-Hn4nEW8V24.png)
 
 
 The relevant circuitry in the CP5 schematic

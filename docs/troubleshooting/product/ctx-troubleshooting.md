@@ -10,13 +10,10 @@ date: 2026-08-18
 
 Most CTX issues come down to one of two things: a swapped resistor or cold solder joint. Find the section below that matches what you're seeing and work through the steps in order.
 
-## Before you start
+## General resources
 
-You'll need: a multimeter, your CTX component sorting sheet, and the correct assembly manual for your board.
-
-Two general resources are useful alongside this guide:
-
-- [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/) — how to verify component positions and orientation
+- [CTX Assembly Guide](https://manuals.diy.re/ctx/)
+- [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/)
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 
 ## 1. No sound, or sound drops out when Colour is engaged

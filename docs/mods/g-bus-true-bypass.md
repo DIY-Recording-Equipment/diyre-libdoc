@@ -23,11 +23,11 @@ In this mode, you will replace the standard output with true bypass. So the comp
 1. Remove C13, C15, R20, and R22
 2. Solder jumper wires from the round pads of C13 and C15 to IN+ and IN- respectively. Do the same on both channels.
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635abb562a22cc147576d7e1/file-J2E25r2UTK.png)
+![](/assets/docs/file-J2E25r2UTK.png)
 
 This option results in the circuit below:
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635ab0429171a91e374a4cf9/file-9YjsrBM1aK.png)
+![](/assets/docs/file-9YjsrBM1aK.png)
 
 **Option 2: True bypass XFMR IN**
 
@@ -38,15 +38,15 @@ In this mode, you will replace the XFMR output with true bypass. So the compress
 
 Left channel:
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635abe349171a91e374a4d3c/file-SWnTRMYX6n.png)
+![](/assets/docs/file-SWnTRMYX6n.png)
 
 R channel:
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635abf717678db1f11869272/file-1XvG5fwh84.png)
+![](/assets/docs/file-1XvG5fwh84.png)
 
 This option results in the circuit below:
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635ab0397678db1f11869225/file-MX81iwgENM.png)
+![](/assets/docs/file-MX81iwgENM.png)
 
 **Additional Resources:**
 

@@ -20,7 +20,7 @@ So, if you tend to mix "quiet" or are using an all-analog setup, you may want to
 
 Fair warning, the stock values were arrived at after much gnashing of teeth and pulling-out of hair. Being a passive network, every resistor in the THRESHOLD circuit affects every other. So you may decrease R3\_CB only to find that the control is now too sensitive at the CW end, in which case you need to decrease R4\_CB, which in turn makes the CCW end less sensitive, etc. So I recommend replacing R3\_CB and R4\_CB with trim pots to start, so you won't be replacing resistors too many times. And if you land on a group of settings you really like, please let us know so we can post them here for other users.
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/63595be82a22cc147576d14c/file-Pv1ZuHLaR2.png)
+![](/assets/docs/file-Pv1ZuHLaR2.png)
 
 **Additional Resources:**
 

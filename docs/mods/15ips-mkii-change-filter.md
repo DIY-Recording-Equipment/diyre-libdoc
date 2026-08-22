@@ -23,4 +23,4 @@ If you want to modify or remove this bump while keeping the compression and dist
 | 27k | 43Hz | 1dB |
 | Remove | None | None |
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/6455211c1140db1f380b7972/file-sGMLO2dTTZ.png)
+![](/assets/docs/file-sGMLO2dTTZ.png)

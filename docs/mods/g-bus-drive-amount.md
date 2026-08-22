@@ -14,7 +14,7 @@ The DRIVE switch controls two stages at once: the gain of the opamp IC3.2 and an
 
 The gain/attenuation resistors correspond to each other as shown below. Note there is no corresponding attenuation resistor for R5\_CB, R10\_CB.
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635aa3d92a22cc147576d748/file-H2moPgBKeK.png)
+![](/assets/docs/file-H2moPgBKeK.png)
 
 Tips for modding the DRIVE amounts:
 
@@ -26,7 +26,7 @@ Tips for modding the DRIVE amounts:
 
 Gain resistors are highlighted green, attenuation resistors are highlighted red.
 
-![](https://s3.amazonaws.com/helpscout.net/docs/assets/5b2130d82c7d3a0fa9a2f0bc/images/635a9e187678db1f118691a9/file-vSkIol6qCm.png)
+![](/assets/docs/file-vSkIol6qCm.png)
 
 **Additional Resources:**
 
