@@ -1,14 +1,14 @@
 ---
 layout: support.liquid
-title: "Checking your assembly (component positions and orientation)"
+title: "Checking your assembly"
 eleventyNavigation:
-  key: "Checking your assembly (component positions and orientation)"
+  key: "Checking your assembly"
   parent: "General"
   order: 2
 date: 2022-10-26
 ---
 
-More often than not, the issue with your build is a signle misplaced component. Carefully check your board for the following?
+Carefully check your board for the following:
 
 1. Are all ICs in the correct position and orientation?
 2. Are all resistors in the correct positions? Check the color bands of every resistor against the sorting sheet. Pay especially close attention to those that start with the same number, for example 4.7k and 47k.
@@ -19,4 +19,4 @@ More often than not, the issue with your build is a signle misplaced component. 
 6. Are all transistors in the correct positions and orientation?
 
 If everything above looks good but you're still having problems, it's time to
-[check your soldering](/troubleshooting/cleaning-up-solder-joints/).
+[check your soldering](/docs/troubleshooting/general/cleaning-up-solder-joints/).

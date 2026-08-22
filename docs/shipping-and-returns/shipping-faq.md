@@ -22,7 +22,7 @@ Kits must be received in the same condition they were sent with no parts bent or
 
 Assembled units must also be in "as received" condition. You are welcome to try them out before returning, but be careful not to scratch or otherwise damage the unit.
 
-For more about returns, see the [Returns Process](/shipping-and-returns/returns-process/).
+For more about returns, see the [Returns Process](/docs/shipping-and-returns/returns-process/).
 
   
 

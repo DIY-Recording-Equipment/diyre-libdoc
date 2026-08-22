@@ -16,4 +16,4 @@ Before you even start checking your assembly and soldering, it's a good idea to 
 4. Swap the module to another slot in your rack, if possible.
 5. If you have a known-good module, test that in the slot you are using to test the DIYRE gear.
 
-Once you've confirmed that your audio setup is working correctly, proceed to [Checking Your Assembly](/troubleshooting/checking-your-assembly/).
+Once you've confirmed that your audio setup is working correctly, proceed to [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/).

@@ -92,13 +92,6 @@
     </script>
 </head>
 <body class="d-flex fd-column ai-center | m-0">
-    {% if libdocConfig.siteLogoUrl %}
-        <div class="d-flex jc-center | w-100 | pt-6 pb-6">
-            <a href="https://www.diyrecordingequipment.com">
-                <img src="{{ libdocConfig.siteLogoUrl }}" alt="{{ libdocConfig.siteTitle }}" style="max-height: {{ libdocConfig.siteLogoMaxHeight }}px; width: auto;">
-            </a>
-        </div>
-    {% endif %}
     <div class="d-flex | w-100"
         fd-column="xs,sm"
         ai-start="md"
@@ -162,17 +155,30 @@
                 h-sidebar="xs,sm"
                 brad-3="md"
                 brad-3="md">
-                {% if libdocConfig.searchEnabled %}
-                    <menu id="nav_primary_header"
-                        class="
-                        d-flex fd-column
-                        pos-sticky top-0 z-1
-                        m-0 p-0 pb-7
-                        ls-none
-                        {% if eleventyNavigationMenu.size > 0 %}bbwidth-1 bbstyle-dashed bcolor-neutral-500{% endif %}"
-                        gap-5="md"
-                        bradtl-3="md"
-                        bradtr-3="md">
+                <menu id="nav_primary_header"
+                    class="
+                    d-flex fd-column
+                    pos-sticky top-0 z-1
+                    m-0 p-0 pb-7
+                    ls-none
+                    {% if eleventyNavigationMenu.size > 0 %}bbwidth-1 bbstyle-dashed bcolor-neutral-500{% endif %}"
+                    gap-5="md"
+                    bradtl-3="md"
+                    bradtr-3="md">
+                    {% if libdocConfig.siteLogoUrl %}
+                        <li class="d-flex ai-center">
+                            <a  href="https://www.diyrecordingequipment.com"
+                                class="pl-5 pt-5 pr-5 | td-none fvs-wght-700 lsp-5 fs-8 tws-balance | c-neutral-900"
+                                title="{{ libdocConfig.siteDescription }}">
+                                <img src="{{ libdocConfig.siteLogoUrl }}"
+                                    alt="{{ libdocConfig.siteTitle }}"
+                                    eleventy:widths="{{ libdocSystem.widthSidebar | minus: 40 | times: 2 }}"
+                                    class="maxw-100 w-auto"
+                                    style="max-height: {{ libdocConfig.siteLogoMaxHeight }}px">
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if libdocConfig.searchEnabled %}
                         <li class="pos-relative z-1" d-none="xs,sm">
                             <form action="/search/"
                                 class="d-flex fd-column | pos-relative | pl-5 pr-5 pt-5 | search_form | auto-search-wrapper">
@@ -202,8 +208,8 @@
                                 </div>
                             </form>
                         </li>
-                    </menu>
-                {% endif %}
+                    {% endif %}
+                </menu>
 
                 {% if collections.post.size > 0 %}
                     <a  href="/{{ libdocConfig.blogSlug }}/"

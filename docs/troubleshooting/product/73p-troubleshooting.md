@@ -8,14 +8,12 @@ eleventyNavigation:
 date: 2026-08-18
 ---
 
-A multimeter set to both AC and DC voltage is essential for this guide, since several of the fixes below involve tracing a signal or checking a rail rather than just inspecting the board by eye.
-
-- [Checking Your Assembly](/troubleshooting/checking-your-assembly/) covers how to verify component positions and orientation.
-- [General Troubleshooting Tips](/troubleshooting/general-troubleshooting-tips/)
+- [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/) covers how to verify component positions and orientation.
+- [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 
 ## 1. No signal, or signal cuts out at a specific gain setting
 
-1. Reflow any solder joint you're unsure of.. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/). A missed or partially soldered transformer pin is the single most common cause of no signal.
+1. Reflow any solder joint you're unsure of.. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/). A missed or partially soldered transformer pin is the single most common cause of no signal.
 2. Check the orientation of all transistors, diodes, and capacitors.
 3. Check the values of all resistors.
 4. If the signal disappears entirely once gain reaches 55dB and above, the fault is in the PRE 1 section, since that's the stage that only engages at 55dB and higher.
@@ -23,7 +21,7 @@ A multimeter set to both AC and DC voltage is essential for this guide, since se
 
 ## 2. Noise or hum
 
-1. Reflow suspect joints, particularly any tied to the ground pour (these have four small lines connecting the pad to the ground pour). Those pads pull heat away faster than the rest of the board, so they're more likely to end up as cold joints even on an otherwise good build. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/).
+1. Reflow suspect joints, particularly any tied to the ground pour (these have four small lines connecting the pad to the ground pour). Those pads pull heat away faster than the rest of the board, so they're more likely to end up as cold joints even on an otherwise good build. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/).
 2. A small, quiet pop each time you turn the gain switch is normal (see Section 10). If instead you're hearing a loud pop on every turn, isolate it by swapping the PRE 2 board with a known-good 73P if you have one. If that fixes it, reflow the solder joints on PRE 2.
 
 ## 3. V+ reads lower than 24-26V
@@ -31,11 +29,11 @@ A multimeter set to both AC and DC voltage is essential for this guide, since se
 1. If your 73P is completely built, a V+ measurement in the range of 20-22V range is normal. The amplifier stages draw more current once they're populated, which drags the power rail down below 24v. This is normal and intended.
 2. If the build is only completely up through section 1 and V+ is still low, check that the orienation of both diodes.
 3. Check the orientation of T10 and the values of R43-R46.
-4. Reflow cold joints in the power section. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/).
+4. Reflow cold joints in the power section. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/).
 
 ## 4. Works for a while, then stops
 
-This pattern points to a cold solder joint, not a dead part. Reflow your solder joints any solder joints that don't look like perfect, shiny tents. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/) for how to do this.
+This pattern points to a cold solder joint, not a dead part. Reflow your solder joints any solder joints that don't look like perfect, shiny tents. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for how to do this.
 
 ## 5. No power at all on the first test, or a capacitor pops
 

@@ -10,19 +10,19 @@ date: 2026-08-18
 
 Most HC1 issues trace back to one of three things: a component installed backwards (cap, chip, or socket), a cold solder joint, or a grounding choice that disturbs the HC1's virtual ground.
 
-- [Checking Your Assembly](/troubleshooting/checking-your-assembly/) — how to verify component positions and orientation
-- [General Troubleshooting Tips](/troubleshooting/general-troubleshooting-tips/)
+- [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/) — how to verify component positions and orientation
+- [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 
 ## 1. No sound, or the sound cuts out after a few seconds
 
 1. Check that all four electrolytic caps are oriented correctly: the negative stripe on the cap should be opposite the "+" marking on the PCB.
 2. Check that the dual op-amp chip and its socket are both oriented the same direction and inserted correctly.
-3. Reflow every solder joint, especially the ground connections. A cold joint here is a common cause of sound that works briefly, then cuts out or disappears entirely. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/).
+3. Reflow every solder joint, especially the ground connections. A cold joint here is a common cause of sound that works briefly, then cuts out or disappears entirely. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/).
 4. Measure the DC voltage at the op-amp's power pins: black probe on the ground screw of the DC IN jack, red probe on pin 4 (V-) and then pin 8 (V+). With a 12V supply you should read close to ±6V; with a 9V battery, close to ±4.5V. A missing or very different reading points to a power-wiring problem rather than the audio path itself.
 
 ## 2. Buzzing or humming that gets worse as you turn up the volume
 
-1. Reflow your ground solder joints. A cold joint on the ground path is a common cause of noise that increases with volume. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/).
+1. Reflow your ground solder joints. A cold joint on the ground path is a common cause of noise that increases with volume. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/).
 2. Swap in a 9V battery in place of your wall-wart power supply. If the noise disappears, the supply itself is the source. Some DC power supplies are just noisy, and the HC1's onboard filtering can only do so much about that.
 3. If the HC1 is mounted in a metal enclosure, make sure the power negative (V-/0V) is **not** connected to the chassis. This shorts out the virtual ground the HC1 depends on. If you want a chassis ground reference, tie the audio ground (the input/output jack sleeves) to the chassis instead, and leave V- floating.
 

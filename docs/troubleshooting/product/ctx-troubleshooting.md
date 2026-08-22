@@ -16,8 +16,8 @@ You'll need: a multimeter, your CTX component sorting sheet, and the correct ass
 
 Two general resources are useful alongside this guide:
 
-- [Checking Your Assembly](/troubleshooting/checking-your-assembly/) — how to verify component positions and orientation
-- [General Troubleshooting Tips](/troubleshooting/general-troubleshooting-tips/)
+- [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/) — how to verify component positions and orientation
+- [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 
 ## 1. No sound, or sound drops out when Colour is engaged
 
@@ -36,5 +36,5 @@ If your resistors are all correct and the distortion doesn't change at all as yo
 
 This pattern points to a cold solder joint, not a dead part.
 
-1. Reflow your solder joints, especially at the DOA socket and the two large transistors. See [Cleaning Up Solder Joints](/troubleshooting/cleaning-up-solder-joints/) for how to do this.
+1. Reflow your solder joints, especially at the DOA socket and the two large transistors. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for how to do this.
 2. If reflowing doesn't help, but swapping in a different DOA does, the original one needs to be repaired or replaced.

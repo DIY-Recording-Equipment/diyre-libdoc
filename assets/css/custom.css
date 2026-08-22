@@ -617,6 +617,12 @@ main > ol ul > li::before {
     border-left: none;
 }
 
+/* Search box (in the sidebar header): solid border instead of dashed. */
+#nav_primary_header .search_form input[type="search"],
+#nav_primary_header .search_form button[type="submit"] {
+    border-style: solid;
+}
+
 /* Ordered lists: simpler numbering, no dashed guide lines or pill radius */
 main > ol:not(:has(ul)) > li,
 main > ol:not(:has(ul)) li > ol > li,
