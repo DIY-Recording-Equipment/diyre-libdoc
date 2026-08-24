@@ -4,7 +4,7 @@ title: "When will kits be back in stock?"
 eleventyNavigation:
   key: "When will kits be back in stock?"
   parent: "Shipping & Returns"
-  order: 5
+  order: 7
 date: 2022-10-26
 ---
 

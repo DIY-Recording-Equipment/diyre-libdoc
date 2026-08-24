@@ -4,7 +4,7 @@ title: "EQP5 Troubleshooting"
 eleventyNavigation:
   key: "EQP5 Troubleshooting"
   parent: "By Product"
-  order: 0
+  order: 13
 ---
 
 Most EQP5 problems come down to an LED, an IC, or a connector that isn't seated or oriented correctly, and most resolve with a multimeter check rather than a parts swap. If you've installed the vintage output option, a few of its own issues are covered separately below. The sections below are ordered by likelihood, so work down from the top.
@@ -17,7 +17,7 @@ Most EQP5 problems come down to an LED, an IC, or a connector that isn't seated 
 
 You'll want a multimeter for the checks below.
 
-## 1. No signal / level is too quiet
+## No signal / level is too quiet {.step}
 
 1. Make sure the jumpers on CON1 (Modern/Vintage output select) are oriented as shown below. The #1 cause for no signal in the EQP5 is having these headers rotated 90 degrees.
 
@@ -30,7 +30,7 @@ You'll want a multimeter for the checks below.
 3. Check for cold or blobby solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
 4. Swap in NE5532 ICs from another EQP5 (if available) to rule out damaged ICs.
 
-## 2. LED doesn't light up
+## LED doesn't light up {.step}
 1. Confirm LED1 is installed in the correct direction by the orientatin of the small metal parts inside the LED.
 {% lightbox '/assets/docs/led-polarity.png' %}
 1. Check that all ICs are seated fully and in the correct orientation.
@@ -39,7 +39,7 @@ Check for solder joints that are bridged too each othery by too much solder.
 2. Remove all ICs and the DOA (if installed). IF the LED lights up with them removed, try adding back one at a time to see which one causes the power to fail.
 3. Measure the resistance between +16v/-16v test points and ground. If either is close to 0 ohms, there is a short circuit between that power rail and ground.
 
-## 3. Noise, crackling, intermittent signal, or a flickering LED
+## Noise, crackling, intermittent signal, or a flickering LED {.step}
 
 Cold or "blobby" solder joints are the most common cause here, especially if the symptom showed up after the unit worked fine for a while.
 
@@ -47,13 +47,13 @@ Cold or "blobby" solder joints are the most common cause here, especially if the
 2. Reflow the suspect joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints) for the full technique, but in short: get the iron properly hot with a clean tip, touch it to where the pad and lead meet, hold for 2 to 5 seconds until the existing solder fully melts and settles onto the pad, then add a small amount of fresh solder and hold for another couple seconds before removing the iron.
 3. Check the underside of the board for stray solder specks or blobs that could be bridging two points that shouldn't be connected. These can cause exactly this kind of intermittent noise and are easy to miss.
 
-## 4. One of the boost/cut frequencies doesn't work
+## One of the boost/cut frequencies doesn't work {.step}
 
 1. Check the values and solder joints of C15-C24.
 2. Check the solder joints on the CON2A/CON2B and CON3A/CON3B connector pairs.
 3. Check the solder joints on the frequency-select switches.  
 
-## 5. Crackle when turning a pot, or hum when touching the LF Cut knob
+## Crackle when turning a pot, or hum when touching the LF Cut knob {.step}
 
 This points to grounding, shielding, or a dirty pot rather than a component failure.
 

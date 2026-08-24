@@ -4,7 +4,7 @@ title: "Cleaning up solder joints"
 eleventyNavigation:
   key: "Cleaning up solder joints"
   parent: "General"
-  order: 5
+  order: 6
 date: 2022-10-26
 ---
 

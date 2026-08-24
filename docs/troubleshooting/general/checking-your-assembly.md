@@ -4,7 +4,7 @@ title: "Checking your assembly"
 eleventyNavigation:
   key: "Checking your assembly"
   parent: "General"
-  order: 2
+  order: 3
 date: 2022-10-26
 ---
 

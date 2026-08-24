@@ -4,7 +4,7 @@ title: "Checking your audio setup"
 eleventyNavigation:
   key: "Checking your audio setup"
   parent: "General"
-  order: 3
+  order: 4
 date: 2022-10-26
 ---
 

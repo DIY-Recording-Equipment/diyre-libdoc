@@ -4,7 +4,7 @@ title: "FF1 Troubleshooting"
 eleventyNavigation:
   key: "FF1 Troubleshooting"
   parent: "By Product"
-  order: 0
+  order: 16
 ---
 
 Reported FF1 issues are limited, and the clearest recurring one is a persistent, rhythmic hiss traced to a damaged transistor. The sections below are ordered by likelihood, so work down from the top.
@@ -14,11 +14,11 @@ Reported FF1 issues are limited, and the clearest recurring one is a persistent,
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 - [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/)
 
-## 1. Persistent, rhythmic hiss or noise
+## Persistent, rhythmic hiss or noise {.step}
 
 This points to a damaged transistor rather than a solder or wiring issue. Replacing the transistor resolves it.
 
-## 2. Damaged the board removing a backward header
+## Damaged the board removing a backward header {.step}
 
 If you installed a header backward and damaged the board pulling it back out, a replacement PCB is the fix rather than trying to repair the damaged traces. When removing a misplaced header in the future, clip the pins first and desolder them individually rather than pulling the whole header out at once, which is much less likely to lift a pad or tear a trace.
 

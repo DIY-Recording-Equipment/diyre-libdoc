@@ -4,7 +4,7 @@ title: "Returns process"
 eleventyNavigation:
   key: "Returns process"
   parent: "Shipping & Returns"
-  order: 7
+  order: 6
 date: 2025-10-15
 ---
 

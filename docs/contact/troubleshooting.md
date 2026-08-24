@@ -18,14 +18,14 @@ We're dedicated to helping you finish your DIY project. But we're also a small c
 
 Most build issues come down to something small: a missed solder joint, a swapped resistor, or a part in the wrong orientation. Please work through the steps below before contacting our support team.
 
-## 1. Double-check your build
+## Double-check your build {.step}
 
 Go through the manual step-by-step and confirm you did everything correctly. Then check every solder joint. It's common to find that you missed a solder joint or put something in backwards, even if you're sure you didn't miss anything! Catching this yourself is almost always quicker than a support back-and-forth.
 
 - [Checking Your Assembly](https://support.diy.re/article/35-checking-your-assembly)
 - [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints)
 
-## 2. Consult our troubleshooting guides
+## Consult our troubleshooting guides {.step}
 
 We maintain both general guides and guides specific to each product:
 
@@ -33,7 +33,7 @@ We maintain both general guides and guides specific to each product:
 
 - Your product's specific troubleshooting guide (search support.diy.re for your product name)
 
-## 3. Still stuck? Contact our support team
+## Still stuck? Contact our support team {.step}
 
 - Describe your problem with as much detail as possible. For example:
     - If your unit is too quiet, specify the dB value.

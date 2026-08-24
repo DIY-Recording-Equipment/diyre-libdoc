@@ -3,7 +3,7 @@ layout: support.liquid
 title: "Troubleshooting"
 eleventyNavigation:
   key: "Troubleshooting"
-  order: 2
+  order: 4
 ---
 
 Start with **General** if you're not sure where your issue fits, it covers checks that apply across most kits. If your issue is specific to one product, go to **By Product** instead.

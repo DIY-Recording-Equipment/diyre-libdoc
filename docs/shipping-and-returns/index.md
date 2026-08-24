@@ -3,7 +3,7 @@ layout: support.liquid
 title: "Shipping & Returns"
 eleventyNavigation:
   key: "Shipping & Returns"
-  order: 1
+  order: 3
 ---
 
 **When will my order ship?**

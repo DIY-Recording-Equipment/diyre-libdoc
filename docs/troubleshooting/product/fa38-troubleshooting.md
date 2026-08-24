@@ -4,7 +4,7 @@ title: "FA38 Troubleshooting"
 eleventyNavigation:
   key: "FA38 Troubleshooting"
   parent: "By Product"
-  order: 0
+  order: 14
 ---
 
 All problems encountered with the FA38 so far have been due to either:

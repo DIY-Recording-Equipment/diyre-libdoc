@@ -4,7 +4,7 @@ title: "Checking power with a multi-meter"
 eleventyNavigation:
   key: "Checking power with a multi-meter"
   parent: "General"
-  order: 7
+  order: 2
 date: 2022-10-26
 ---
 
