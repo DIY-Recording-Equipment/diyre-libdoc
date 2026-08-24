@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "15IPS less distortion (30IPS mod)"
   parent: "Mods"
   order: 1
-date: 2024-08-19
 ---
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.

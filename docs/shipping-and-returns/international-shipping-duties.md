@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "International shipping duties"
   parent: "Shipping & Returns"
   order: 2
-date: 2025-04-02
 ---
 
 Most international customers will owe some import duties to their local customs agency. As the importer, you're responsible for any taxes, duties, or fees assessed by your local customs agency.

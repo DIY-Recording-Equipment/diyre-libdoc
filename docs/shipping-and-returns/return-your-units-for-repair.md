@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Return your unit for the Last Ditch Repair Service"
   parent: "Shipping & Returns"
   order: 5
-date: 2026-08-21
 ---
 
 After you have purchased the Last Ditch Repair Service and filled out the info form, return your unit(s) to us via the process below.

@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "G Bus THRESHOLD sensitivity"
   parent: "Mods"
   order: 12
-date: 2023-12-11
 ---
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.

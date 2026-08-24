@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Checking power with a multi-meter"
   parent: "General"
   order: 2
-date: 2022-10-26
 ---
 
 Many DIYRE kits have test pads for testing the power rails with a multi-meter. To confirm that the power rails are correct with a multi-meter, follow these steps:

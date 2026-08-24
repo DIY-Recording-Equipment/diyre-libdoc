@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "73P Troubleshooting"
   parent: "By Product"
   order: 3
-date: 2026-08-18
 ---
 
 - [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/) covers how to verify component positions and orientation.

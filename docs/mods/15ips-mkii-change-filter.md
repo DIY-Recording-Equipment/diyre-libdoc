@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "15IPS mkii change resonant filter"
   parent: "Mods"
   order: 2
-date: 2024-10-22
 ---
 
 Part of the distinctive sound of tape that the 15IPS is a resonant high-pass filter in the very low frequencies, sometimes known as the "head bump." Vintage tape machines had a wide range of curves in the low frequencies. Head bumps at 15 inches per second varied in the range of <1dB to 4dB and roughly 30Hz to 70Hz. The 15IPS is designed to have a head bump of 3dB with a corner frequency of 47Hz.

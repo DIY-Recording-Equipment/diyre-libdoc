@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "JFT Colour Troubleshooting"
   parent: "By Product"
   order: 19
-date: 2026-08-18
 ---
 
 ## Before you start

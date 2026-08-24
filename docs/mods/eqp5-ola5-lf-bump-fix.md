@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "EQP5 and OLA5 LF bump fix"
   parent: "Mods"
   order: 7
-date: 2023-02-09
 ---
 
 The EQP5 and OLA5 naturally have small bump in the very low frequencies when using the Vintage Output. When the output is connected to a standard line-level input with an impedance of 20k Ohms or lower, the bump is about 2dB at 5Hz. However, with higher impedance inputs the bump can increase in amplitude and move up into the audible range.

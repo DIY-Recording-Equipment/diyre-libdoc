@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Checking your assembly"
   parent: "General"
   order: 3
-date: 2022-10-26
 ---
 
 Carefully check your board for the following:

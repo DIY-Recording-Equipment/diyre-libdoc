@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Cleaning up solder joints"
   parent: "General"
   order: 6
-date: 2022-10-26
 ---
 
 Take a look for these issues in your build:

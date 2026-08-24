@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "CTX Colour Troubleshooting"
   parent: "By Product"
   order: 10
-date: 2026-08-18
 ---
 
 Most CTX issues come down to one of two things: a swapped resistor or cold solder joint. Find the section below that matches what you're seeing and work through the steps in order.

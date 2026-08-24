@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "HC1 Headphone Amp Troubleshooting"
   parent: "By Product"
   order: 18
-date: 2026-08-18
 ---
 
 Most HC1 issues trace back to one of three things: a component installed backwards (cap, chip, or socket), a cold solder joint, or a grounding choice that disturbs the HC1's virtual ground.

@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Checking your audio setup"
   parent: "General"
   order: 4
-date: 2022-10-26
 ---
 
 Before you even start checking your assembly and soldering, it's a good idea to check your audio setup first.

@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "OLA5 Troubleshooting"
   parent: "By Product"
   order: 25
-date: 2026-08-18
 ---
 
 ## No Signal

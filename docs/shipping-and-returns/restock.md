@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "When will kits be back in stock?"
   parent: "Shipping & Returns"
   order: 7
-date: 2022-10-26
 ---
 
 Unless a kit says "(Discontinued)" in the title, you can rest assured we are planning on restocking it. Most out-of-stock kits are restocked within 1-2 weeks. However, if we are waiting on a specific part we will put an estimated back-in-stock date on the product page. To find out as soon as a kit is back in stock, enter your email and click the "Notify Me" button.

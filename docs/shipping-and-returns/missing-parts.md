@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Missing or damaged parts"
   parent: "Shipping & Returns"
   order: 4
-date: 2024-10-24
 ---
 
 **If your kit arrived with missing or damaged parts...**

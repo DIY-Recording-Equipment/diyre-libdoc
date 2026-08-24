@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "International repair techs"
   parent: "Shipping & Returns"
   order: 1
-date: 2022-10-26
 ---
 
 We have a worldwide network of trusted repair techs to help you out with your project. All of the techs below have access to our repair documentation and replacement parts.

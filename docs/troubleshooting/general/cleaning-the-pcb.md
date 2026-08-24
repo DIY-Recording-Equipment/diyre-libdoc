@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Cleaning the PCB"
   parent: "General"
   order: 5
-date: 2021-10-06
 ---
 
 Although it's not strictly required, and it's unlikely to fix any issues you are having with your build, cleaning your PCB will make it look nicer and ensure there is no flux or solder residue left behind.

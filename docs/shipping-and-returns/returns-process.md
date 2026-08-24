@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Returns process"
   parent: "Shipping & Returns"
   order: 6
-date: 2025-10-15
 ---
 
 It's ok to change your mind. You can return unopened kits and as-new assembled units within 30 days of when you received you order for a refund, minus the shipping costs. Please visit the [returns portal](https://account.diyrecordingequipment.com) to request a return.

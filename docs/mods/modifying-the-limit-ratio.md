@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "OLA5 limit ratio"
   parent: "Mods"
   order: 17
-date: 2022-10-27
 ---
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.

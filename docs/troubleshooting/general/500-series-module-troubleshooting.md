@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "500-series module troubleshooting"
   parent: "General"
   order: 1
-date: 2022-10-26
 ---
 
 ### Check the Rack and Routing

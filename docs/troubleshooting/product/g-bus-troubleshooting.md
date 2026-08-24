@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "G Bus Troubleshooting"
   parent: "By Product"
   order: 17
-date: 2026-08-18
 ---
 
 This guide covers the issues that come up most often while building, calibrating, and living with the G Bus VCA bus compressor kit. It's organized by symptom, so scan the headings for whatever you're running into. Most G Bus problems trace back to one of a handful of causes: a cold solder joint, a mixed-up resistor, or an issue with the test setup during calibration and testing.
@@ -53,7 +52,7 @@ If you want to modify your G Bus for lower input levels, see the [G Bus threshol
 
 This points to an IC installed backwards. Remove the affected part(s) before powering up again, and request replacements via the **[ Parts Request](/docs/contact/parts/)** form.
 
-## Something works fine for a while, then stops
+## Something works fine for a while, then stops {.steps}
 
 An intermittent issue is almost always cause by one or more cold solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints) for how to identify and fix cold joints.
 

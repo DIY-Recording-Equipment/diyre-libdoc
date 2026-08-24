@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "Last Ditch Repair Policy"
   parent: "Shipping & Returns"
   order: 3
-date: 2025-12-12
 ---
 
 Our first priority at DIYRE is to see your DIY project succeed. That's why try to make the best [step-by-step guides](http://www.diyrecordingequipment.com/pages/manuals) and offer [email support](http://www.diyrecordingequipment.com/pages/support). However, sometimes even the best of us get stuck. That's where our Last Ditch Service comes in.

@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "LEDs not lighting or turning off after a few seconds"
   parent: "General"
   order: 8
-date: 2026-08-18
 ---
 
 If the LEDs don't turn on or turn off quickly after turning on your unit, something is tripping the fuses F1 and F2. Please check the following:

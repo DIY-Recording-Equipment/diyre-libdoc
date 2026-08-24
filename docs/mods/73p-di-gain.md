@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "73P DI gain"
   parent: "Mods"
   order: 3
-date: 2026-04-01
 ---
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.

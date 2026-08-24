@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "G Bus true bypass"
   parent: "Mods"
   order: 13
-date: 2026-03-31
 ---
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.

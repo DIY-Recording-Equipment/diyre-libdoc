@@ -5,7 +5,6 @@ eleventyNavigation:
   key: "General troubleshooting tips"
   parent: "General"
   order: 7
-date: 2025-10-28
 ---
 
 So, you finished building your DIYRE kit and it's not working. Here's our recommended troubleshooting procedure:
