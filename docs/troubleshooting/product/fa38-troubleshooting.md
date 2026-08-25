@@ -8,8 +8,8 @@ eleventyNavigation:
 ---
 
 All problems encountered with the FA38 so far have been due to either:
-1. One or more cold solder joints
-2. One or more resistors in the wrong position
+
+
 
 ## General resources
 
@@ -17,6 +17,11 @@ All problems encountered with the FA38 so far have been due to either:
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 - [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/)
 
+## One or more cold solder joints {.step}
+
+
+
+## One or more resistors in the wrong position {.step}
 
 ## Request Troubleshooting Support
 
