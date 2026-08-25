@@ -750,10 +750,19 @@ main .__search-occurrence {
     position: relative;
 }
 #nav_primary li.nav_primary__parent > .nav_primary__toggle {
+    /* Pinned to a fixed offset from the <li>'s top edge - which is also the
+       link's top edge, since the link is always the li's first child -
+       rather than centered with top:50%/translateY(-50%). The li is the
+       positioning context, and its height includes the nested <ol> once
+       expanded, so a 50%-based center would drift down to the middle of
+       the whole (now much taller) expanded section instead of staying on
+       the link's own row. var(--ita-spacings-2) matches the link's own
+       pt-2 padding-top, and the fixed height keeps the chevron roughly
+       centered on that first line without depending on the li's total
+       height. */
     position: absolute;
-    top: 50%;
+    top: var(--ita-spacings-2);
     right: 0;
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -23,22 +23,17 @@ Cold or underheated solder joints cause the large majority of PR502 problems, wh
 ## No power {.step}
 
 1. Check the external PSU first by removing it from the PR502 and plugging it into the wall. The blue light on the PSU should stay lit. If it does not turn on or flickers, the PSU is bad and needs to be replaced.
+2. Check solder joints as in section 1.
+3. Check for solder bridges between pads, especially on the headers where the pins are closer together.
 4. Check the orientation of D1 and the power LEDs. LED orientation can be deteremined by the little parts inside the LED. {% lightbox '/assets/docs/led-polarity.png' %}
-5. If you're on an older board revision, confirm you applied the step 4.5 PCB revision fix. A missed revision fix is a recurring cause of power faults.
-6. Blown zener diodes or transistors from age, or from a mismatched PSU, will also produce this symptom and need replacing.
-7. If a module with large capacitors causes the inrush-limiting resistor to burn out when plugged in, that resistor needs upgrading from the stock SMD part to a 1 to 4.7 ohm through-hole resistor, which handles the inrush current better.
 
 ## Power is fine, but one module slot gets no power or signal {.step}
 
-Check that the small card-edge connector PCB for that slot is installed the right way around, with its unmarked side facing outward. This is the most common cause of a single slot losing power or signal while the rest of the chassis works normally, and it's also the most frequent point of physical damage (torn traces) if you try to desolder it without confirming orientation first.
+Check that the small card-edge connector PCB for that slot is installed the right way around, with its marked side facing outward. This is the most common cause of a single slot losing power or signal while the rest of the chassis works normally.
 
 ## A 500-series module or rack ears don't quite fit {.step}
 
 This is almost always the third-party module or mounting bracket running slightly outside VPR spec, not a fault in the PR502 itself. There isn't a fix on the PR502 side for this.
-
-## No signal survives reflowing and part-swapping {.step}
-
-At this point the fault is most likely a shorted trace, a bad IC, or a swapped resistor value that isn't visually obvious. This is worth sending in for repair rather than continuing to troubleshoot blind.
 
 ## Request Troubleshooting Support
 

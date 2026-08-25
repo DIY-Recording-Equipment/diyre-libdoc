@@ -7,8 +7,6 @@ eleventyNavigation:
   order: 27
 ---
 
-Reversed Q7/Q8 transistors are the first thing worth checking on almost any RED-25 complaint, and correcting their orientation resolves a large share of cases outright. The rest mostly comes down to cold solder joints or a fault elsewhere in the host circuit damaging the RED-25 rather than the module being bad out of the box. The sections below are ordered by likelihood, so work down from the top.
-
 ## General resources
 
 - [RED-25 Assembly Guide](https://www.diyrecordingequipment.com/pages/red-25-assembly-guide)
@@ -17,11 +15,11 @@ Reversed Q7/Q8 transistors are the first thing worth checking on almost any RED-
 
 ## No output, distortion, or excess noise {.step}
 
-Check Q7 and Q8 first. These are the two large transistors (BD139 and BD140), and having them swapped is the single most common cause of these symptoms. Getting their orientation correct resolves the issue outright in most cases.
+Check the positions of Q7 and Q8 against the assembly guide. Having these two transistors swapped is the single most common cause of problems with the RED-25.
 
-## Intermittent, weak, or muted output, or the sound seems to come from behind the module {.step}
+## Intermittent, weak, or muted output {.step}
 
-Check for cold or blobby solder joints on the RED-25's own pads, especially at V+/V- and the transistor leads. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints) for how to reflow these properly. This is the standard fix for these symptoms and resolves most cases.
+Check for cold or blobby solder joints, especially at V+/V- and the transistor leads. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints) for how to reflow these properly.
 
 ## A transistor or resistor looks damaged, or a 68 ohm resistor is smoking {.step}
 
