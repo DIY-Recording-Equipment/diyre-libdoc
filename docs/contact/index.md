@@ -3,7 +3,7 @@ layout: support.liquid
 title: Contact Us
 eleventyNavigation:
   key: "Contact Us"
-  order: 1
+  order: 5
 ---
 
 Use the form below for general inquiries.

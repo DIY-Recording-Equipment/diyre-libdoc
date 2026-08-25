@@ -4,7 +4,7 @@ title: "500-series module troubleshooting"
 eleventyNavigation:
   key: "500-series module troubleshooting"
   parent: "General"
-  order: 1
+  order: 8
 ---
 
 ### Check the Rack and Routing

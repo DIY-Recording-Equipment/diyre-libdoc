@@ -1,10 +1,10 @@
 ---
 layout: support.liquid
-title: "General troubleshooting tips"
+title: "General troubleshooting tips (start here!)"
 eleventyNavigation:
   key: "General troubleshooting tips"
   parent: "General"
-  order: 7
+  order: 1
 ---
 
 So, you finished building your DIYRE kit and it's not working. Here's our recommended troubleshooting procedure:
@@ -16,4 +16,6 @@ So, you finished building your DIYRE kit and it's not working. Here's our recomm
 5. [Check your soldering.](/docs/troubleshooting/general/cleaning-up-solder-joints/) Joints should have a smooth, shiny, concave surface, and cover the entire pad.
 6. **Clean your board.** Sometimes small pieces of solder or flux can get stuck to the PCB and cause issues. Go through methodically and remove any flecks on the top and bottom of the board—a little pressure from the tip of a screwdriver is all it takes.
 
-Still not working? Check out the product-specific troubleshooting guides or [contact us](/troubleshooting-support/).
+---
+
+{% embed 'https://www.youtube.com/embed/yFiawqU6_Rk' %}
