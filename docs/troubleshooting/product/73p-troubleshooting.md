@@ -15,7 +15,7 @@ eleventyNavigation:
 1. Reflow any solder joint you're unsure of.. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/). A missed or partially soldered transformer pin is the single most common cause of no signal.
 2. Check the orientation of all transistors, diodes, and capacitors.
 3. Check the values of all resistors.
-4. If the signal disappears entirely once gain reaches 55dB and above, the fault is in the PRE 1 section, since that's the stage that only engages at 55dB and higher.
+4. If the signal is attenuated or disappears entirely once gain reaches 55dB and above, the fault is in the PRE 1 section, since that's the stage that only engages at 55dB and higher.
 5. If the gain is only wrong, or drops out, at one specific gain-switch position rather than across the board, double check the resistor values and solder joints on the GAIN board.
 
 ## Noise or hum {.step}
