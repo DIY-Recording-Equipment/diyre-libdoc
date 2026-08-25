@@ -9,6 +9,7 @@ eleventyNavigation:
 
 ## Before you start
 
+- [JFT Assembly Guide](https://manuals.diy.re/jft)
 - [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/) covers how to confirm a part is in the right spot and facing the right way, which comes up in a few sections below.
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 
@@ -20,7 +21,7 @@ eleventyNavigation:
 
 ## No signal, weak or distorted bursts {.step}
 
-1. Check the transistor positions against the build guide, particularly that the JFET hasn't been swapped with one of the small bipolar transistors on the board.
+1. Check the transistor positions against the build guide.
 2. If placement checks out, reflow the solder joints, especially around the transistor legs and trim pots. A cold joint at either spot can produce the same symptoms as a misplaced part.
 
 ## Low end flutter, or the sound cuts in and out {.step}

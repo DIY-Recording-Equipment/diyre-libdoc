@@ -13,31 +13,18 @@ Most L2A issues come down to the transformer, the cabling, or expectations aroun
 
 - [L2A Assembly Guide](https://manuals.diy.re/l2a)
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
-- [Checking Your Audio Setup](/docs/troubleshooting/general/checking-your-audio-setup/) is worth ruling out first if the signal seems weak or noisy, since cabling accounts for a lot of L2A reports.
+- [Checking Your Audio Setup](/docs/troubleshooting/general/checking-your-audio-setup/) is worth ruling out first if the signal seems weak or noisy, since cabling accounts for a lot of L2A issues.
 
-You'll want a multimeter for the transformer test below.
+## Weak, thin, or no output {.step}
 
-## Transformer fails a resistance or continuity test {.step}
-
-1. Set a multimeter to resistance and test across pins 1 and 3, and separately across pins 5 and 7. An open circuit or a wildly inconsistent reading on either pair points to a damaged or genuinely bad transformer.
-2. Note your exact ohm readings and take photos of the transformer and its solder joints. A broken internal lead or a cold solder joint from shipping can produce the same symptom as a bad transformer, so the readings help tell them apart.
-
-## Weak, thin, or low-level output {.step}
-
-1. Confirm both ends of your cabling are actually balanced. The L2A is designed for balanced TRS or XLR connections, and running it with unbalanced TS cabling or a mismatched patchbay is a common cause of a signal that sounds quiet or thin.
+1. Confirm that the cable going to the input of the L2A is balanced.
 2. Check that your volume pot is turned all the way up.
-3. Remember the L2A is a passive, unity-gain device. It doesn't boost the signal, so if your source is already quiet, you'll need a preamp downstream to bring it up to a usable level. A thin or quiet result isn't necessarily a fault.
+3. Remember the L2A is a passive, unity-gain device. At max volume, it does not boost the signal at all. Compare the output level of the L2A to the output level of your interface wihout the L2A before concluding the L2A is the problem.
 
 ## Buzz, hum, or ground noise {.step}
 
-1. Try the ground-lift switch in both positions. If the noise changes or worsens with it engaged, that narrows the fault to grounding rather than the signal path itself.
-2. Take photos of your solder joints on the board, particularly around the wiring.
-3. Isolate whether the noise is coming from your interface, your cabling, or a wiring mistake on the L2A itself by swapping one variable at a time.
-
-## Volume knob pops off, or the volume pot doesn't fully attenuate {.step}
-
-1. A knob that pops off or breaks is a mechanical fit issue with the knob itself and needs a replacement.
-2. A pot with an odd loud-quiet-loud sweep, or one that won't fully attenuate, was a known issue on a first-run PCB layout that has since been corrected. A $5 replacement pot, or checking your board against the corrected layout guidance, resolves it.
+1. Try the ground-lift switch in both positions. If the noise changes or worsens in either position, the issue is most likely with your calbing or another device in the chain, not the L2A.
+2. If the noise is equally bad in both switch positions, double check all your solder joints. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for more on how to identify and fix cold solder joints.
 
 ## Request Troubleshooting Support
 

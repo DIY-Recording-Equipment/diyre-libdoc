@@ -7,20 +7,23 @@ eleventyNavigation:
   order: 16
 ---
 
-Reported FF1 issues are limited, and the clearest recurring one is a persistent, rhythmic hiss traced to a damaged transistor. The sections below are ordered by likelihood, so work down from the top.
+All issues reported so far with the FF1 have been due to either a cold solder joint or a misplaced component.
 
 ## General resources
 
+- [FF1 Assembly Guide](https://manuals.diy.re/ff1)
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 - [Checking Your Assembly](/docs/troubleshooting/general/checking-your-assembly/)
 
-## Persistent, rhythmic hiss or noise {.step}
+## One or more cold solder joints {.step}
 
-This points to a damaged transistor rather than a solder or wiring issue. Replacing the transistor resolves it.
+Make sure all your solder joints form shiny tents that cover the entire pad. Reflow any joints that look less than perfect. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for more on how to identify and fix cold solder joints.
 
-## Damaged the board removing a backward header {.step}
+## One or more parts in the wrong position {.step}
 
-If you installed a header backward and damaged the board pulling it back out, a replacement PCB is the fix rather than trying to repair the damaged traces. When removing a misplaced header in the future, clip the pins first and desolder them individually rather than pulling the whole header out at once, which is much less likely to lift a pad or tear a trace.
+1. Double check all the resistor values by their color codes. (You cannot reliabily confirm resistor values with a multimeter after they've been installed in the circuit.)
+2. Check the capacitor positions and orientation
+3. Check the orientation of the diodes
 
 ## Request Troubleshooting Support
 

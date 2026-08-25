@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 26
 ---
 
-Cold or underheated solder joints cause the large majority of PR502 problems, whether the symptom is no signal, no power, or a module that only works intermittently. The sections below are ordered by likelihood, so work down from the top, and reflow before you start swapping parts.
+Cold or underheated solder joints cause the large majority of PR502 problems, whether the symptom is no signal, no power, or a module that only works intermittently.
 
 ## General resources
 
@@ -20,12 +20,10 @@ Cold or underheated solder joints cause the large majority of PR502 problems, wh
 1. Reflow your solder joints, looking especially for dull or "blobby" pads from underheated soldering. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints). This resolves the majority of PR502 issues without anything needing to be replaced.
 2. If reflowing doesn't help, go to Section 2 or Section 3 depending on whether the problem is with power or with a specific module slot.
 
-## No power, or the external power supply misbehaves {.step}
+## No power {.step}
 
-1. Check the PSU's blue indicator LED. Flickering or shutting off points to the supply rather than the chassis.
-2. Check whether only the red 48V LED lights, and it fades rather than staying steady. This is a distinct symptom from a fully dead supply and points to the same power section.
-3. Measure the +16V, -16V, and +48V rails at the test points. A missing rail narrows down which section of the power supply has the fault.
-4. Check D1 and the power LEDs for reversed orientation, a common assembly mistake in this section.
+1. Check the external PSU first by removing it from the PR502 and plugging it into the wall. The blue light on the PSU should stay lit. If it does not turn on or flickers, the PSU is bad and needs to be replaced.
+4. Check the orientation of D1 and the power LEDs. LED orientation can be deteremined by the little parts inside the LED. {% lightbox '/assets/docs/led-polarity.png' %}
 5. If you're on an older board revision, confirm you applied the step 4.5 PCB revision fix. A missed revision fix is a recurring cause of power faults.
 6. Blown zener diodes or transistors from age, or from a mismatched PSU, will also produce this symptom and need replacing.
 7. If a module with large capacitors causes the inrush-limiting resistor to burn out when plugged in, that resistor needs upgrading from the stock SMD part to a 1 to 4.7 ohm through-hole resistor, which handles the inrush current better.

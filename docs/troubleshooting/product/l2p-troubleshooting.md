@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 21
 ---
 
-Most L2P reports come down to the box being run unbalanced when it's designed for balanced I/O, which produces symptoms that look like a fault but aren't. Genuine build issues are mostly a part soldered on the wrong side or a failed switch. The sections below are ordered by likelihood, so work down from the top.
+Most L2P issues are caused by using an unbalanced cable for one of the connections. As a balanced attenuator, the L2P will only work as intended if the cables to both input and output are balanced. The remaining issues are caused by a cold solder joint or a resistor in the wrong place.
 
 ## General resources
 
@@ -15,18 +15,17 @@ Most L2P reports come down to the box being run unbalanced when it's designed fo
 - [General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/)
 - [Checking Your Audio Setup](/docs/troubleshooting/general/checking-your-audio-setup/) is worth ruling out first, since cabling accounts for a lot of L2P reports.
 
-## No attenuation, unexpected bass loss, or the -10/-30 pad settings don't behave as expected {.step}
+## No attenuation, weak bass, or the pad settings don't behave as expected {.step}
 
 1. Confirm both ends of your signal chain are genuinely balanced. The L2P is designed for balanced I/O, and running it with unbalanced cables, a mismatched patchbay, or a TRS-to-XLR wiring error produces exactly these kinds of unexpected results.
-2. If you actually want to run the L2P unbalanced, that's supported, but it requires grounding the negative leg rather than just using an unbalanced cable on a balanced connection. Wiring it the wrong way looks like a fault but is really a setup mismatch.
 
-## An input jack, switch, or the whole board seems soldered on the wrong side {.step}
+## One or more cold solder joints {.step}
 
-Check the board orientation against the manual. Soldering an input jack or the entire board to the wrong side of the enclosure is a common first-build mistake and needs a replacement part (jack or PCB) rather than a rework.
+Make sure all your solder joints form shiny tents that cover the entire pad. Reflow any joints that look less than perfect. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for more on how to identify and fix cold solder joints.
 
-## Pad switch has failed {.step}
+## One or more resistors in the wrong position {.step}
 
-A failed pad switch needs replacing rather than repairing. This is a straightforward parts swap once you've confirmed the switch itself, not the wiring around it, is the problem.
+Double check all the resistor values by their color codes. (You cannot reliabily confirm resistor values with a multimeter after they've been installed in the circuit.)
 
 ## Request Troubleshooting Support
 

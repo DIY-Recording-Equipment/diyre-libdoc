@@ -7,8 +7,6 @@ eleventyNavigation:
   order: 15
 ---
 
-The FE2 is a passive direct box, so a fair amount of what feels like a problem is actually its transformer doing exactly what it's designed to do. Genuine faults mostly trace back to a cold solder joint around the transformer or XLR jack. The sections below are ordered by likelihood, so work down from the top.
-
 ## General resources
 
 - [FE2 Assembly Guide](http://www.diyrecordingequipment.com/pages/fe2-assembly-guide)
@@ -21,8 +19,7 @@ This is normal. The XLR screws cut the threads in the plastic the first time the
 
 ## Low output or no sound {.step}
 
-1. Check for cold or "blobby" solder joints, especially around the transformer and the XLR jack. Reflow any joints that look suspect. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
-3. If reflowing doesn't resolve it, test the transformer's resistance across its windings. A genuinely dead transformer reads near-infinite or missing resistance on the affected pins and needs to be replaced.
+Check for cold or "blobby" solder joints, especially around the transformer and the XLR jack. Reflow any joints that look suspect. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
 
 ## Output seems too quiet compared to an active DI box {.step}
 
