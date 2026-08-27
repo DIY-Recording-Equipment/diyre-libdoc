@@ -22,4 +22,4 @@ If your OLA5 is not passing a signal, please check the following:
 If your OLA5 is passing a signal but not compressing, check the following:
 
 1. Q1 orientation: the side with text should be facing the bottom of the PCB (toward OPT1)
-2. LED3 and LED 4 orientation: remove the LDR assemblies from OPT1 and OPT2 and check the LEDs underneath. The flatted side of the LEDs should correspond to the flat side on the silk screen.
+2. LED3 and LED4 orientation: remove the LDR assemblies from OPT1 and OPT2 and check the LEDs underneath. The flatted side of the LEDs should correspond to the flat side on the silk screen.

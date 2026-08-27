@@ -11,7 +11,7 @@ eleventyNavigation:
 
 You can easily modify the amount of gain the HC1 provides by removing or replacing a few resistors. By default, the HC1 has up to 10dB of gain. The opamps IC1.1 and IC2.1 have a fixed gain of 10dB, which is set by the resistors in the feedback path, R5/R3 and R6/R4. Gain is controlled by the volume knob which is a passive attenuator before the amplifiers.
 
-IC1.1 and IC2.2 are set up as non-inverting amplifiers. In this circuit gain is set by a very simple formula: 1+(Rf/Rg). Where f is the feedback resistor (R5 and R6 in the HC1) and is the resistor to ground (R3 and R4). The stock values are 2.2k for R5, R6 and 1k for R3, R4. So the gain is 1+(2.2k/1k)=3.3 (about 10dB). So, you can increase the gain by increasing R5/R6 and decrease it by reducing those same resistors.
+IC1.1 and IC2.2 are set up as non-inverting amplifiers. In this circuit gain is set by a very simple formula: 1+(Rf/Rg). Where f is the feedback resistor (R5 and R6 in the HC1) and g is the resistor to ground (R3 and R4). The stock values are 2.2k for R5, R6 and 1k for R3, R4. So the gain is 1+(2.2k/1k)=3.3 (about 10dB). So, you can increase the gain by increasing R5/R6 and decrease it by reducing those same resistors.
 
   
 

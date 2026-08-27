@@ -19,11 +19,11 @@ Most L2A issues come down to the transformer, the cabling, or expectations aroun
 
 1. Confirm that the cable going to the input of the L2A is balanced.
 2. Check that your volume pot is turned all the way up.
-3. Remember the L2A is a passive, unity-gain device. At max volume, it does not boost the signal at all. Compare the output level of the L2A to the output level of your interface wihout the L2A before concluding the L2A is the problem.
+3. Remember the L2A is a passive, unity-gain device. At max volume, it does not boost the signal at all. Compare the output level of the L2A to the output level of your interface without the L2A before concluding the L2A is the problem.
 
 ## Buzz, hum, or ground noise {.step}
 
-1. Try the ground-lift switch in both positions. If the noise changes or worsens in either position, the issue is most likely with your calbing or another device in the chain, not the L2A.
+1. Try the ground-lift switch in both positions. If the noise changes or worsens in either position, the issue is most likely with your cabling or another device in the chain, not the L2A.
 2. If the noise is equally bad in both switch positions, double check all your solder joints. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for more on how to identify and fix cold solder joints.
 
 ## Request Troubleshooting Support

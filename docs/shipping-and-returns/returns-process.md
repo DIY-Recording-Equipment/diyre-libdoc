@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 6
 ---
 
-It's ok to change your mind. You can return unopened kits and as-new assembled units within 30 days of when you received you order for a refund, minus the shipping costs. Please visit the [returns portal](https://account.diyrecordingequipment.com) to request a return.
+It's ok to change your mind. You can return unopened kits and as-new assembled units within 30 days of when you received your order for a refund, minus the shipping costs. Please visit the [returns portal](https://account.diyrecordingequipment.com) to request a return.
 
 Unfortunately, we can't accept returns after you've started soldering. Once the iron gets hot, you are the manufacturer.
 
@@ -15,7 +15,7 @@ Note that we can only send returns to the original payment method.
 
   
 
-## Step-by-step Process  for Requesting a Return
+## Step-by-step Process for Requesting a Return
 
   
 

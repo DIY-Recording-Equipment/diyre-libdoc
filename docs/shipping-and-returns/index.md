@@ -30,11 +30,11 @@ No, we are not equipped to offer local pickup at our Philadelphia warehouse.
 
   
 
-**Do you ship to my country**?
+**Do you ship to my country?**
 
 Most likely, yes! We're proud to send our kits to DIYers all over the world.
 
-We will ship to any country served by USPS ( [see full list here](http://pe.usps.com/text/Imm/immctry.htm)) as well as APO/FPO/DPO addresses.
+We will ship to any country served by USPS ([see full list here](http://pe.usps.com/text/Imm/immctry.htm)) as well as APO/FPO/DPO addresses.
 
   
 

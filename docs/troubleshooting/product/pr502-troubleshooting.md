@@ -25,7 +25,7 @@ Cold or underheated solder joints cause the large majority of PR502 problems, wh
 1. Check the external PSU first by removing it from the PR502 and plugging it into the wall. The blue light on the PSU should stay lit. If it does not turn on or flickers, the PSU is bad and needs to be replaced.
 2. Check solder joints as in section 1.
 3. Check for solder bridges between pads, especially on the headers where the pins are closer together.
-4. Check the orientation of D1 and the power LEDs. LED orientation can be deteremined by the little parts inside the LED. {% lightbox '/assets/docs/led-polarity.png' %}
+4. Check the orientation of D1 and the power LEDs. LED orientation can be determined by the little parts inside the LED. {% lightbox '/assets/docs/led-polarity.png' %}
 
 ## Power is fine, but one module slot gets no power or signal {.step}
 

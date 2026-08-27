@@ -17,5 +17,5 @@ eleventyNavigation:
 
 1. Are all resistors in the correct positions? Check the color bands of every resistor against the sorting sheet. Pay especially close attention to those that start with the same number, for example 4.7k and 47k.
 2. Are all ICs in the correct position and orientation?
-3. Are all capacitors in the correction positions and orientation?
-4. Are all diodes in the correction orientation?
+3. Are all capacitors in the correct positions and orientation?
+4. Are all diodes in the correct orientation?

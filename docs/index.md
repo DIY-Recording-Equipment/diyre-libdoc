@@ -8,7 +8,7 @@ Welcome to the DIYRE Support Docs. Find troubleshooting help, optional mods, and
 Kit not working? Start here:
 
 - **[General Troubleshooting Tips](/docs/troubleshooting/general/general-troubleshooting-tips/):** our recommended first steps for any kit that isn't working right.
-- **[Troubleshooting by Product](/docs/troubleshooting/product/):**  Troubleshooting guides for specific kits.
+- **[Troubleshooting by Product](/docs/troubleshooting/product/):** Troubleshooting guides for specific kits.
 
 Browse by section:
 

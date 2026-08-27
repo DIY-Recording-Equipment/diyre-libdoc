@@ -17,21 +17,13 @@ Most reported SS VCA issues trace to a specific component value or a calibration
 
 ## Sound is muffled {.step}
 
-Check C2. It should be a 22pF capacitor, not a 0.1uF one. This specific mislabeling has caused muffled sound in more than one build, so it's worth checking before looking elsewhere.
+Check the value of C2. Make sure you haven't accidentally put a .1uF cap (labeled 104) there instead of 22pF (labeled 22j).
 
-## Trouble calibrating VR1 or the Colour trim pot {.step}
+## Trouble calibrating VR1 {.step}
 
-1. Double check resistor orientation around the trim pot area against the manual.
-2. Reflow the joints in that section if orientation checks out but calibration still won't hold. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
-3. For the calibration switch settings themselves, use 2:1 and FAST, then adjust the Colour knob until you see 3dB of gain reduction.
-
-## Noise or hiss {.step}
-
-Check the VR1 trim pot's setting before assuming a fault. This has been traced to the pot's position rather than a defect in more than one case.
-
-## Trim pot has no detent click {.step}
-
-A trim pot missing its tactile click still needs replacing if you can't reliably return to a known setting by feel.
+1. If you can't reach 3dB gain, double check your test setup first. Make sure you can get unity gain when running a cable directly out of your interface and back in as shown in step 6.2.
+2. Double check all resistor values against the guide.
+3. Make sure your switches are set to 2:1 and FAST when doing the gain calibration.
 
 ## Request Troubleshooting Support
 

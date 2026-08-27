@@ -19,9 +19,9 @@ The DOA Colour needs a separate op-amp module, like a RED-25, Rogue Five, or GAR
 
 1. Confirm you have a compatible op-amp module (RED-25, Rogue Five, or GAR series) installed. The DOA Colour won't function without one.
 2. Check that the DOA is fully seated in the sockets.
-2. Double check resistor values.
-3. Check solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
-4. If you're using a RED-25 as the op-amp module, check Q7 and Q8 for a BD139/BD140 swap.
+3. Double check resistor values.
+4. Check solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
+5. If you're using a RED-25 as the op-amp module, check Q7 and Q8 for a BD139/BD140 swap.
 
 ## Distortion sounds unpleasant or "crunchy" rather than clean {.step}
 

@@ -7,8 +7,6 @@ eleventyNavigation:
   order: 34
 ---
 
-A big volume drop under compression is usually the Toneloc working as designed, since it's a hard compressor without full makeup gain built in. Genuine faults are mostly build errors: a reversed IC, a swapped transistor, or a cold solder joint. The sections below are ordered by likelihood, so work down from the top.
-
 ## General resources
 
 - [Toneloc Assembly Guide](https://manuals.diy.re/toneloc)
@@ -17,22 +15,17 @@ A big volume drop under compression is usually the Toneloc working as designed, 
 
 ## Level drops 10 to 30dB when compression kicks in {.step}
 
-This is usually normal. The Toneloc is a hard compressor without full makeup gain, so a significant drop under compression is expected rather than a fault.
+This is usually normal. The Toneloc is an extreme compressor without adjustable makeup gain, so a significant drop under compression is expected.
 
-1. Send a test tone at a defined dBFS level into the input and compare it against the output at the same setting. This distinguishes expected compression from a genuinely faulty unit better than judging by ear alone.
-2. If the drop is well beyond what the test tones suggest it should be, a TRIM/OUT stage adjustment or a resistor swap may be needed. Take photos of your board before assuming a part is at fault.
+1. Send a very quiet (about -40dBFS or lower) test signal to the Toneloc to test the gain without any compression. If the Toneloc passes roughly unity gain, the Toneloc is working as expected.
+2. If the level drop persists even at very low levels, double check solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
 
-## No output, hiss, or erratic compression on a fresh build {.step}
+## No output, hiss, or erratic compression {.step}
 
-1. Take high-resolution top and bottom photos of the board.
-2. Check for reversed ICs or an IC installed in the wrong PCB position.
-3. Check the transistors (2N5088/2N5458) for correct placement and orientation.
-4. Reflow any joints that look cold or "blobby." See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints). Most cases resolve with a combination of these steps.
-5. If a bad transistor persists with no clear visible cause, or you're linking two units in stereo and their sidechain timing doesn't match, this is a stubborn case that's more likely to need a part replacement or a full module swap.
-
-## A capacitor code or resistor color band doesn't match the sorting sheet {.step}
-
-Capacitor codes like "101" and "102" look similar and are easy to misread, and sorting sheets have occasionally shipped with a mismatched color-band entry (bag 6, R13, is a known example). Compare the part against the schematic value rather than assuming the part in the bag is wrong.
+1. Check the orientation of the IC.
+2. Check the orientation and position of all transistors.
+3. Reflow any joints that look cold or "blobby." See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
+4. If all parts are in the correct place/orientation and reflowing joints doesn't help, the most likely cause is a damaged transistor. Use **[Parts Request](/docs/contact/parts/)** form to request replacement parts.
 
 ## Request Troubleshooting Support
 

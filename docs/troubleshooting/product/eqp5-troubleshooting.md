@@ -24,20 +24,20 @@ You'll want a multimeter for the checks below.
 {% lightbox '/assets/docs/file-sd33lNIGfq.png' %}
 
 2. Check that all ICs are seated fully and in the correct orientation.
-2. If your EQP5 is set to Vintage mode, try Modern mode, and vice versa.
-2. Double check all resistor values.
-2. Check the orientation of all capacitors.
-3. Check for cold or blobby solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
-4. Swap in NE5532 ICs from another EQP5 (if available) to rule out damaged ICs.
+3. If your EQP5 is set to Vintage mode, try Modern mode, and vice versa.
+4. Double check all resistor values.
+5. Check the orientation of all capacitors.
+6. Check for cold or blobby solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
+7. Swap in NE5532 ICs from another EQP5 (if available) to rule out damaged ICs.
 
 ## LED doesn't light up {.step}
-1. Confirm LED1 is installed in the correct direction by the orientatin of the small metal parts inside the LED.
+1. Confirm LED1 is installed in the correct direction by the orientation of the small metal parts inside the LED.
 {% lightbox '/assets/docs/led-polarity.png' %}
-1. Check that all ICs are seated fully and in the correct orientation.
-2. Check the orientation of all capacitors.
-Check for solder joints that are bridged too each othery by too much solder.
-2. Remove all ICs and the DOA (if installed). IF the LED lights up with them removed, try adding back one at a time to see which one causes the power to fail.
-3. Measure the resistance between +16v/-16v test points and ground. If either is close to 0 ohms, there is a short circuit between that power rail and ground.
+2. Check that all ICs are seated fully and in the correct orientation.
+3. Check the orientation of all capacitors.
+4. Check for solder joints that are bridged to each other by too much solder.
+5. Remove all ICs and the DOA (if installed). If the LED lights up with them removed, try adding back one at a time to see which one causes the power to fail.
+6. Measure the resistance between +16v/-16v test points and ground. If either is close to 0 ohms, there is a short circuit between that power rail and ground.
 
 ## Noise, crackling, intermittent signal, or a flickering LED {.step}
 
@@ -61,10 +61,10 @@ This points to grounding, shielding, or a dirty pot rather than a component fail
 2. Reflow its solder joints if cleaning doesn't fully resolve it. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
 3. If the hum specifically appears when touching the LF Cut knob, check the grounding around that section of the board.
 
-## Things that seem like problems but arent
+## Things that seem like problems but aren't
 
 1. Low-frequency bump in Vintage mode. This is normal, not a defect. It comes from the interaction between the output transformer behavior and the input impedance of whatever you're feeding. It's rarely audible with real program material, mostly showing up as a bump on a sweep or analyzer plot.
-2. A small ~1dB difference in level between a pair of EQP5s. The EQP5 is built around potentiometers and film capacitors with roughly 20% tolerance which can create slight differenes in level between units.
+2. A small ~1dB difference in level between a pair of EQP5s. The EQP5 is built around potentiometers and film capacitors with roughly 20% tolerance which can create slight differences in level between units.
 
 ## Request Troubleshooting Support
 
@@ -77,7 +77,7 @@ If your EQP5 is not passing unity gain when in bypass mode, check the following:
 
 1. Check all resistor color codes against the [EQP5 Sorting Sheet](https://cdn.shopify.com/s/files/1/0698/2265/files/EQP5_Component_Sorting_Sheet_2.2.pdf?9410476748528023624)
 2. Check the values of the pots VR1-VR4. They should be:
-   1. VR1- B1k
+   1. VR1 - B1k
    2. VR2 - B10k
    3. VR3 - A100k
    4. VR4 - A10k

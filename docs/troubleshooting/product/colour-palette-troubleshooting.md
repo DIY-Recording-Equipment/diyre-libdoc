@@ -20,7 +20,7 @@ The Palette chassis itself is usually solid. Most problems come from a cold join
 1. Remove all Colour modules from the Palette and check whether you get signal with the chassis empty. This isolates whether the fault is in the Palette itself or in a Colour module.
 2. Make sure that no empty Colour slots are engaged. If a Colour slot is empty, engaging it will mute the signal.
 3. Reflow the solder joints at the CON1A through CON6 connectors and anywhere the motherboard meets the daughterboard. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
-3. Check IC placement and orientation against the manual.
+4. Check IC placement and orientation against the manual.
 
 ## A component looks soldered to the wrong side of the board {.step}
 

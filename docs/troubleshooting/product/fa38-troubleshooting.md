@@ -7,10 +7,6 @@ eleventyNavigation:
   order: 14
 ---
 
-All problems encountered with the FA38 so far have been due to either:
-
-
-
 ## General resources
 
 - [FA38 Assembly Guide](https://manuals.diy.re/fa38)
@@ -23,7 +19,7 @@ Make sure all your solder joints form shiny tents that cover the entire pad. Ref
 
 ## One or more resistors in the wrong position {.step}
 
-Double check all the resistor values by their color codes. (You cannot reliabily confirm resistor values with a multimeter after they've been installed in the circuit.)
+Double check all the resistor values by their color codes. (You cannot reliably confirm resistor values with a multimeter after they've been installed in the circuit.)
 
 ## Request Troubleshooting Support
 

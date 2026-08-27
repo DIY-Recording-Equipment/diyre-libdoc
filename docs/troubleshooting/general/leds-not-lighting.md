@@ -13,4 +13,4 @@ If the LEDs don't turn on or turn off quickly after turning on your unit, someth
 2. Check the orientation of all ICs and transistors
 3. Remove all the socketed ICs and power the unit up.
    1. If the LEDs work now, replace the ICs one-by-one, powering down every time before placing a new IC.
-   2. If one or more of the ICs are bad, please [contact us](/missing-parts/) for a replacement
+   2. If one or more of the ICs are bad, please [contact us](/docs/contact/parts/) for a replacement

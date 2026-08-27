@@ -15,9 +15,9 @@ eleventyNavigation:
 
 ## No power, LEDs don't light up {.step}
 
-1. Unplug the external power supply's from the Duo and check its indicator LED. No light, or a light that cycles on and off, points to a failed supply rather than the Duo itself.
+1. Unplug the external power supply from the Duo and check its indicator LED. No light, or a light that cycles on and off, points to a failed supply rather than the Duo itself.
 2. If the PSU light stays lit while connected to the Duo, check the connection between the I/O Board and Drawer. Make sure the Drawer is completely inserted and that the thumb screws are screwed in. Power is passed to the audio circuitry through the two sets of large connectors CON1 and CON2.
-3. If the external PSU works when disconnected from the Duo, but turns of or blinks when connected, there is a short circuit in one of the power rails of the Duo. Check these things:
+3. If the external PSU works when disconnected from the Duo, but turns off or blinks when connected, there is a short circuit in one of the power rails of the Duo. Check these things:
    1. Disconnect the drawer and check the PSU light again. If the PSU stays lit, the issue is on the Drawer. If it is still off, the issue is on the I/O Board.
    2. After narrowing down the issue to the Drawer or I/O board, check all parts and solder joints on that board. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
 

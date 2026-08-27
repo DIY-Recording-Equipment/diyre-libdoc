@@ -9,7 +9,7 @@ eleventyNavigation:
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
 
-The THRESHOLD control is one of the few places that the G Bus circuit departs from the original console schematic. This is because, in the years since the console was designed, the world has switched to digital recording and as a result work at higher signal levels. So the THRESHOLD control on the G Bus is dialed in to be less sensitive than the original.
+The THRESHOLD control is one of the few places that the G Bus circuit departs from the original console schematic. This is because, in the years since the console was designed, the world has switched to digital recording and, as a result, works at higher signal levels. So the THRESHOLD control on the G Bus is dialed in to be less sensitive than the original.
 
 So, if you tend to mix "quiet" or are using an all-analog setup, you may want to make THRESHOLD more sensitive. To do this, you can adjust R3\_CB or both R3\_CB and R4\_CB.
 

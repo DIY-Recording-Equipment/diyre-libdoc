@@ -12,8 +12,8 @@ Most issues we see are due to a simple assembly error. Carefully check your boar
 1. Are all ICs in the correct position and orientation?
 2. Are all resistors in the correct positions? Check the color bands of every resistor against the sorting sheet. Pay especially close attention to those that start with the same number, for example 4.7k and 47k.
 3. Are all non-polarized capacitors in the correct positions?
-4. Are all electrolytic capacitors in the correction positions and orientation?
-5. Are all diodes in the correction orientation?
+4. Are all electrolytic capacitors in the correct positions and orientation?
+5. Are all diodes in the correct orientation?
 6. Are all transistors in the correct positions and orientation?
 
 If everything above looks good but you're still having problems, it's time to

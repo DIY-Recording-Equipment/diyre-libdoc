@@ -16,7 +16,7 @@ You can easily reduce the overall gain by 9dB and therefore make the clipping po
 
 ![](/assets/docs/file-YUz9OCuB6b.png)
 
-Note: The resistor designators are different on the Rev A (pre-2023), version of the Distortastudio. The resistors to change in the Rev A version are:
+Note: The resistor designators are different on the Rev A (pre-2023) version of the Distortastudio. The resistors to change in the Rev A version are:
 
 1. Replace R2 with a jumper.
 2. Replace R8 with a 1.8k resistor.

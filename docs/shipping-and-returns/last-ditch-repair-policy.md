@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-Our first priority at DIYRE is to see your DIY project succeed. That's why try to make the best [step-by-step guides](http://www.diyrecordingequipment.com/pages/manuals) and offer [email support](http://www.diyrecordingequipment.com/pages/support). However, sometimes even the best of us get stuck. That's where our Last Ditch Service comes in.
+Our first priority at DIYRE is to see your DIY project succeed. That's why we try to make the best [step-by-step guides](http://www.diyrecordingequipment.com/pages/manuals) and offer [email support](http://www.diyrecordingequipment.com/pages/support). However, sometimes even the best of us get stuck. That's where our Last Ditch Service comes in.
 
 ### The Repair Process
 
@@ -19,13 +19,13 @@ After you've done your best to build and troubleshoot your kit:
 
 ### Supported Kits Only
 
-We can only repair kits that we at DIYRE designed and support. Look for the the "Supported" check box on the product page.
+We can only repair kits that we at DIYRE designed and support. Look for the "Supported" check box on the product page.
 
 ![](https://cdn.shopify.com/s/files/1/0698/2265/files/supported-example_grande.png?13080411443222395680)
 
 ### Repairs Only
 
-We offer repairs as zero-profit service to our customers because we want you to be happy with your DIYRE product. So we ask that you only use this service after you've built the kit completely and have given troubleshooting your best shot. That is, this is not an assembly service. We also cannot support or service kits built and sold by a 3rd party, either through an authorized retailer or on Reverb, eBay, etc.
+We offer repairs as a zero-profit service to our customers because we want you to be happy with your DIYRE product. So we ask that you only use this service after you've built the kit completely and have given troubleshooting your best shot. That is, this is not an assembly service. We also cannot support or service kits built and sold by a 3rd party, either through an authorized retailer or on Reverb, eBay, etc.
 
   
 

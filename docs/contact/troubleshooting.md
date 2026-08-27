@@ -10,9 +10,9 @@ eleventyNavigation:
 Use the form below to request support if your kit isn't working. Please read through all of the instructions before submitting the form.
 
 - For general inquiries, use the **[Contact](/docs/contact/)** form.
-- For missing or replacement parts, use the **[ Parts Request](/docs/contact/parts/)** form.
+- For missing or replacement parts, use the **[Parts Request](/docs/contact/parts/)** form.
 
-We're dedicated to helping you finish your DIY project. But we're also a small company without a dedicated support team. Troubleshooting requires one of experts to make time to give your issue their full, sustained attention. Please be respectful of this time by sending a clear, detailed message, and please allow two business days for troubleshooting responses.
+We're dedicated to helping you finish your DIY project. But we're also a small company without a dedicated support team. Troubleshooting requires one of our experts to make time to give your issue their full, sustained attention. Please be respectful of this time by sending a clear, detailed message, and please allow two business days for troubleshooting responses.
 
 ## Do this first
 
@@ -37,16 +37,16 @@ We maintain both general guides and guides specific to each product:
 
 - Describe your problem with as much detail as possible. For example:
     - If your unit is too quiet, specify the dB value.
-    - If your unit is noise, describe the noise (hum, buzz, etc.) and the approximate frequency range.
+    - If your unit is noisy, describe the noise (hum, buzz, etc.) and the approximate frequency range.
 - Describe your test setup.
     - What gear is your unit connected to?
     - What software and interface are you using?
     - What kind of cables are you using?
 - List troubleshooting steps you've already tried
     - Have you checked all components?
-    - Have you re-flowed any solder joints
+    - Have you re-flowed any solder joints?
     - Have you swapped cables?
-- Include iigh-resolution photos of both the top and bottom of your build
+- Include high-resolution photos of both the top and bottom of your build
 
 The more of this you can provide up front, the faster we can diagnose the issue.
 

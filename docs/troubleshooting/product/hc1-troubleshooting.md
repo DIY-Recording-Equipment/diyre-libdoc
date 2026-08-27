@@ -34,7 +34,7 @@ The gain is set by the ratio of two resistor pairs: R5/R3 for one channel, R6/R4
 
 ## Whistling sound that changes pitch as you turn the volume knob, after swapping in a different op-amp {.step}
 
-1. This is oscillation, not a bad part or bad build. Ot shows up with some high-bandwidth op-amps.
+1. This is oscillation, not a bad part or bad build. It shows up with some high-bandwidth op-amps.
 2. Add a small capacitor (33–47pF) across R5 and R6, the feedback resistors. This limits the op-amp's bandwidth enough to stop the oscillation.
 3. If you'd rather not modify the board, swap back to a standard dual op-amp like the stock NE5532.
 

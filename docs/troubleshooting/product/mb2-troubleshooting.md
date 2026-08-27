@@ -18,12 +18,12 @@ Cold solder joints are the default first check for nearly every MB2 symptom, fro
 ## One channel is noisier, quieter, or hissing more than the other {.step}
 
 1. Reflow the solder joints on the affected channel first. This resolves the issue in most cases. See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/) for how to identify and fix cold solder joints.
-2. Double check all the resistor values by their color codes. (You cannot reliabily confirm resistor values with a multimeter after they've been installed in the circuit.)
+2. Double check all the resistor values by their color codes. (You cannot reliably confirm resistor values with a multimeter after they've been installed in the circuit.)
 
 ## No signal or no audio output {.step}
 
 1. Reflow the solder joints, same as Section 1.
-2. Confirm phantom power (+48V) is engaged and working on your preamp. A surprising number of "no output" reports turn out to be an issue with te phantom power of the preamp.
+2. Confirm phantom power (+48V) is engaged and working on your preamp. A surprising number of "no output" reports turn out to be an issue with the phantom power of the preamp.
 
 ## MB2 sounds noisier than another mic booster you've compared it to {.step}
 

@@ -23,7 +23,7 @@ One thing worth knowing up front: nearly every test step in the assembly guide r
 1. Confirm the power supply itself is good: unplug it from the G Bus and plug it into the wall only. The blue LED should light and stay solid. If it doesn't light, or it blinks, the power supply has failed and needs to be replaced.
 2. Double check the G Bus is actually powered while you're testing.
 3. If one rail reads 0V or far from spec while the others are fine, set your meter to resistance and test from that rail to GND with the power off. A reading near 0 ohms means a short circuit. The most common cause for this is two solder joints touching each other rather than a bad part. Look closely at the section around that rail and reflow anything "blobby." See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/).
-4. If If the +12v or -12v rails stay at 0V after cleaning up the joints, check the orientation and positions of the U1 and U2 regulators.
+4. If the +12v or -12v rails stay at 0V after cleaning up the joints, check the orientation and positions of the U1 and U2 regulators.
 5. If you find a short and fix it, but a power supply has already been connected to it, treat that supply as suspect too. A sustained short can kill it even if it worked before.
 
 ## Levels are off in REW tests {.step}
@@ -33,8 +33,8 @@ This is very often an issue with the test setup, not the G Bus.
 1. Confirm the dB units are set correctly. Some tests use dBFS while others use dBU.
 2. Run a cable directly from your interface's output back into its input, with the G Bus out of the chain entirely, and send a test tone. Make sure you are getting unity gain from the output to the input of your interface.
 3. In REW's audio preferences, check for a "Control Input Volume" option. If it's checked and can't be unchecked, try switching the driver (Java versus ASIO, for instance) until it can be, since a locked input-volume control throws off calibration.
-5. Make sure the unit is powered on for every test. It's easy to test with power disconnected out of habit and get readings that look like a fault but are actually just an unpowered board.
-6. If REW still won't cooperate with your interface no matter what, you can run the levels tests in a DAW instead: a signal generator plugin feeding the G Bus, and a level meter on the return track give you the same information REW would.
+4. Make sure the unit is powered on for every test. It's easy to test with power disconnected out of habit and get readings that look like a fault but are actually just an unpowered board.
+5. If REW still won't cooperate with your interface no matter what, you can run the levels tests in a DAW instead: a signal generator plugin feeding the G Bus, and a level meter on the return track give you the same information REW would.
 
 ## Can't get enough compression for ratio calibration (13.2) {.step}
 
@@ -50,11 +50,11 @@ If you want to modify your G Bus for lower input levels, see the [G Bus threshol
 
 ## A component smokes, overheats, or fails on first power-up {.step}
 
-This points to an IC installed backwards. Remove the affected part(s) before powering up again, and request replacements via the **[ Parts Request](/docs/contact/parts/)** form.
+This points to an IC installed backwards. Remove the affected part(s) before powering up again, and request replacements via the **[Parts Request](/docs/contact/parts/)** form.
 
-## Something works fine for a while, then stops {.steps}
+## Something works fine for a while, then stops {.step}
 
-An intermittent issue is almost always cause by one or more cold solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints) for how to identify and fix cold joints.
+An intermittent issue is almost always caused by one or more cold solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints) for how to identify and fix cold joints.
 
 ## Balanced input test (6.2) reads double, half, or otherwise wrong {.step}
 
@@ -70,10 +70,10 @@ Check the orientation of the pushbutton switches on CB2. The E on the switch bod
 ## Signal passes, but no compression {.step}
 
 1. Check that MIX and MONO SC are switched out. Also check the orientation of both of these switches.
-1. Check the wiring of the COMPRESSION switch.
-1. Check the connections between CB1 and the motherboard.
-2. Check that the FILTER switch isn't set to EXT SC (fully clockwise). With nothing connected to the external sidechain input, this position will show no compression at all and is easy to land on by accident.
-3. Double check that the MIX (10k, detented) and THRESHOLD (50k, smooth) potentiometers aren't swapped.
+2. Check the wiring of the COMPRESSION switch.
+3. Check the connections between CB1 and the motherboard.
+4. Check that the FILTER switch isn't set to EXT SC (fully clockwise). With nothing connected to the external sidechain input, this position will show no compression at all and is easy to land on by accident.
+5. Double check that the MIX (10k, detented) and THRESHOLD (50k, smooth) potentiometers aren't swapped.
 
 ## Sidechain VCA test (10.3) is out of range {.step}
 
@@ -104,9 +104,9 @@ A small gain increase, under about 2dB, when engaging XFMR is expected, since it
 ## Harsh distortion or clipping when DRIVE is engaged (especially settings 2 and 3) {.step}
 
 1. This is very often correct behavior, see the explanation below under "Things that seem like problems but aren't."
-3. If harsh distortion shows up even at low input levels, or only on one channel, check the DRIVE-section resistors on CB2 and the solder joints around that channel's transformer.
-4. If DRIVE 2 and 3 are just too aggressive for your use case (mix bus duty especially), you can tame them by doing the (G Bus DRIVE Amount mod)[/mods/g-bus-drive-amount/].
-5. If the DRIVE knob spins past its third position, that's just the rotary switch stop needing adjustment per step 12.3 of the build guide.
+2. If harsh distortion shows up even at low input levels, or only on one channel, check the DRIVE-section resistors on CB2 and the solder joints around that channel's transformer.
+3. If DRIVE 2 and 3 are just too aggressive for your use case (mix bus duty especially), you can tame them by doing the [G Bus DRIVE Amount mod](/docs/mods/g-bus-drive-amount/).
+4. If the DRIVE knob spins past its third position, that's just the rotary switch stop needing adjustment per step 12.3 of the build guide.
 
 
 ## Things that seem like problems but aren't

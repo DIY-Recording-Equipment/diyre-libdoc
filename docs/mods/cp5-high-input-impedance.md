@@ -9,7 +9,7 @@ eleventyNavigation:
 
 **Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
 
-The [CP5 Mic Preamp's](https://www.diyrecordingequipment.com/products/cp5-mic-preamp-with-colour) default input impedance is 2.9k ohms. This sits in a sweet spot to maximize noise and voltage transfer for almost all microphones. However, some users prefer to increase the impedance to 10k or above for use with ribbon microphones.
+The [CP5 Mic Preamp's](https://www.diyrecordingequipment.com/products/cp5-mic-preamp-with-colour) default input impedance is 2.9k ohms. This sits in a sweet spot to minimize noise and maximize voltage transfer for almost all microphones. However, some users prefer to increase the impedance to 10k or above for use with ribbon microphones.
 
   
 

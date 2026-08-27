@@ -33,13 +33,13 @@ This option results in the circuit below:
 In this mode, you will replace the XFMR output with true bypass. So the compressor will be completely bypassed when the XFMR switch is in the IN position, and the XFMR output will be disabled. With this mod installed, the DRIVE switch will not do anything.
 
 1. Remove R25, R26 and R13\_CB, R14\_CB (not pictured).
-2. Solder jumper wires from the pads shown below of R25 and R26 to IN- an IN+ respectively.
+2. Solder jumper wires from the pads shown below of R25 and R26 to IN- and IN+ respectively.
 
 Left channel:
 
 ![](/assets/docs/file-SWnTRMYX6n.png)
 
-R channel:
+Right channel:
 
 ![](/assets/docs/file-1XvG5fwh84.png)
 

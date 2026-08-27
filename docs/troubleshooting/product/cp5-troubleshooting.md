@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 9
 ---
 
-Most CP5 problems trace back to one of a handful of assembly slips: a swapped IC, a wrong resistor value, or a cold solder joint. A few things that feel like faults, like gain varying slightly between two units high noise floor with no mic plugged in, are actually normal behavior for a mic preamp. The sections below are ordered by likelihood, so work down from the top.
+Most CP5 problems trace back to one of a handful of assembly slips: a swapped IC, a wrong resistor value, or a cold solder joint. A few things that feel like faults, like gain varying slightly between two units, or a high noise floor with no mic plugged in, are actually normal behavior for a mic preamp. The sections below are ordered by likelihood, so work down from the top.
 
 ## General resources
 
@@ -19,8 +19,8 @@ Most CP5 problems trace back to one of a handful of assembly slips: a swapped IC
 ## No signal {.step}
 
 1. Check that U1, U2, and U3 are in the correct sockets and orientation.
-3. Check the values of all resistor.
-3. Check the orientaiton of all capacitors and the BR1 and BR2 diode bridges.
+2. Check the values of all resistors.
+3. Check the orientation of all capacitors and the BR1 and BR2 diode bridges.
 4. Check solder joints. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints).
 
 
@@ -44,7 +44,7 @@ Check the value and soldering of R14. A wrong value or cold solder joint here is
 
 Reflow the solder joints around the phantom power section as described in #3 above. See [Cleaning Up Solder Joints](https://support.diy.re/article/20-cleaning-up-solder-joints). This resolves the majority of cases.
 
-## Two CP5 units don't measure exactly the same gain {.step}
+## Two CP5s don't measure exactly the same gain {.step}
 
 This is expected. The gain pots are rated to 20% tolerance, though in practice most measure closer to 10%, meaning up to about 0.5dB-1dB difference between two units at the same knob position. It's not a defect and doesn't need correcting.
 

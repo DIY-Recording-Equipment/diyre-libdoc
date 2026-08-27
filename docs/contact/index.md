@@ -8,7 +8,7 @@ eleventyNavigation:
 
 Use the form below for general inquiries.
 
-- For missing or replacement parts, use the **[ Parts Request](parts/)** form.
+- For missing or replacement parts, use the **[Parts Request](parts/)** form.
 - To request help with troubleshooting, use the **[Support Request](troubleshooting/)** form.
 
 Otherwise, use the form below for anything else.

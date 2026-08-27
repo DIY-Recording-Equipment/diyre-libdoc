@@ -21,7 +21,7 @@ Make sure all your solder joints form shiny tents that cover the entire pad. Ref
 
 ## One or more parts in the wrong position {.step}
 
-1. Double check all the resistor values by their color codes. (You cannot reliabily confirm resistor values with a multimeter after they've been installed in the circuit.)
+1. Double check all the resistor values by their color codes. (You cannot reliably confirm resistor values with a multimeter after they've been installed in the circuit.)
 2. Check the capacitor positions and orientation
 3. Check the orientation of the diodes
 
