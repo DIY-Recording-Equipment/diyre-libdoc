@@ -1,0 +1,78 @@
+url,title
+https://manuals.diy.re/contact/thanks/,Request Received
+https://manuals.diy.re/docs/,DIYRE Support Docs
+https://manuals.diy.re/docs/contact/,Contact Us
+https://manuals.diy.re/docs/contact/parts/,Parts Request
+https://manuals.diy.re/docs/contact/troubleshooting/,Troubleshooting Support Request
+https://manuals.diy.re/docs/mods/,Mods
+https://manuals.diy.re/docs/mods/15ips-less-distortion/,15IPS less distortion (30IPS mod)
+https://manuals.diy.re/docs/mods/15ips-mkii-change-filter/,15IPS mkii change resonant filter
+https://manuals.diy.re/docs/mods/73p-di-gain/,73P DI gain
+https://manuals.diy.re/docs/mods/cp5-high-input-impedance/,CP5 high input impedance
+https://manuals.diy.re/docs/mods/distortastudio-less-distortion/,Distortastudio less distortion
+https://manuals.diy.re/docs/mods/eqp5-change-frequencies/,EQP5 alternate frequencies
+https://manuals.diy.re/docs/mods/eqp5-ola5-lf-bump-fix/,EQP5 and OLA5 LF bump fix
+https://manuals.diy.re/docs/mods/g-bus-drive-amount/,G Bus DRIVE amount
+https://manuals.diy.re/docs/mods/g-bus-feed-forward-mode/,G Bus feed-forward mode
+https://manuals.diy.re/docs/mods/g-bus-filter-frequencies/,G Bus high-pass filter frequencies
+https://manuals.diy.re/docs/mods/g-bus-make-up-mod/,G Bus MAKE-UP amount
+https://manuals.diy.re/docs/mods/g-bus-thresh-mod/,G Bus THRESHOLD sensitivity
+https://manuals.diy.re/docs/mods/g-bus-true-bypass/,G Bus true bypass
+https://manuals.diy.re/docs/mods/g-bus-vintage-vcas/,G Bus vintage VCAs
+https://manuals.diy.re/docs/mods/hc1-gain-amount/,HC1 gain amount
+https://manuals.diy.re/docs/mods/l2p-balanced-attenuation/,L2P attenuation amount
+https://manuals.diy.re/docs/mods/modifying-the-limit-ratio/,OLA5 limit ratio
+https://manuals.diy.re/docs/shipping-and-returns/,Shipping & Returns
+https://manuals.diy.re/docs/shipping-and-returns/international-repair-techs/,International repair techs
+https://manuals.diy.re/docs/shipping-and-returns/international-shipping-duties/,International shipping duties
+https://manuals.diy.re/docs/shipping-and-returns/last-ditch-repair-policy/,Last Ditch Repair Policy
+https://manuals.diy.re/docs/shipping-and-returns/missing-parts/,Missing or damaged parts
+https://manuals.diy.re/docs/shipping-and-returns/restock/,When will kits be back in stock?
+https://manuals.diy.re/docs/shipping-and-returns/return-your-units-for-repair/,Return your unit for the Last Ditch Repair Service
+https://manuals.diy.re/docs/shipping-and-returns/returns-process/,Returns process
+https://manuals.diy.re/docs/troubleshooting/,Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/general/,General Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/general/500-series-module-troubleshooting/,500-series module troubleshooting
+https://manuals.diy.re/docs/troubleshooting/general/checking-your-assembly/,Checking your assembly
+https://manuals.diy.re/docs/troubleshooting/general/checking-your-audio-setup/,Checking your audio setup
+https://manuals.diy.re/docs/troubleshooting/general/cleaning-the-pcb/,Cleaning the PCB
+https://manuals.diy.re/docs/troubleshooting/general/cleaning-up-solder-joints/,Cleaning up solder joints
+https://manuals.diy.re/docs/troubleshooting/general/general-troubleshooting-tips/,General troubleshooting tips (start here!)
+https://manuals.diy.re/docs/troubleshooting/general/how-to-check-power-with-a-multi-meter/,Checking power with a multi-meter
+https://manuals.diy.re/docs/troubleshooting/general/leds-not-lighting/,LEDs not lighting or turning off after a few seconds
+https://manuals.diy.re/docs/troubleshooting/product/,Troubleshooting by Product
+https://manuals.diy.re/docs/troubleshooting/product/15ips-troubleshooting/,15IPS Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/500ext-troubleshooting/,500EXT Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/73p-troubleshooting/,73P Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/aurex-troubleshooting/,AurEx Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/colour-duo-troubleshooting/,Colour Duo Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/colour-palette-troubleshooting/,Colour Palette Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/colourphone-troubleshooting/,Colourphone Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/colourupter-troubleshooting/,Colourupter Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/cp5-troubleshooting/,CP5 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/ctx-troubleshooting/,CTX Colour Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/distortastudio-troubleshooting/,Distortastudio Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/doa-colour-troubleshooting/,DOA Colour Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/eqp5-troubleshooting/,EQP5 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/fa38-troubleshooting/,FA38 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/fe2-troubleshooting/,FE2 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/ff1-troubleshooting/,FF1 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/g-bus-troubleshooting/,G Bus Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/hc1-troubleshooting/,HC1 Headphone Amp Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/jft-troubleshooting/,JFT Colour Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/l2a-troubleshooting/,L2A Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/l2p-troubleshooting/,L2P Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/mb2-troubleshooting/,MB2 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/mojo-maestro-troubleshooting/,Mojo Maestro Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/ola5-troubleshooting/,OLA5 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/pr502-troubleshooting/,PR502 Chassis Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/red-25-troubleshooting/,RED-25 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/rm-5-rm-6-troubleshooting/,RM-5 and RM-6 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/sb2-troubleshooting/,SB2 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/ss-vca-troubleshooting/,SS VCA Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/tm79-troubleshooting/,TM79 Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/toneloc-troubleshooting/,Toneloc Troubleshooting
+https://manuals.diy.re/docs/troubleshooting/product/tsx-troubleshooting/,TSX Troubleshooting
+https://manuals.diy.re/search/,Search
+https://manuals.diy.re/ssdiy/,SS-DIY Assembly Guide
+https://manuals.diy.re/tags/,Tags list

@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 6
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 All the frequency bands on the EQP5 Passive EQ can be customized by changing the capacitor value.
 

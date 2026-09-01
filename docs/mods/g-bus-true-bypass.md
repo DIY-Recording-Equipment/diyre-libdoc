@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 13
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 By default, the G Bus COMPRESSOR switch only bypasses the compression circuitry and audio still passes through the compressor, including the XFMR/DRIVE circuitry if it is switched in. However, you can modify the XFMR switch to be a "true bypass" switch using the "IN+" and "IN-" pads on the PCB.
 

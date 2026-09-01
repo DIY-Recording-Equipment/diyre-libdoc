@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 8
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 The DRIVE switch controls two stages at once: the gain of the opamp IC3.2 and an attenuator after the transformer. The gain is set by the resistors R5\_CB-R7\_CB and R10\_CB-R12\_CB, while the attenuation is set by R8\_CB, R9\_CB and R13\_CB, R14\_CB.
 

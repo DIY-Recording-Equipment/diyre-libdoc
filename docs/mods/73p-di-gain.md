@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 The direct input (DI) of the 73P is dialed in for -20dB gain reduction by default. This is to prevent very hot instrument signals, such as a bass with active pickups, from clipping the preamp. However, this comes at a tradeoff of increasing the noise floor for the DI input. Some users prefer to increase the output of the DI so that less gain is required and therefore noise is lower.
 

@@ -7,9 +7,9 @@ eleventyNavigation:
   order: 2
 ---
 
-Part of the distinctive sound of tape that the 15IPS is a resonant high-pass filter in the very low frequencies, sometimes known as the "head bump." Vintage tape machines had a wide range of curves in the low frequencies. Head bumps at 15 inches per second varied in the range of <1dB to 4dB and roughly 30Hz to 70Hz. The 15IPS is designed to have a head bump of 3dB with a corner frequency of 47Hz.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
-  
+Part of the distinctive sound of tape that the 15IPS is a resonant high-pass filter in the very low frequencies, sometimes known as the "head bump." Vintage tape machines had a wide range of curves in the low frequencies. Head bumps at 15 inches per second varied in the range of <1dB to 4dB and roughly 30Hz to 70Hz. The 15IPS is designed to have a head bump of 3dB with a corner frequency of 47Hz.
 
 If you want to modify or remove this bump while keeping the compression and distortion character, simply change or remove R7/R8. In the 15IPS mkII it is R7, in the mkIII it is R8. The resistor specifications are through-hole, metal film, 1% tolerance, 1/4 watt.
 

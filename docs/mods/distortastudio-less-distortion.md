@@ -6,6 +6,7 @@ eleventyNavigation:
   parent: "Mods"
   order: 5
 ---
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 The Distortastudio is an exceedingly simple circuit: it consists of four opamps, three that add gain (IC1.1, IC1.2, IC2.1), and one that attenuates the gain back to unity (IC2.2). To reduce the amount of distortion, simply reduce the gain of IC1.1 and then reduce the attenuation of IC2.2 accordingly.
 

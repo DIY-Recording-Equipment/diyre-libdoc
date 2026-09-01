@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 9
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 The G Bus has a unique hybrid feedback/feed-forward topology (you can read more about this in [step 9 of the assembly guide](https://manuals.diy.re/gbus#mcb_toc_head38)). So it normally operates in feedback mode, but can be easily modified to be feed-forward.
 

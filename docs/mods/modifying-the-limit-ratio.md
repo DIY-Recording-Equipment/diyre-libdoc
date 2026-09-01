@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 17
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 You can customize the compression ratio of the LIM (limit) mode by changing the resistors R2 and R3. R2 sets the first ratio option on CON3 and R3 sets the second option.
 

@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 A single resistor sets the amount that the diode ladder will clip the signal. In the 15IPS mkII this is R6, in the 15IPS mkIII it is R7. Increase R6/R7 for more distortion or decrease it for less.
 

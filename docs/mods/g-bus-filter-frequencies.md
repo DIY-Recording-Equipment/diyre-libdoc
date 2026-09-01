@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 10
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 The three high-pass filters in the G Bus are simple passive networks that can be easily customized. Each setting consists of a resistor (R43) and capacitor (C3\_CB, C4\_CB, C5\_CB, depending on the switch position). To customize the corner frequencies, simply change the capacitor values.
 

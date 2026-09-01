@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 15
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 You can easily modify the amount of gain the HC1 provides by removing or replacing a few resistors. By default, the HC1 has up to 10dB of gain. The opamps IC1.1 and IC2.1 have a fixed gain of 10dB, which is set by the resistors in the feedback path, R5/R3 and R6/R4. Gain is controlled by the volume knob which is a passive attenuator before the amplifiers.
 

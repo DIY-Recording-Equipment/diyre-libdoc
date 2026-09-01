@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 16
 ---
 
-**Note:** Mods are not supported! Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.
+{% alert 'Mods are not supported. Once you start modding, we cannot offer troubleshooting support. Make sure your unit is working in the stock configuration before adding any mods.', 'warning', 'Note' %}
 
 The L2P’s attenuation can easily be modified. The base values of -10 dB and -30 dB can be changed by swapping out a few resistors. The L2P uses a voltage divider to achieve this reduction. Using the simple calculator below, you can find alternative values for R3, R7, R4, and R8 for your preferred attenuation.
 
