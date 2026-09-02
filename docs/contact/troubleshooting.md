@@ -30,7 +30,6 @@ Go through the manual step-by-step and confirm you did everything correctly. The
 We maintain both general guides and guides specific to each product:
 
 - [General Troubleshooting Tips](https://support.diy.re/article/28-general-troubleshooting-tips)
-
 - Your product's specific troubleshooting guide (search support.diy.re for your product name)
 
 ## Still stuck? Contact our support team {.step}

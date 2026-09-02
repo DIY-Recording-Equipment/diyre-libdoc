@@ -37,15 +37,15 @@ const ALLOWED_MIME_TYPES = [
 /**
  * Redirects back to the page the form was submitted from (same-host only,
  * to avoid becoming an open redirect) with a status query param appended,
- * falling back to /contact/ if there's no usable referer.
+ * falling back to /docs/contact/ if there's no usable referer.
  */
 function redirect_with_status(string $status): never
 {
-    $target = '/contact/';
+    $target = '/docs/contact/';
     if (!empty($_SERVER['HTTP_REFERER'])) {
         $referer = parse_url($_SERVER['HTTP_REFERER']);
         if (!empty($referer['host']) && $referer['host'] === ($_SERVER['HTTP_HOST'] ?? '')) {
-            $target = ($referer['path'] ?? '/contact/');
+            $target = ($referer['path'] ?? '/docs/contact/');
         }
     }
     $separator = str_contains($target, '?') ? '&' : '?';
@@ -54,7 +54,7 @@ function redirect_with_status(string $status): never
 }
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
-    header('Location: /contact/');
+    header('Location: /docs/contact/');
     exit;
 }
 
@@ -62,7 +62,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
 // CSS, see custom.css's .hp-field). If it's non-empty, silently pretend
 // success so bots don't learn the field is being checked.
 if (!empty($_POST['website'])) {
-    header('Location: /contact/thanks/');
+    header('Location: /docs/contact/thanks/');
     exit;
 }
 
@@ -183,5 +183,5 @@ try {
     redirect_with_status('error=send');
 }
 
-header('Location: /contact/thanks/');
+header('Location: /docs/contact/thanks/');
 exit;

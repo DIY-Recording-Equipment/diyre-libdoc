@@ -2,7 +2,7 @@
 layout: support.liquid
 title: Request Received
 description: false
-permalink: contact/thanks/index.html
+permalink: docs/contact/thanks/index.html
 eleventyExcludeFromCollections: true
 ---
 

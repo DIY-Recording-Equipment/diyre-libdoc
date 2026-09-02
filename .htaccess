@@ -9,6 +9,14 @@ Options -Indexes -MultiViews
 
     # Root visits go to the main store's manuals landing page, not our own homepage
     RewriteRule ^(index\.html)?$ https://www.diyrecordingequipment.com/pages/manuals [R=301,L]
+
+    # /contact moved to the docs section
+    RewriteRule ^contact/?$ /docs/contact/ [R=301,L]
+
+    # /contact/thanks/ and the old FormSubmit-style /contact-success both
+    # moved to the docs section alongside /contact
+    RewriteRule ^contact/thanks/?$ /docs/contact/thanks/ [R=301,L]
+    RewriteRule ^contact-success/?$ /docs/contact/thanks/ [R=301,L]
 </IfModule>
 
 # Disable SiteGround SuperCacher (Dynamic Cache / NGINX Direct Delivery) for this
