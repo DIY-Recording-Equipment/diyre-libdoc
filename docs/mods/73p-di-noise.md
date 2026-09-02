@@ -18,6 +18,7 @@ Beginning spring 2026, we began to receive reports that the DI input was noisier
 * Cranborne
 * Radial
 * API (8-space rack only) 
+* Lindell
 
 Beacuse the DI input is high-impedance and unbalanced, it's unavoidable that it will pick up some of this power supply noise.
 
