@@ -17,9 +17,8 @@ IC1.1 and IC2.2 are set up as non-inverting amplifiers. In this circuit gain is 
 
 Here are a few options:
 
-|  |  |  |
-| --- | --- | --- |
 | Gain | R5/R6 | R3/R4 |
+| --- | --- | --- |
 | 0dB (1:1) | Jumper | Remove |
 | 6dB (2:1) | 1k | 1k |
 | 10dB (3.3:1, default) | 2.2k | 1k |
