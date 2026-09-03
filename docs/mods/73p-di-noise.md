@@ -41,7 +41,7 @@ First, source the parts below. You can buy it them most parts distributors, or u
 | RefDes | Old Value | New Value | Part # | Manufacturer |
 | --- | --- | --- |--- | --- |
 | N/A | N/A | 470uH | [RLB0914-471KL](https://octopart.com/part/bourns/RLB0914-471KL) | Bourns |
-| C13 | 22uF | .47uF | [K473K20X7RH53L2](https://octopart.com/part/vishay/K473K20X7RH53L2)| Vishay |
+| C13 | 22uF | .47uF | [FG14X7R1E474KNT00 ](https://octopart.com/part/tdk/FG14X7R1E474KNT00)| TDK |
 | C14 | 22uF | .01uF | [K103K10X7RF53L2](https://octopart.com/part/vishay/K103K10X7RF53L2)| Vishay |
 
 ### Replace capacitors {.step}
