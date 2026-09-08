@@ -1010,7 +1010,10 @@ input[type="radio"] ~ label::before {
     #floating_toc_container {
         display: flex !important;
     }
-    #toc_main {
+    /* Only swap #toc_main out for the floating TOC on layouts that actually
+       create #floating_toc_container (e.g. page.liquid). Layouts without it
+       (support.liquid, guide.liquid) keep the static top-of-page TOC. */
+    body:has(#floating_toc_container) #toc_main {
         display: none !important;
     }
 }

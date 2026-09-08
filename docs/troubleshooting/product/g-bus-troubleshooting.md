@@ -109,16 +109,16 @@ A small gain increase, under about 2dB, when engaging XFMR is expected, since it
 4. If the DRIVE knob spins past its third position, that's just the rotary switch stop needing adjustment per step 12.3 of the build guide.
 
 
-## Things that seem like problems but aren't
+## Things that seem like problems but aren't {.step}
 
-### Compression seems backward: low ratios compress more than high ratios at the same threshold
+### Compression seems backward: low ratios compress more than high ratios at the same threshold {.step}
 
 This is normal and by design. THRESHOLD rises automatically as you raise RATIO, so at a fixed THRESHOLD setting you'll see less total gain reduction at higher ratios, not more. To get more compression out of a higher ratio, lower the THRESHOLD after increasing the RATIO.
 
-### Too much distortion at DRIVE positions 2 and 3
+### Too much distortion at DRIVE positions 2 and 3 {.step}
 
 This is very often correct behavior, not a fault: DRIVE 2 and 3 add a lot of gain (up to roughly 20dB). If you're feeding the G Bus a mix that's already been limited and sits close to 0dBFS, DRIVE 2/3 will clip hard against the power rails, and that clipping sounds harsh and "digital," not like pleasant saturation. Confirm this by backing off your input level by about 10dB (or testing with a less limited source). If the harshness clears up, DRIVE is working as designed and the fix is gain-staging, not a repair.
 
-## Request Troubleshooting Support
+## Request Troubleshooting Support {.step}
 
 If you weren't able to solve your issue from this guide, you can request email support from one of our troubleshooting experts here: [Request Troubleshooting Support](/docs/contact/troubleshooting/).

@@ -430,7 +430,11 @@ const libdocUi = {
         return linkIndexesArray;
     },
     createFloatingToc: function() {;
-        if (libdocUi.el.ftoc === undefined && libdocUi.el.tocMainOl !== null) {
+        // The floating TOC re-uses the small-devices TOC toggle button, so
+        // only layouts that render that button (e.g. page.liquid) get a
+        // floating TOC. Layouts without it (guide.liquid, support.liquid)
+        // keep only the static #toc_main at the top of the page.
+        if (libdocUi.el.ftoc === undefined && libdocUi.el.tocMainOl !== null && libdocUi.el.navSmallDevicesFTOCBtn !== null) {
             libdocUi.el.ftocContainer = document.createElement('div');
             const elContainer = libdocUi.el.ftocContainer;
             elContainer.setAttribute('w-100', 'xs,sm');
@@ -564,7 +568,7 @@ const libdocUi = {
         }
     },
     updateFTOCBtns: function() {
-        if (libdocUi.el.tocMainOl !== null) {
+        if (libdocUi.el.tocMainOl !== null && libdocUi.el.navSmallDevicesFTOCBtn !== null) {
             if (getComputedStyle(libdocUi.el.navPrimaryContainer).display != 'none') {
                 libdocUi.el.navSmallDevicesFTOCBtn.disabled = true;
             } else {

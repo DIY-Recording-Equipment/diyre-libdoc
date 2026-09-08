@@ -21,7 +21,7 @@ Most 73P issues trace back to one of three things: a cold solder joint, a resist
 4. If the signal is attenuated or disappears entirely once gain reaches 55dB and above, the fault is in the PRE 1 section, since that's the stage that only engages at 55dB and higher.
 5. If the gain is only wrong, or drops out, at one specific gain-switch position rather than across the board, double check the resistor values and solder joints on the GAIN board.
 
-## During calibration, REW shows no signal or wrong levels
+## During calibration, REW shows no signal or wrong levels {.step}
 
 This is very often related to the test setup, not the 73P, so it's worth ruling out before you touch the hardware.
 
@@ -78,7 +78,7 @@ This pattern points to a cold solder joint, not a dead part. Reflow your solder 
 2. Being off the exact -10dBFS reference by up to about 2dB is normal and due to the different output impedances of different audio interfaces. Keep in mind that the goal of calibration is not to reach an absolute value, but to make sure two or more 73Ps are matched to each other.
 3. If steps 1 and 2 don't explain what you're seeing, do the steps in section 1.
 
-## R20 smokes when 48V phantom power is engaged
+## R20 smokes when 48V phantom power is engaged {.step}
 
 R20 (100R, 1/4W) is a soft-start resistor for the phantom power circuit, and it's the most frequently damaged part in the whole kit. It isn't required for the rest of the unit to work, so if it's already blown you can safely keep testing and building with 48V left disengaged while you get a replacement.
 
@@ -94,11 +94,11 @@ R20 (100R, 1/4W) is a soft-start resistor for the phantom power circuit, and it'
 2. Check the values of R24 and R27.
 3. If these are correct, T4 is probably damaged and should be replaced.
 
-## DI signal level is wrong
+## DI signal level is wrong {.step}
 1. Check resistor values, especially R25/R26.
 2. Check the positions of T4/T5.
 
-## DI is noisier than mic input
+## DI is noisier than mic input {.step}
 See the [73P DI noise mod](/docs/mods/73p-di-noise.html) for more information about this issue and how to deal with it.
 
 ## One of the knobs feels sticky {.step}
