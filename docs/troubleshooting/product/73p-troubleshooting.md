@@ -99,7 +99,7 @@ R20 (100R, 1/4W) is a soft-start resistor for the phantom power circuit, and it'
 2. Check the positions of T4/T5.
 
 ## DI is noisier than mic input {.step}
-See the [73P DI noise mod](/docs/mods/73p-di-noise.html) for more information about this issue and how to deal with it.
+See the [73P DI noise mod](/docs/mods/73p-di-noise/) for more information about this issue and how to deal with it.
 
 ## One of the knobs feels sticky {.step}
 
