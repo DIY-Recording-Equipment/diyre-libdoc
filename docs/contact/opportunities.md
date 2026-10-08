@@ -11,7 +11,7 @@ DIY Recording Equipment, LLC is currently hiring for a Production Technician. Th
 
 As a Production Technician, you will assemble DIY electronics kits by organizing and packaging components according to documentation. You will perform quality control checks throughout the assembly process to ensure accuracy and completeness of each kit. You may also perform through-hole electronics assembly, soldering components onto printed circuit boards. You will maintain accurate inventory records through data entry, tracking components, assemblies, and stock levels in our systems.
 
-*** Responsibilities ***
+**Responsibilities**
 
 - Pick parts and package kits from a list of parts
 - Pack and fulfill orders with shipping software
@@ -19,13 +19,13 @@ As a Production Technician, you will assemble DIY electronics kits by organizing
 - Receive, check-in, and stock shipments of parts
 - Through-hole PCB assembly
 
-*** Skills and Experience ***
+**Skills and Experience**
 - Ability to follow written and visual documentation precisely
 - Comfortable with repetitive tasks while maintaining quality standards
 - Basic familiarity with electronics components (resistors, capacitors, ICs, etc.) preferred
 - Soldering experience (through-hole or surface mount) preferred
 
-*** Details ***
+**Details**
 - $20/hour
 - 1-2 days per week, flexible timing
 - Work out of West Philadelphia office
