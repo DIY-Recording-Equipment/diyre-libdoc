@@ -88,6 +88,13 @@ R20 (100R, 1/4W) is a soft-start resistor for the phantom power circuit, and it'
 4. Confirm LED1 is installed in the correct direction by the orientation of the small metal parts inside the LED.
 {% lightbox '/assets/docs/led-polarity.png' %}
 
+## GAIN switch pops when changing positions.
+
+A small amount of popping when changing the gain settings is normal. This is due to the fact that the switch is break-before-make, so there is a millisecond or so of silence in between each position. However, if the popping is louder than roughly -30dBFS (in your DAW), there is probably an issue with too much DC offset.
+
+1. Double check all the solder joints on PRE 2.
+2. If this does not solve the issue, replace the three tantalum capacitors in PRE 2 (C33, C35, C37 in v1.1).
+
 ## DI input does not switch in when a plug is inserted {.step}
 
 1. Check the orientation/value of T4
