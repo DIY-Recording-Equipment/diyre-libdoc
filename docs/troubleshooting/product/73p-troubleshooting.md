@@ -45,7 +45,8 @@ This points at a swapped resistor rather than a general solder problem, especial
 3. About 6dB quieter: Back off the input-transformer mounting screws a little bit. One of them may be shorting against the transformer winding.
 4. More than 10dB quieter: Check the resistors values and solder joints of the PRE 2 and Output sections.
 
-## Very high levels, clipping during testing
+## Very high levels, clipping during testing {.step}
+
 This is most often due to a setting in the interface drivers, not the 73P.
 
 1. Check for direct monitoring, "Control Input Volume," or a software passthrough option in your interface's mixer app (this has shown up on UA Console, Focusrite, RME TotalMix, and others). Turn all of these options off. 
@@ -88,7 +89,7 @@ R20 (100R, 1/4W) is a soft-start resistor for the phantom power circuit, and it'
 4. Confirm LED1 is installed in the correct direction by the orientation of the small metal parts inside the LED.
 {% lightbox '/assets/docs/led-polarity.png' %}
 
-## GAIN switch pops when changing positions.
+## GAIN switch pops when changing positions {.step}
 
 A small amount of popping when changing the gain settings is normal. This is due to the fact that the switch is break-before-make, so there is a millisecond or so of silence in between each position. However, if the popping is louder than roughly -30dBFS (in your DAW), there is probably an issue with too much DC offset.
 
