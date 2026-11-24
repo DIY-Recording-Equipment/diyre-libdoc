@@ -23,8 +23,9 @@ One thing worth knowing up front: nearly every test step in the assembly guide r
 1. Confirm the power supply itself is good: unplug it from the G Bus and plug it into the wall only. The blue LED should light and stay solid. If it doesn't light, or it blinks, the power supply has failed and needs to be replaced.
 2. Double check the G Bus is actually powered while you're testing.
 3. If one rail reads 0V or far from spec while the others are fine, set your meter to resistance and test from that rail to GND with the power off. A reading near 0 ohms means a short circuit. The most common cause for this is two solder joints touching each other rather than a bad part. Look closely at the section around that rail and reflow anything "blobby." See [Cleaning Up Solder Joints](/docs/troubleshooting/general/cleaning-up-solder-joints/).
-4. If the +12v or -12v rails stay at 0V after cleaning up the joints, check the orientation and positions of the U1 and U2 regulators.
-5. If you find a short and fix it, but a power supply has already been connected to it, treat that supply as suspect too. A sustained short can kill it even if it worked before.
+4. If the blue LED stays solid with the power supply unplugged from the G Bus but flashes when it's connected, and the rails to GND read very low resistance, one of the ICs is probably causing the problem. Unplug the power supply and remove all of the ICs, then plug the power supply back in. If the LED stays solid and the rails read correctly, put the ICs back one at a time, powering up after each one. When the problem returns, the IC you just installed is backwards or damaged.
+5. If the +12v or -12v rails stay at 0V after cleaning up the joints, check the orientation and positions of the U1 and U2 regulators.
+6. If you find a short and fix it, but a power supply has already been connected to it, treat that supply as suspect too. A sustained short can kill it even if it worked before.
 
 ## Levels are off in REW tests {.step}
 

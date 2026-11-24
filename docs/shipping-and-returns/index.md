@@ -34,26 +34,34 @@ No, we are not equipped to offer local pickup at our Philadelphia warehouse.
 
 Most likely, yes! We're proud to send our kits to DIYers all over the world.
 
-We will ship to any country served by USPS ([see full list here](http://pe.usps.com/text/Imm/immctry.htm)) as well as APO/FPO/DPO addresses.
+We ship within the United States (including APO/FPO/DPO addresses), to Canada, to Europe and the UK, and to most other countries worldwide. If your country is available at checkout, we can ship to it. If it isn't, we can't ship there at the moment.
 
   
 
+**How much does shipping cost?**
+
+Shipping is calculated at checkout based on your address and the service you choose.
+
+- **United States:** UPS and USPS options are available. Orders of $150 or more qualify for free Economy shipping.
+- **International:** UPS, DHL eCommerce, and USPS options are available, along with flat-rate options in many countries.
+
+
 **How long does shipping take?**
 
-Domestic shipping typically takes 2-3 business days, depending on your location. International shipments typically take 2-5 days via UPS. You can track your shipment via the tracking number in your shipping confirmation email.
+Domestic shipping typically takes 2-3 business days, depending on your location. International shipments typically take 2-5 days via UPS; economy services take longer. You can track your shipment via the tracking number in your shipping confirmation email.
 
 
 **Will I need to pay any import fees?**
 
-Most international customers will owe some import duties to their local customs agency. As the importer, you're responsible for any taxes, duties, or fees assessed by your local customs agency.
+No. For all international orders, import duties and taxes are included in the price you pay at checkout, so you won't owe anything when your package arrives. See [International shipping duties](/docs/shipping-and-returns/international-shipping-duties/) for a breakdown by region.
 
-We declare all items as “Merchandise” with the actual amount of your purchase on the customs form. Please don't ask us to modify the amount on the customs form; we can't do it, sorry!
+If a carrier or customs agency asks you to pay duties or taxes on one of our orders, please don't pay it. [Contact us](/docs/contact/) and we'll sort it out.
 
   
 
 **My package hasn't arrived yet (international).**
 
-If your package hasn't arrived, odds are it's stuck with your local customs office. Contact your local customs or postal office to see if they are holding your package. They may be able to identify your package via the USPS tracking/customs number provided in your shipping confirmation email.
+If your package hasn't arrived, it may be held up in customs. Check the tracking link in your shipping confirmation email first. If tracking shows it's held, contact the carrier or your local postal office with your tracking number.
 
 Sometimes, if your customs agency can't contact you within a certain time period, they may return the package to us. If this happens, you have the choice of a) receiving a refund for your order, minus the shipping cost or b) having your order re-shipped for the re-shipment cost.
 
